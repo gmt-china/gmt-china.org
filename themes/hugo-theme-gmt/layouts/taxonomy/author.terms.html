@@ -1,0 +1,44 @@
+<!--
+template for /authors/
+-->
+{{ partial "header" . }}
+
+<body>
+    <div class="container">
+        {{ partial "navbar" . }}
+
+        <div id="body">
+            <div class="outer">
+                <section id="main">
+                    <article>
+                        <div class="article-inner">
+                            {{ partial "article_header" . }}
+
+                            <div class="row author-list">
+                                {{ $authors := .Site.Data.authors }}
+                                {{ range $key, $value := .Data.Terms.ByCount }}
+                                {{ range $authors }}
+                                {{ if eq .name $value.Name }}
+                                <div class="col-xs-6 col-md-2">
+                                    <a href="{{ $value.Name | urlize }}">
+                                        {{ if .avatar }}
+                                        <img src="{{ .avatar }}" alt="{{ $value.Name }}" class="img-circle">
+                                        {{ else }}
+                                        <img src="https://www.gravatar.com/avatar/{{ md5 $value.Name }}?s=200&d=identicon" class="img-circle">
+                                        {{ end }}
+                                        <div class="author-name"><h4>{{ $value.Name }} <span class="badge">{{ $value.Count }}</span></h4></div>
+                                    </a>
+                                </div>
+                                {{ end }}
+                                {{ end }}
+                                {{ end }}
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </div>
+        {{ partial "footer" . }}
+    </div>
+</body>
+</html>

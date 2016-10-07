@@ -1,0 +1,24 @@
+{{ partial "header" . }}
+
+<body>
+    <div class="container">
+        {{ partial "navbar" . }}
+
+        <div id="body">
+            <div class="outer">
+                <section id="main">
+                    <article>
+                        <div class="article-inner">
+                            {{ partial "article_header" . }}
+                            <div class="article-body" itemprop="articleBody">
+                                {{ .Content }}
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </div>
+        {{ partial "footer" . }}
+    </div>
+</body>
+</html>

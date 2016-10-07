@@ -1,3 +1,93 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "http://gmt-china.org/"
+languageCode = "zh-cmn-Hans"
+title = "GMT 中文社区"
+theme = "hugo-theme-gmt"
+
+paginate = 10
+disablePathToLower = true
+preserveTaxonomyNames = true
+hasCJKLanguage = true
+publishdir = "dist"
+defaultLayout = "blog"
+ignoreFiles = ["gmt-chinese-users.dat",
+               "GeoJSON.pl",
+               "gmt.history",
+               "gmt.conf",
+               ".ps$",
+              ]
+
+[blackfriday]
+    hrefTargetBlank = true
+
+[taxonomies]
+    tag = "tags"
+    category = "categories"
+    author = "authors"
+
+[permalinks]
+    blog = "/blog/:slug/"
+
+[author]
+    name = "GMT 中文社区"
+    email = "admin@gmt-china.org"
+
+[params]
+    description = "面向 GMT 中文用户的小众社区"
+    copyright = "Powered by [Hugo](https://gohugo.io) & Hosted by [GitHub](https://github.com/gmt-china/gmt-china.org)."
+
+    # Format dates with Go's time formating
+    # since = 2016
+    date_format = "2006年01月02日"
+
+    sectionsInBlog = ["blog", "example"]
+    sectionsInGallery = ["example"]
+
+    userMap = "gmt-chinese-users.json"
+
+
+# Navigation Links
+#   The weight parameter defines the order that the links will appear in.
+[[menu.main]]
+    name = "首页"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "文档"
+    url = "/docs/"
+    weight = 2
+
+[[menu.main]]
+    name = "图库"
+    url = "/gallery/"
+    weight = 3
+
+[[menu.main]]
+    name = "博客"
+    url = "/blog"
+    weight = 4
+
+[[menu.main]]
+    name = "下载"
+    url = "/download/"
+    weight = 5
+
+[[menu.main]]
+    name = "贡献者"
+    url = "/authors/"
+    weight = 6
+
+[[menu.main]]
+    name = "关于"
+    url = "/about/"
+    weight = 7
+
+[[menu.icon]]
+    name = "github"
+    url = "https://github.com/gmt-china"
+    weight = 8
+
+[[menu.icon]]
+    name = "envelope"
+    url = "mailto:admin@gmt-china.org"
+    weight = 9

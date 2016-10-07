@@ -1,0 +1,34 @@
+<!--
+default template for:
+1. section list
+-->
+{{ partial "header" . }}
+
+<body>
+    <div class="container">
+        {{ partial "navbar" . }}
+
+        <div id="body">
+            <div class="outer">
+                <section id="main">
+                    <section class="archives-wrap">
+                        <h1>{{ .Title }}</h1>
+
+                        {{ $paginator := .Paginate .Data.Pages }}
+                        {{ range $paginator.Pages }}
+                        <article class="article article-type-post" itemscope="" itemprop="blogPost">
+                            <div class="article-inner">
+                                {{ partial "article_header" . }}
+                            </div>
+                        </article>
+                        {{ end }}
+                    </section>
+                    {{ template "_internal/pagination.html" . }}
+                </section>
+            </div>
+        </div>
+        {{ partial "footer" . }}
+    </div>
+</body>
+
+</html>

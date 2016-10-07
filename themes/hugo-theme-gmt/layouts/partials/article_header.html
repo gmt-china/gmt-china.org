@@ -1,0 +1,52 @@
+<header class="article-header">
+    <h1 class="article-title" itemprop="name">
+	<a href="{{ .Permalink }}" class="permalink">{{ .Title }}</a>
+    </h1>
+
+    {{ if or (or .Params.categories .Params.tags) }}
+    <div class="article-meta">
+        {{ if .Params.categories }}
+        {{ $categoryLen := len .Params.categories }}
+        {{ if gt $categoryLen 0 }}
+        <div class="article-category">
+            <i class="fa fa-sitemap"></i>
+            {{ range $k, $v := .Params.categories }}
+            <a class="article-category-link" href="{{ $.Site.BaseURL }}categories/{{ . | urlize }}">{{ . }}</a>
+            {{ if lt $k (sub $categoryLen 1) }},{{ end }}
+            {{ end }}
+        </div>
+        {{ end }}
+        {{ end }}
+
+        {{ if .Params.tags }}
+        {{ $tagsLen := len .Params.tags }}
+        {{ if gt $tagsLen 0 }}
+        <div class="article-category">
+		<i class="fa fa-tags"></i>
+            {{ range $k, $v := .Params.tags }}
+            <a class="article-category-link" href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">{{ . }}</a>
+            {{ if lt $k (sub $tagsLen 1) }}, {{ end }}
+            {{ end }}
+        </div>
+        {{ end }}
+        {{ end }}
+
+        {{ if .Params.authors }}
+        {{ $authorLen := len .Params.authors }}
+        {{ if gt $authorLen 0 }}
+        <div class="article-category">
+            <i class="fa fa-user"></i>
+            {{ range $k, $v := .Params.authors }}
+            <a class="article-category-link" href="{{ $.Site.BaseURL }}authors/{{ . | urlize }}">{{ . }}</a>
+            {{ if lt $k (sub $authorLen 1) }},{{ end }}
+            {{ end }}
+        </div>
+        {{ end }}
+        {{ end }}
+
+        {{ if ne .Date.Year 1 }}
+        <time class="article-date" datetime="{{ .Date }}" itemprop="datePublished">{{ .Date.Format .Site.Params.date_format }}</time>
+        {{ end }}
+    </div>
+    {{ end }}
+</header>

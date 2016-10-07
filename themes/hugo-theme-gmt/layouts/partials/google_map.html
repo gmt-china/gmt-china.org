@@ -1,0 +1,59 @@
+<div id="map"></div>
+<script>
+var map;
+function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 35, lng: 105},
+        zoom: 4,
+        streetViewControl: false,
+    });
+
+    // Map Title
+    var titleControlDiv = document.createElement('div');
+    var titleControl = new TitleControl(titleControlDiv, map);
+
+    titleControlDiv.index = 1;
+    map.controls[google.maps.ControlPosition.TOP_RIGHT].push(titleControlDiv);
+
+    // load GeoJson data
+    map.data.loadGeoJson("{{ .Site.Params.userMap }}");
+
+    // popup InfoWindow when click markers
+    var infowindow = new google.maps.InfoWindow();
+    map.data.addListener('click', function(event) {
+        var popInfo = "<b>" + event.feature.getProperty("city") + "</b><br />" + event.feature.getProperty("name");
+        infowindow.setContent("<div class='popinfo'>"+popInfo+"</div>");
+        infowindow.setPosition(event.feature.getGeometry().get());
+        infowindow.setOptions({pixelOffset: new google.maps.Size(0,-30)});
+        infowindow.open(map);
+    });
+}
+
+
+function TitleControl(controlDiv, map) {
+    // Set CSS for the control border.
+    var controlUI = document.createElement('div');
+    controlUI.style.backgroundColor = '#fff';
+    controlUI.style.border = '2px solid #fff';
+    controlUI.style.borderRadius = '3px';
+    controlUI.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
+    controlUI.style.cursor = 'pointer';
+    controlUI.style.marginBottom = '22px';
+    controlUI.style.textAlign = 'center';
+    controlUI.title = 'Map Title';
+    controlDiv.appendChild(controlUI);
+
+    // Set CSS for the control interior.
+    var controlText = document.createElement('div');
+    controlText.style.color = 'rgb(25,25,25)';
+    controlText.style.fontFamily = 'Roboto,Arial,sans-serif';
+    controlText.style.fontSize = '16px';
+    controlText.style.lineHeight = '38px';
+    controlText.style.paddingLeft = '5px';
+    controlText.style.paddingRight = '5px';
+    controlText.innerHTML = 'GMT中文用户全球分布图';
+    controlUI.appendChild(controlText);
+}
+
+</script>
+<script async defer src="http://www.google.cn/maps/api/js?key=AIzaSyBP5DIVloAvKk7NCjV2NzvsH7wLa5BB2Pw&callback=initMap"></script>

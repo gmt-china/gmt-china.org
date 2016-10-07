@@ -1,0 +1,6 @@
++++
+categories = []
+tags = []
+authors = []
+slug = ""
++++

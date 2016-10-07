@@ -1,0 +1,18 @@
+name = "GMT"
+license = "MIT"
+licenselink = "https://github.com/gmt-china/hugo-theme-gmt/blob/master/LICENSE.md"
+description = ""
+homepage = "http://gmt-china.org/"
+tags = ["", ""]
+features = ["", ""]
+min_version = 0.16
+
+[author]
+  name = "Dongdong Tian"
+  homepage = "https://seisman.info"
+
+# If porting an existing theme
+[original]
+  name = "syui"
+  homepage = "https://syui.github.io/"
+  repo = "https://github.com/syui/hugo-theme-wave"

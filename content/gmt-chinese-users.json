@@ -1,0 +1,239 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+
+        {
+            "id": 0,
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [117.270375, 31.841339]
+            },
+            "properties": {
+                "city": " 合肥市",
+                "name": " 中国科学技术大学 地球和空间科学学院"
+            }
+        },
+
+        {
+            "id": 1,
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [110.303073, 25.063901]
+            },
+            "properties": {
+                "city": " 桂林市",
+                "name": " 桂林理工大学 地球科学学院"
+            }
+        },
+
+        {
+            "id": 2,
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-73.125765, 40.914749]
+            },
+            "properties": {
+                "city": " Stony Brook",
+                "name": " Department of Geosciences, State University of New York at Stony Brook"
+            }
+        },
+
+        {
+            "id": 3,
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.366316, 30.574801]
+            },
+            "properties": {
+                "city": " 武汉市",
+                "name": " 中国科学院 测量与地球物理研究所"
+            }
+        },
+
+        {
+            "id": 4,
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [113.363330, 23.144246]
+            },
+            "properties": {
+                "city": " 广州市",
+                "name": " 中国科学院 广州地球化学研究所"
+            }
+        },
+
+        {
+            "id": 5,
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.351956, 30.539620]
+            },
+            "properties": {
+                "city": " 武汉市",
+                "name": " 中国地震局地震研究所"
+            }
+        },
+
+        {
+            "id": 6,
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [116.314260, 39.991768]
+            },
+            "properties": {
+                "city": " 北京市",
+                "name": " 北京大学 地球与空间科学学院"
+            }
+        },
+
+        {
+            "id": 7,
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [118.781832, 32.055826]
+            },
+            "properties": {
+                "city": " 南京市",
+                "name": " 南京大学 地球科学系"
+            }
+        },
+
+        {
+            "id": 8,
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [116.315618, 39.947662]
+            },
+            "properties": {
+                "city": " 北京市",
+                "name": " 中国地震局地球物理研究所"
+            }
+        },
+
+        {
+            "id": 9,
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [102.855505, 24.826814]
+            },
+            "properties": {
+                "city": " 昆明市",
+                "name": " 云南大学 资源环境与地球科学学院"
+            }
+        },
+
+        {
+            "id": 10,
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [116.799801, 39.952166]
+            },
+            "properties": {
+                "city": " 廊坊市",
+                "name": " 中国地震局 防灾科技学院"
+            }
+        },
+
+        {
+            "id": 11,
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [116.383207, 39.977771]
+            },
+            "properties": {
+                "city": " 北京市",
+                "name": " 中国科学院 地质与地球物理研究所"
+            }
+        },
+
+        {
+            "id": 12,
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [126.611055, 45.713993]
+            },
+            "properties": {
+                "city": " 哈尔滨市",
+                "name": " 中国地震局工程力学研究所"
+            }
+        },
+
+        {
+            "id": 13,
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.399564, 30.518594]
+            },
+            "properties": {
+                "city": " 武汉",
+                "name": " 中国地质大学（武汉） 地球物理与空间信息学院"
+            }
+        },
+
+        {
+            "id": 14,
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [120.124289, 36.000097]
+            },
+            "properties": {
+                "city": " 青岛",
+                "name": " 山东科技大学 地球科学与工程学院"
+            }
+        },
+
+        {
+            "id": 15,
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [127.381000, 42.257600]
+            },
+            "properties": {
+                "city": " 白山市",
+                "name": " 吉林省龙岗火山监测站"
+            }
+        },
+
+        {
+            "id": 16,
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [79.211289, 41.203188]
+            },
+            "properties": {
+                "city": " 阿克苏",
+                "name": " 新疆地震局乌什国家数字地震台"
+            }
+        },
+
+        {
+            "id": 17,
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-95.345146, 29.722887]
+            },
+            "properties": {
+                "city": " Houston",
+                "name": " Department of Earth and Atmospheric Sciences, University of Houston"
+            }
+        }
+    ]
+}

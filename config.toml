@@ -64,7 +64,7 @@ ignoreFiles = ["gmt-chinese-users.dat",
 
 [[menu.main]]
     name = "博客"
-    url = "/blog"
+    url = "/blog/"
     weight = 4
 
 [[menu.main]]

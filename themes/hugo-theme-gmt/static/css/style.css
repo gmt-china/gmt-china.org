@@ -247,3 +247,15 @@ img {
 .author-list .author-info .fa {
 	text-align: center;
 }
+
+
+/* nav-tabs */
+ul.nav.nav-tabs {
+    padding: 0 15px;
+}
+
+.tab-content {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-top: none;
+}

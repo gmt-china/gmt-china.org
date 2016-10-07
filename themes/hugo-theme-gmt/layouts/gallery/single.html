@@ -13,29 +13,31 @@
                             <div class="article-body" itemprop="articleBody">
                                 {{ .Content }}
                             </div>
-
-                            {{ $baseURL := .Site.BaseURL }}
-                            <div class="row">
-                                {{ range (where .Site.Pages "Section" "in" .Site.Params.sectionsInGallery) }}
-                                {{ $permalink := .Permalink }}
-                                {{ $dirname := .File.Dir }}
-                                {{ $title := .Title }}
-                                {{ range .Params.images }}
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="thumbnail">
-                                        <figure>
-                                            <a href="{{ $permalink }}" target="_blank">
-                                                <img src="{{ $baseURL }}{{ $dirname }}{{.}}" alt="{{.}}">
-                                            </a>
-                                            <figcaption>{{ $title }}</figcaption>
-                                        </figure>
-                                    </div>
-                                </div>
-                                {{ end }}
-                                {{ end }}
-                            </div>
                         </div>
                     </article>
+
+                    <div class="gallery">
+                        {{ $baseURL := .Site.BaseURL }}
+                        <div class="row">
+                            {{ range (where .Site.Pages "Section" "in" .Site.Params.sectionsInGallery) }}
+                            {{ $permalink := .Permalink }}
+                            {{ $dirname := .File.Dir }}
+                            {{ $title := .Title }}
+                            {{ range .Params.images }}
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <figure>
+                                        <a href="{{ $permalink }}" target="_blank">
+                                            <img src="{{ $baseURL }}{{ $dirname }}{{.}}" alt="{{.}}">
+                                        </a>
+                                        <figcaption>{{ $title }}</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            {{ end }}
+                            {{ end }}
+                        </div>
+                    </div>
                 </section>
             </div>
         </div>
@@ -43,4 +45,5 @@
         {{ partial "footer" . }}
     </div>
 </body>
+
 </html>

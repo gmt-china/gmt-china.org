@@ -3,7 +3,7 @@ title = "GMT国内镜像正式建成"
 date = "2016-07-08"
 categories = ["新闻动态"]
 tags = ["镜像"]
-authors = ['刘珠妹']
+authors = ['忆尤']
 slug = "mirror-site-founded"
 +++
 

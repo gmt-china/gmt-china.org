@@ -1,0 +1,8 @@
+{{ if .Params.datas }}
+<div class="alert alert-info" role="alert">
+    数据下载：
+    {{ range .Params.datas }}
+    <a href="{{.}}">{{.}}</a>
+    {{ end }}
+</div>
+{{ end }}

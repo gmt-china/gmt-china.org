@@ -11,6 +11,7 @@
                         <div class="article-inner">
                             {{ partial "article_header" . }}
                             <div class="article-body" itemprop="articleBody">
+                                {{ partial "article_resources" .}}
                                 {{ .Content }}
                             </div>
                             {{ partial "article_footer" . }}

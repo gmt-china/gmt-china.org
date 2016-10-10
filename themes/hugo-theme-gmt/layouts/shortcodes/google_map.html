@@ -16,7 +16,7 @@ function initMap() {
     map.controls[google.maps.ControlPosition.TOP_RIGHT].push(titleControlDiv);
 
     // load GeoJson data
-    map.data.loadGeoJson("{{ .Site.Params.userMap }}");
+    map.data.loadGeoJson("{{ .Site.BaseURL }}{{ .Get 0 }}");
 
     // popup InfoWindow when click markers
     var infowindow = new google.maps.InfoWindow();
@@ -28,7 +28,6 @@ function initMap() {
         infowindow.open(map);
     });
 }
-
 
 function TitleControl(controlDiv, map) {
     // Set CSS for the control border.
@@ -44,15 +43,15 @@ function TitleControl(controlDiv, map) {
     controlDiv.appendChild(controlUI);
 
     // Set CSS for the control interior.
-    var controlText = document.createElement('div');
-    controlText.style.color = 'rgb(25,25,25)';
-    controlText.style.fontFamily = 'Roboto,Arial,sans-serif';
-    controlText.style.fontSize = '16px';
-    controlText.style.lineHeight = '38px';
-    controlText.style.paddingLeft = '5px';
-    controlText.style.paddingRight = '5px';
-    controlText.innerHTML = 'GMT中文用户全球分布图';
-    controlUI.appendChild(controlText);
+    // var controlText = document.createElement('div');
+    // controlText.style.color = 'rgb(25,25,25)';
+    // controlText.style.fontFamily = 'Roboto,Arial,sans-serif';
+    // controlText.style.fontSize = '16px';
+    // controlText.style.lineHeight = '38px';
+    // controlText.style.paddingLeft = '5px';
+    // controlText.style.paddingRight = '5px';
+    // controlText.innerHTML = 'GMT中文用户全球分布图';
+    // controlUI.appendChild(controlText);
 }
 
 </script>

@@ -1,6 +1,7 @@
 +++
 title = "关于"
 type = "page"
+custom_js = "google-map.js"
 +++
 
 GMT中文社区是由 [seisman](https://seisman.info) 创建的面向GMT中文用户的非盈利社区。
@@ -14,7 +15,7 @@ GMT中文社区是由 [seisman](https://seisman.info) 创建的面向GMT中文�
 
 ## 费用
 
-维持整个社区正常运行所需的费用包括域名费用、主机费用以及流量费用。
+维持整个社区正常运行所需的费用包括域名费用。
 
 目前所有的费用由 [seisman](https://seisman.info) 承担。以后，会根据费用的数额决定是否定期向社区成员发起众筹。鉴于社区的非盈利性质，若决定发起众筹，会公开社区的支出明细（收据或发票），并严格限定众筹的金额。
 
@@ -23,6 +24,10 @@ GMT中文社区是由 [seisman](https://seisman.info) 创建的面向GMT中文�
 社区相关问题请联系： [admin@gmt-china.org](mailto:admin@gmt-china.org)
 
 本邮箱不负责回答任何GMT使用方面的相关问题。
+
+## GMT 中文用户分布
+
+{{% google_map "gmt-chinese-users.json" %}}
 
 ## 致谢
 

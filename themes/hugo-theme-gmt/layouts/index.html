@@ -16,10 +16,6 @@
                     </article>
                 </section>
 
-                <section id="google-map">
-                {{ partial "google_map" .}}
-                </section>
-
                 <section id="article-list">
                     <h1 class="article-title" itemprop="name">{{ with .Site.Data.l10n.global.recent_articles}}{{.}}{{end}}</h1>
                     <ul>

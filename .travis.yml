@@ -13,7 +13,7 @@ env:
 
 install:
     - wget https://github.com/spf13/hugo/releases/download/v0.17/hugo_0.17_Linux-64bit.tar.gz
-    - tar -xvf hugo_0.17_Linux-64bit.tar.gz
+    - mv `tar -xvf hugo_0.17_Linux-64bit.tar.gz hugo_*/hugo_*` hugo
 
 script:
     - ./hugo

@@ -7,7 +7,6 @@ paginate = 10
 disablePathToLower = true
 preserveTaxonomyNames = true
 hasCJKLanguage = true
-publishdir = "dist"
 defaultLayout = "blog"
 ignoreFiles = ["gmt-chinese-users.dat",
                "GeoJSON.pl",

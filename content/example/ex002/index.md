@@ -14,11 +14,11 @@ commands = ["psbasemap", "pstext"]
 
 本示例将展示如何绘制震中距为30度的 PcP 和 PKiKP 震相的射线路径，同时绘制地球内的410、660界面以及 CMB 和 ICB。最终的绘图效果如下：
 
-{{< figure src="earth-discontinuities.png" title="震相射线路径" width="300px">}}
+{{< figure src="/example/ex002/earth-discontinuities.png" title="震相射线路径" width="300px">}}
 
 绘图脚本如下：
 
-{{< include-code "plot-earth-discontinuities.sh" bash >}}
+{{< include-code "/example/ex002/plot-earth-discontinuities.sh" bash >}}
 
 脚本中使用了五个 `psbasemap` 命令分别绘制五个界面。
 

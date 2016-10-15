@@ -37,7 +37,8 @@
 
     能够推送到 GitHub 的前提是有本repo的写权限。
     ```
-    $ hugo
+    $ hugo -d dist
+    $ ./css-html-js-minify.py dist --overwrite
     $ ./deploy.sh
     ```
 

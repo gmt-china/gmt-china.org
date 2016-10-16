@@ -1,6 +1,6 @@
 #!/bin/bash
-J=Pa10c/285
-R=-10/38/0/6371
+J=Pa10c/15
+R=-10/40/0/6371
 PS=earth-discontinuities.ps
 
 gmt set MAP_GRID_PEN_PRIMARY 1p
@@ -30,11 +30,11 @@ EOF
 
 # 添加标注
 gmt pstext -J$J -R$R -F+f11p+a -N -K -O >> $PS << EOF
--6 6170 -70 Surface
--6 3280 -70 CMB
--3 1020 -70 ICB
-16 4100 -90 @;blue;PcP@;;
-37 1600 -90 @;red;PKiKP@;;
+-6 6170 20 Surface
+-6 3280 20 CMB
+-3 1020 20 ICB
+16 4100 0 @;blue;PcP@;;
+37 1600 0 @;red;PKiKP@;;
 EOF
 
 gmt psxy -J$J -R$R -T -O >> $PS

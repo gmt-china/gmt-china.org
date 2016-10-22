@@ -3,7 +3,7 @@ $('code').each(function() {
     var code = $(this),
         text = code.text();
 
-    if (text.length > 15) {
+    if (text.length > 30) {
         if (!clipInit) {
             var text, clip = new Clipboard('.copy-to-clipboard', {
                 text: function(trigger) {

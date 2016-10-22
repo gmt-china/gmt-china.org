@@ -293,7 +293,6 @@ div.notices.info p {
 }
 div.notices.info p:first-child:after {
     content: 'Info';
-    padding-left: 10px;
 }
 div.notices.warning p {
     border-top: 30px solid rgba(217, 83, 79, 0.8);

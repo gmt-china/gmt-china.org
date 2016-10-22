@@ -38,8 +38,15 @@ type = "page"
 
 ## 文档下载
 
-- GMT参考手册5.2.1版： [PDF版](https://github.com/gmt-china/GMT_docs/releases/download/v5.2.1/GMT_docs-5.2.1.pdf) [HTML版](https://github.com/gmt-china/GMT_docs/releases/download/v5.2.1/GMT_docs-5.2.1-HTML.zip)
-- GMT模块手册5.2.1版： [PDF版](https://github.com/gmt-china/GMT_modules/releases/download/v5.2.1/GMT_modules-5.2.1.pdf) [HTML版](https://github.com/gmt-china/GMT_modules/releases/download/v5.2.1/GMT_modules-5.2.1-HTML.zip)
+### GMT 参考手册
+
+- GMT 5.3.1：[在线阅读](http://docs.gmt-china.org/) [PDF](https://github.com/gmt-china/GMT_docs/raw/doc-dev/GMT_docs-dev.pdf) [HTML](https://github.com/gmt-china/GMT_docs/raw/doc-dev/GMT_docs-dev.zip)
+- GMT 5.2.1：[PDF](https://github.com/gmt-china/GMT_docs/releases/download/v5.2.1/GMT_docs-v5.2.1.pdf) [HTML](https://github.com/gmt-china/GMT_docs/releases/download/v5.2.1/GMT_docs-v5.2.1-HTML.zip)
+
+### GMT 模块手册
+
+- GMT 5.3.1：[在线阅读](http://modules.gmt-china.org/) [PDF](https://github.com/gmt-china/GMT_modules/raw/doc-dev/GMT_modules-dev.pdf) [HTML](https://github.com/gmt-china/GMT_modules/raw/doc-dev/GMT_modules-dev.zip)
+- GMT 5.2.1：[PDF](https://github.com/gmt-china/GMT_modules/releases/download/v5.2.1/GMT_modules-v5.2.1.pdf) [HTML](https://github.com/gmt-china/GMT_modules/releases/download/v5.2.1/GMT_modules-v5.2.1-HTML.zip)
 
 ---
 

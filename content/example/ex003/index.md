@@ -7,7 +7,7 @@ images = ["CN-border-JD.png", "CN-border-JM.png"]
 commands = ["pscoast", "psxy"]
 +++
 
-由于存在领土争议，GMT 自带的国界数据是无法直接用于发表的，因而用户需要自己准备国界数据。本文提供了笔者自己数字化的几个国界相关数据以及两个绘制中国地图的脚本。
+由于 GMT 自带的国界线数据不符合中国领土主张，因而在绘制用于正式图件时用户需要自己准备国界数据。本文提供了笔者自己数字化的几个国界相关数据以及两个绘制中国地图的脚本。
 
 {{% notice info %}}
 数据下载： [CN-border-La.dat](/datas/CN-border-La.dat)

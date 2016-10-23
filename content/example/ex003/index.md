@@ -1,6 +1,6 @@
 +++
 title = "中国国界、省界及九段线"
-date = "2016-10-22"
+date = "2016-10-23"
 categories = ["GMT示例", "地学数据"]
 authors = ['刘珠妹']
 images = ["CN-border-JD.png", "CN-border-JM.png"]

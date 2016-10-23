@@ -19,12 +19,14 @@
                     <div class="gallery">
                         {{ $baseURL := .Site.BaseURL }}
                         <div class="row">
+                            {{ $.Scratch.Add "imageCount" 0}}
                             {{ range (where .Site.Pages "Section" "in" .Site.Params.sectionsInGallery) }}
                             {{ $permalink := .Permalink }}
                             {{ $dirname := .File.Dir }}
                             {{ $title := .Title }}
                             {{ range .Params.images }}
-                            <div class="col-sm-6 col-md-4">
+                            {{ $.Scratch.Add "imageCount" 1 }}
+                            <div class="col-sm-6 col-md-4 col-lg-4">
                                 <div class="thumbnail">
                                     <figure>
                                         <a href="{{ $permalink }}" target="_blank">
@@ -34,8 +36,12 @@
                                     </figure>
                                 </div>
                             </div>
+                            {{ if eq (mod ($.Scratch.Get "imageCount") 3) 0}}
+                            <div class="clearfix visible-lg visible-md"></div>
                             {{ end }}
                             {{ end }}
+                            {{ end }}
+
                         </div>
                     </div>
                 </section>

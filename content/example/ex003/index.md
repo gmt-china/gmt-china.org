@@ -2,7 +2,7 @@
 title = "中国国界、省界及九段线"
 date = "2016-10-23"
 categories = ["GMT示例", "地学数据"]
-authors = ['刘珠妹']
+authors = ['忆尤']
 images = ["CN-border-JD.png", "CN-border-JM.png"]
 commands = ["pscoast", "psxy"]
 +++

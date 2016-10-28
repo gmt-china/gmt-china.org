@@ -8,6 +8,8 @@ slug = "GMT-5.3.1-released"
 +++
 >本软件包中程序来自 [MS4W](http://www.ms4w.com/download.html "Title").
 
+ 将可执行程序放在gmt的bin目录下即可使用。
+
 ## 软件包中程序名及功能如下：
 
 *    `cat`：获取文本内容

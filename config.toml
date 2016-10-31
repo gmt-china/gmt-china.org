@@ -12,7 +12,7 @@ ignoreFiles = ["gmt-chinese-users.dat",
                "GeoJSON.pl",
                "gmt.history",
                "gmt.conf",
-               ".ps$",
+               "\\.ps$",
               ]
 
 [blackfriday]

@@ -19,7 +19,7 @@ template for /authors/
                                 {{ range $key, $value := .Data.Terms.ByCount }}
                                 {{ range $authors }}
                                 {{ if eq .name $value.Name }}
-                                <div class="col-xs-6 col-md-2">
+                                <div class="col-xs-6 col-sm-3 col-md-2 col-lg-2">
                                     <a href="{{ $value.Name | urlize }}">
                                         {{ if .avatar }}
                                         <img src="{{ .avatar }}" alt="{{ $value.Name }}" class="img-circle">

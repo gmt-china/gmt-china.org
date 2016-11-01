@@ -1,15 +1,15 @@
 #
 # key 必须唯一且不能是中文
 #
-[seisman]
+[TianDongdong]
     name = "seisman"
     email = "seisman.info@gmail.com"
-    avatar = "http://home.ustc.edu.cn/~dongzhi/img/portrait.jpg"
+    avatar = "/avatars/TianDongdong.jpg"
     homepage = "https://seisman.info"
 
 [WangLiang]
     name = "王亮"
-    avatar = "/avatars/wangliang.jpg"
+    avatar = "/avatars/WangLiang.jpg"
 
 [LiuZhumei]
     name = "忆尤"
@@ -23,6 +23,6 @@
 [XiaoXiao]
     name = "Seispider"
 
-[HuGe]
+[YuShan]
     name = "虎哥"
-    avatar = "/avatars/HuGe.jpg"
+    avatar = "/avatars/YuShan.jpg"

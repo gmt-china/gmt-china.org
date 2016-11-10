@@ -22,6 +22,7 @@ GMT 学习QQ群: 218905582
 
 ## GMT 中文用户分布
 
+如果你想将自己所在位置添加到用户分布图中，请将“城市+单位+经纬度信息”发送至 [admin@gmt-china.org](mailto:admin@gmt-china.org)
 {{% google_map "gmt-chinese-users.json" %}}
 
 ## 致谢

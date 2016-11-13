@@ -11,7 +11,7 @@
         <div class="article-category">
             <i class="fa fa-sitemap"></i>
             {{ range $k, $v := .Params.categories }}
-            <a class="article-category-link" href="{{ $.Site.BaseURL }}categories/{{ . | urlize }}">{{ . }}</a>
+            <a class="article-category-link" href="{{ $.Site.BaseURL }}categories/{{ . | urlize }}/">{{ . }}</a>
             {{ if lt $k (sub $categoryLen 1) }},{{ end }}
             {{ end }}
         </div>
@@ -24,7 +24,7 @@
         <div class="article-category">
 		<i class="fa fa-tags"></i>
             {{ range $k, $v := .Params.tags }}
-            <a class="article-category-link" href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">{{ . }}</a>
+            <a class="article-category-link" href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}/">{{ . }}</a>
             {{ if lt $k (sub $tagsLen 1) }}, {{ end }}
             {{ end }}
         </div>
@@ -37,7 +37,7 @@
         <div class="article-category">
             <i class="fa fa-user"></i>
             {{ range $k, $v := .Params.authors }}
-            <a class="article-category-link" href="{{ $.Site.BaseURL }}authors/{{ . | urlize }}">{{ . }}</a>
+            <a class="article-category-link" href="{{ $.Site.BaseURL }}authors/{{ . | urlize }}/">{{ . }}</a>
             {{ if lt $k (sub $authorLen 1) }},{{ end }}
             {{ end }}
         </div>

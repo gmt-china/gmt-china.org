@@ -20,7 +20,7 @@ template for /authors/
                                 {{ range $authors }}
                                 {{ if eq .name $value.Name }}
                                 <div class="col-xs-6 col-sm-3 col-md-2 col-lg-2">
-                                    <a href="{{ $value.Name | urlize }}">
+                                    <a href="/authors/{{ $value.Name | urlize }}/">
                                         {{ if .avatar }}
                                         <img src="{{ .avatar }}" alt="{{ $value.Name }}" class="img-circle">
                                         {{ else }}

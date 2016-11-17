@@ -51,8 +51,6 @@ type = "page"
 
 ## GMT相关工具下载
 
-- [MIF2GMT](/blog/mif2gmt): 将MIF格式数据转换为GMT可用的数据格式
-
 ---
 
 ## 数据下载

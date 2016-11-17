@@ -31,9 +31,9 @@ GMT 学习QQ群: 218905582
 
 - [GitHub](https://github.com/gmt-china)：整个社区的源码以及网页都托管在GitHub上
 - [DNSPod](https://www.dnspod.cn)：提供DNS解析
-- [Hugo](https://gohugo.io/): 社区主页所使用的静态博客引擎
+- [Hugo](https://gohugo.io): 社区主页所使用的静态博客引擎
 - [Sphinx](http://www.sphinx-doc.org)：社区中文文档的生成工具
 - [sphinx_rtd_theme](https://github.com/snide/sphinx_rtd_theme)：GMT中文参考手册所使用的主题
-- [The Cloud Sphinx Theme](http://pythonhosted.org/cloud_sptheme/)：GMT模块手册所使用的主题
-- [Travis CI](https://travis-ci.org/)：社区源码自动测试和部署
-- [腾讯企业邮](http://exmail.qq.com/)：为社区提供免费的域名邮箱
+- [The Cloud Sphinx Theme](http://pythonhosted.org/cloud_sptheme)：GMT模块手册所使用的主题
+- [Travis CI](https://travis-ci.org)：社区源码自动测试和部署
+- [腾讯企业邮](http://exmail.qq.com)：为社区提供免费的域名邮箱

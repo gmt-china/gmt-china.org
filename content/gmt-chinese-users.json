@@ -234,6 +234,19 @@
                 "city": " Houston",
                 "name": " Department of Earth and Atmospheric Sciences, University of Houston"
             }
+        },
+
+        {
+            "id": 18,
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [116.251417, 39.908198]
+            },
+            "properties": {
+                "city": " 北京",
+                "name": " 中国科学院大学地球科学学院"
+            }
         }
     ]
 }

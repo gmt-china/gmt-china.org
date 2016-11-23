@@ -18,9 +18,6 @@
 [LuoNa]
     name = "罗娜"
 
-[WeiJin]
-    name = "韦进"
-
 [XiaoXiao]
     name = "Seispider"
     avatar = "/avatars/XiaoXiao.jpg"
@@ -28,3 +25,6 @@
 [YuShan]
     name = "虎哥"
     avatar = "/avatars/YuShan.jpg"
+
+[LiJun]
+    name = "李君"

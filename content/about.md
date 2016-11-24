@@ -24,16 +24,3 @@ GMT 学习QQ群: 218905582
 
 如果你想将自己所在位置添加到用户分布图中，请将“城市+单位+经纬度信息”发送至 [admin@gmt-china.org](mailto:admin@gmt-china.org)
 {{% google_map "gmt-chinese-users.json" %}}
-
-## 致谢
-
-整个社区的建立和维护使用了众多免费的项目，在此一并致谢：
-
-- [GitHub](https://github.com/gmt-china)：整个社区的源码以及网页都托管在GitHub上
-- [DNSPod](https://www.dnspod.cn)：提供DNS解析
-- [Hugo](https://gohugo.io): 社区主页所使用的静态博客引擎
-- [Sphinx](http://www.sphinx-doc.org)：社区中文文档的生成工具
-- [sphinx_rtd_theme](https://github.com/snide/sphinx_rtd_theme)：GMT中文参考手册所使用的主题
-- [The Cloud Sphinx Theme](http://pythonhosted.org/cloud_sptheme)：GMT模块手册所使用的主题
-- [Travis CI](https://travis-ci.org)：社区源码自动测试和部署
-- [腾讯企业邮](http://exmail.qq.com)：为社区提供免费的域名邮箱

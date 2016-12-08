@@ -254,7 +254,7 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [36.055339, 120.346439]
+                "coordinates": [120.346439, 36.055339]
             },
             "properties": {
                 "city": " 青岛",

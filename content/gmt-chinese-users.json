@@ -247,6 +247,19 @@
                 "city": " 北京",
                 "name": " 中国科学院大学地球科学学院"
             }
+        },
+
+        {
+            "id": 19,
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [36.055339, 120.346439]
+            },
+            "properties": {
+                "city": " 青岛",
+                "name": " 中国科学院海洋研究所"
+            }
         }
     ]
 }

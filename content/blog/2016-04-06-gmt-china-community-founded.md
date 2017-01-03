@@ -6,7 +6,7 @@ authors = ['seisman']
 slug = "gmt-china-community-founded"
 +++
 
-GMT的中文用户们，大家好，我是 [seisman](https://seisman.info) 。
+GMT的中文用户们，大家好，我是 [seisman](http://seisman.info) 。
 
 GMT中文社区于今日正式成立了！
 

@@ -9,7 +9,7 @@ min_version = 0.16
 
 [author]
   name = "Dongdong Tian"
-  homepage = "https://seisman.info"
+  homepage = "http://seisman.info"
 
 # If porting an existing theme
 [original]

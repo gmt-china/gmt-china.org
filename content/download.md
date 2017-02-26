@@ -15,20 +15,20 @@ type = "page"
 
 <div class="tab-content">
 {{% tablist-body id="windows" status="active" %}}
-- **GMT安装包**： [GMT 5.3.1 32位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.3.1-win32.exe) [GMT 5.3.1 64位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.3.1-win64.exe)
+- **GMT安装包**： [GMT 5.3.2 32位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.3.2-win32.exe) [GMT 5.3.2 64位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.3.2-win64.exe)
 - **ghostscript安装包**： [gs 9.19 32位](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs919/gs919w32.exe) [gs 9.19 64位](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs919/gs919w64.exe)
 - **gsview安装包**： [gsview 6.0](http://www.gsview.com/downloads/gsview_setup_6.0.exe)
 - **UnixTools**: [UnixTools.zip](http://gmt-china.org/datas/UnixTools.zip)
 {{% /tablist-body %}}
 
 {{% tablist-body id="linux" %}}
-- **GMT源码**： [GMT 5.3.1](http://mirrors.ustc.edu.cn/gmt/gmt-5.3.1-src.tar.gz)
+- **GMT源码**： [GMT 5.3.2](http://mirrors.ustc.edu.cn/gmt/gmt-5.3.2-src.tar.gz)
 - **GSHHG 全球海岸线数据**： [GSHHG 2.3.6](http://mirrors.ustc.edu.cn/gmt/gshhg-gmt-2.3.6.tar.gz)
 - **DCW 数据**： [DCW 1.1.2](http://mirrors.ustc.edu.cn/gmt/dcw-gmt-1.1.2.tar.gz)
 {{% /tablist-body %}}
 
 {{% tablist-body id="mac" %}}
-- **GMT 安装包**： [GMT 5.3.1 64位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.3.1-darwin-x84_64.dmg)
+- **GMT 安装包**： [GMT 5.3.2 64位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.3.2-darwin-x84_64.dmg)
 {{% /tablist-body %}}
 </div>
 </div>
@@ -39,12 +39,14 @@ type = "page"
 
 ### GMT 参考手册
 
-- GMT 5.3.1：[在线阅读](http://docs.gmt-china.org) [PDF](https://github.com/gmt-china/GMT_docs/raw/doc-dev/GMT_docs-dev.pdf) [HTML](https://github.com/gmt-china/GMT_docs/raw/doc-dev/GMT_docs-dev.zip)
+- 最新版本：[在线阅读](http://docs.gmt-china.org) [PDF](https://github.com/gmt-china/GMT_docs/raw/doc-dev/GMT_docs-dev.pdf) [HTML](https://github.com/gmt-china/GMT_docs/raw/doc-dev/GMT_docs-dev.zip)
+- GMT 5.3.1：[PDF](https://github.com/gmt-china/GMT_docs/releases/download/v5.3.1/GMT_docs-v5.3.1.pdf) [HTML](https://github.com/gmt-china/GMT_docs/releases/download/v5.3.1/GMT_docs-v5.3.1-HTML.zip)
 - GMT 5.2.1：[PDF](https://github.com/gmt-china/GMT_docs/releases/download/v5.2.1/GMT_docs-v5.2.1.pdf) [HTML](https://github.com/gmt-china/GMT_docs/releases/download/v5.2.1/GMT_docs-v5.2.1-HTML.zip)
 
 ### GMT 模块手册
 
-- GMT 5.3.1：[在线阅读](http://modules.gmt-china.org) [PDF](https://github.com/gmt-china/GMT_modules/raw/doc-dev/GMT_modules-dev.pdf) [HTML](https://github.com/gmt-china/GMT_modules/raw/doc-dev/GMT_modules-dev.zip)
+- 最新版本：[在线阅读](http://modules.gmt-china.org) [PDF](https://github.com/gmt-china/GMT_modules/raw/doc-dev/GMT_modules-dev.pdf) [HTML](https://github.com/gmt-china/GMT_modules/raw/doc-dev/GMT_modules-dev.zip)
+- GMT 5.3.1：[PDF](https://github.com/gmt-china/GMT_modules/releases/download/v5.3.1/GMT_modules-v5.3.1.pdf) [HTML](https://github.com/gmt-china/GMT_modules/releases/download/v5.3.1/GMT_modules-v5.3.1-HTML.zip)
 - GMT 5.2.1：[PDF](https://github.com/gmt-china/GMT_modules/releases/download/v5.2.1/GMT_modules-v5.2.1.pdf) [HTML](https://github.com/gmt-china/GMT_modules/releases/download/v5.2.1/GMT_modules-v5.2.1-HTML.zip)
 
 ---

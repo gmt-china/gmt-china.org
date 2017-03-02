@@ -35,7 +35,7 @@ ignoreFiles = ["gmt-chinese-users.dat",
     copyright = "Powered by [Hugo](https://gohugo.io) & Hosted by [GitHub](https://github.com/gmt-china/gmt-china.org)."
 
     # Format dates with Go's time formating
-    # since = 2016
+    since = 2016
     date_format = "2006年01月02日"
 
     sectionsInBlog = ["blog", "example"]

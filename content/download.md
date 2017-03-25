@@ -15,20 +15,20 @@ type = "page"
 
 <div class="tab-content">
 {{% tablist-body id="windows" status="active" %}}
-- **GMT安装包**： [GMT 5.3.2 32位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.3.2-win32.exe) [GMT 5.3.2 64位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.3.2-win64.exe)
+- **GMT安装包**： [GMT 5.3.3 32位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.3.3-win32.exe) [GMT 5.3.3 64位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.3.3-win64.exe)
 - **ghostscript安装包**： [gs 9.19 32位](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs919/gs919w32.exe) [gs 9.19 64位](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs919/gs919w64.exe)
 - **gsview安装包**： [gsview 6.0](http://www.gsview.com/downloads/gsview_setup_6.0.exe)
 - **UnixTools**: [UnixTools.zip](http://gmt-china.org/datas/UnixTools.zip)
 {{% /tablist-body %}}
 
 {{% tablist-body id="linux" %}}
-- **GMT源码**： [GMT 5.3.2](http://mirrors.ustc.edu.cn/gmt/gmt-5.3.2-src.tar.gz)
+- **GMT源码**： [GMT 5.3.3](http://mirrors.ustc.edu.cn/gmt/gmt-5.3.3-src.tar.gz)
 - **GSHHG 全球海岸线数据**： [GSHHG 2.3.6](http://mirrors.ustc.edu.cn/gmt/gshhg-gmt-2.3.6.tar.gz)
 - **DCW 数据**： [DCW 1.1.2](http://mirrors.ustc.edu.cn/gmt/dcw-gmt-1.1.2.tar.gz)
 {{% /tablist-body %}}
 
 {{% tablist-body id="mac" %}}
-- **GMT 安装包**： [GMT 5.3.2 64位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.3.2-darwin-x84_64.dmg)
+- **GMT 安装包**： [GMT 5.3.3 64位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.3.3-darwin-x84_64.dmg)
 {{% /tablist-body %}}
 </div>
 </div>

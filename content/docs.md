@@ -5,7 +5,7 @@ type = "page"
 
 <div class="row">
     <div class="col-sm-6 col-md-3 col-lg-3">
-        <div class="thumbnail">            
+        <div class="thumbnail">
             <div class="caption">
             <h3 class="text-center"><i class="fa fa-book"></i> GMT参考手册</h3>
             <p>参考手册详细介绍了GMT的基础和进阶知识，是GMT新手的推荐入门读物，同时也可以在日常绘图时作为参考。</p>
@@ -47,6 +47,9 @@ type = "page"
             <div class="caption">
             <h3 class="text-center"><i class="fa fa-question-circle"></i> GMT FAQ</h3>
             <p>FAQ 中收集整理了GMT使用过程中的常见问题及其解答。</p>
+            <div class="text-center">
+            <a href="https://github.com/gmt-china/faq" class="btn btn-primary" role="button">主页(建设中)</a>
+            </div>
             </div>
         </div>
     </div>

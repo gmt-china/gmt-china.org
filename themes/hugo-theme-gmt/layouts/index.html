@@ -10,7 +10,7 @@
                     <article>
                         <div class="article-inner">
                             <div class="article-body" itemprop="articleBody">
-                                {{ range where .Data.Pages "Type" "index" }} {{ .Content }} {{ end }}
+                            {{ .Content }}
                             </div>
                         </div>
                     </article>
@@ -19,10 +19,11 @@
                 <section id="article-list">
                     <h1 class="article-title" itemprop="name">{{ with .Site.Data.l10n.global.recent_articles}}{{.}}{{end}}</h1>
                     <ul>
-                        {{ range first 5 (where .Site.Pages "Section" "in" .Site.Params.sectionsInBlog) }}
+                        {{ range first 5 .Data.Pages }}
                         <li>
                             <h3>
                                 <time datetime="{{ .Date }}" itemprop="datePublished">{{ .Date.Format .Site.Params.date_format }}</time>
+
                                 <a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a>
                             </h3>
                         </li>

@@ -2,25 +2,24 @@ language: python
 python: 3.5
 
 branches:
-    only:
-    - master
+  only:
+  - master
 
 env:
-    global:
-        - GIT_DEPLOY_USERNAME="Dongdong Tian"
-        - GIT_DEPLOY_EMAIL="seisman.info@gmail.com"
-        - GIT_DEPLOY_REPO="https://${GH_TOKEN}@github.com/gmt-china/gmt-china.org"
+  global:
+    - GIT_DEPLOY_USERNAME="Dongdong Tian"
+    - GIT_DEPLOY_EMAIL="seisman.info@gmail.com"
+    - GIT_DEPLOY_REPO="https://${GH_TOKEN}@github.com/gmt-china/gmt-china.org"
 
 install:
-    - wget https://github.com/spf13/hugo/releases/download/v0.17/hugo_0.17_Linux-64bit.tar.gz
-    - tar -xvf hugo_0.17_Linux-64bit.tar.gz --strip-components 1
-    - mv hugo_0.17_linux_amd64 hugo
-    - pip install -r requirements.txt
-
+  - wget https://github.com/spf13/hugo/releases/download/v0.20/hugo_0.20_Linux-64bit.tar.gz
+  - tar -xvf hugo_0.20_Linux-64bit.tar.gz --strip-components 1
+  - mv hugo_0.20_linux_amd64 hugo
+  - pip install -r requirements.txt
 
 script:
-    - ./hugo -d dist
-    - ./css-html-js-minify.py dist --overwrite
+  - ./hugo -d dist
+  - ./css-html-js-minify.py dist --overwrite
 
 after_success:
-    ./deploy.sh
+  ./deploy.sh

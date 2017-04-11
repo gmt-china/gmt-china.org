@@ -1,6 +1,5 @@
 +++
-title = "首页"
-type = "index"
+title = "GMT中文社区"
 +++
 
 GMT，全称Generic Mapping Tools，是一种开源地图绘制工具，广泛应用于全球地学界。

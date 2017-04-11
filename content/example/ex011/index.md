@@ -1,6 +1,6 @@
 +++
 title = "事件相对台站的震中距方位角分布图"
-author = "lxrat"
+authors = "lxrat"
 date = "2017-04-11"
 categories = ["GMT示例"]
 authors = [""]

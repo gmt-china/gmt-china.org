@@ -18,8 +18,11 @@ install:
   - pip install -r requirements.txt
 
 script:
-  - ./hugo -d dist
-  - ./css-html-js-minify.py dist --overwrite
+  - ./hugo
+  - ./css-html-js-minify.py public --overwrite
 
-after_success:
-  ./deploy.sh
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: ${GH_TOKEN}
+  local_dir: public

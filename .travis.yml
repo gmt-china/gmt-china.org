@@ -1,20 +1,14 @@
 language: python
-python: 3.5
+python: 3.6
 
 branches:
   only:
   - master
 
-env:
-  global:
-    - GIT_DEPLOY_USERNAME="Dongdong Tian"
-    - GIT_DEPLOY_EMAIL="seisman.info@gmail.com"
-    - GIT_DEPLOY_REPO="https://${GH_TOKEN}@github.com/gmt-china/gmt-china.org"
-
 install:
-  - wget https://github.com/spf13/hugo/releases/download/v0.20.1/hugo_0.20.1_Linux-64bit.tar.gz
-  - tar -xvf hugo_0.20.1_Linux-64bit.tar.gz --strip-components 1
-  - mv hugo_0.20.1_linux_amd64 hugo
+  - wget https://github.com/spf13/hugo/releases/download/v0.20.2/hugo_0.20.2_Linux-64bit.tar.gz
+  - tar -xvf hugo_0.20.2_Linux-64bit.tar.gz --strip-components 1
+  - mv hugo_0.20.2_linux_amd64 hugo
   - pip install -r requirements.txt
 
 script:

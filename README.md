@@ -39,7 +39,7 @@
     ```
     $ hugo -d dist
     $ ./css-html-js-minify.py dist --overwrite
-    $ ./deploy.sh
+    $ git push
     ```
 
 ## 发布博文

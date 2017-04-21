@@ -33,18 +33,18 @@
 
     终端执行 `hugo server` 然后浏览器打开 `localhost:1313` 即可。
 
-5.  手动推送到 GitHub
+5.  推送到 GitHub
 
     能够推送到 GitHub 的前提是有本repo的写权限。
     ```
-    $ hugo -d dist
-    $ ./css-html-js-minify.py dist --overwrite
     $ git push
     ```
 
+    网页会自动更新。
+
 ## 发布博文
 
-一般博文位于 `content` 目录下，GMT示例位于 `example` 目录下。
+一般博文位于 `content/blog` 目录下，GMT示例位于 `content/example` 目录下。
 
 ## 作者列表
 

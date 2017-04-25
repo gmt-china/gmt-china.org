@@ -7,7 +7,7 @@ branches:
 
 install:
   - wget https://github.com/spf13/hugo/releases/download/v0.20.5/hugo_0.20.5_Linux-64bit.tar.gz
-  - tar -xvf hugo_0.20.5_Linux-64bit.tar hugo
+  - tar -xvf hugo_0.20.5_Linux-64bit.tar.gz hugo
   - pip install -r requirements.txt
 
 script:

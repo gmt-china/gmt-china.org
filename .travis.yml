@@ -6,9 +6,8 @@ branches:
   - master
 
 install:
-  - wget https://github.com/spf13/hugo/releases/download/v0.20.2/hugo_0.20.2_Linux-64bit.tar.gz
-  - tar -xvf hugo_0.20.2_Linux-64bit.tar.gz --strip-components 1
-  - mv hugo_0.20.2_linux_amd64 hugo
+  - wget https://github.com/spf13/hugo/releases/download/v0.20.5/hugo_0.20.5_Linux-64bit.tar.gz
+  - tar -xvf hugo_0.20.5_Linux-64bit.tar hugo
   - pip install -r requirements.txt
 
 script:

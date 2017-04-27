@@ -23,7 +23,6 @@
                             {{ range (where .Site.Pages "Section" "in" .Site.Params.sectionsInGallery) }}
                             {{ $permalink := .Permalink }}
                             {{ $dirname := .File.Dir }}
-                            {{ $exname := .File.BaseFileName}}
                             {{ $title := .Title }}
                             {{ range .Params.images }}
                             {{ $.Scratch.Add "imageCount" 1 }}
@@ -31,7 +30,7 @@
                                 <div class="thumbnail">
                                     <figure>
                                         <a href="{{ $permalink }}" target="_blank">
-                                            <img src="{{ $baseURL }}{{ $dirname }}{{$exname}}/{{.}}" alt="{{.}}">
+                                            <img src="{{ $baseURL }}{{ $dirname }}{{.}}" alt="{{.}}">
                                         </a>
                                         <figcaption>{{ $title }}</figcaption>
                                     </figure>

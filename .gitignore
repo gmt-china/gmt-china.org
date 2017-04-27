@@ -1,5 +1,5 @@
 # hugo output directory
-dist/
+public/
 # GMT related files
 *.ps
 gmt.history

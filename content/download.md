@@ -17,7 +17,7 @@ type = "page"
 {{% tablist-body id="windows" status="active" %}}
 - **GMT安装包**： [GMT 5.3.3 32位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.3.3-win32.exe) [GMT 5.3.3 64位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.3.3-win64.exe)
 - **ghostscript安装包**： [gs 9.21 32位](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs921/gs921w32.exe) [gs 9.21 64位](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs921/gs921w64.exe)
-- **gsview安装包**： [gsview 6.0](http://www.gsview.com/downloads/gsview_setup_6.0.exe)
+- **gsview安装包**： [gsview 6.0](http://www.artifex.com/gsview/download/gsview_setup_6.0.exe)
 - **UnixTools**: [UnixTools.zip](http://gmt-china.org/datas/UnixTools.zip)
 {{% /tablist-body %}}
 

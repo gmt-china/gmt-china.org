@@ -1,7 +1,6 @@
 baseURL = "http://gmt-china.org/"
 languageCode = "zh-cmn-Hans"
 title = "GMT 中文社区"
-theme = "hugo-theme-gmt"
 
 paginate = 10
 disablePathToLower = true

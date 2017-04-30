@@ -2,7 +2,7 @@
 title = "GMT中文社区"
 +++
 
-GMT，全称Generic Mapping Tools，是一种开源地图绘制工具，广泛应用于全球地学界。
+[GMT](http://gmt.soest.hawaii.edu/projects/gmt)，全称Generic Mapping Tools，是一种开源地图绘制工具，广泛应用于全球地学界。
 
 GMT中文社区是为GMT中文用户而建立的小众社区。首次访问社区主页的用户，可以先看看 [关于](/about/) 页面中社区的相关信息，也可以看看社区的 [博客] (/blog/)。
 

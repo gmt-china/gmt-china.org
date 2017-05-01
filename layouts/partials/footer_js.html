@@ -5,4 +5,7 @@
 <script src="//cdn.bootcss.com/prism/1.5.1/plugins/line-numbers/prism-line-numbers.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.12/clipboard.js"></script>
 <script src="//cdn.bootcss.com/featherlight/1.5.0/featherlight.min.js"></script>
+{{ range .Params.extra_js }}
+<script src="{{ absURL . }}"></script>
+{{ end }}
 <script src="{{ absURL "js/script.js" }}"></script>

@@ -12,6 +12,9 @@
 <link href="//cdn.bootcss.com/prism/1.5.1/themes/prism-solarizedlight.min.css" rel="stylesheet">
 <link href="//cdn.bootcss.com/prism/1.5.1/plugins/line-numbers/prism-line-numbers.min.css" rel="stylesheet">
 <link href="//cdn.bootcss.com/featherlight/1.5.0/featherlight.min.css" rel="stylesheet">
+{{ range .Params.extra_css }}
+<link href="{{ . }}" rel="stylesheet">
+{{ end }}
 <link rel="stylesheet" href="{{ absURL "css/style.css" }}"/>
 <link rel="stylesheet" href="{{ absURL "css/mobile.css" }}"/>
 

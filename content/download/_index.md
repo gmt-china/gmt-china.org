@@ -1,6 +1,5 @@
 +++
 title = "下载"
-type = "page"
 +++
 
 

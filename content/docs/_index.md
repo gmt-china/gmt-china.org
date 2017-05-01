@@ -1,6 +1,5 @@
 +++
 title = "文档"
-type = "page"
 +++
 
 <div class="row">

@@ -1,44 +1,28 @@
-<!--
-default template for a list of terms
--->
-{{ partial "header" . }}
-
-<body>
-    <div class="container">
-        {{ partial "navbar" . }}
-
-        <div id="body">
-            <div class="outer">
-                <section id="main">
-                    <section>
-                        <div>
-                            <h1 id="title">{{ .Title }}</h1>
-                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                                {{ $data := .Data }}
-                                {{ range $key,$value := .Data.Terms.ByCount }}
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id=" {{ $value.Name }}">
-                                        <h4 class="panel-title">
-                                            <div role="button" data-toggle="collapse" data-parent="#accordion" data-target="#{{ $value.Name}}"  aria-expanded="true" aria-controls="{{ $value.Name }}">
-                                            {{ $value.Name }}<span class="badge"> {{ $value.Count }}</span>
-                                            </div>
-                                        </h4>
-                                    </div>
-                                    <div id="{{$value.Name}}" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="{{ $value.Name }}">
-                                        <div class="panel-body">
-                                            {{ partial "article_list" . }}
-                                        </div>
-                                    </div>
-                                </div>
-                                {{ end }}
+{{ define "main" }}
+<section id="main">
+    <section>
+        <div>
+            <h1 id="title">{{ .Title }}</h1>
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                {{ $data := .Data }}
+                {{ range $key,$value := .Data.Terms.ByCount }}
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id=" {{ $value.Name }}">
+                        <h4 class="panel-title">
+                            <div role="button" data-toggle="collapse" data-parent="#accordion" data-target="#{{ $value.Name}}"  aria-expanded="true" aria-controls="{{ $value.Name }}">
+                            {{ $value.Name }}<span class="badge"> {{ $value.Count }}</span>
                             </div>
+                        </h4>
+                    </div>
+                    <div id="{{$value.Name}}" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="{{ $value.Name }}">
+                        <div class="panel-body">
+                            {{ partial "article_list" . }}
                         </div>
-                    </section>
-                </section>
+                    </div>
+                </div>
+                {{ end }}
             </div>
         </div>
-        {{ partial "footer" . }}
-    </div>
-</body>
-
-</html>
+    </section>
+</section>
+{{ end }}

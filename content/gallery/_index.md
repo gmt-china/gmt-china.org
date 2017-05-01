@@ -1,6 +1,5 @@
 +++
 title = "图库"
-type = "gallery"
 +++
 
 <div class="alert alert-info" role="alert">

@@ -1,6 +1,6 @@
 ---
 title: 全球地形起伏数据
-date: 2017-05-15
+date: 2017-05-14
 slug: global-earth-relief-grids
 categories:
     - 地学数据

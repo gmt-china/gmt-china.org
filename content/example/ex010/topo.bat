@@ -2,7 +2,7 @@ set PS="topo.ps"
 set eqfile=eq.dat
 set R=70/135/15/55
 
-gmt grdcut ETOPO1_Ice.grd -R%R% -GcutTopo.grd
+gmt grdcut earth_relief_01m.grd -R%R% -GcutTopo.grd
 gmt grdgradient cutTopo.grd -Ne0.7 -A50 -GcutTopo_i.grd
 gmt grd2cpt cutTopo.grd -Cglobe -S-10000/10000/200 -Z -D>colorTopo.cpt
 

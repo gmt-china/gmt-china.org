@@ -273,6 +273,19 @@
                 "city": " 银川",
                 "name": " 宁夏回族自治区地质调查院"
             }
+        },
+
+        {
+            "id": 30,
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [117.145667, 34.218558]
+            },
+            "properties": {
+                "city": " 徐州市",
+                "name": " 中国矿业大学环境与测绘学院"
+            }
         }
     ]
 }

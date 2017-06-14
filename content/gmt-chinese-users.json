@@ -286,6 +286,19 @@
                 "city": " 徐州市",
                 "name": " 中国矿业大学环境与测绘学院"
             }
+        },
+
+        {
+            "id": 31,
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [113.999864, 22.594241]
+            },
+            "properties": {
+                "city": " 深圳市",
+                "name": " 南方科技大学地球与空间科学系"
+            }
         }
     ]
 }

@@ -1,13 +1,15 @@
 language: python
 python: 3.6
+env:
+  - HUGO_VERSION=0.23
 
 branches:
   only:
   - master
 
 install:
-  - wget https://github.com/gohugoio/hugo/releases/download/v0.23/hugo_0.23_Linux-64bit.tar.gz
-  - tar -xvf hugo_0.23_Linux-64bit.tar.gz hugo
+  - wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz
+  - tar -xvf hugo_${HUGO_VERSION}_Linux-64bit.tar.gz hugo
   - pip install -r requirements.txt
 
 script:

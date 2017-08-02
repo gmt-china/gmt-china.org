@@ -299,6 +299,19 @@
                 "city": " 深圳市",
                 "name": " 南方科技大学地球与空间科学系"
             }
+        },
+
+        {
+            "id": 32,
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [104.141079, 30.673939]
+            },
+            "properties": {
+                "city": " 成都市",
+                "name": " 成都理工大学地球物理学院"
+            }
         }
     ]
 }

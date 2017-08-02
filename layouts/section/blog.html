@@ -1,13 +1,12 @@
 {{ define "main" }}
 <section id="main">
-
-    {{ $paginator := .Paginate (where .Site.Pages "Section" "in" .Site.Params.sectionsInBlog) }}
+    {{ $paginator := .Paginate .Data.Pages }}
     {{ range $paginator.Pages }}
     <article class="article article-type-post" itemscope="" itemprop="blogPost">
         <div class="article-inner">
             {{ partial "article_header" . }}
         </div>
-    </article>
+    <article>
     {{ end }}
     <div class="text-center">
     {{ template "_internal/pagination.html" . }}

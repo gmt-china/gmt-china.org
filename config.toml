@@ -37,7 +37,6 @@ ignoreFiles = ["gmt-chinese-users.dat",
     since = 2016
     date_format = "2006年01月02日"
 
-    sectionsInBlog = ["blog", "example"]
     sectionsInGallery = ["example"]
 
     userMap = "gmt-chinese-users.json"

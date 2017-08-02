@@ -66,26 +66,31 @@ ignoreFiles = ["gmt-chinese-users.dat",
     weight = 4
 
 [[menu.main]]
+    name = "示例"
+    url = "/example/"
+    weight = 5
+
+[[menu.main]]
     name = "下载"
     url = "/download/"
-    weight = 5
+    weight = 6
 
 [[menu.main]]
     name = "贡献者"
     url = "/authors/"
-    weight = 6
+    weight = 7
 
 [[menu.main]]
     name = "关于"
     url = "/about/"
-    weight = 7
+    weight = 8
 
 [[menu.icon]]
     name = "github"
     url = "https://github.com/gmt-china"
-    weight = 8
+    weight = 9
 
 [[menu.icon]]
     name = "envelope"
     url = "mailto:admin@gmt-china.org"
-    weight = 9
+    weight = 10

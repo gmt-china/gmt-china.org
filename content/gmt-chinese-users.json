@@ -312,6 +312,19 @@
                 "city": " 成都市",
                 "name": " 成都理工大学地球物理学院"
             }
+        },
+
+        {
+            "id": 33,
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [114.360734, 30.541093]
+            },
+            "properties": {
+                "city": " 武汉市",
+                "name": " 武汉大学测绘学院"
+            }
         }
     ]
 }

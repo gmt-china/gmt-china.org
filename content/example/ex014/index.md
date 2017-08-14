@@ -32,7 +32,6 @@ commands = ["project"]
 
 {{< figure src="/example/ex014/seismic-profile.png" title="地震剖面图" width="500px">}}
 
-绘图脚本如下，同时也提供了一个功能相同的 [bat](/example/ex014/profile.bat) 脚本。
-
+绘图脚本如下：
 
 {{< include-code "/example/ex014/profile.sh" bash >}}

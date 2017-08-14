@@ -4,10 +4,10 @@ PS=seismic-profile.ps
 gmt set MAP_FRAME_TYPE=plain
 # === (a) 绘制区域震中分布图和选定的测线 ===
 gmt psbasemap -R100/110/20/30 -JM3i  -Ba5f2.5 -BWeSn -P -Y5i -K > $PS
-# 沿着测线每隔0.1度生成一个测点并绘制测线
-gmt project -C100/22 -E106/30 -G0.1 | gmt psxy -R -J -W2p,blue -O -K >> $PS
 # 绘制所有地震位置
 gmt psxy earthquakes.dat -R -J -Sc0.1i -Gred -W0.25p -O -K >> $PS
+# 沿着测线每隔0.1度生成一个测点并绘制测线
+gmt project -C100/22 -E106/30 -G0.1 | gmt psxy -R -J -W2p,blue -O -K >> $PS
 echo '(a)' | gmt pstext -R -J -F+cBR+f12p,1 -Dj0.2c/0.2c -O -K >> $PS
 
 # === (b) 绘制选定测线0.2度范围内地震的震中分布图 ===

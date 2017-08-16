@@ -1,10 +1,12 @@
-+++
-title = "为子图添加编号"
-date = "2016-10-17"
-categories = ['GMT技巧']
-authors = ['seisman']
-slug = "numbering-subfigures"
-+++
+---
+title: 为子图添加编号
+date: 2016-10-17
+categories:
+    - GMT技巧
+authors:
+    - seisman
+slug: numbering-subfigures
+---
 
 在绘制组合图（即一张图由多张子图组成）时，需要在每张子图的左上角加上 a、b、c、d 等子图编号。常规的方法是根据子图的 `-R` 选项的范围估计编号在当前子图里的坐标，然后使用 `pstext` 模块将编号写在坐标所在的位置。此方法的一个明显缺点是，当 `-R` 选项发生变化时，子图编号的坐标也需要发生变化。
 

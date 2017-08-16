@@ -1,10 +1,12 @@
-+++
-title = "GMT中文社区正式成立"
-date = "2016-04-06"
-categories = ['新闻动态']
-authors = ['seisman']
-slug = "gmt-china-community-founded"
-+++
+---
+title: GMT中文社区正式成立
+date: 2016-04-06
+categories:
+    - 新闻动态
+authors:
+    - seisman
+slug: gmt-china-community-founded
+---
 
 GMT的中文用户们，大家好，我是 [seisman](http://seisman.info) 。
 

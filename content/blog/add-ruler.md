@@ -1,11 +1,13 @@
-+++
-title = "为 GMT 加一把尺子"
-date = "2014-12-28"
-authors = ['seisman']
-categories = ['GMT技巧']
-draft = true
-slug = 'gmt-ruler'
-+++
+---
+title: "为 GMT 加一把尺子"
+date: 2014-12-28
+slug: gmt-ruler
+categories:
+    - GMT技巧
+authors:
+    - seisman
+draft: true
+---
 
 在日常绘图时经常会需要在已经画好的图上添加一些注释或标注，比如在某个位置加文字、箭头或者连线。一般情况下，若注释或标注出现在单个底图的内部，则可以很容易通过 `pstext` 和 `psxy` 来实现；若需要在底图外添加注释或标注，则会复杂一些。本文试图解决这个问题。
 

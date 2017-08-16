@@ -1,11 +1,14 @@
-+++
-title = "生成多页PS/PDF文件"
-date = "2016-10-12"
-categories = ['GMT技巧']
-tags = ["psconvert"]
-authors = ['seisman']
-slug = "multipage-ps"
-+++
+---
+title: "生成多页PS/PDF文件"
+date: 2016-10-12
+categories:
+    - GMT技巧
+tags:
+    - psconvert
+authors:
+    - seisman
+slug: multipage-ps
+---
 
 通常，在使用GMT画图时都是一个PS文件中保存一张图。因而，在需要画很多张同类型的图时，就需要生成很多个PS文件。比如要画1000个台站的波形数据，每张图只能放下20个波形，那么就需要写个循环画50张图，最终得到50个PS文件。有没有可能生成一个多页文件，每一页一张图呢？
 

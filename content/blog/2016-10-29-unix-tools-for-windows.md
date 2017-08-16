@@ -1,11 +1,15 @@
-+++
-title = "Windows 下可用的 Unix 工具"
-date = "2016-10-29"
-categories = ["GMT工具"]
-tags = ["Linux", 'Windows']
-authors = ['Seispider']
-slug = "unix-tools-for-windows"
-+++
+---
+title: "Windows 下可用的 Unix 工具"
+date: 2016-10-29
+categories:
+    - GMT工具
+tags:
+    - Linux
+    - Windows
+authors:
+    - Seispider
+slug: unix-tools-for-windows
+---
 
 {{% notice info %}}
 下载地址：[UnixTools.zip](/datas/UnixTools.zip)

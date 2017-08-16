@@ -1,11 +1,14 @@
-+++
-title = "GMT国内镜像正式建成"
-date = "2016-07-08"
-categories = ["新闻动态"]
-tags = ["镜像"]
-authors = ['忆尤']
-slug = "mirror-site-founded"
-+++
+---
+title: GMT国内镜像正式建成
+date: 2016-07-08
+categories:
+    - 新闻动态
+tags:
+    - 镜像
+authors:
+    - 忆尤
+slug: mirror-site-founded
+---
 
 经过本社区积极联系，GMT中国区镜像站点已于2016年7月6日正式建立，并已加入GMT官网镜像列表中。
 

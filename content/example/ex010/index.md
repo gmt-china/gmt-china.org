@@ -1,8 +1,6 @@
 ---
 title: 含中国大陆地区的地形图
 date: 2016-11-24
-categories:
-    - GMT示例
 tags:
     - 地形图
 authors:

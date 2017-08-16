@@ -1,11 +1,14 @@
-+++
-title = "绘制M-T图"
-date = "2017-07-29"
-categories = ["GMT示例"]
-authors = ["戴宗辉", "王亮"]
-images = ["mt.png"]
-commands = ["psxy"]
-+++
+---
+title: 绘制M-T图
+date: 2017-07-29
+authors:
+    - 戴宗辉
+    - 王亮
+images:
+    - mt.png
+commands:
+    - psxy
+---
 
 {{% notice info %}}
 数据下载： [mt.dat](/example/ex012/mt.dat)

@@ -1,12 +1,16 @@
-+++
-title = "绘制地球内部主要界面"
-date = "2016-08-31"
-categories = ["GMT示例"]
-tags = ["射线"]
-authors = ['seisman']
-images = ["earth-discontinuities.png"]
-commands = ["psbasemap", "pstext"]
-+++
+---
+title: 绘制地球内部主要界面
+date: 2016-08-31
+tags:
+    - 射线
+authors:
+    - seisman
+images:
+    - earth-discontinuities.png
+commands:
+    - psbasemap
+    - pstext
+---
 
 在利用地震波研究地球深部结构时，经常需要绘制震相在深度剖面下的射线路径，同时也需要绘制地球内部的主要界面。
 

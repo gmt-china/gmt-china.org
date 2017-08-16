@@ -1,10 +1,13 @@
-+++
-title = "中国省会城市分布图"
-date = "2016-10-24"
-categories = ["GMT示例", "地学数据"]
-authors = ["忆尤"]
-images = ["CN-capitals.png"]
-+++
+---
+title: 中国省会城市分布图
+date: 2016-10-24
+tags:
+    - 地学数据
+authors:
+    - 忆尤
+images:
+    - CN-capitals.png
+---
 
 {{% notice info %}}
 数据下载：[CN-border-La.dat](/datas/CN-border-La.dat) [CN-capitals.dat](/datas/CN-capitals.dat)

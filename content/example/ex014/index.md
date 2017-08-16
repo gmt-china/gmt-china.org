@@ -1,11 +1,13 @@
-+++
-title = "绘制指定测线的地震剖面图"
-date = "2017-08-15"
-categories = ["GMT示例"]
-authors = ["邓山泉"]
-images = ["seismic-profile.png"]
-commands = ["project"]
-+++
+---
+title: 绘制指定测线的地震剖面图
+date: 2017-08-15
+authors:
+    - 邓山泉
+images:
+    - seismic-profile.png
+commands:
+    - project
+---
 
 {{% notice info %}}
 数据下载： [earthquakes.dat](/example/ex014/earthquakes.dat)

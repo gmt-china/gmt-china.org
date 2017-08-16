@@ -1,10 +1,13 @@
-+++
-title = "中国地震区域划分"
-date = "2016-10-25"
-categories = ["GMT示例", "地学数据"]
-authors = ["忆尤"]
-images = ["CN-EQRegion.png"]
-+++
+---
+title: 中国地震区域划分
+date: 2016-10-25
+tags:
+    - 地学数据
+authors:
+    - 忆尤
+images:
+    - CN-EQRegion.png
+---
 
 {{% notice info %}}
 数据下载：[CN-border-La.dat](/datas/CN-border-La.dat) [CN-EQRegion.dat](/datas/CN-EQRegion.dat)

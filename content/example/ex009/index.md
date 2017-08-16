@@ -1,11 +1,14 @@
-+++
-title = "绘制晨昏线及太阳位置"
-date = "2016-11-01T00:30:00"
-categories = ["GMT示例"]
-authors = ["虎哥"]
-images = ["solar.png"]
-commands = ['psxy', 'pssolar']
-+++
+---
+title: 绘制晨昏线及太阳位置
+date: 2016-11-01
+authors:
+    - 虎哥
+images:
+    - solar.png
+commands:
+    - psxy
+    - pssolar
+---
 
 {{% notice info %}}
 数据下载：[sunglasses.eps](/example/ex009/sunglasses.eps)

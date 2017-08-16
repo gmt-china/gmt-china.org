@@ -1,11 +1,14 @@
-+++
-title = "绘制等高线图和剖面图"
-date = "2017-08-14"
-categories = ["GMT示例"]
-authors = ["王亮"]
-images = ["maunakea.png"]
-commands = ["project", "grdtrack"]
-+++
+---
+title: 绘制等高线图和剖面图
+date: 2017-08-14
+authors:
+    - 王亮
+images:
+    - maunakea.png
+commands:
+    - project
+    - grdtrack
+---
 
 {{% notice info %}}
 数据下载： [maunakea.grd](/example/ex013/maunakea.grd)

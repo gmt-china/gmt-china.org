@@ -1,6 +1,6 @@
-+++
-title = "图库"
-+++
+---
+title: 图库
+---
 
 <div class="alert alert-info" role="alert">
 <strong>欢迎投稿</strong>。

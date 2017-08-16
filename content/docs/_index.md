@@ -1,6 +1,6 @@
-+++
-title = "文档"
-+++
+---
+title: 文档
+---
 
 <div class="row">
     <div class="col-sm-6 col-md-3 col-lg-3">

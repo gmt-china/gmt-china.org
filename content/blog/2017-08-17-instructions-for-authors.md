@@ -8,7 +8,9 @@ authors:
     - 王亮
 ---
 
-GMT 中文社区欢迎读者投稿。投稿分为两类：博客和示例。
+GMT 中文社区欢迎读者投稿，投稿者请将稿件发送至 [admin@gmt-china.org](mailto:admin@gmt-china.org) 。
+
+投稿分为两类：博客和示例。
 
 ## 博客的要求
 

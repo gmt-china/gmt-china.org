@@ -3,7 +3,7 @@
 	<a href="{{ .Permalink }}" class="permalink">{{ .Title }}</a>
     </h1>
 
-    {{ if or (or .Params.categories .Params.tags) }}
+    {{ if .Params.authors }}
     <div class="article-meta">
         {{ if .Params.categories }}
         {{ $categoryLen := len .Params.categories }}

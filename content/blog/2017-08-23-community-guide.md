@@ -1,6 +1,6 @@
 ---
 title: GMT学习群入群须知
-date: 2017-08-24
+date: 2017-08-23
 slug: community-guide
 authors:
     - seisman

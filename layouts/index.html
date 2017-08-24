@@ -11,14 +11,14 @@
             </article>
         </div>
         <div class="col-md-6">
-            <h3 class="article-title" itemprop="name">{{ with .Site.Data.l10n.global.recent_articles}}{{.}}{{end}}</h3>
+            <h4 class="article-title" itemprop="name">{{ with .Site.Data.l10n.global.recent_articles}}{{.}}{{end}}</h4>
             <ul>
-            {{ range first 8 .Data.Pages }}
+            {{ range first 6 .Data.Pages }}
             <li>
-                <h4>
+                <h5>
                 <time datetime="{{ .Date }}" itemprop="datePublished">{{ .Date.Format .Site.Params.date_format }}</time>
                 <a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a>
-               </h4>
+                </h5>
             </li>
             {{ end }}
             </ul>

@@ -1,12 +1,14 @@
 #!/bin/bash
 PS=map.ps
+R=g
 # 假定台站位于 105/30 处
 stlo=105
 stla=30
-R=g
+max_distance=90
 width=10c  # 图片宽度
-# 使用 -JA投影并指定台站位置为投影中心
-J=A$stlo/$stla/$width
+# 使用-JE投影，其后面的四个参数分别是:
+#   中心经度/中心纬度/最大震中距/图片宽度
+J=E$stlo/$stla/$max_distance/$width
 
 # 绘制底图
 gmt pscoast -J$J -R$R -A10000 -Ggrey -K > $PS

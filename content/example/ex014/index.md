@@ -1,6 +1,7 @@
 ---
 title: 绘制指定测线的地震剖面图
 date: 2017-08-15
+lastmod: 2017-09-11
 authors:
     - 邓山泉
 images:
@@ -34,6 +35,6 @@ commands:
 
 {{< figure src="/example/ex014/seismic-profile.png" title="地震剖面图" width="500px">}}
 
-绘图脚本如下：
+bash绘图脚本如下，也提供了等效的 [bat脚本](/example/ex014/profile.bat)：
 
 {{< include-code "/example/ex014/profile.sh" bash >}}

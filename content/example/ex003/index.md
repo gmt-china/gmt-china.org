@@ -38,3 +38,8 @@ commands:
 
 {{< include-code "/example/ex003/CN-border-JM.sh" bash >}}
 {{< figure src="/example/ex003/CN-border-JM.png" title="中国地图" >}}
+
+## 更新历史
+
+- 2016-10-23：初稿；
+- 2017-09-11：更新了 `CN-border-L1.dat` 的拓扑结构，使得其可以正确填充颜色；

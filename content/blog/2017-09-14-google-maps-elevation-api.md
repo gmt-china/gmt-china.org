@@ -86,7 +86,7 @@ https://maps.googleapis.com/maps/api/elevation/json?locations=39.7391536,-104.98
 
 ### 批量获取高程
 
-Google Maps 提供了多种客户端以实现批量获取高程。此处以Python客户端为例。
+Google Maps 提供了多种客户端以实现批量获取高程。此处以[Python客户端](https://github.com/googlemaps/google-maps-services-python/) 为例。
 
 1. 安装 Google Map API 的 Python模块:
 
@@ -137,7 +137,3 @@ with open("Elevations.dat", "w") as f:
                 subloc['resolution'])
             f.writelines(outputstr)
 ```
-
-## 参考连接
-
-- [Google Map API 的 Python 客户端](https://github.com/googlemaps/google-maps-services-python/)

@@ -1,5 +1,5 @@
 ---
-title: 利用 Google Maps 获取超高分辨率高程数据
+title: 利用 Google Maps 获取超高精度高程数据
 date: 2017-09-14
 slug: google-maps-elevation-api
 categories:

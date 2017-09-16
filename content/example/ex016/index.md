@@ -27,11 +27,11 @@ commands:
 
 数据由网友根据下图矢量化而成，并经本文作者做了一定的格式转换：
 
-{{< figure src="/example/ex016/zhang.jpg" width="500px">}}
+{{< figure src="/example/ex016/zhang.jpg" width="800px">}}
 
 绘图效果如下：
 
-{{< figure src="/example/ex016/BLOCK.png" title="中国大陆及周边活动地块分布图" width="500px">}}
+{{< figure src="/example/ex016/BLOCK.png" title="中国大陆及周边活动地块分布图" width="800px">}}
 
 bash绘图脚本如下，也提供了等效的 [bat脚本](/example/ex016/BLOCK.bat)：
 

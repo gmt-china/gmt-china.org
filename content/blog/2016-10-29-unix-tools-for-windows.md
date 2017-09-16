@@ -7,7 +7,7 @@ tags:
     - Linux
     - Windows
 authors:
-    - Seispider
+    - SeisPider
 slug: unix-tools-for-windows
 ---
 

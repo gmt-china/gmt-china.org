@@ -19,7 +19,8 @@
     name = "罗娜"
 
 [XiaoXiao]
-    name = "Seispider"
+    name = "SeisPider"
+	email = "xiaox.seis@gmail.com"
     avatar = "/avatars/XiaoXiao.jpg"
     homepage = "http://seispider.top"
 

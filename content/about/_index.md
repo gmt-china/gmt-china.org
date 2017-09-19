@@ -4,20 +4,18 @@ title: 关于
 
 GMT中文社区是一个面向GMT中文用户的非盈利社区。
 
-<div class="row">
-<div class="col-md-6">
-{{% md %}}
+{{< row >}}
+
+{{% col 6 %}}
 ## 社区目标
 
 1. 为GMT中文用户提供优质的GMT学习资源
 2. 组织社区成员协同维护GMT中文文档
 3. 专注于GMT，保持小众的特色
 4. 开展线下培训与聚餐等活动
-{{% /md %}}
-</div>
+{{% /col %}}
 
-<div class="col-md-6">
-{{% md %}}
+{{% col 6 %}}
 ## 联系方式
 
 GMT 学习QQ群: 218905582
@@ -25,9 +23,8 @@ GMT 学习QQ群: 218905582
 社区相关问题请联系： [admin@gmt-china.org](mailto:admin@gmt-china.org)
 
 本邮箱不负责回答任何GMT使用方面的相关问题。
-{{% /md %}}
-</div>
-</div>
+{{% /col %}}
+{{< /row >}}
 
 ## GMT 中文用户分布
 

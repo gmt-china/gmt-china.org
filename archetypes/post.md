@@ -1,6 +1,0 @@
-+++
-categories = []
-tags = []
-authors = []
-slug = ""
-+++

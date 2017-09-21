@@ -14,7 +14,7 @@ install:
 
 script:
   - ./hugo
-  - ./css-html-js-minify.py public --overwrite
+  - ./scripts/css-html-js-minify.py public --overwrite
 
 deploy:
   provider: pages

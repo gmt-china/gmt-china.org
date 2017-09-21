@@ -4,32 +4,33 @@ title: 下载
 
 ## 软件下载
 
-<div>
-<ul class="nav nav-tabs" role="tablist">
-{{% tablist-header title="Window用户" id="windows" status="active" %}}
-{{% tablist-header title="Linux用户" id="linux" %}}
-{{% tablist-header title="Mac用户" id="mac" %}}
-</ul>
+{{< row >}}
+{{% col 4 %}}
+### Windows用户
+- **GMT 5.4.2安装包**：
+    [32位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.4.2-win32.exe) |
+    [64位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.4.2-win64.exe)
+- **ghostscript安装包**：
+    [32位](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs921/gs921w32.exe) |
+    [64位](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs921/gs921w64.exe)
+- **gsview安装包**：
+    [5.0](http://pages.cs.wisc.edu/~ghost/gsview/get50.htm) |
+    [6.0测试版](https://www.artifex.com/developers-ghostscript-gsview/)
+- **UnixTools**：[UnixTools.zip](http://gmt-china.org/datas/UnixTools.zip)
+{{% /col %}}
 
-<div class="tab-content">
-{{% tablist-body id="windows" status="active" %}}
-- **GMT安装包**： [GMT 5.4.2 32位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.4.2-win32.exe) [GMT 5.4.2 64位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.4.2-win64.exe)
-- **ghostscript安装包**： [gs 9.21 32位](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs921/gs921w32.exe) [gs 9.21 64位](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs921/gs921w64.exe)
-- **gsview安装包**： [gsview 6.0](http://www.artifex.com/gsview/download/gsview_setup_6.0.exe)
-- **UnixTools**: [UnixTools.zip](http://gmt-china.org/datas/UnixTools.zip)
-{{% /tablist-body %}}
-
-{{% tablist-body id="linux" %}}
+{{% col 4 %}}
+### Linux用户
 - **GMT源码**： [GMT 5.4.2](http://mirrors.ustc.edu.cn/gmt/gmt-5.4.2-src.tar.gz)
-- **GSHHG 全球海岸线数据**： [GSHHG 2.3.6](http://mirrors.ustc.edu.cn/gmt/gshhg-gmt-2.3.6.tar.gz)
-- **DCW 数据**： [DCW 1.1.2](http://mirrors.ustc.edu.cn/gmt/dcw-gmt-1.1.2.tar.gz)
-{{% /tablist-body %}}
+- **GSHHG数据**： [GSHHG 2.3.7](http://mirrors.ustc.edu.cn/gmt/gshhg-gmt-2.3.7.tar.gz)
+- **DCW数据**： [DCW 1.1.2](http://mirrors.ustc.edu.cn/gmt/dcw-gmt-1.1.2.tar.gz)
+{{% /col %}}
 
-{{% tablist-body id="mac" %}}
-- **GMT 安装包**： [GMT 5.4.2 64位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.4.2-darwin-x84_64.dmg)
-{{% /tablist-body %}}
-</div>
-</div>
+{{% col 3 %}}
+## macOS用户
+- **GMT 安装包**： [5.4.2](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.4.2-darwin-x84_64.dmg)
+{{% /col %}}
+{{< /row >}}
 
 ---
 

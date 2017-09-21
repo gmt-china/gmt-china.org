@@ -20,9 +20,7 @@ GMT中文社区是一个面向GMT中文用户的非盈利社区。
 
 GMT 学习QQ群: 218905582
 
-社区相关问题请联系： [admin@gmt-china.org](mailto:admin@gmt-china.org)
-
-本邮箱不负责回答任何GMT使用方面的相关问题。
+社区建议及投稿请联系： [admin@gmt-china.org](mailto:admin@gmt-china.org)
 {{% /col %}}
 {{< /row >}}
 

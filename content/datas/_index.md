@@ -13,6 +13,9 @@ title: 地学数据
 - [CN-faults.dat](/datas/CN-faults.dat): 中国断层数据
 - [CN-Railways.dat](/datas/CN-Railways.dat): 中国铁路线
 - [CN-Rivers.dat](/datas/CN-Rivers.dat): 中国一级河流数据
+- [CN-block-L1.dat](/datas/CN-block-L1.dat): 中国大陆一级地块边界数据
+- [CN-block-L1-deduced.dat](/datas/CN-block-L1-deduced.dat): 中国大陆一级地块推断边界数据
+- [CN-block-L2.dat](/datas/CN-block-L2.dat): 中国大陆二级地块边界数据
 
 ---
 

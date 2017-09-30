@@ -24,14 +24,14 @@ Google Maps Elevation API 提供地球表面所有位置的海拔高度数据，
 
 官方文档：
 
-- [入门指南](https://developers.google.cn/maps/documentation/elevation/start?hl=zh-cn)
-- [开发人员指南](https://developers.google.cn/maps/documentation/elevation/intro?hl=zh-cn)
+- [入门指南](https://developers.google.com/maps/documentation/elevation/start?hl=zh-cn)
+- [开发人员指南](https://developers.google.com/maps/documentation/elevation/intro?hl=zh-cn)
 
 ## 获取密钥 API KEY
 
 想要从Google Maps中获取地形数据，首先需要一个密钥。
 
-1. 访问 [入门指南](https://developers.google.cn/maps/documentation/elevation/start?hl=zh-cn) 页面
+1. 访问 [入门指南](https://developers.google.com/maps/documentation/elevation/start?hl=zh-cn) 页面
 2. 点击右上角的“获取密钥”按钮（你可能需要翻墙才能获取密钥）
 
 限额说明：

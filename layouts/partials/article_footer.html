@@ -1,2 +1,5 @@
 <footer class="article-footer">
+{{ if ne .Params.comment false }}
+{{ partial "gitalk" . }}
+{{ end }}
 </footer>

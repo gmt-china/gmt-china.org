@@ -41,3 +41,9 @@
 
 [WangJie]
     name = "王杰"
+
+[ZhaoZhiyuan]
+    name = "赵志远"
+    email = "shetu2008@163.com"
+    avatar = "/avatars/ZhaoZhiyuan.jpg"
+    homepage = "http://zhaozhiyuan.org"

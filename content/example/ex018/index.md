@@ -4,7 +4,7 @@ date: 2017-10-13
 authors:
     - 赵志远
 images:
-    - plot_def.png    
+    - plot_def.png
     - def.png
 commands:
     - psxy

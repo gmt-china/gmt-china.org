@@ -16,19 +16,19 @@ REM 绘制colorbar
 gmt psscale -DjCB+w7i/0.15i+o0/-0.5i+h -R -J -CcolorTopo.cpt -Bxa2000f400+l"Elevation/m" -G-8000/8000 -O -K>>%PS%
 
 REM 分震级绘制地震
-gawk "{if(($3>=5.0)&&($3<6.0)) print $1,$2,$3*0.04}" %eqfile% > tmp5
+gawk "{if(($3>=5.0)&&($3<6.0)) print $1,$2,$3*0.04}" %eqfile% > tmp
 REM 统计5级地震个数
-for /f "delims=:" %%a in ('findstr/n .* "tmp5"') do set M5=%%a
-gmt psxy -R -J tmp5 -Sc -Gblue -O -K  >> %PS%
-gawk "{if(($3>=6.0)&&($3<7.0)) print $1,$2,$3*0.04}" %eqfile% > tmp6
-for /f "delims=:" %%a in ('findstr/n .* "tmp6"') do set M6=%%a
-gmt psxy -R -J tmp6 -Sc -Gred -O -K >> %PS%
-gawk "{if(($3>=7.0)&&($3<8.0)) print $1,$2,$3*0.06}" %eqfile% > tmp7
-for /f "delims=:" %%a in ('findstr/n .* "tmp7"') do set M7=%%a
-gmt psxy -R -J tmp7 -Sa -Ggreen -W0.4p,black -O -K >> %PS%
-gawk "{if($3>=8.0) print $1,$2,$3*0.06}" %eqfile% > tmp8
-for /f "delims=:" %%a in ('findstr/n .* "tmp8"') do set M8=%%a
-gmt psxy -R -J tmp8 -Sa -Gpurple -W0.4p,black -O -K >> %PS%
+for /f "delims=:" %%a in ('findstr/n .* "tmp"') do set M5=%%a
+gmt psxy -R -J tmp -Sc -Gblue -O -K  >> %PS%
+gawk "{if(($3>=6.0)&&($3<7.0)) print $1,$2,$3*0.04}" %eqfile% > tmp
+for /f "delims=:" %%a in ('findstr/n .* "tmp"') do set M6=%%a
+gmt psxy -R -J tmp -Sc -Gred -O -K >> %PS%
+gawk "{if(($3>=7.0)&&($3<8.0)) print $1,$2,$3*0.06}" %eqfile% > tmp
+for /f "delims=:" %%a in ('findstr/n .* "tmp"') do set M7=%%a
+gmt psxy -R -J tmp -Sa -Ggreen -W0.4p,black -O -K >> %PS%
+gawk "{if($3>=8.0) print $1,$2,$3*0.06}" %eqfile% > tmp
+for /f "delims=:" %%a in ('findstr/n .* "tmp"') do set M8=%%a
+gmt psxy -R -J tmp -Sa -Gpurple -W0.4p,black -O -K >> %PS%
 
 REM 绘制图例
 echo G 0.01i >legend.txt
@@ -46,4 +46,4 @@ gmt pslegend legend.txt -R -J -DjBR+w1.2i+l1.2+o0 -F+g229+p0.25p -O -K >> %PS%
 gmt psxy -R -J -T -O >>%PS%
 gmt psconvert %PS% -A -Tg -P -Z
 
-del .gmt* gmt.* cutTopo*.grd colorTopo.cpt tmp* legend.txt
+del .gmt* gmt.* cutTopo*.grd colorTopo.cpt tmp legend.txt

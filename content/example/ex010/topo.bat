@@ -16,26 +16,34 @@ REM 绘制colorbar
 gmt psscale -DjCB+w7i/0.15i+o0/-0.5i+h -R -J -CcolorTopo.cpt -Bxa2000f400+l"Elevation/m" -G-8000/8000 -O -K>>%PS%
 
 REM 分震级绘制地震
-gawk "{if(($3>=5.0)&&($3<6.0)) print $1,$2,$3*0.04}" %eqfile% | gmt psxy -R -J -Sc -Gblue -O -K  >> %PS%
-gawk "{if(($3>=6.0)&&($3<7.0)) print $1,$2,$3*0.04}" %eqfile% | gmt psxy -R -J -Sc -Gred -O -K >> %PS%
-gawk "{if(($3>=7.0)&&($3<8.0)) print $1,$2,$3*0.06}" %eqfile% | gmt psxy -R -J -Sa -Ggreen -W0.4p,black -O -K>> %PS%
-gawk "{if($3>=8.0) print $1,$2,$3*0.06}" %eqfile% | gmt psxy -R -J -Sa -Gpurple -W0.4p,black -O -K>> %PS%
+gawk "{if(($3>=5.0)&&($3<6.0)) print $1,$2,$3*0.04}" %eqfile% > tmp5
+REM 统计5级地震个数
+for /f "delims=:" %%a in ('findstr/n .* "tmp5"') do set M5=%%a
+gmt psxy -R -J tmp5 -Sc -Gblue -O -K  >> %PS%
+gawk "{if(($3>=6.0)&&($3<7.0)) print $1,$2,$3*0.04}" %eqfile% > tmp6
+for /f "delims=:" %%a in ('findstr/n .* "tmp6"') do set M6=%%a
+gmt psxy -R -J tmp6 -Sc -Gred -O -K >> %PS%
+gawk "{if(($3>=7.0)&&($3<8.0)) print $1,$2,$3*0.06}" %eqfile% > tmp7
+for /f "delims=:" %%a in ('findstr/n .* "tmp7"') do set M7=%%a
+gmt psxy -R -J tmp7 -Sa -Ggreen -W0.4p,black -O -K >> %PS%
+gawk "{if($3>=8.0) print $1,$2,$3*0.06}" %eqfile% > tmp8
+for /f "delims=:" %%a in ('findstr/n .* "tmp8"') do set M8=%%a
+gmt psxy -R -J tmp8 -Sa -Gpurple -W0.4p,black -O -K >> %PS%
 
 REM 绘制图例
 echo G 0.01i >legend.txt
 echo H 8 4 MAGNITUDE >>legend.txt
 echo C 0/0/255 >>legend.txt
-echo S 0.1i c 0.20 blue 0.25p,blue 0.18i 5~5.9 >>legend.txt
+echo S 0.1i c 0.20 blue 0.25p,blue 0.18i 5~5.9(%M5%) >>legend.txt
 echo C 255/0/0 >>legend.txt
-echo S 0.1i c 0.24 red 0.25p,red 0.18i 6~6.9 >>legend.txt
+echo S 0.1i c 0.24 red 0.25p,red 0.18i 6~6.9(%M6%) >>legend.txt
 echo C 0/255/0 >>legend.txt
-echo S 0.1i a 0.42 green 0.25p,black 0.18i 7~7.9 >>legend.txt
+echo S 0.1i a 0.42 green 0.25p,black 0.18i 7~7.9(%M7%) >>legend.txt
 echo C purple >>legend.txt
-echo S 0.1i a 0.48 purple 0.25p,black 0.18i 8~8.9 >>legend.txt
-gmt pslegend legend.txt -R -J -DjBR+w0.8i+l1.2+o0 -F+g229+p0.25p -O -K >> %PS%
+echo S 0.1i a 0.48 purple 0.25p,black 0.18i 8~8.9(%M8%) >>legend.txt
+gmt pslegend legend.txt -R -J -DjBR+w1.2i+l1.2+o0 -F+g229+p0.25p -O -K >> %PS%
 
 gmt psxy -R -J -T -O >>%PS%
-gmt psconvert %PS% -A -Tg -P
+gmt psconvert %PS% -A -Tg -P -Z
 
-del .gmt* cutTopo*.grd colorTopo.cpt
-pause
+del .gmt* gmt.* cutTopo*.grd colorTopo.cpt tmp* legend.txt

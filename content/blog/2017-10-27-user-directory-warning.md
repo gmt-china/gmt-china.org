@@ -5,7 +5,7 @@ categories:
     - GMT技巧
 authors:
     - 赵志远
-slug: GMT5-Windows-Warning
+slug: user-directory-warning
 ---
 
 由于某些不明原因，在 Windows 下运行 GMT 5 的某些版本时总是提示

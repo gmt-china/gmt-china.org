@@ -19,24 +19,28 @@ gmt psscale -R -J -DjCB+w7i/0.15i+o0/-0.5i+h -CcolorTopo.cpt -Bxa2000f400+l"Elev
 
 #分震级绘制地震
 awk '$3>=5.0 && $3<6.0 {print $1,$2,$3*0.04}' $eqfile | gmt psxy -R -J -Sc -Gblue -O -K >> $PS
-awk '$3>=6.0 && $3<7.0 {print $1,$2,$3*0.04}' $eqfile | gmt psxy -R -J -Sc -Gred -O -K >> $PS
-awk '$3>=7.0 && $3<8.0 {print $1,$2,$3*0.06}' $eqfile | gmt psxy -R -J -Sa -Ggreen -W0.4p,black -O -K >> $PS
+M5=`awk '$3>=5.0 && $3<6.0' $eqfile | wc -l | cut -d" " -f1`
+awk '$3>=6.0 && $3<7.0 {print $1,$2,$3*0.04}' $eqfile | gmt psxy -R -J -Sc -Gred -K -O >> $PS
+M6=`awk '$3>=6.0 && $3<7.0' $eqfile | wc -l | cut -d" " -f1`
+awk '$3>=7.0 && $3<8.0 {print $1,$2,$3*0.04}' $eqfile | gmt psxy -R -J -Sc -Ggreen -O -K >> $PS
+M7=`awk '$3>=7.0 && $3<8.0' $eqfile | wc -l | cut -d" " -f1`
 awk '$3>=8.0 {print $1,$2,$3*0.06}' $eqfile | gmt psxy -R -J -Sa -Gpurple -W0.4p,black -O -K >> $PS
+M8=`awk '$3>=8.0' $eqfile | wc -l | cut -d" " -f1`
 
 #绘制图例
-gmt pslegend -R -J -DjBR+w0.8i+l1.2+o0 -F+g229+p0.25p -O -K >> $PS <<EOF
+gmt pslegend -R -J -DjBR+w1.2i+l1.2+o0 -F+g229+p0.25p -O -K >> $PS <<EOF
 G 0.01i
 H 8 4 MAGNITUDE
 C blue
-S 0.1i c 0.20 blue 0.25p,blue 0.18i 5~5.9
+S 0.1i c 0.20 blue 0.25p,blue 0.18i 5~5.9($M5)
 C red
-S 0.1i c 0.24 red 0.25p,red 0.18i 6~6.9
+S 0.1i c 0.24 red 0.25p,red 0.18i 6~6.9($M6)
 C green
-S 0.1i a 0.42 green 0.25p,black 0.18i 7~7.9
+S 0.1i a 0.42 green 0.25p,black 0.18i 7~7.9($M7)
 C purple
-S 0.1i a 0.48 purple 0.25p,black 0.18i 8~8.9
+S 0.1i a 0.48 purple 0.25p,black 0.18i 8~8.9($M8)
 EOF
 
 gmt psxy -R -J -T -O >>$PS
-gmt psconvert $PS -A -Tg -P
+gmt psconvert $PS -A -Tg -P -Z
 rm gmt.* cutTopo*.grd colorTopo.cpt

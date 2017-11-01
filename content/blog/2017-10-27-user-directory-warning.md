@@ -26,6 +26,6 @@ gmt: Auto-downloading of earth_relief_##m|s.grd files has been disabled.
      变量值： C:\Users\用户名
 ```
 
-重现运行脚本检查问题是否得到解决。
+重新运行脚本检查问题是否得到解决。
 
 经过测试， `HOME` 变量的值可以取任意盘符中任何已存在的文件夹，正常情况下，执行脚本后会生成 `%HOME%/.gmt/cache` 空文件夹。

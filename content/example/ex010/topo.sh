@@ -3,8 +3,9 @@
 PS=topo.ps
 eqfile=eq.dat
 R=70/135/15/55
+topodata=earth_relief_06m.grd
 
-gmt grdcut earth_relief_01m.grd -R$R -GcutTopo.grd
+gmt grdcut $topodata -R$R -GcutTopo.grd
 gmt grdgradient cutTopo.grd -Ne0.7 -A50 -GcutTopo_i.grd
 gmt grd2cpt cutTopo.grd -Cglobe -S-10000/10000/200 -Z -D > colorTopo.cpt
 
@@ -42,5 +43,5 @@ S 0.1i a 0.48 purple 0.25p,black 0.18i 8~8.9($M8)
 EOF
 
 gmt psxy -R -J -T -O >>$PS
-gmt psconvert $PS -A -Tg -P -Z
+gmt psconvert $PS -A -Tg -E200 -P -Z
 rm gmt.* cutTopo*.grd colorTopo.cpt

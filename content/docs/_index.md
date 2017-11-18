@@ -47,7 +47,7 @@ title: 文档
             <h3 class="text-center"><i class="fa fa-question-circle"></i> GMT FAQ</h3>
             <p>FAQ 中收集整理了GMT使用过程中的常见问题及其解答。</p>
             <div class="text-center">
-            <a href="http://faqs.gmt-china.org/" class="btn btn-primary" role="button">主页(建设中)</a>
+            <a href="http://faqs.gmt-china.org/" class="btn btn-primary" role="button">主页</a>
             <a href="https://github.com/gmt-china/GMT_FAQs" class="btn btn-default" role="button">源码</a>
             </div>
             </div>

@@ -5,7 +5,7 @@ R=70/135/15/55
 J=M18c
 
 # 准备底图所需的地形数据
-gmt grdcut earth_relief_02m.grd -R$R -GcutTopo.grd
+gmt grdcut earth_relief_06m.grd -R$R -GcutTopo.grd
 gmt grdgradient cutTopo.grd -Ne0.7 -A50 -GcutTopo_i.grd
 gmt grd2cpt cutTopo.grd -Cglobe -S-10000/10000/200 -Z -D > colorTopo.cpt
 

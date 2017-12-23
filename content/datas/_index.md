@@ -28,4 +28,4 @@ title: 地学数据
 | SRTM30+     | 30弧秒 | 纬度[-81,81] | 陆地+海洋  | [官方主页](http://topex.ucsd.edu/WWW_html/srtm30_plus.html)
 | SRTM15+     | 15弧秒 | 纬度[-81,81] | 陆地+海洋  | [官方主页](http://topex.ucsd.edu/WWW_html/mar_topo.html)
 | SRTM        | 3弧秒  | 纬度[-60,60] | 陆地       | [官方主页](http://srtm.csi.cgiar.org/SELECTION/inputCoord.asp)
-| ASTER GDEM  | 1弧秒  | 纬度[-83,83] | 陆地       |
+| ASTER GDEM  | 1弧秒  | 纬度[-83,83] | 陆地       | [官方主页](https://gdex.cr.usgs.gov/gdex/)

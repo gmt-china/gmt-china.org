@@ -1,0 +1,9 @@
+#	$Id: city.def 2017-12-29 16:31:54 zhaozhiyuan $
+#
+#	Definition file for city symbol.  Use in psxy
+#	as -Skcity/<size>. for example -Skcity/0.2i.
+#   Use in pslegend as :
+#          [ S 0.2c kcity 0.12i white 0.5p 1c city ]
+#
+0	0	1.0	c
+0   0   0.6 c  -Gblack

@@ -8,7 +8,7 @@ tags:
     - pslegend
 authors:
     - 赵志远
-slug: useful-diy-symbols
+slug: gmt-custom-symbols
 ---
 
 {{% notice info %}}

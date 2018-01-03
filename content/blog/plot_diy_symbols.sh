@@ -1,11 +1,11 @@
 #!/bin/bash
 ps=plot_diy_symbols.ps
 # 绘制城市符号
-echo 3 5 | gmt psxy -R0/10/0/10 -JM4i -B2 -Skcity/0.2i -K > $ps
+echo 3 5 | gmt psxy -R0/10/0/10 -JM4i -B2 -Skcity/0.2i -W0.6p -K > $ps
 echo 5 5 | gmt psxy -R -J -Skcity/0.3i -Gblue -K -O >> $ps
 echo 7 5 | gmt psxy -R -J -Skcity/0.4i -Gred -W1p -K -O >> $ps
 # 绘制指北针符号
-echo 3 8 | gmt psxy -R -J -Skcompass/0.4i -K -O >> $ps
+echo 3 8 | gmt psxy -R -J -Skcompass/0.4i -W0.6p -K -O >> $ps
 echo 5 8 | gmt psxy -R -J -Skcompass/0.5i -Gblue -K -O >> $ps
 echo 7 8 | gmt psxy -R -J -Skcompass/0.6i -Gred -W1p -K -O >> $ps
 # 绘制三角形和五角星符号

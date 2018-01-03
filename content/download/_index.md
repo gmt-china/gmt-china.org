@@ -7,9 +7,9 @@ title: 下载
 {{< row >}}
 {{% col 4 %}}
 ### Windows用户
-- **GMT 5.4.2安装包**：
-    [32位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.4.2-win32.exe) |
-    [64位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.4.2-win64.exe)
+- **GMT 5.4.3安装包**：
+    [32位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.4.3-win32.exe) |
+    [64位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.4.3-win64.exe)
 - **ghostscript安装包**：
     [32位](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs922/gs922w32.exe) |
     [64位](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs922/gs922w64.exe)
@@ -21,14 +21,14 @@ title: 下载
 
 {{% col 4 %}}
 ### Linux用户
-- **GMT源码**： [GMT 5.4.2](http://mirrors.ustc.edu.cn/gmt/gmt-5.4.2-src.tar.gz)
+- **GMT源码**： [GMT 5.4.3](http://mirrors.ustc.edu.cn/gmt/gmt-5.4.3-src.tar.gz)
 - **GSHHG数据**： [GSHHG 2.3.7](http://mirrors.ustc.edu.cn/gmt/gshhg-gmt-2.3.7.tar.gz)
 - **DCW数据**： [DCW 1.1.2](http://mirrors.ustc.edu.cn/gmt/dcw-gmt-1.1.2.tar.gz)
 {{% /col %}}
 
 {{% col 3 %}}
 ## macOS用户
-- **GMT 安装包**： [5.4.2](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.4.2-darwin-x84_64.dmg)
+- **GMT 安装包**： [5.4.3](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.4.3-darwin-x84_64.dmg)
 {{% /col %}}
 {{< /row >}}
 

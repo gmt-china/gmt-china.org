@@ -1,0 +1,14 @@
+#  $Id: compass.def 2018-01-02 16:56:00 zhaozhiyuan $
+#
+#  Definition file for compass symbol.  
+#
+#  Used in psxy as -Skcompass/<size>:
+#           -Skcompass/0.2i.
+#
+0      0.5  0.3   N l+f12p,0,black -Gblack
+0	    0.35  M -Gblack 
+0.25  -0.5  D
+0     -0.3  D  
+0     -0.3  M 
+-0.25 -0.5  D   
+0     0.35  D

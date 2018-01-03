@@ -1,0 +1,11 @@
+#  $Id: city.def 2017-12-29 16:31:54 zhaozhiyuan $
+#
+#  Definition file for city symbol.  
+#
+#  Used in psxy as -Skcity/<size>:
+#           -Skcity/0.2i.
+#  Used in pslegend as :
+#        S 0.2c kcity 0.12i white 0.5p 1c city
+#
+0	0	1.0	c
+0   0   0.4 c  -Gblack

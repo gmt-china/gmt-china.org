@@ -104,6 +104,26 @@ import numpy as np
 
 
 def request_elevation(xmin, xmax, xinc, ymin, ymax, yinc, maxnum=512):
+    """Request elevation and return them with a list
+
+    Parameter
+    =========
+    xmin : float
+        minimum longitude, unit is degree
+    xmax : float
+        maximum longitude, unit is degree
+    xinc : float
+        increment of longitude
+
+    ymin : float
+        minimum latitude, unit is degree
+    ymax : float
+        maximum latitude, unit is degree
+    yinc : float
+        increment of latitude
+    maxnum : int
+        point number of one request, maximum value is 512
+    """
 
     xlist = np.arange(xmin, xmax, xinc)
     ylist = np.arange(ymin, ymax, yinc)
@@ -123,8 +143,9 @@ ymin, ymax, yinc = 30.000, 30.005, 0.00005
 
 gmaps = googlemaps.Client(key='YOU_API_KEY')
 
-# Generate all locations
-elevations = request_elevation(xmin, xmax, xinc, ymin, ymax, yinc)
+# Obtain all elevations
+# 请设置 maxnum 确保每一次请求的数据点数不超过 512 个以控制请求字符串长度
+elevations = request_elevation(xmin, xmax, xinc, ymin, ymax, yinc, maxnum=512)
 
 # output data with format `longitude   latitude elevation resolution`
 with open("Elevations.dat", "w") as f:

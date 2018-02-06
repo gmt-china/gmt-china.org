@@ -338,6 +338,19 @@
                 "city": " 邢台市",
                 "name": " 河北省地震局红山基准台"
             }
+        },
+
+        {
+            "id": 35,
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [8.367217, 49.020638]
+            },
+            "properties": {
+                "city": " Karlsruhe",
+                "name": " Geophysikalisches Instiut, Karlsruhe Inistitute of Technology"
+            }
         }
     ]
 }

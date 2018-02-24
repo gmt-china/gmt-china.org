@@ -1,15 +1,14 @@
 language: python
 python: 3.6
-env:
-  - HUGO_VERSION=0.34
 
 branches:
   only:
   - master
 
 install:
-  - wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz
-  - tar -xvf hugo_${HUGO_VERSION}_Linux-64bit.tar.gz hugo
+  - export HUGO_PACKAGE=`curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest | grep browser_download_url | cut -d '"' -f 4 | grep Linux-64bit.tar.gz`
+  - wget $HUGO_PACKAGE
+  - tar -xvf $HUGO_PACKAGE hugo
   - pip install css-html-js-minify
 
 script:

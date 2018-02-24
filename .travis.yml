@@ -7,8 +7,8 @@ branches:
 
 install:
   - export HUGO_PACKAGE=`curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest | grep browser_download_url | cut -d '"' -f 4 | grep Linux-64bit.tar.gz`
-  - wget $HUGO_PACKAGE
-  - tar -xvf $HUGO_PACKAGE hugo
+  - wget $HUGO_PACKAGE -O hugo.tar.gz
+  - tar -xvf hugo.tar.gz hugo
   - pip install css-html-js-minify
 
 script:

@@ -13,6 +13,7 @@ ignoreFiles = ["gmt-chinese-users.dat",
                "gmt.conf",
                "\\.ps$",
               ]
+rssLimit = 20
 
 [blackfriday]
     hrefTargetBlank = true

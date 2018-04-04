@@ -91,11 +91,16 @@ rssLimit = 20
     weight = 9
 
 [[menu.icon]]
+    name = "qq"
+    url = "/images/qq-group.jpg"
+    weight = 10
+
+[[menu.icon]]
     name = "github"
     url = "https://github.com/gmt-china"
-    weight = 10
+    weight = 11
 
 [[menu.icon]]
     name = "envelope"
     url = "mailto:admin@gmt-china.org"
-    weight = 11
+    weight = 12

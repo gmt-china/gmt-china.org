@@ -10,7 +10,7 @@ commands:
     - grdvector
 ---
 {{% notice info %}}
-示例数据: 
+示例数据:
 [速度矢量](/example/ex017/velo.gmt)
 [板块位置](/example/ex017/slab.gmt)
 [应力张量](/example/ex017/stresstensor.gmt)
@@ -20,7 +20,7 @@ commands:
 
 Bash 绘图脚本如下:
 
-{{< include-code "/example/ex017/subslab.sh" bash >}}
+{{< include-code "subslab.sh" bash >}}
 
 绘图效果如下:
 

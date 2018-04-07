@@ -21,7 +21,7 @@ commands:
 本文展示了如何绘制含中国大陆地区的地形图，同时也展示了如何通过 `awk`+`wc`+`cut` 对数据进行筛选计数，以及如何绘制简单的图例。
 
 下面是绘图所使用的 bash 脚本，同时也提供了一个功能相同的 [bat 脚本](/example/ex010/topo.bat)。
-{{< include-code "/example/ex010/topo.sh" bash >}}
+{{< include-code "topo.sh" bash >}}
 
 绘图效果：
 {{< figure src="/example/ex010/topo.png" title="含中国大陆地区的地形图" >}}

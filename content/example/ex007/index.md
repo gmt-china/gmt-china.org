@@ -25,6 +25,6 @@ images:
 
     Deng, Q. D., Zhang, P. Z., Ran, Y. K., Yang, X. P., Min, W., Chen, L. C., 2003. Active tectonics and earthquake activities in China. Earth Science Frontiers, 10(S1): 66-73.
 
-{{< include-code "/example/ex007/CN-faults.sh" bash >}}
+{{< include-code "CN-faults.sh" bash >}}
 
 {{< figure src="/example/ex007/CN-faults.png" title="中国断层线" >}}

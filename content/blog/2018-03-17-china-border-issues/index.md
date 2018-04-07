@@ -39,7 +39,7 @@ GMT自带了两套与中国国界相关的数据：
 
 绘图脚本：
 
-{{< include-code "/blog/2018-03-17-china-border-issues/ChinaBorder.sh" bash >}}
+{{< include-code "ChinaBorder.sh" bash >}}
 
 绘图结果如下，其中蓝色边界来自DCW数据，红色边界来自社区数据。
 

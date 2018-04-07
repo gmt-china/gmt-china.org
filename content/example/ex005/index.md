@@ -18,6 +18,6 @@ images:
 
 本文提供了中国地震区划数据。
 
-{{< include-code "/example/ex005/CN-EQRegion.sh" bash >}}
+{{< include-code "CN-EQRegion.sh" bash >}}
 
 {{< figure src="/example/ex005/CN-EQRegion.png" title="中国地震区域划分" >}}

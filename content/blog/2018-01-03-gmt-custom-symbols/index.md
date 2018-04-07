@@ -30,7 +30,7 @@ slug: gmt-custom-symbols
 
 使用方法如下：
 
-{{< include-code "/blog/2018-01-03-gmt-custom-symbols/plot_custom_symbols.sh" bash >}}
+{{< include-code "plot_custom_symbols.sh" bash >}}
 
 绘图效果如下：
 

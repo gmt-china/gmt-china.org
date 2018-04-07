@@ -13,6 +13,6 @@ images:
 数据下载：[CN-border-La.dat](/datas/CN-border-La.dat) [CN-Rivers.dat](/datas/CN-Rivers.dat)
 {{% /notice %}}
 
-{{< include-code "/example/ex008/CN-Rivers.sh" bash >}}
+{{< include-code "CN-Rivers.sh" bash >}}
 
 {{< figure src="/example/ex008/CN-Rivers.png" title="中国一级河流" >}}

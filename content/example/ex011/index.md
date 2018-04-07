@@ -15,7 +15,7 @@ commands:
 地震分布图，以展示地震相对于台站的距离以及方位角分布。
 
 下面是绘图所使用的bash脚本：
-{{< include-code "/example/ex011/map.sh" bash >}}
+{{< include-code "map.sh" bash >}}
 
 绘图效果：
 {{< figure src="/example/ex011/map.png" title="事件相对台站的震中距方位角分布图" >}}

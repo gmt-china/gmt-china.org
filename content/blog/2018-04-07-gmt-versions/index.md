@@ -32,7 +32,7 @@ GMT6 虽然尚未发布，但其已经足够稳定，可以用于日常使用。
 下面的脚本展示了如何在GMT4下绘制上图。脚本中的注释信息简单介绍了每句命令的含义，
 选项的具体含义不是本文重点，不再赘述。
 
-{{< include-code "/blog/2018-04-07-gmt-versions/gmt4.sh" bash >}}
+{{< include-code "gmt4.sh" bash >}}
 
 ## GMT5
 
@@ -54,7 +54,7 @@ GMT6 虽然尚未发布，但其已经足够稳定，可以用于日常使用。
 -   图片转换命令从 `ps2raster` 改成了 `psconvert`
 -   配置文件和命令历史文件的文件名变成了 `gmt.conf` 和 `gmt.history`
 
-{{< include-code "/blog/2018-04-07-gmt-versions/gmt5.sh" bash >}}
+{{< include-code "gmt5.sh" bash >}}
 
 ## GMT6
 
@@ -75,4 +75,4 @@ GMT6 相对于 GMT5 做了大量简化，列举如下：
 -   执行 `gmt end` 时自动根据 `gmt begin` 中的设置生成多种格式的图片
 -   不再需要手动清理 `gmt.conf` 和 `gmt.history` 等临时文件
 
-{{< include-code "/blog/2018-04-07-gmt-versions/gmt6.sh" bash >}}
+{{< include-code "gmt6.sh" bash >}}

@@ -29,6 +29,6 @@ commands:
 
 绘图脚本如下：
 
-{{< include-code "/example/ex013/plot-grdtrack.sh" bash >}}
+{{< include-code "plot-grdtrack.sh" bash >}}
 
 本示例修改自鄭懷傑的[等高線地圖及地形剖面指令稿](http://gmt-tutorials.org/contour_and_profile.html)。

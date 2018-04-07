@@ -3,6 +3,8 @@ title: GMT6 要来啦 — GMT 各版本间的差异
 date: 2018-04-07
 authors:
   - seisman
+categories:
+  - GMT技巧
 slug: gmt-versions
 ---
 

@@ -25,4 +25,4 @@ Bash 绘图脚本如下:
 
 绘图效果如下:
 
-{{< figure src="/example/ex019/profile.png" title="剖面绘制" width="800px">}}
+{{< figure src="profile.png" title="剖面图绘制" width="800px">}}

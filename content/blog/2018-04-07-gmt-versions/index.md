@@ -23,6 +23,12 @@ GMT 目前存在如下几个大版本:
 GMT6 虽然尚未发布，但其已经足够稳定，可以用于日常使用。最主要的是，GMT6 几乎
 完全兼容 GMT5 的语法，且提供了一种更为简洁易用的新写法。
 
+{{% alert info %}}
+对 GMT6 有兴趣的 Linux 用户，可以
+根据 [此文](http://docs.gmt-china.org/appendix/get-gmt-dev/) 获取 GMT6 开发版，
+并根据 [此文](http://docs.gmt-china.org/install/linux/) 即可编译安装并试用 GMT6。
+{{% /alert %}}
+
 本文将通过绘制如下一张简单的图片来展示 GMT 不同版本在绘图脚本上的主要差异。
 需要注意，本文不可能详细介绍 GMT 各版本之间的主要差异，本文的主要目的是为了
 演示 GMT6 新语法的简洁性。

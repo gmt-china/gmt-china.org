@@ -25,7 +25,7 @@ GMT6 虽然尚未发布，但其已经足够稳定，可以用于日常使用。
 需要注意，本文不可能详细介绍 GMT 各版本之间的主要差异，本文的主要目的是为了
 演示 GMT6 新语法的简洁性。
 
-{{< figure src="/blog/2018-04-07-gmt-versions/gmt-map.png" >}}
+{{< figure src="/blog/gmt-versions/gmt-map.png" >}}
 
 ## GMT4
 

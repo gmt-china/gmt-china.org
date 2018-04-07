@@ -1,4 +1,10 @@
 <!-- An ugly but working shortcode to include code from file -->
 {{ $filename := (.Get 0 )}}
-{{ $fullpath := delimit (slice "content" $filename) "/"}}
+
+{{ if hasPrefix $filename "/" }}    <!-- starts with / means absolute PATH -->
+{{ $fullpath := delimit (slice "content" $filename) "/" }}
 <pre><code class="language-{{ .Get 1 }} line-numbers">{{ readFile $fullpath }}</code></pre>
+{{ else }}                          <!-- starts without / means relative to current directory -->
+{{ $fullpath := delimit (slice "content" .Page.Dir $filename) "/" }}
+<pre><code class="language-{{ .Get 1 }} line-numbers">{{ readFile $fullpath }}</code></pre>
+{{ end }}

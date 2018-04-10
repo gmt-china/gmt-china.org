@@ -276,6 +276,19 @@
         },
 
         {
+            "id": 21,
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [120.495551, 36.160428]
+            },
+            "properties": {
+                "city": " 青岛",
+                "name": " 中国海洋大学海洋地球科学学院"
+            }
+        },
+
+        {
             "id": 30,
             "type": "Feature",
             "geometry": {

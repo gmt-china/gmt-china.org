@@ -1,5 +1,11 @@
+# Hugo
 public
 resources
+
+# GMT
 *.ps
 gmt.conf
 gmt.history
+
+# htmltest
+.htmltest/

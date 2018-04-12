@@ -28,7 +28,7 @@ title: 下载
 
 {{% col 3 %}}
 ## macOS用户
-- **GMT 安装包**： [5.4.3](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.4.3-darwin-x84_64.dmg)
+- **GMT 安装包**： [5.4.3](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.4.3-darwin-x86_64.dmg)
 {{% /col %}}
 {{< /row >}}
 

@@ -87,10 +87,10 @@
 
   该数据集包括各级行政区界线，以GB码进行区分：
 
-  <table style="margin-left: 20px">  
+  <table style="margin-left: 20px" width="500">  
     <tr>
-      <th bgcolor='lightgray'> 行政区界类型 </th>   
-      <th bgcolor='lightgray'> GB码</th>
+      <th bgcolor='lightgray'width="400"> 行政区界类型 </th>   
+      <th bgcolor='lightgray'width="100" align= "center"> GB码</th>
     </tr>
     <tr>  
       <td> 海岸线</td>
@@ -141,10 +141,10 @@
 
   水系数据集以GB码区分：
 
-  <table style="margin-left: 20px">  
+  <table style="margin-left: 20px" width="500">  
     <tr>
-      <th bgcolor='lightgray'> 水系要素类型 </th>   
-      <th bgcolor='lightgray'> GB码</th>
+      <th bgcolor='lightgray'width="400"> 水系要素类型 </th>   
+      <th bgcolor='lightgray'width="100" align= "center"> GB码</th>
     </tr>
     <tr>  
       <td> 地面河流</td>
@@ -197,7 +197,7 @@
 * **RESA.shp 居民地（面）图层**
 *	**RESP 居民地（点）图层，包括普通房屋、蒙古包、放牧点等**
 
-  **以上只列出了部分要素的分类编码，更多可参考基础地理信息要素分类与代码（GB/T 13923-2006）**。
+  以上只列出了部分要素的分类编码，更多可参考基础地理信息要素分类与代码（GB/T 13923-2006）。
 
 ## 数据处理
 

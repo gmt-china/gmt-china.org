@@ -1,4 +1,12 @@
-# 2017版1:100万全国标准基础地理数据！你值得拥有
+---
+title: 2017版1:100万全国标准基础地理数据！你值得拥有
+date: 2018-04-14
+slug: national-database
+categories:
+    - 地学数据
+authors:
+    - eyou
+---
 
 本文介绍国家标准地理数据的获取以及处理为GMT支持格式的方法，具体包括：
   * 国家标准1:100万（非涉密）基础地理数据的申请、下载
@@ -11,7 +19,7 @@
 
 该数据库包括水系、居民地及设施、公路铁路、行政边界、地名等5个数据集12个数据层，如下图所示。数据更多介绍可访问[全国地理信息资源目录服务系统](http://www.webmap.cn/commres.do?method=result100W)。
 
-  <img src="./images/01.list.png"  width="500" >
+![list](./images/01.list.png)
 
 ## 数据获取
 * 进入[全国地理信息资源目录服务系统](http://www.webmap.cn)，点右上角“注册”。已注册用户直接登陆。
@@ -24,180 +32,86 @@
 
 * **AANP 自然地名（点）图层**：包括交通要素名、纪念地和古迹名、山名、水系名、海洋地域名、自然地域名等
 
-  <img src="./images/02.AANP.png"  width="500" >
+![AANP](./images/02.AANP.png)
 
 * **AGNP 居民地（点）图层**：包括各级行政地名和城乡居民地名称等
 
-  <img src="./images/03.AGNP.png"  width="500" >
+![AGNP](./images/03.AGNP.png)
 
-  该数据集包括首都、省会、直辖市、特别行政区、地级行政区、县级行政区以及乡镇，以识别码CLASS进行区分：
+该数据集包括首都、省会、直辖市、特别行政区、地级行政区、县级行政区以及乡镇，以识别码CLASS进行区分：
 
-  <table style="margin-left: 20px">  
-    <tr>
-      <th bgcolor='lightgray'> 行政区地名 </th>   
-      <th bgcolor='lightgray'> CLASS码</th>
-    </tr>
-    <tr>  
-      <td> 省行政地名（直辖市、自治区、特别行政区）</td>
-      <td align= "center"> AB </td>
-    </tr>
-    <tr>  
-      <td> 自治州、盟、地区行政地名</td>
-      <td align= "center"> AC </td>
-    </tr>
-    <tr>  
-      <td> 地级市行政地名</td>
-      <td align= "center"> AD </td>
-    </tr>
-    <tr>  
-      <td> 县级市行政地名</td>
-      <td align= "center"> AE </td>
-    </tr>
-    <tr>  
-      <td> 县级行政地名（自治县、旗、自治旗、地级市市辖区）</td>
-      <td align= "center"> AF </td>
-    </tr>
-    <tr>  
-      <td> 县辖区及县级行政区域的派出机构地名</td>
-      <td align= "center"> AG </td>
-    </tr>
-    <tr>  
-      <td> 街道办事处地名</td>
-      <td align= "center"> AH </td>
-    </tr>
-    <tr>  
-      <td> 镇行政地名</td>
-      <td align= "center"> AI </td>
-    </tr>
-    <tr>  
-      <td> 乡行政地名</td>
-      <td align= "center"> AJ </td>
-    </tr>
-  </table>
+
+行政区地名                                   | CLASS码
+------------------------------------------- | :-----:
+省行政地名(直辖市、自治区、特别行政区)         | AB
+自治州、盟、地区行政地名                      | AC
+地级市行政地名                               | AD
+县级市行政地名                               | AE
+县级行政地名（自治县、旗、自治旗、地级市市辖区）| AF
+县辖区及县级行政区域的派出机构地名             | AG
+街道办事处地名                               | AH
+镇行政地名                                   | AI
+乡行政地名                                   | AJ
 
 * **BOUA 各级行政区（面）图层**
 
-  <img src="./images/04.BOUA.png"  width="500" >
+![BOUA](./images/04.BOUA.png)
 
-  注：该数据集包含了分幅边界，进行单个行政区（例如某省、市）边界、面积提取时需先合并图层。
+注：该数据集包含了分幅边界，进行单个行政区（例如某省、市）边界、面积提取时需先合并图层。
 
 * **BOUL 中国及邻区各级行政界限（线）图层**
 
-  <img src="./images/05.BOUL.png"  width="500" >
+![BOUL](./images/05.BOUL.png)
 
-  该数据集包括各级行政区界线，以GB码进行区分：
+该数据集包括各级行政区界线，以GB码进行区分：
 
-  <table style="margin-left: 20px" width="500">  
-    <tr>
-      <th bgcolor='lightgray'width="400"> 行政区界类型 </th>   
-      <th bgcolor='lightgray'width="100" align= "center"> GB码</th>
-    </tr>
-    <tr>  
-      <td> 海岸线</td>
-      <td align= "center"> 250200 </td>
-    </tr>
-    <tr>  
-      <td> 水系交汇处</td>
-      <td align= "center"> 260100 </td>
-    </tr>
-    <tr>  
-      <td> 外国地区国界线</td>
-      <td align= "center"> 610200 </td>
-    </tr>
-    <tr>  
-      <td> 国界线（已定）</td>
-      <td align= "center"> 620201 </td>
-    </tr>
-    <tr>  
-      <td> 国界线（未定）</td>
-      <td align= "center"> 620202 </td>
-    </tr>
-    <tr>  
-      <td> 省级界线</td>
-      <td align= "center"> 630200 </td>
-    </tr>
-    <tr>  
-      <td> 特别行政区界</td>
-      <td align= "center"> 630400 </td>
-    </tr>
-    <tr>  
-      <td> 地、市、州级行政区界</td>
-      <td align= "center"> 640200 </td>
-    </tr>
-    <tr>  
-      <td> 县级行政区界（已定）</td>
-      <td align= "center">650201 </td>
-    </tr>
-    <tr>  
-      <td> 特殊地区界限</td>
-      <td align= "center"> 670202 </td>
-    </tr>
-  </table>
+行政区界类型         | GB码
+------------------- | -----
+海岸线              | 250200
+水系交汇处          | 260100
+外国地区国界线      |	610200
+国界线(已定)        |	620201
+国界线(未定)        | 620202
+省级界线	          | 630200
+特别行政区界	      | 630400
+地、市、州级行政区界 |	640200
+县级行政区界（已定） |	650201
+特殊地区界限      	| 670202
 
 * **BOUP 领海基点(点)图层**
 * **HYDA 水系（面）图层，包括湖泊、水库、双线河流等**
 
-  <img src="./images/06.HYDA.png"  width="500" >
+![HYDA](./images/06.HYDA.png)
 
-  水系数据集以GB码区分：
+水系数据集以GB码区分：
 
-  <table style="margin-left: 20px" width="500">  
-    <tr>
-      <th bgcolor='lightgray'width="400"> 水系要素类型 </th>   
-      <th bgcolor='lightgray'width="100" align= "center"> GB码</th>
-    </tr>
-    <tr>  
-      <td> 地面河流</td>
-      <td align= "center"> 210101 </td>
-    </tr>
-    <tr>  
-      <td> 时令河</td>
-      <td align= "center"> 210200 </td>
-    </tr>
-    <tr>  
-      <td> 干涸河</td>
-      <td align= "center"> 210300 </td>
-    </tr>
-    <tr>  
-      <td> 湖泊</td>
-      <td align= "center"> 230101 </td>
-    </tr>
-    <tr>  
-      <td> 池塘</td>
-      <td align= "center"> 230102 </td>
-    </tr>
-    <tr>  
-      <td> 时令湖</td>
-      <td align= "center"> 230200 </td>
-    </tr>
-    <tr>  
-      <td> 干涸湖</td>
-      <td align= "center"> 230300 </td>
-    </tr>
-    <tr>  
-      <td> 建成水库</td>
-      <td align= "center"> 240101 </td>
-    </tr>
-    <tr>  
-      <td> 建设中水库</td>
-      <td align= "center"> 240102 </td>
-    </tr>
-  </table>
+水系要素类型 | GB码
+----------- | ----
+地面河流    | 210101
+时令河	     | 210200
+干涸河	     | 210300
+湖泊	      | 230101
+池塘	      | 230102
+时令湖	     | 230200
+干涸湖	     | 230300
+建成水库	  | 240101
+建设中水库	 | 240102
+
 * **HYDL 水系（线）图层，包括单线河流、沟渠、河流结构线等**
 
-  <img src="./images/07.HYDL.png"  width="500" >
+![HYDL](./images/07.HYDL.png)
 
 * **HYDP 水系（点）图层，包括泉、井等**
 * **LRDL 公路（线）图层，包括国道、省道、县道、乡道、其它公路、街道、乡村道路等**
 
-  <img src="./images/08.LRDL.png"  width="500" >
+![LRDL](./images/08.LRDL.png)
 
-  不同行政等级公路数据以GB码进行区分，而不同技术等级以RTEG码区分。
+不同行政等级公路数据以GB码进行区分，而不同技术等级以RTEG码区分。
 * **LRRL 铁路（线）图层**
 * **RESA.shp 居民地（面）图层**
 *	**RESP 居民地（点）图层，包括普通房屋、蒙古包、放牧点等**
 
-  以上只列出了部分要素的分类编码，更多可参考基础地理信息要素分类与代码（GB/T 13923-2006）。
+以上只列出了部分要素的分类编码，更多可参考基础地理信息要素分类与代码（GB/T 13923-2006）。
 
 ## 数据处理
 
@@ -211,7 +125,7 @@
 
 可以使用FME软件、ArcGIS软件或直接编写python批处理脚本进行gdb数据的批量合并。前两款软件比较大，若只需要对数据进行简单处理，可以利用python的**ArcPy**包进行批处理：
 
-{{< include-code "merge.py" python>}}
+{{< include-code "merge-gdb.py" python>}}
 
 其中，`infile`是77个gdb文件夹的目录，`out_location`是合并目录，`out_name`是合并为一个gdb数据库文件的名称。ArcPy可以随ArcGIS而安装，也可以单独安装。该代码将分幅的交通、水系、边界等12类要素分别合并为全国一张图，最后转为12个shp文件。
 
@@ -229,7 +143,7 @@
 
 ### 格式转换
 
-利用OGR库将shp文件转化为gmt可用的文本文件，具体可参考博文[GDAL/OGR: 地理空间数据格式转换神器](http://gmt-china.org/blog/gdal-ogr/):
+利用OGR库将shp文件转化为gmt可用的文本文件，具体可参考博文[GDAL/OGR: 地理空间数据格式转换神器](/blog/gdal-ogr/):
 ```
 ogr2ogr -f GMT BOUL_1.gmt BOUL_1.shp
 ```
@@ -238,6 +152,6 @@ ogr2ogr -f GMT BOUL_1.gmt BOUL_1.shp
 ```
 gmt psxy BOUL_1.gmt -R70/145/3/55 -JM105/35/6.5i > ChinaMap.ps
 ```
-  <img src="./images/09.ChinaMap.png"  width="500" >
+![ChinaMap](./images/09.ChinaMap.png)
 
 **注：本文仅供个人科研作图参考。若使用者编制的地图需向社会公开的，请务必遵守《地图管理条例》有关规定依法履行地图审核程序。**

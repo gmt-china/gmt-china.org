@@ -10,31 +10,32 @@
     </article>
 
     <div class="gallery">
-        {{ $baseURL := .Site.BaseURL }}
         <div class="row">
-            {{ $.Scratch.Add "imageCount" 0}}
+            {{ $.Scratch.Add "imageCount" 0 }}
             {{ range (where .Site.Pages "Section" "in" .Site.Params.sectionsInGallery) }}
-            {{ $permalink := .Permalink }}
-            {{ $dirname := .File.Dir }}
-            {{ $title := .Title }}
-            {{ range .Params.images }}
-            {{ $.Scratch.Add "imageCount" 1 }}
-            <div class="col-sm-6 col-md-4 col-lg-4">
-                <div class="thumbnail">
-                    <figure>
-                        <a href="{{ $permalink }}" target="_blank">
-                            <img src="{{ $baseURL }}{{ $dirname }}{{.}}" alt="{{.}}">
-                        </a>
-                        <figcaption>{{ $title }}</figcaption>
-                    </figure>
-                </div>
-            </div>
-            {{ if eq (mod ($.Scratch.Get "imageCount") 3) 0}}
-            <div class="clearfix visible-lg visible-md"></div>
+            {{ $post_permalink := .Permalink }}
+            {{ $post_title := .Title }}
+            {{ $images_to_show := .Params.images }}
+            {{ range .Resources.ByType "image" }} <!-- loop over resources -->
+                {{ if in $images_to_show .Name }}
+                {{ $.Scratch.Add "imageCount" 1 }}
+                    {{ $image := .Resize "300x" }}
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <div class="thumbnail">
+                            <figure>
+                                <a href="{{ $post_permalink }}" target="_blank">
+                                    <img src="{{ $image.RelPermalink }}" alt="{{ $post_title }}">
+                                </a>
+                                <figcaption>{{ $post_title }}</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                {{ end }}
+                {{ if eq (mod ($.Scratch.Get "imageCount") 3) 0}}
+                <div class="clearfix visible-lg visible-md"></div>
+                {{ end }}
+                {{ end }}
             {{ end }}
-            {{ end }}
-            {{ end }}
-
         </div>
     </div>
 </section>

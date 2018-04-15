@@ -4,3 +4,4 @@ public/
 *.ps
 gmt.history
 gmt.conf
+.resources

@@ -4,7 +4,7 @@ date: 2016-10-24
 tags:
     - 地学数据
 authors:
-    - 忆尤
+    - eyou
 images:
     - CN-capitals.png
 ---

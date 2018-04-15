@@ -6,7 +6,7 @@ categories:
 tags:
     - 镜像
 authors:
-    - 忆尤
+    - eyou
 slug: mirror-site-founded
 ---
 

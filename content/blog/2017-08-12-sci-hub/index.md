@@ -36,7 +36,7 @@ sci-hub 是一个在线网站，可以下载众多本该付费下载的文章，
 
 访问 sci-hub 网址，比如 http://sci-hub.tw/ ，如下图所示：
 
-![sci-hub主页](/images/sci-hub-homepage.jpg)
+![sci-hub主页](sci-hub-homepage.jpg)
 
 将文献网址或DOI粘贴到搜索框中，按下确认键或点击搜索框右边的open按钮即可。
 
@@ -55,7 +55,7 @@ http://www.sciencedirect.com.sci-hub.tw/science/article/pii/0031920181900467 即
 
 - 当文献下载过频繁会要求用户输入验证码，如下图：
 
-  ![sci-hub验证码](/images/sci-hub-captcha.png)
+  ![sci-hub验证码](sci-hub-captcha.png)
 
 - DOI是如 `10.1016/0031-9201(81)90046-7` 这样的字符串，前面不要带 `doi:` 等其他字符。
 - sci-hub 不支持下载国内期刊的文章

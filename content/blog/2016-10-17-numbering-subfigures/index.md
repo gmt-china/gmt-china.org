@@ -28,7 +28,7 @@ gmt psxy -J$J -R$R -T -O >> $PS
 ```
 
 结果如下图所示：
-![子图编号](/images/numbering-subfigures.png)
+![子图编号](numbering-subfigures.png)
 
 几点说明：
 

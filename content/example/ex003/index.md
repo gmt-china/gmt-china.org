@@ -5,7 +5,7 @@ lastmod: 2017-09-16
 tags:
     - 地学数据
 authors:
-    - 忆尤
+    - eyou
 images:
     - CN-border-JD.png
     - CN-border-JM.png

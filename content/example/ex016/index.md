@@ -3,7 +3,7 @@ title: 中国大陆及周边活动地块分布图
 date: 2017-09-17
 authors:
     - 王杰
-    - 忆尤
+    - eyou
     - 邓山泉
 images:
     - BLOCK.png

@@ -4,7 +4,7 @@ date: 2016-10-25
 tags:
     - 地学数据
 authors:
-    - 忆尤
+    - eyou
 images:
     - CN-Rivers.png
 ---

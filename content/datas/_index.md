@@ -2,9 +2,9 @@
 title: 地学数据
 ---
 
-- [CN-border-La.dat](/datas/CN-border-La.dat): 中国国界、省界、九段线以及南海诸岛
-- [CN-border-L1.dat](/datas/CN-border-L1.dat): 国界、九段线以及南海诸岛数据（不含省界数据）
-- [nine-dash-line.dat](/datas/nine-dash-line.dat): 仅包含九段线数据
+- [CN-border-La.dat](/datas/CN-border-La.dat): 中国国界、省界、十段线以及南海诸岛
+- [CN-border-L1.dat](/datas/CN-border-L1.dat): 国界、十段线以及南海诸岛数据（不含省界数据）
+- [ten-dash-line.dat](/datas/ten-dash-line.dat): 仅包含十段线数据
 - [CN-capitals.dat](/datas/CN-capitals.dat): 中国省会城市坐标
 - [CN-EQRegion.dat](/datas/CN-EQRegion.dat): 中国地震区域划分边界数据
 - [CN-EQRegion-name.dat](/datas/CN-EQRegion-name.dat): 中国地震区域划分名称数据

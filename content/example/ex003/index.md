@@ -28,7 +28,7 @@ commands:
 2.  `CN-border-La.dat` 中包含最全的信息，包括国界、省界、九段线以及南海诸多小岛；
 3.  `CN-border-L1.dat` 包含国界、九段线以及南海诸岛数据，不含省界数据；
 5.  `nine-dash-line.dat` 仅包含九段线数据；
-{{% /notice %}}
+{{% /alert %}}
 
 ## -JD 等距圆锥投影
 

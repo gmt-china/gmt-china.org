@@ -1,8 +1,8 @@
 gmt set MAP_TICK_LENGTH_PRIMARY -0.1c
 model=model.txt
 PS=model.ps
-gmt psbasemap -R0/10/0/50 -JX8c/-10c -Bx1+l"velocity (km/s)" -By10+l"depth (km)" -BWN -K -P > $PS
-gmt psbasemap -R -J -Bse -B0 -K -O >> $PS
+gmt psbasemap -R0/10/0/50 -JX8c/-10c -Bx1+l"velocity (km/s)" -By10+l"depth (km)" -BWS -K -P > $PS
+gmt psbasemap -R -J -Ben -B0 -K -O >> $PS
 # Vs
 awk 'BEGIN{d1=0;d2=0}{d2=d2+$1;print $2,d1;print $2,d2;d1=d2;}' $model | \
 gmt psxy -R -J -W1.5p,blue -K -O >> $PS

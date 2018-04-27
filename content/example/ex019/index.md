@@ -1,5 +1,5 @@
 ---
-title: 绘制剖面图
+title: 绘制含地形起伏的地震剖面图
 date: 2018-04-07
 authors:
     - SeisPider

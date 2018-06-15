@@ -365,5 +365,17 @@
                 "name": " Geophysikalisches Instiut, Karlsruhe Inistitute of Technology"
             }
         }
+        {
+            "id": 36,
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [115.6052, -32.0474]
+            },
+            "properties": {
+                "city": " Perth",
+                "name": " Western Australian Centre for Geodesy, Curtin University"
+            }
+        }
     ]
 }

@@ -364,13 +364,14 @@
                 "city": " Karlsruhe",
                 "name": " Geophysikalisches Instiut, Karlsruhe Inistitute of Technology"
             }
-        }
+        },
+
         {
             "id": 36,
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [115.6052, -32.0474]
+                "coordinates": [115.605200, -32.047400]
             },
             "properties": {
                 "city": " Perth",

@@ -377,6 +377,19 @@
                 "city": " Perth",
                 "name": " Western Australian Centre for Geodesy, Curtin University"
             }
+        },
+
+        {
+            "id": 37,
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [106.423750, 29.822202]
+            },
+            "properties": {
+                "city": " 重庆市",
+                "name": " 西南大学地理科学学院"
+            }
         }
     ]
 }

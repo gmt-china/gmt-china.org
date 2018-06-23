@@ -8,7 +8,7 @@ GMT中文社区是为GMT中文用户而建立的小众社区。首次访问社�
 
 社区内包含了大量的GMT相关资源：
 
-- [文档](/docs/) 页面中包含了社区翻译和维护的中文文档，包括 [参考手册](http://docs.gmt-china.org/)、[模块手册](http://modules.gmt-china.org/)、[FAQs](http://faqs.gmt-china.org/)
+- [文档](/docs/) 页面中包含了社区翻译和维护的中文文档，包括 [参考手册](https://docs.gmt-china.org/)、[模块手册](https://modules.gmt-china.org/)、[FAQs](https://faqs.gmt-china.org/)
 - [图库](/gallery/) 页面列出了众多社区维护的GMT示例
 - [下载](/download/) 页面中可以下载最新的GMT安装包、文档
 - [数据集](/datas/) 页面提供了众多GMT中可用的地学数据

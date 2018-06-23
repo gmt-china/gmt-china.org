@@ -41,9 +41,9 @@ title: 下载
 ### GMT 参考手册
 
 - 最新版本：
-    [在线阅读](http://docs.gmt-china.org) |
-    [PDF](http://docs.gmt-china.org/GMT_docs.pdf) |
-    [HTML](http://docs.gmt-china.org/GMT_docs.zip)
+    [在线阅读](https://docs.gmt-china.org) |
+    [PDF](https://docs.gmt-china.org/GMT_docs.pdf) |
+    [HTML](https://docs.gmt-china.org/GMT_docs.zip)
 - GMT 5.4.3：
     [PDF](https://github.com/gmt-china/GMT_docs/releases/download/5.4.3/GMT_docs.pdf) |
     [HTML](https://github.com/gmt-china/GMT_docs/releases/download/5.4.3/GMT_docs.zip)
@@ -62,9 +62,9 @@ title: 下载
 ### GMT 模块手册
 
 - 最新版本：
-    [在线阅读](http://modules.gmt-china.org) |
-    [PDF](http://modules.gmt-china.org/GMT_modules.pdf) |
-    [HTML](http://modules.gmt-china.org/GMT_modules.zip)
+    [在线阅读](https://modules.gmt-china.org) |
+    [PDF](https://modules.gmt-china.org/GMT_modules.pdf) |
+    [HTML](https://modules.gmt-china.org/GMT_modules.zip)
 - GMT 5.4.3：
     [PDF](https://github.com/gmt-china/GMT_modules/releases/download/5.4.3/GMT_modules.pdf) |
     [HTML](https://github.com/gmt-china/GMT_modules/releases/download/5.4.3/GMT_modules.zip)

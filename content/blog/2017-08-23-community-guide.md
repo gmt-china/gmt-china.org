@@ -115,8 +115,8 @@ categories:
 
 - [GMT中文社区图库](http://gmt-china.org/gallery/)
 - [GMT中文社区博客](http://gmt-china.org/blog/)
-- [GMT参考手册](http://docs.gmt-china.org/)
-- [GMT模块手册](http://modules.gmt-china.org/)
+- [GMT参考手册](https://docs.gmt-china.org/)
+- [GMT模块手册](https://modules.gmt-china.org/)
 - [GMT官方文档](http://gmt.soest.hawaii.edu/projects/gmt/wiki/Documentation)
 
 ### 提问技巧

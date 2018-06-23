@@ -9,7 +9,7 @@ title: 文档
             <h3 class="text-center"><i class="fa fa-book"></i> GMT参考手册</h3>
             <p>参考手册详细介绍了GMT的基础和进阶知识，是GMT新手的推荐入门读物，同时也可以在日常绘图时作为参考。</p>
             <div class="text-center">
-            <a href="http://docs.gmt-china.org" class="btn btn-primary" role="button">主页</a>
+            <a href="https://docs.gmt-china.org" class="btn btn-primary" role="button">主页</a>
             <a href="https://github.com/gmt-china/GMT_docs" class="btn btn-default" role="button">源码</a>
             <a href="http://gmt-china.org/download/" class="btn btn-default" role="button">下载</a>
             </div>
@@ -22,7 +22,7 @@ title: 文档
             <h3 class="text-center"><i class="fa fa-book"></i> GMT模块手册</h3>
             <p>模块手册详细介绍了GMT模块的语法和用法，并辅以示例和效果图，以帮助用户掌握模块的使用方法。</p>
             <div class="text-center">
-            <a href="http://modules.gmt-china.org" class="btn btn-primary" role="button">主页</a>
+            <a href="https://modules.gmt-china.org" class="btn btn-primary" role="button">主页</a>
             <a href="https://github.com/gmt-china/GMT_modules" class="btn btn-default" role="button">源码</a>
             <a href="http://gmt-china.org/download/" class="btn btn-default" role="button">下载</a>
             </div>
@@ -47,7 +47,7 @@ title: 文档
             <h3 class="text-center"><i class="fa fa-question-circle"></i> GMT FAQ</h3>
             <p>FAQ 收集整理了GMT使用过程中的常见问题及其解答以便查询，同时也欢迎用户提交使用过程中遇到的新问题。</p>
             <div class="text-center">
-            <a href="http://faqs.gmt-china.org/" class="btn btn-primary" role="button">主页</a>
+            <a href="https://faqs.gmt-china.org/" class="btn btn-primary" role="button">主页</a>
             <a href="https://github.com/gmt-china/GMT_FAQs" class="btn btn-default" role="button">源码</a>
             </div>
             </div>

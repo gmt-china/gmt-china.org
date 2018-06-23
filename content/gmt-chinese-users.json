@@ -390,6 +390,19 @@
                 "city": " 重庆市",
                 "name": " 西南大学地理科学学院"
             }
+        },
+
+        {
+            "id": 38,
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [174.765979, -41.290094]
+            },
+            "properties": {
+                "city": " Wellington",
+                "name": " School of Geography, Environment and Earth Sciences, Victoria University of Wellington"
+            }
         }
     ]
 }

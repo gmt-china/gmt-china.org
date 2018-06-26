@@ -10,8 +10,8 @@ slug: gmt-versions
 
 GMT 目前存在如下几个大版本:
 
-- [GMT4](https://www.soest.hawaii.edu/gmt/)：最新版本为 GMT 4.5.17，计划于2018年6月1日停止维护
-- [GMT5](http://gmt.soest.hawaii.edu/doc/5.4.3/)：最新版本为 GMT 5.4.3，是目前的主流版本
+- [GMT4](https://www.soest.hawaii.edu/gmt/)：最新版本为 GMT 4.5.18，也是最终版本，已不再维护更新；
+- [GMT5](http://gmt.soest.hawaii.edu/doc/5.4.4/)：最新版本为 GMT 5.4.4，是目前的主流版本
 - [GMT6](http://gmt.soest.hawaii.edu/doc/latest/)：正在开发中的版本，预计未来一年内会发发布第一个正式版
 
 除此之外，GMT 还为其他常用的编程语言提供了方便的接口：

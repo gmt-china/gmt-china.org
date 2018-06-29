@@ -1,4 +1,4 @@
-baseURL = "http://gmt-china.org/"
+baseURL = "https://gmt-china.org/"
 languageCode = "zh-cmn-Hans"
 title = "GMT 中文社区"
 

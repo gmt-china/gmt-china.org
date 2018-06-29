@@ -11,7 +11,7 @@ title: 文档
             <div class="text-center">
             <a href="https://docs.gmt-china.org" class="btn btn-primary" role="button">主页</a>
             <a href="https://github.com/gmt-china/GMT_docs" class="btn btn-default" role="button">源码</a>
-            <a href="http://gmt-china.org/download/" class="btn btn-default" role="button">下载</a>
+            <a href="https://gmt-china.org/download/" class="btn btn-default" role="button">下载</a>
             </div>
             </div>
         </div>
@@ -24,7 +24,7 @@ title: 文档
             <div class="text-center">
             <a href="https://modules.gmt-china.org" class="btn btn-primary" role="button">主页</a>
             <a href="https://github.com/gmt-china/GMT_modules" class="btn btn-default" role="button">源码</a>
-            <a href="http://gmt-china.org/download/" class="btn btn-default" role="button">下载</a>
+            <a href="https://gmt-china.org/download/" class="btn btn-default" role="button">下载</a>
             </div>
             </div>
         </div>
@@ -36,7 +36,7 @@ title: 文档
             <h3 class="text-center"><i class="fa fa-image"></i> GMT 图库</h3>
             <p>图库收集了众多使用GMT绘制的图片，每张图片均提供了相应的脚本及数据，读者可以学习并修改这些示例。</p>
             <div class="text-center">
-            <a href="http://gmt-china.org/gallery/" class="btn btn-primary" role="button">主页</a>
+            <a href="https://gmt-china.org/gallery/" class="btn btn-primary" role="button">主页</a>
             </div>
             </div>
         </div>

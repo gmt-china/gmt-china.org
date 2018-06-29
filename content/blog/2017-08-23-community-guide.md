@@ -38,7 +38,7 @@ categories:
 ## 文献求助
 
 需要他人帮忙下载文献时，请先使用 sci-hub 工具自行尝试下载
-（[sci-hub教程](http://gmt-china.org/blog/sci-hub/)）。
+（[sci-hub教程](/blog/sci-hub/)）。
 
 对于中文文献或sci-hub无法下载的文献，方可在群中寻找帮助。求助文献时，请先明确
 告知“使用sci-hub无法下载该文章”并提供文章的官方链接。若找不到官方链接，则提供
@@ -113,8 +113,8 @@ categories:
 
 推荐的一些文档：
 
-- [GMT中文社区图库](http://gmt-china.org/gallery/)
-- [GMT中文社区博客](http://gmt-china.org/blog/)
+- [GMT中文社区图库](/gallery/)
+- [GMT中文社区博客](/blog/)
 - [GMT参考手册](https://docs.gmt-china.org/)
 - [GMT模块手册](https://modules.gmt-china.org/)
 - [GMT官方文档](http://gmt.soest.hawaii.edu/projects/gmt/wiki/Documentation)

@@ -16,7 +16,7 @@ title: 下载
 - **gsview安装包**：
     [5.0](http://pages.cs.wisc.edu/~ghost/gsview/get50.htm) |
     [6.0测试版](https://www.artifex.com/developers-ghostscript-gsview/)
-- **UnixTools**：[UnixTools.zip](http://gmt-china.org/datas/UnixTools.zip)
+- **UnixTools**：[UnixTools.zip](/datas/UnixTools.zip)
 {{% /col %}}
 
 {{% col 4 %}}

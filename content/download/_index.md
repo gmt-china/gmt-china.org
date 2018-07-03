@@ -23,7 +23,7 @@ title: 下载
 ### Linux用户
 - **GMT源码**： [GMT 5.4.4](http://mirrors.ustc.edu.cn/gmt/gmt-5.4.4-src.tar.gz)
 - **GSHHG数据**： [GSHHG 2.3.7](http://mirrors.ustc.edu.cn/gmt/gshhg-gmt-2.3.7.tar.gz)
-- **DCW数据**： [DCW 1.1.3](http://mirrors.ustc.edu.cn/gmt/dcw-gmt-1.1.3.tar.gz)
+- **DCW数据**： [DCW 1.1.4](http://mirrors.ustc.edu.cn/gmt/dcw-gmt-1.1.4.tar.gz)
 {{% /col %}}
 
 {{% col 3 %}}

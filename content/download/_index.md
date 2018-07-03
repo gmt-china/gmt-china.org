@@ -8,8 +8,8 @@ title: 下载
 {{% col 4 %}}
 ### Windows用户
 - **GMT 5.4.3安装包**：
-    [32位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.4.3-win32.exe) |
-    [64位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.4.3-win64.exe)
+    [32位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.4.4-win32.exe) |
+    [64位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.4.4-win64.exe)
 - **ghostscript安装包**：
     [32位](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs922/gs922w32.exe) |
     [64位](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs922/gs922w64.exe)
@@ -21,14 +21,14 @@ title: 下载
 
 {{% col 4 %}}
 ### Linux用户
-- **GMT源码**： [GMT 5.4.3](http://mirrors.ustc.edu.cn/gmt/gmt-5.4.3-src.tar.gz)
+- **GMT源码**： [GMT 5.4.4](http://mirrors.ustc.edu.cn/gmt/gmt-5.4.4-src.tar.gz)
 - **GSHHG数据**： [GSHHG 2.3.7](http://mirrors.ustc.edu.cn/gmt/gshhg-gmt-2.3.7.tar.gz)
-- **DCW数据**： [DCW 1.1.3](http://mirrors.ustc.edu.cn/gmt/dcw-gmt-1.1.3.tar.gz)
+- **DCW数据**： [DCW 1.1.4](http://mirrors.ustc.edu.cn/gmt/dcw-gmt-1.1.4.tar.gz)
 {{% /col %}}
 
 {{% col 3 %}}
 ## macOS用户
-- **GMT 安装包**： [5.4.3](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.4.3-darwin-x86_64.dmg)
+- **GMT 安装包**： [5.4.4](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.4.4-darwin-x86_64.dmg)
 {{% /col %}}
 {{< /row >}}
 
@@ -44,6 +44,9 @@ title: 下载
     [在线阅读](https://docs.gmt-china.org) |
     [PDF](https://docs.gmt-china.org/GMT_docs.pdf) |
     [HTML](https://docs.gmt-china.org/GMT_docs.zip)
+- GMT 5.4.4：
+    [PDF](https://github.com/gmt-china/GMT_docs/releases/download/5.4.4/GMT_docs.pdf) |
+    [HTML](https://github.com/gmt-china/GMT_docs/releases/download/5.4.4/GMT_docs.zip)
 - GMT 5.4.3：
     [PDF](https://github.com/gmt-china/GMT_docs/releases/download/5.4.3/GMT_docs.pdf) |
     [HTML](https://github.com/gmt-china/GMT_docs/releases/download/5.4.3/GMT_docs.zip)
@@ -65,6 +68,9 @@ title: 下载
     [在线阅读](https://modules.gmt-china.org) |
     [PDF](https://modules.gmt-china.org/GMT_modules.pdf) |
     [HTML](https://modules.gmt-china.org/GMT_modules.zip)
+- GMT 5.4.4：
+    [PDF](https://github.com/gmt-china/GMT_modules/releases/download/5.4.4/GMT_modules.pdf) |
+    [HTML](https://github.com/gmt-china/GMT_modules/releases/download/5.4.4/GMT_modules.zip)
 - GMT 5.4.3：
     [PDF](https://github.com/gmt-china/GMT_modules/releases/download/5.4.3/GMT_modules.pdf) |
     [HTML](https://github.com/gmt-china/GMT_modules/releases/download/5.4.3/GMT_modules.zip)

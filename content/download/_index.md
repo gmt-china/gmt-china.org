@@ -7,7 +7,7 @@ title: 下载
 {{< row >}}
 {{% col 4 %}}
 ### Windows用户
-- **GMT 5.4.3安装包**：
+- **GMT 5.4.4 安装包**：
     [32位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.4.4-win32.exe) |
     [64位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.4.4-win64.exe)
 - **ghostscript安装包**：

@@ -38,7 +38,7 @@ ogr2ogr -f GMT -nln gadm36_0 gadm36_0 gadm36_0.shp # 之后只需要文件 gadm3
 
 绘图代码：
 
-`quakes.dat` 是人工手划的中国邻区界限数据。
+`cut-line.txt` 是人工手划的中国邻区界限。
 利用 `select` 模块从正确的中国及邻区的各国国界数据中选出邻区内的数据，然后用 `psxy `画图。
 利用 `select` 模块从公开数据中选出邻区外的数据，然后用 `psxy `画图。
 

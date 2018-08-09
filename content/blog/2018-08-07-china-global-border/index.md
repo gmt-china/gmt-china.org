@@ -4,7 +4,8 @@ date: 2018-08-07
 categories:
     - GMT技巧
 authors:
-    - 王亮 刘珠妹
+    - 王亮
+    - 刘珠妹
 slug: china-global-border
 ---
 
@@ -24,7 +25,7 @@ slug: china-global-border
 
 下载两个数据的交界线数据：
 
-下载正确的中国及领区的各国国界数据：
+下载正确的中国及邻区的各国国界数据：
 
 下载全球国界数据：https://data.biogeo.ucdavis.edu/data/gadm3.6/gadm36_levels_shp.zip
 
@@ -36,6 +37,10 @@ ogr2ogr -f GMT -nln gadm36_0 gadm36_0 gadm36_0.shp # 之后只需要文件 gadm3
 ````
 
 绘图代码：
+
+`quakes.dat` 是人工手划的中国邻区界限数据。
+利用 `select` 模块从正确的中国及邻区的各国国界数据中选出邻区内的数据，然后用 `psxy `画图。
+利用 `select` 模块从公开数据中选出邻区外的数据，然后用 `psxy `画图。
 
 {{< include-code "Chinaglobal.sh" bash >}}
 

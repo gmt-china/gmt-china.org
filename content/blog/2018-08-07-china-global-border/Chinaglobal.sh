@@ -4,7 +4,7 @@ J=M104/29/15c
 PS=CN-global-border.ps
 
 gmt psxy -J$J -R$R -T -K > $PS
-gmt psbasemap -R -J -Bxaf -Byaf -BWSEN -P -K -O >> $PS
+gmt psbasemap -R -J -Bxaf -Byaf -BWSEN -K -O >> $PS
 
 # 画出中国邻区国界
 gmt select china-neighbor-admin-lines.dat -Fcut-line.txt -fg | gmt psxy -J -R -W0.5p,black -K -O >> $PS

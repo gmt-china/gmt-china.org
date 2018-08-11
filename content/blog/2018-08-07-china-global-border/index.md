@@ -17,15 +17,15 @@ slug: china-global-border
 4. 阿克赛钦
 5. 藏南
 6. 其他与印度及属国不丹交界的部分领土
-7. 吉尔吉斯斯坦和俄国已归还给中国的领土
+7. 吉尔吉斯斯坦和俄罗斯已归还的领土
 8. ...
 
-为此，我们已经为大家提供了正确的中国国界。但是如果要同时画邻国的国界，则会因为要使用开放数据画因外国边界而和我们的数据发生冲突。
-现在我们搜集到了中国即领区的各国国界数据。这让我们能同时正确画中国和邻国国界称为可能。
+之前，我们已经为大家提供了正确的中国国界。但是如果要同时画邻国的国界，则会因为要使用开放数据画外国边界而和我们的数据发生冲突。
+现在我们搜集了中国及邻区的国界数据。这让我们能同时正确画中国和邻国国界称为可能。
 
-下载两个数据的交界线数据：
-
-下载正确的中国及邻区的各国国界数据：
+{{% notice info %}}
+数据下载：[中国及邻区国界数据](/datas/china-neighbor-admin-lines.dat) [中国邻区界线](/blog/china-global-border/cut-line.txt)
+{{% /notice %}}
 
 下载全球国界数据：https://data.biogeo.ucdavis.edu/data/gadm3.6/gadm36_levels_shp.zip
 
@@ -33,12 +33,11 @@ slug: china-global-border
 
 ````bash
 unzip gadm36_levels_shp.zip -d gadm36_levels
-ogr2ogr -f GMT -nln gadm36_0 gadm36_0 gadm36_0.shp # 之后只需要文件 gadm36_0.gmt
+ogr2ogr -f GMT -nln gadm36_0 gadm36_0 gadm36_0.shp # 只需要文件 gadm36_0.gmt
 ````
 
 绘图代码：
 
-`cut-line.txt` 是人工手划的中国邻区界限。
 利用 `select` 模块从正确的中国及邻区的各国国界数据中选出邻区内的数据，然后用 `psxy `画图。
 利用 `select` 模块从公开数据中选出邻区外的数据，然后用 `psxy `画图。
 
@@ -46,4 +45,4 @@ ogr2ogr -f GMT -nln gadm36_0 gadm36_0 gadm36_0.shp # 之后只需要文件 gadm3
 
 绘图结果如下:
 
-{{< figure src="/blog/china-global-border/CN-global-border.png" title="中国国界对比图" >}}
+{{< figure src="/blog/china-global-border/CN-global-border.png" >}}

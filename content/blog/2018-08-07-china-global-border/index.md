@@ -44,15 +44,6 @@ ogr2ogr -f GMT -nln gadm36_0 gadm36_0 gadm36_0.shp # 之后只需要文件 gadm3
 
 {{< include-code "Chinaglobal.sh" bash >}}
 
-绘图结果如下，其中蓝色边界来自DCW数据，红色边界来自社区数据。
+绘图结果如下:
 
-{{< figure src="/blog/china-border-issues/CN-border.png" title="中国国界对比图" >}}
-
-从上图中可以看出，阿克赛钦地区、藏南地区边界均存在明显差异，其他地方也存在微小差异。
-
-在涉及到这些区域时应格外注意。需要提供的是，社区提供的国界数据并不能保证完全
-正确，若用户也更为权威的国界数据，欢迎共享。
-
-## 参考
-
-- [“问题地图”清查工作指南](http://www.iap.cas.cn/xwzx/tzgg/201709/P020170911372769133133.pdf)
+{{< figure src="/blog/china-global-border/CN-global-border.png" title="中国国界对比图" >}}

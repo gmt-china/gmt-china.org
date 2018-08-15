@@ -18,7 +18,10 @@ GMT中文社区是一个面向GMT中文用户的非盈利社区。
 {{% col 6 %}}
 ## 联系方式
 
-GMT 学习QQ群: 218905582
+GMT中文社区官方QQ群：
+
+ - 1群：218905582 （已满）
+ - 2群：791856541
 
 社区建议及投稿请联系： [admin@gmt-china.org](mailto:admin@gmt-china.org)
 {{% /col %}}

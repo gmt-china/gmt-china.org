@@ -3,11 +3,9 @@ python: 3.6
 
 install:
   - curl -L https://raw.githubusercontent.com/seisman/install/master/install-hugo.sh | bash
-  - pip install css-html-js-minify
 
 script:
-  - ./hugo
-  #- ./scripts/css-html-js-minify.py public --overwrite
+  - ./hugo --minify
 
 deploy:
   provider: pages

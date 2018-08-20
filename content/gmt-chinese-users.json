@@ -403,6 +403,19 @@
                 "city": " Wellington",
                 "name": " School of Geography, Environment and Earth Sciences, Victoria University of Wellington"
             }
+        },
+
+        {
+            "id": 39,
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-84.477990, 42.731188]
+            },
+            "properties": {
+                "city": " East Lansing",
+                "name": " Department of Earth and Enviromental Sciences, Michigan State Univeristy"
+            }
         }
     ]
 }

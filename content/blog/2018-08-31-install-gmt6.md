@@ -21,6 +21,7 @@ $ git clone https://github.com/GenericMappingTools/gmt
 ```
 
 获取源码之后，按照如下步骤即可安装。详细步骤可参考《[Linux下安装GMT](https://docs.gmt-china.org/install/linux/)》一文。
+
 ```
 $ cd gmt
 $ cp cmake/ConfigUserTemplate.cmake cmake/ConfigUser.cmake
@@ -32,7 +33,7 @@ $ cd build
 $ cmake ..
 $ make -jx
 $ make -jx install
-````
+```
 
 # macOS 平台
 

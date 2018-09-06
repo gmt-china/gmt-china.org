@@ -1,6 +1,5 @@
 #!/bin/bash
 PS=hawaii.ps
-R=-156.5/-154.5/18.5/20.5
 landdata=hawaii_land_1s.grd
 oceandata=hawaii_ocean_15s.grd
 cpt=hawaii.cpt
@@ -9,7 +8,7 @@ cpt=hawaii.cpt
 gmt grdgradient $landdata -Ne0.7 -A315 -G$landdata.light
 gmt grdgradient $oceandata -Ne0.7 -A315 -G$oceandata.light
 # 底图
-gmt psbasemap -R$R -JM15c -Baf -BWSEN -K -P > $PS
+gmt psbasemap -R-156.5/-154.5/18.5/20.5 -JM15c -Baf -BWSEN -K -P > $PS
 # 地形
 #  海洋部分
 gmt grdimage $oceandata -R -J -I$oceandata.light -C$cpt -O -K >> $PS
@@ -20,5 +19,5 @@ gmt pscoast -O -K -Q >> $PS # 关闭裁剪
 # 文件尾
 gmt psxy -R -J -T -O >> $PS
 # 输出
-gmt psconvert $PS -A -Tg -E2048
-rm *.ps *.light gmt.history
+gmt psconvert $PS -A -Tg
+rm $PS *.light gmt.history

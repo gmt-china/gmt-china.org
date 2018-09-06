@@ -5,7 +5,7 @@ categories:
     - GMT技巧
 authors:
     - 王亮
-    - 田冬冬
+    - seisman
 slug: install-gmt6
 ---
 

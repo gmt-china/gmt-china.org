@@ -189,3 +189,21 @@ lat: 42.731188
 lon: -84.47799
 city: East Lansing
 name: Department of Earth and Enviromental Sciences, Michigan State Univeristy
+
+id: 40
+lat: 25.014778
+lon: 121.537235
+city: 台北市
+name: 國立台灣大學地質科學系暨研究所
+
+id: 41
+lat: 29.35235
+lon: 104.775043
+city: 自贡市
+name: 自贡市环境监测中心
+
+id: 42
+lat: 52.383021
+lon: 13.063190
+city: Potsdam
+name: Helmholtz-Zentrum Potsdam Deutsches GeoForschungsZentrum GFZ

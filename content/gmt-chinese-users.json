@@ -416,6 +416,45 @@
                 "city": " East Lansing",
                 "name": " Department of Earth and Enviromental Sciences, Michigan State Univeristy"
             }
+        },
+
+        {
+            "id": 40,
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [121.537235, 25.014778]
+            },
+            "properties": {
+                "city": " 台北市",
+                "name": " 國立台灣大學地質科學系暨研究所"
+            }
+        },
+
+        {
+            "id": 41,
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [104.775043, 29.352350]
+            },
+            "properties": {
+                "city": " 自贡市",
+                "name": " 自贡市环境监测中心"
+            }
+        },
+
+        {
+            "id": 42,
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [13.063190, 52.383021]
+            },
+            "properties": {
+                "city": " Potsdam",
+                "name": " Helmholtz-Zentrum Potsdam Deutsches GeoForschungsZentrum GFZ"
+            }
         }
     ]
 }

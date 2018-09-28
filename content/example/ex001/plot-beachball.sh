@@ -26,7 +26,6 @@ gmt begin beachball png
     104.1200  31.7800  12.7 186.00 68.00  107.00  4.7 103.830  32.2600 F
     104.2300  31.6100  62.0  86.00 63.00  -51.00  4.7 104.960  31.6900 G
 EOF
-
-gmt psscale -C$CPT -DjBL+w5c/0.5c+ml+o0.8c/0.4c -Bx+lDepth -By+lkm -L -S
+    gmt psscale -C$CPT -DjBL+w5c/0.5c+ml+o0.8c/0.4c -Bx+lDepth -By+lkm -L -S
 gmt end
 rm $CPT

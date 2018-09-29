@@ -25,5 +25,5 @@ gmt meca -CP5p -Sa1.3c -Z$CPT << EOF
 104.2300  31.6100  62.0  86.00 63.00  -51.00  4.7 104.960  31.6900 G
 EOF
 gmt colorbar -C$CPT -DjBL+w5c/0.5c+ml+o0.8c/0.4c -Bx+lDepth -By+lkm -L -S
-gmt end
 rm $CPT
+gmt end

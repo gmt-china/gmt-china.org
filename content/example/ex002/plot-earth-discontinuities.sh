@@ -1,10 +1,7 @@
 #!/bin/bash
-J=Pa10c/15
-R=-10/40/0/6371
-PS=earth-discontinuities.ps
 
-gmt set MAP_GRID_PEN_PRIMARY 1p
 gmt begin earth-discontinuities png
+gmt set MAP_GRID_PEN_PRIMARY 1p
 # 绘制地表
 gmt basemap -JPa10c/15 -R-10/40/0/6371 -Byg6371 -Bs
 # 绘制 410 界面
@@ -36,6 +33,5 @@ gmt text -F+f11p+a -N << EOF
 16 4100 0 @;blue;PcP@;;
 37 1600 0 @;red;PKiKP@;;
 EOF
-
-gmt end
 rm *.raypath.gmt
+gmt end

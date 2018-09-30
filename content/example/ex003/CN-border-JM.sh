@@ -1,7 +1,4 @@
 #!/bin/bash
-R=70/138/13/56
-J=M105/35/6.5i
-PS=CN-border-JM.ps
 
 gmt begin CN-border-JM png
 gmt set MAP_GRID_PEN_PRIMARY 0.25p,gray,2_2:1
@@ -14,11 +11,8 @@ gmt coast -JM105/35/6.5i -R70/138/13/56 -G244/243/239 -S167/194/223 -B10f5g10 -L
 gmt plot CN-border-La.dat -W0.5p 
 
 # 绘制南海区域
-R=105/123/3/24
-J=M1.1i
-gmt psbasemap -J$J -R$R -B0 -X5.4i --MAP_FRAME_TYPE=plain --MAP_FRAME_PEN=1p -K -O >> $PS
-gmt pscoast -J$J -R$R -N1/0.1p -W1/0.25p -G244/243/239 -S167/194/223 -K -O >> $PS
-gmt psxy CN-border-La.dat -J$J -R$R -W0.25p -O -K >> $PS
-echo "南海诸岛" | gmt pstext -J$J -R$R -F+f10p,35+cBC -D0c/0.1c -N -Gwhite -O >> $PS
-
-rm gmt.conf gmt.history
+gmt basemap -JM1.1i -R105/123/3/24 -B0 -X5.4i --MAP_FRAME_TYPE=plain --MAP_FRAME_PEN=1p
+gmt coast -N1/0.1p -W1/0.25p -G244/243/239 -S167/194/223
+gmt plot CN-border-La.dat -W0.25p
+echo "南海诸岛" | gmt text -F+f10p,35+cBC -D0c/0.1c -N -Gwhite
+gmt end

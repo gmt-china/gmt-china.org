@@ -15,7 +15,7 @@ commands:
 数据下载：[sunglasses.eps](/example/ex009/sunglasses.eps)
 {{% /alert %}}
 
-本文利用 GMT 5.3 中新增的 `pssolar` 模块绘制了晨昏线并计算得到太阳的位置，同时利用 `psxy` 的新增功能，直接将 `eps` 格式的太阳图片绘制在指定位置。
+本文利用 GMT 中新增的 `solar` 模块绘制了晨昏线并计算得到太阳的位置，同时利用 `plot`，直接将 `eps` 格式的太阳图片绘制在指定位置。
 
 {{< include-code "pssolar.sh" bash >}}
 

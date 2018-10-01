@@ -10,7 +10,7 @@ gmt grd2cpt cutTopo.grd -Cglobe -S-10000/10000/200 -Z -D > colorTopo.cpt
 gmt begin topo png
 #绘制底图
 gmt gmtset FORMAT_GEO_MAP=ddd:mm:ssF
-gmt basemap -R70/135/15/55 -JM7i -Ba10f5 -BWesN -Xc -Yc
+gmt basemap -R70/135/15/55 -JM7i -Ba10f5 -BWesN
 gmt grdimage cutTopo.grd -IcutTopo_i.grd -CcolorTopo.cpt -Q
 gmt coast -Dh -W1/0.2p -I1/0.25p -N1/0.5p
 

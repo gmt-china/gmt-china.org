@@ -8,7 +8,7 @@ gmt grd2cpt cutTopo.grd -Cglobe -S-10000/10000/200 -Z -D>colorTopo.cpt
 gmt begin topo png
 REM ���Ƶ�ͼ
 gmt gmtset FORMAT_GEO_MAP=ddd:mm:ssF
-gmt basemap -R70/135/15/55 -JM7i -Bf5a10 -BWesN -Xc -Yc
+gmt basemap -R70/135/15/55 -JM7i -Bf5a10 -BWesN
 gmt grdimage cutTopo.grd -IcutTopo_i.grd -CcolorTopo.cpt -Q
 gmt coast -Dh -W1/0.2p -I1/0.25p -N1/0.5p
 

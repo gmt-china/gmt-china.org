@@ -17,7 +17,7 @@ gmt set FORMAT_GEO_MAP=+D
 gmt basemap -R0/360/0/90 -JPa$width -Bxa60g60 -Bya180
 
 # 绘制台站位置（红色三角形）
-echo $stlo $stla | gmt psxy -J$J -Rg -St0.15i -Gred
+echo $stlo $stla | gmt plot -J$J -Rg -St0.15i -Gred
 # 绘制地震震源位置
 gmt plot -Sc0.05i -Gblue << EOF
 145 30

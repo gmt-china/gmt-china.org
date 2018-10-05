@@ -6,7 +6,7 @@ authors:
 images:
     - subslab.png
 commands:
-    - psvelo
+    - velo
     - grdvector
 ---
 {{% notice info %}}

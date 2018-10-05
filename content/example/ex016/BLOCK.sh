@@ -6,7 +6,7 @@ gmt gmtset MAP_TICK_LENGTH_PRIMARY 0
 gmt gmtset MAP_FRAME_TYPE plain
 
 # ============底图
-gmt psbasemap -R78/12/149/53r -JB105/10/25/47/15 -Bx10 -By5 -BNEWS
+gmt basemap -R78/12/149/53+r -JB105/10/25/47/15 -Bx10 -By5 -BNEWS
 gmt coast -Ggray95 -S83/216/238 -A5000 -Dh
 gmt plot CN-border-L1.dat -W0.2p -Gwhite
 

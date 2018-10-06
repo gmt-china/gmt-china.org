@@ -71,6 +71,11 @@ GMT官方整理的地形起伏数据包含13个不同的精度，以满足多种
 
 3.  在任意目录下执行如下命令以测试GMT能否正确找到地形数据:
 
+    GMT6用户:
+
+        gmt grdimage earth_relief_10m.grd -Rg -JH20c -Cetopo1 -png gmt5-topo
+
+
     GMT5用户:
 
         gmt grdimage earth_relief_10m.grd -Rg -JH20c -Cetopo1 > gmt5-topo.ps

@@ -7,9 +7,9 @@ authors:
 images:
     - profile.png
 commands:
-    - pscoupe
-    - psxy
-    - pslegend
+    - coupe
+    - plot
+    - legend
 ---
 {{% alert info %}}
 示例数据:

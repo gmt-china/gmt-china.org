@@ -1,5 +1,5 @@
 ---
-title: 用两套地形数据绘制檀香山地形图
+title: 用两套地形数据绘制夏威夷岛地形图
 date: 2018-09-05
 authors:
     - 王亮
@@ -16,9 +16,11 @@ commands:
 [配色文件](/example/ex021/hawaii.cpt)
 {{% /notice %}}
 
-檀香山是夏威夷主岛火奴鲁鲁的旧称，因孙文为代表的革命党人在这里的革命活动而为华人熟知。
 
-现在我们想绘制檀香山的地形。我们希望地形的精度尽可能的高，以得到最清晰的地图。
+
+夏威夷岛是夏威夷群岛中的最大岛屿，又称大岛Big Island，位于群岛最南端，面积10414平方公里。
+全岛有丰富的火山活动，岛上有五个盾状火山，设有夏威夷火山国家公园，其中冒纳罗亚火山海拔4170米。
+我们想绘制它的地形。我们希望地形的精度尽可能的高，以得到最清晰的地图。
 目前，免费开放的最精确的地形文件的精度是 1 弧秒，即 30m 一个采样点，但只包含陆地。包含了海洋的地形的精度最高是 15s。
 这样，我们就需要用 1 弧秒的数据来绘制地形，15 弧秒的数据来绘制海底。
 
@@ -31,4 +33,12 @@ commands:
 
 绘图效果如下:
 
-{{< figure src="hawaii.png" title="夏威夷檀香山" width="1000px">}}
+{{< figure src="hawaii.png" title="夏威夷岛" width="1000px">}}
+
+
+- 中文引用:
+
+    NASA/METI/AIST/Japan Spacesystems, and U.S./Japan ASTER Science Team. ASTER Global Digital Elevation Model. 2009, distributed by NASA EOSDIS Land Processes DAAC, https://doi.org/10.5067/ASTER/ASTGTM.002.
+
+    维基百科编者. 夏威夷岛[G/OL]. 维基百科, 2018(20180918)[2018-09-18]. https://zh.wikipedia.org/w/index.php?title=%E5%A4%8F%E5%A8%81%E5%A4%B7%E5%B3%B6&oldid=51338007.
+

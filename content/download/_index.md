@@ -14,8 +14,8 @@ title: 下载
     [32位](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs922/gs922w32.exe) |
     [64位](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs922/gs922w64.exe)
 - **gsview安装包**：
-    [5.0](http://pages.cs.wisc.edu/~ghost/gsview/get50.htm) |
-    [6.0测试版](https://www.artifex.com/developers-ghostscript-gsview/)
+    [32位](http://www.ghostgum.com.au/download/gsv50w32.exe) |
+    [64位](http://www.ghostgum.com.au/download/gsv50w64.exe)
 - **UnixTools**：[UnixTools.zip](/datas/UnixTools.zip)
 {{% /col %}}
 

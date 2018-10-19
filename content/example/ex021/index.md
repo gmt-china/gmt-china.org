@@ -35,10 +35,3 @@ commands:
 
 {{< figure src="hawaii.png" title="夏威夷岛" width="1000px">}}
 
-
-- 中文引用:
-
-    NASA/METI/AIST/Japan Spacesystems, and U.S./Japan ASTER Science Team. ASTER Global Digital Elevation Model. 2009, distributed by NASA EOSDIS Land Processes DAAC, https://doi.org/10.5067/ASTER/ASTGTM.002.
-
-    维基百科编者. 夏威夷岛[G/OL]. 维基百科, 2018(20180918)[2018-09-18]. https://zh.wikipedia.org/w/index.php?title=%E5%A4%8F%E5%A8%81%E5%A4%B7%E5%B3%B6&oldid=51338007.
-

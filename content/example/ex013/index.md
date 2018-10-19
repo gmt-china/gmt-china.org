@@ -31,8 +31,6 @@ commands:
 
 {{< include-code "plot-grdtrack.sh" bash >}}
 
-- 中文引用:
-
-    NASA/METI/AIST/Japan Spacesystems, and U.S./Japan ASTER Science Team. ASTER Global Digital Elevation Model. 2009, distributed by NASA EOSDIS Land Processes DAAC, https://doi.org/10.5067/ASTER/ASTGTM.002.
+- 引用:
 
     本示例修改自鄭懷傑的[等高線地圖及地形剖面指令稿](http://gmt-tutorials.org/contour_and_profile.html)。

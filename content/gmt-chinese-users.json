@@ -455,6 +455,19 @@
                 "city": " Potsdam",
                 "name": " Helmholtz-Zentrum Potsdam Deutsches GeoForschungsZentrum GFZ"
             }
+        },
+
+        {
+            "id": 43,
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [113.259205, 35.186359]
+            },
+            "properties": {
+                "city": " 焦作市 ",
+                "name": " 河南理工大学 测绘学院"
+            }
         }
     ]
 }

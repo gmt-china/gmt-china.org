@@ -211,5 +211,11 @@ name: Helmholtz-Zentrum Potsdam Deutsches GeoForschungsZentrum GFZ
 id: 43
 lat: 35.186359
 lon: 113.259205
-city: 焦作市 
+city: 焦作市
 name: 河南理工大学 测绘学院
+
+id: 44
+lat: 48.149944
+lon: 11.567722
+city: Munich
+name: Lehrstuhl für Astronomische und Physikalische Geodäsie  Technische Universität München

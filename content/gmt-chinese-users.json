@@ -465,8 +465,21 @@
                 "coordinates": [113.259205, 35.186359]
             },
             "properties": {
-                "city": " 焦作市 ",
+                "city": " 焦作市",
                 "name": " 河南理工大学 测绘学院"
+            }
+        },
+
+        {
+            "id": 44,
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [11.567722, 48.149944]
+            },
+            "properties": {
+                "city": " Munich",
+                "name": " Lehrstuhl für Astronomische und Physikalische Geodäsie  Technische Universität München"
             }
         }
     ]

@@ -4,9 +4,7 @@ date: 2019-01-22
 authors:
     - 李黎明
 images:
-    - ternary1.png
     - ternary2.png
-    - Engauge.jpg
 commands:
     - psternary
 ---

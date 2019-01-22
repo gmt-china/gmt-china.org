@@ -1,5 +1,4 @@
-language: python
-python: 3.6
+language: generic
 
 install:
   - curl -L https://raw.githubusercontent.com/seisman/install/master/install-hugo.sh | bash

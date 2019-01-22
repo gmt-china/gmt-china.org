@@ -7,7 +7,7 @@ gmt psbasemap -R -J -DjTL+w6c/7c+o0.2c/0.2c+stmp -F+gwhite+p1p+c0.1c+s -O -K >> 
 
 read x0 y0 w h < tmp
 # x0 和 y0 是图中图左下角的坐标
-# w 是图中图的款度
+# w 是图中图的宽度
 # h 是图中图的高度
 gmt pscoast -R129E/146E/30N/46N -JM$w -Df -W1p -A1000 -Glightbrown -Sazure1 -K -O -X$x0 -Y$y0 >> $PS
 gmt psbasemap -R -J -D$R -F+p2p,blue -O >> $PS

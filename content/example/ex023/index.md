@@ -27,7 +27,7 @@ gmt 的 psbasemap 模块可以实现这一个需求。
 
 {{< figure src="draw-inset-map.png" title="东京湾" width="1000px">}}
 
-psbasemap 就是在地图上绘制一个新底图（map insert box）。
+psbasemap 就是在地图上绘制一个新底图（map inset box）。
 -D 选项就是指定新底图的位置，并输出新底图的位置信息，以便后续的命令能获得。
 -F 选项则是为这个新底图绘制一个矩形的边界（使用 -D 选项后就必须使用 -F 选项）。
 下面说明脚本中这两个选项的具体含义。

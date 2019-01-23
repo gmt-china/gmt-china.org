@@ -4,13 +4,13 @@ date: 2019-01-22
 authors:
     - 李黎明
 images:
-    - ternary2.png
+    - ternary.png
 commands:
     - psternary
 ---
 
 {{% notice info %}}
-数据下载：[三角图解文件](/example/ex022/ternary.txt)
+数据下载：[三角图解文件](/example/ex022/ternary.csv)
 [曲线坐标数据](/example/ex022/Th-Sc-La.txt )
 {{% /notice %}}
 
@@ -28,43 +28,10 @@ commands:
 
 psternary 模块可以实现三角框架和数据投点，代码如下：
 
-{{< include-code "draw-ternary1.sh" bash >}}
-
-结果如图，但是还缺少原图相应的判定曲线。
-
-{{< figure src="ternary1.png" title="Th,Sc,La三角图解" width="400px">}}
-
-# 获得判定曲线坐标数据
-
-将原图以左下方的点为坐标原点建立笛卡儿坐标系，等边三角形边长 $a = 100$，则高为:
-
-$$h=\frac{1}{2}*\sqrt{3}*a=\frac{1}{2}*\sqrt{3}*100=50\sqrt{3}$$
-
-如下图；然后利用 Engauge Digitizer 软件自动获得判定曲线的坐标数据。
-
-{{< figure src="Engauge.jpg" title="判定曲线的坐标数据" width="400px">}}
-
-# 在原绘图脚本上叠加判定曲线
-
-需要注意的是，在三角图解坐标系下，-R, -J分别为
-
-````bash
-R1=0/100/0/100/0/100
-J1=X8c
-````
-
-而在用psxy绘制判定曲线时，要在三角图解的基础上再定义一个坐标系，其 x 值要与 R1
-和 J1 的 x 值相同，y 值仍按上述公式换算。以保证两个不同的坐标系在纸面坐标上是重合的。
-
-$$
-R2=0/100/0/50\sqrt{3}\\
-J2=X8c/4\sqrt{3}c
-$$
-
-完整绘图代码如下：
-
-{{< include-code "draw-ternary2.sh" bash >}}
+{{< include-code "ternary.sh" bash >}}
 
 绘图效果如下:
 
-{{< figure src="ternary2.png" title="Th,Sc,La三角图解" width="400px">}}
+{{< figure src="ternary.png" title="Th,Sc,La三角图解" width="400px">}}
+
+其中，判断曲线使用 Engauge Digitizer 软件自动获得。

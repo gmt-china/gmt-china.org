@@ -40,8 +40,10 @@ title: 下载
 {{% col 4 %}}
 ### GMT 参考手册
 
-- 最新版本：
-    [在线阅读](https://docs.gmt-china.org)
+- GMT 6.0.0：
+    [在线阅读](https://docs.gmt-china.org/6.0.0/)
+- GMT 5.4.5：
+    [在线阅读](https://docs.gmt-china.org/5.4.5/)
 - GMT 5.4.4：
     [PDF](https://github.com/gmt-china/GMT_docs/releases/download/5.4.4/GMT_docs.pdf) |
     [HTML](https://github.com/gmt-china/GMT_docs/releases/download/5.4.4/GMT_docs.zip)

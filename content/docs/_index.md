@@ -3,7 +3,7 @@ title: 文档
 ---
 
 <div class="row">
-    <div class="col-sm-6 col-md-3 col-lg-3">
+    <div class="col-sm-6 col-md-4 col-lg-4">
         <div class="thumbnail">
             <div class="caption">
             <h3 class="text-center"><i class="fa fa-book"></i> GMT参考手册</h3>
@@ -16,21 +16,8 @@ title: 文档
             </div>
         </div>
     </div>
-    <div class="col-sm-6 col-md-3 col-lg-3">
-        <div class="thumbnail">
-            <div class="caption">
-            <h3 class="text-center"><i class="fa fa-book"></i> GMT模块手册</h3>
-            <p>模块手册详细介绍了GMT模块的语法和用法，并辅以示例和效果图，以帮助用户掌握模块的使用方法。</p>
-            <div class="text-center">
-            <a href="https://modules.gmt-china.org" class="btn btn-primary" role="button">主页</a>
-            <a href="https://github.com/gmt-china/GMT_modules" class="btn btn-default" role="button">源码</a>
-            <a href="https://gmt-china.org/download/" class="btn btn-default" role="button">下载</a>
-            </div>
-            </div>
-        </div>
-    </div>
     <div class="clearfix visible-sm"></div>
-    <div class="col-sm-6 col-md-3 col-lg-3">
+    <div class="col-sm-6 col-md-4 col-lg-4">
         <div class="thumbnail">
             <div class="caption">
             <h3 class="text-center"><i class="fa fa-image"></i> GMT 图库</h3>
@@ -41,7 +28,7 @@ title: 文档
             </div>
         </div>
     </div>
-    <div class="col-sm-6 col-md-3 col-lg-3">
+    <div class="col-sm-6 col-md-4 col-lg-4">
         <div class="thumbnail">
             <div class="caption">
             <h3 class="text-center"><i class="fa fa-question-circle"></i> GMT FAQ</h3>

@@ -1,11 +1,12 @@
 ---
 title: GMT中文社区正式成立
-date: 2016-04-06
-categories:
-    - 新闻动态
+date: 2016-04-06T00:00:00
+type: post
+summary: GMT中文社区于今日正式成立了！
 authors:
-    - seisman
-slug: gmt-china-community-founded
+  - seisman
+categories:
+  - 新闻动态
 ---
 
 GMT的中文用户们，大家好，我是 [seisman](https://seisman.info) 。

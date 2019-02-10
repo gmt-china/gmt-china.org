@@ -1,11 +1,11 @@
 ---
 title: GMT 5 在 Windows 下提示无法创建用户目录的解决办法
 date: 2017-10-27
+type: post
 categories:
     - GMT技巧
 authors:
     - 赵志远
-slug: user-directory-warning
 ---
 
 某些情况下，在 Windows 下运行 GMT 5 时总是出现警告信息：

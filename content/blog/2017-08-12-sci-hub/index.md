@@ -1,7 +1,7 @@
 ---
 title: 使用sci-hub下载文献
 date: 2017-08-12
-slug: sci-hub
+type: post
 categories:
     - 科研工具
 tags:

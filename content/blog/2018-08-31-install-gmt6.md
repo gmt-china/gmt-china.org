@@ -1,12 +1,12 @@
 ---
 title: GMT 6 的安装 —— 正式推出前体验 GMT 6
 date: 2018-08-31
+type: post
 categories:
     - GMT技巧
 authors:
     - 王亮
     - seisman
-slug: install-gmt6
 ---
 
 GMT 6 计划于今年年底正式发布。GMT 6 完全兼容 GMT 5 并新增了更易用的现代模式，想要提前体验的可以按照如下说明安装 GMT 6 的开发版。

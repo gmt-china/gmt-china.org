@@ -1,13 +1,13 @@
 ---
 title: "生成多页PS/PDF文件"
 date: 2016-10-12
+type: post
+authors:
+    - seisman
 categories:
     - GMT技巧
 tags:
     - psconvert
-authors:
-    - seisman
-slug: multipage-ps
 ---
 
 通常，在使用GMT画图时都是一个PS文件中保存一张图。因而，在需要画很多张同类型的图时，就需要生成很多个PS文件。比如要画1000个台站的波形数据，每张图只能放下20个波形，那么就需要写个循环画50张图，最终得到50个PS文件。有没有可能生成一个多页文件，每一页一张图呢？
@@ -55,6 +55,6 @@ done
 经过这样的改动之后，就生成了一个多页PS文件。可以使用`gmt psconvert -Tf map.ps`
 将其转换为多页PDF文件。
 
-{{% notice warning %}}
+{{% alert warn %}}
 将多页PS文件转换为多页PDF文件时，`psconvert` 的 `-A` 和 `-P` 等选项无法使用。
-{{% /notice %}}
+{{% /alert %}}

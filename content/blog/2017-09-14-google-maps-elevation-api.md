@@ -1,15 +1,13 @@
 ---
 title: 利用 Google Maps 获取超高精度高程数据
 date: 2017-09-14
-slug: google-maps-elevation-api
+type: post
 categories:
     - 科研工具
 tags:
     - 数据下载
 authors:
     - SeisPider
-extra_js:
-    - //cdn.bootcss.com/prism/1.5.1/components/prism-python.min.js
 ---
 
 在绘制超小区域的地形图时，常需要超高精度的高程数据。

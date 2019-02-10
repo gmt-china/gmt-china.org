@@ -1,6 +1,7 @@
 ---
 title: GMT 中文社区第三次线下聚餐
 date: 2017-10-17
+type: post
 categories:
     - 新闻动态
 tags:
@@ -8,7 +9,6 @@ tags:
 authors:
     - 王亮
     - seisman
-slug: GUD-20171017
 ---
 
 金秋十月，秋高气爽，雁过留声。GMT 中文社区在北京成功举办了第三次线下聚餐活动。

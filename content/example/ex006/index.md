@@ -1,6 +1,7 @@
 ---
 title: 中国铁路线
 date: 2016-10-25
+type: post
 tags:
     - 地学数据
 authors:
@@ -9,9 +10,9 @@ images:
     - CN-Railways.png
 ---
 
-{{% notice info %}}
-数据下载：[CN-border-La.dat](/datas/CN-border-La.dat) [CN-Railways.dat](/datas/CN-Railways.dat)
-{{% /notice %}}
+{{% alert info %}}
+数据下载：[CN-border-La.dat](/data/CN-border-La.dat) [CN-Railways.dat](/data/CN-Railways.dat)
+{{% /alert %}}
 
 铁路线数据来源于 MapSIS。
 

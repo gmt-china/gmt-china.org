@@ -1,6 +1,7 @@
 ---
 title: 中国一级河流数据
 date: 2016-10-25
+type: post
 tags:
     - 地学数据
 authors:
@@ -9,9 +10,9 @@ images:
     - CN-Rivers.png
 ---
 
-{{% notice info %}}
-数据下载：[CN-border-La.dat](/datas/CN-border-La.dat) [CN-Rivers.dat](/datas/CN-Rivers.dat)
-{{% /notice %}}
+{{% alert info %}}
+数据下载：[CN-border-La.dat](/data/CN-border-La.dat) [CN-Rivers.dat](/data/CN-Rivers.dat)
+{{% /alert %}}
 
 {{< include-code "CN-Rivers.sh" bash >}}
 

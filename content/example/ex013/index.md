@@ -1,6 +1,7 @@
 ---
 title: 绘制等高线图和剖面图
 date: 2017-08-14
+type: post
 authors:
     - 王亮
 images:
@@ -10,9 +11,9 @@ commands:
     - grdtrack
 ---
 
-{{% notice info %}}
+{{% alert info %}}
 数据下载： [maunakea.grd](/example/ex013/maunakea.grd)
-{{% /notice %}}
+{{% /alert %}}
 
 冒纳凯阿火山位于夏威夷群岛，是形成夏威夷岛的五座火山之一，是从结构体底部到顶部的全球最高峰。
 这里，我们尝试为冒纳凯阿火山绘制等高线地图和高程的剖面图。

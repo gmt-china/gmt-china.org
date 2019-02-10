@@ -1,6 +1,7 @@
 ---
 title: 绘制含地形起伏的地震剖面图
 date: 2018-04-07
+type: post
 authors:
     - SeisPider
 images:
@@ -10,12 +11,12 @@ commands:
     - psxy
     - pslegend
 ---
-{{% notice info %}}
+{{% alert info %}}
 示例数据:
 [震中位置数据](/example/ex019/event.loc.info) |
 [机制解数据](/example/ex019/beachballs.info) |
 [海拔数据](/example/ex019/elev.csv)
-{{% /notice %}}
+{{% /alert %}}
 
 本文展示了如何同时绘制沿着垂直剖面的海拔变化图、地震分布及震源机制图。
 

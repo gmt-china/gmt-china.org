@@ -1,6 +1,7 @@
 ---
 title: 中国断层数据
 date: 2016-10-25
+type: post
 tags:
     - 地学数据
 authors:
@@ -9,9 +10,9 @@ images:
     - CN-faults.png
 ---
 
-{{% notice info %}}
-数据下载：[CN-border-La.dat](/datas/CN-border-La.dat) [CN-faults.dat](/datas/CN-faults.dat)
-{{% /notice %}}
+{{% alert info %}}
+数据下载：[CN-border-La.dat](/data/CN-border-La.dat) [CN-faults.dat](/data/CN-faults.dat)
+{{% /alert %}}
 
 中国断层数据原始来源为邓起东院士等。
 

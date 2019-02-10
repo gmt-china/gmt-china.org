@@ -2,6 +2,7 @@
 title: "中国国界、省界及十段线"
 date: 2016-10-23
 lastmod: 2017-09-16
+type: post
 tags:
     - 地学数据
 authors:
@@ -16,11 +17,11 @@ commands:
 
 由于 GMT 自带的国界线数据不符合中国领土主张，因而在绘制用于正式图件时用户需要自己准备国界数据。本文提供了笔者自己数字化的几个国界相关数据以及两个绘制中国地图的脚本。
 
-{{% notice info %}}
-数据下载： [CN-border-La.dat](/datas/CN-border-La.dat)
-[CN-border-L1.dat](/datas/CN-border-L1.dat)
-[ten-dash-line.dat](/datas/ten-dash-line.dat)
-{{% /notice %}}
+{{% alert info %}}
+数据下载： [CN-border-La.dat](/data/CN-border-La.dat)
+[CN-border-L1.dat](/data/CN-border-L1.dat)
+[ten-dash-line.dat](/data/ten-dash-line.dat)
+{{% /alert %}}
 
 {{% alert info %}}
 1.  无法保证国界数据完全准确或可通过地图审核；

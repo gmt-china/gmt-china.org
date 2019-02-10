@@ -1,6 +1,7 @@
 ---
 title: 中国省会城市分布图
 date: 2016-10-24
+type: post
 tags:
     - 地学数据
 authors:
@@ -9,9 +10,9 @@ images:
     - CN-capitals.png
 ---
 
-{{% notice info %}}
-数据下载：[CN-border-La.dat](/datas/CN-border-La.dat) [CN-capitals.dat](/datas/CN-capitals.dat)
-{{% /notice %}}
+{{% alert info %}}
+数据下载：[CN-border-La.dat](/data/CN-border-La.dat) [CN-capitals.dat](/data/CN-capitals.dat)
+{{% /alert %}}
 
 本文整理并绘制了中国省会城市的分布图，同时展示了如何巧妙地利用 `pstext` 模块的功能来灵活地放置城市名的位置。
 

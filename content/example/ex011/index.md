@@ -1,6 +1,7 @@
 ---
 title: 事件相对台站的震中距方位角分布图
 date: 2017-04-11
+type: post
 authors:
     - lxrat
 images:

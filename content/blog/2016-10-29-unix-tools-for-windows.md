@@ -1,6 +1,7 @@
 ---
 title: "Windows 下可用的 Unix 工具"
 date: 2016-10-29
+type: post
 categories:
     - GMT工具
 tags:
@@ -8,12 +9,11 @@ tags:
     - Windows
 authors:
     - SeisPider
-slug: unix-tools-for-windows
 ---
 
-{{% notice info %}}
-下载地址：[UnixTools.zip](/datas/UnixTools.zip)
-{{% /notice %}}
+{{% alert note %}}
+<i class="fas fa-download"></i> [UnixTools.zip](/datas/UnixTools.zip)
+{{% /alert %}}
 
 为满足 Windows 下的 GMT 用户对 Linux 工具的需求，我们将常用的 Linux 工具打包供 Windows 用户下载使用。
 

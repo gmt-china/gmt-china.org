@@ -1,6 +1,7 @@
 ---
 title: 绘制图中图
 date: 2019-01-23
+type: post
 authors:
     - 王亮
 images:

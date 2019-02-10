@@ -1,11 +1,11 @@
 ---
 title: GMT自带中国国界问题
 date: 2018-03-17
+type: post
 categories:
     - 地学数据
 authors:
     - seisman
-slug: china-border-issues
 ---
 
 众所周知，中国与周边国家或地区之间存在领土争议，这是一个很敏感的政治问题。

@@ -1,6 +1,7 @@
 ---
 title: 绘制自定义符号
 date: 2017-10-13
+type: post
 authors:
     - 赵志远
 images:

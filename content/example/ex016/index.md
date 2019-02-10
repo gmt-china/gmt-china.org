@@ -1,6 +1,7 @@
 ---
 title: 中国大陆及周边活动地块分布图
 date: 2017-09-17
+type: post
 authors:
     - 王杰
     - eyou
@@ -11,13 +12,13 @@ commands:
     - psxy
 ---
 
-{{% notice info %}}
+{{% alert info %}}
 数据下载： [CN-plate-neighbor.dat](/example/ex016/CN-plate-neighbor.dat)
-[CN-block-L1.dat](/datas/CN-block-L1.dat)
-[CN-block-L1-deduced.dat](/datas/CN-block-L1-deduced.dat)
-[CN-block-L2.dat](/datas/CN-block-L2.dat)
-[CN-border-L1.dat](/datas/CN-border-L1.dat)
-{{% /notice %}}
+[CN-block-L1.dat](/data/CN-block-L1.dat)
+[CN-block-L1-deduced.dat](/data/CN-block-L1-deduced.dat)
+[CN-block-L2.dat](/data/CN-block-L2.dat)
+[CN-border-L1.dat](/data/CN-border-L1.dat)
+{{% /alert %}}
 
 本文绘制了中国大陆及周边活动地块分布图。
 

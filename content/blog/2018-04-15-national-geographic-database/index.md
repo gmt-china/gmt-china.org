@@ -1,7 +1,7 @@
 ---
 title: 2017版1:100万全国标准基础地理数据！你值得拥有
 date: 2018-04-15
-slug: national-geographic-database
+type: post
 categories:
     - 地学数据
 authors:

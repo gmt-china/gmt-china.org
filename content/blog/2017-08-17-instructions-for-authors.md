@@ -1,7 +1,7 @@
 ---
 title: 投稿须知
-date: 2017-08-17
-slug: instructions-for-authors
+date: 2017-08-17T00:00:00
+type: post
 categories:
     - 社区规范
 authors:

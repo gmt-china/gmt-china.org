@@ -2,6 +2,7 @@
 title: 绘制指定测线的地震剖面图
 date: 2017-08-15
 lastmod: 2017-09-11
+type: post
 authors:
     - 邓山泉
 images:
@@ -10,9 +11,9 @@ commands:
     - project
 ---
 
-{{% notice info %}}
+{{% alert info %}}
 数据下载： [earthquakes.dat](/example/ex014/earthquakes.dat)
-{{% /notice %}}
+{{% /alert %}}
 
 本文展示了如何绘制选定测线的地震剖面图。 `earthquakes.dat` 为地震数据文件，包含三列数据，分别是经度、纬度、深度。
 

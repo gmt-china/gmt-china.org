@@ -1,6 +1,7 @@
 ---
 title: 绘制GPS速度场
 date: 2017-09-07
+type: post
 authors:
     - 李黎明
 images:
@@ -15,11 +16,11 @@ commands:
 
 本示例仅用于演示，不保证数据的完整性与可靠性。需要使用相关数据的用户请自行到文章主页下载相关数据。
 
-{{% notice info %}}
+{{% alert info %}}
 数据下载：
 [gps_campagin.txt](/example/ex015/gps_campagin.txt): Velocities of campagin stations with respective to EURASIA plate from 1999-2014
 [gps_continuous.txt](/example/ex015/gps_continuous.txt): Velocities of continuous stations with respective to EURASIA plate from 1999-2014
-{{% /notice %}}
+{{% /alert %}}
 
 {{< include-code "gps.sh" bash >}}
 

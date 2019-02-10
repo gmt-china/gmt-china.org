@@ -1,6 +1,7 @@
 ---
 title: 用两套地形数据绘制檀香山地形图
 date: 2018-09-05
+type: post
 authors:
     - 王亮
 images:
@@ -10,11 +11,11 @@ commands:
     - grdimage
 ---
 
-{{% notice info %}}
+{{% alert info %}}
 数据下载：[陆地地形文件](/example/ex021/hawaii_land_1s.grd)
 [海底地形文件](/example/ex021/hawaii_ocean_15s.grd)
 [配色文件](/example/ex021/hawaii.cpt)
-{{% /notice %}}
+{{% /alert %}}
 
 檀香山是夏威夷主岛火奴鲁鲁的旧称，因孙文为代表的革命党人在这里的革命活动而为华人熟知。
 

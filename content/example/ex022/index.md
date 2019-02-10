@@ -1,6 +1,7 @@
 ---
 title: 地球化学三角图解的绘制
 date: 2019-01-22
+type: post
 authors:
     - 李黎明
 images:
@@ -9,10 +10,10 @@ commands:
     - psternary
 ---
 
-{{% notice info %}}
+{{% alert info %}}
 数据下载：[三角图解文件](/example/ex022/ternary.csv)
 [曲线坐标数据](/example/ex022/Th-Sc-La.txt )
-{{% /notice %}}
+{{% /alert %}}
 
 三角图解有很多种，这里仅讨论一下地球化学上常用的地球化学图解用 GMT 的实现方法。
 该三角图解引自Mukul R. Bhatia & Keith A.W. Crook, 1986, Contrib Mineral Petrol。原图如下：

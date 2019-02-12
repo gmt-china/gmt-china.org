@@ -18,7 +18,7 @@ weight = 20
   <div class="col-12 col-sm-4">
     <div class="featurette-icon"><i class="fab fa-windows"></i></div>
     <h3>Windows</h3>
-    <p><strong>GMT 5.4.5</strong>:
+    <p><strong>GMT</strong>:
     <a href="http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.4.5-win32.exe" target="_blank">32位</a> |
     <a href="http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.4.5-win64.exe" target="_blank">64位</a>
     <br>
@@ -50,7 +50,7 @@ weight = 20
   <div class="col-12 col-sm-4">
     <div class="featurette-icon"><i class="fab fa-apple"></i></div>
     <h3>macOS</h3>
-    <p><strong>GMT 安装包</strong>:
+    <p><strong>GMT安装包</strong>:
     <a href="http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.4.5-darwin-x86_64.dmg" target="_blank">5.4.5</a></p>
   </div>
 </div>

@@ -23,15 +23,6 @@ weight = 30
 - v5.4.4：
     [PDF](https://github.com/gmt-china/GMT_docs/releases/download/5.4.4/GMT_docs.pdf) |
     [HTML](https://github.com/gmt-china/GMT_docs/releases/download/5.4.4/GMT_docs.zip)
-- v5.4.3：
-    [PDF](https://github.com/gmt-china/GMT_docs/releases/download/5.4.3/GMT_docs.pdf) |
-    [HTML](https://github.com/gmt-china/GMT_docs/releases/download/5.4.3/GMT_docs.zip)
-- v5.4.2：
-    [PDF](https://github.com/gmt-china/GMT_docs/releases/download/5.4.2/GMT_docs.pdf) |
-    [HTML](https://github.com/gmt-china/GMT_docs/releases/download/5.4.2/GMT_docs.zip)
-- v5.4.1：
-    [PDF](https://github.com/gmt-china/GMT_docs/releases/download/5.4.1/GMT_docs.pdf) |
-    [HTML](https://github.com/gmt-china/GMT_docs/releases/download/5.4.1/GMT_docs.zip)
 - v5.3.3：
     [PDF](https://github.com/gmt-china/GMT_docs/releases/download/5.3.3/GMT_docs.pdf) |
     [HTML](https://github.com/gmt-china/GMT_docs/releases/download/5.3.3/GMT_docs.zip)

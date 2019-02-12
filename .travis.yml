@@ -4,7 +4,7 @@ install:
   - curl -L https://raw.githubusercontent.com/seisman/install/master/install-hugo.sh | bash
 
 script:
-  - ./hugo --minify
+  - ./hugo
 
 deploy:
   provider: pages

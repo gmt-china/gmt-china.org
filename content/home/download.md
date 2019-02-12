@@ -14,25 +14,43 @@ weight = 20
 
 +++
 
-<i class="fab fa-windows fa-2x"></i>
+<div class="row featurette">
+  <div class="col-12 col-sm-4">
+    <div class="featurette-icon"><i class="fab fa-windows"></i></div>
+    <h3>Windows</h3>
+    <p><strong>GMT 5.4.5</strong>:
+    <a href="http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.4.5-win32.exe" target="_blank">32位</a> |
+    <a href="http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.4.5-win64.exe" target="_blank">64位</a>
+    <br>
+    <strong>ghostscript</strong>:
+    <a href="https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs922/gs922w32.exe" target="_blank">32位</a> |
+    <a href="https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs922/gs922w64.exe" target="_blank">64位</a>
+    <br>
+    <strong>gsview</strong>:
+    <a href="http://www.ghostgum.com.au/download/gsv50w32.exe" target="_blank">32位</a> |
+    <a href="http://www.ghostgum.com.au/download/gsv50w64.exe" target="_blank">64位</a>
+    <br>
+    <strong>UnixTools</strong>:
+    <a href="/data/UnixTools.zip">UnixTools.zip</a></p>
+  </div>
 
-- **GMT 5.4.5 安装包**：
-    [32位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.4.5-win32.exe) |
-    [64位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.4.5-win64.exe)
-- **ghostscript安装包**：
-    [32位](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs922/gs922w32.exe) |
-    [64位](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs922/gs922w64.exe)
-- **gsview安装包**：
-    [32位](http://www.ghostgum.com.au/download/gsv50w32.exe) |
-    [64位](http://www.ghostgum.com.au/download/gsv50w64.exe)
-- **UnixTools**：[UnixTools.zip](/data/UnixTools.zip)
+  <div class="col-12 col-sm-4">
+    <div class="featurette-icon"><i class="fab fa-linux"></i></div>
+    <h3>Linux</h3>
+    <p><strong>GMT源码</strong>:
+    <a href="http://mirrors.ustc.edu.cn/gmt/gmt-5.4.5-src.tar.gz" target="_blank">GMT 5.4.5</a>
+    <br>
+    <strong>GSHHG数据</strong>:
+    <a href="http://mirrors.ustc.edu.cn/gmt/gshhg-gmt-2.3.7.tar.gz" target="_blank">GSHHG 2.3.7</a>
+    <br>
+    <strong>DCW数据</strong>:
+    <a href="http://mirrors.ustc.edu.cn/gmt/dcw-gmt-1.1.4.tar.gz" target="_blank">DCW 1.1.4</a></p>
+    </div>
 
-<i class="fab fa-linux fa-2x"></i>
-
-- **GMT源码**： [GMT 5.4.5](http://mirrors.ustc.edu.cn/gmt/gmt-5.4.5-src.tar.gz)
-- **GSHHG数据**： [GSHHG 2.3.7](http://mirrors.ustc.edu.cn/gmt/gshhg-gmt-2.3.7.tar.gz)
-- **DCW数据**： [DCW 1.1.4](http://mirrors.ustc.edu.cn/gmt/dcw-gmt-1.1.4.tar.gz)
-
-<i class="fab fa-apple fa-2x"></i>
-
-- **GMT 安装包**： [5.4.5](http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.4.5-darwin-x86_64.dmg)
+  <div class="col-12 col-sm-4">
+    <div class="featurette-icon"><i class="fab fa-apple"></i></div>
+    <h3>macOS</h3>
+    <p><strong>GMT 安装包</strong>:
+    <a href="http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.4.5-darwin-x86_64.dmg" target="_blank">5.4.5</a></p>
+  </div>
+</div>

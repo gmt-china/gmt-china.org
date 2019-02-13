@@ -8,8 +8,11 @@
 ## 编译网站
 
 ```
-$ git clone https://github.com/gmt-china/gmt-china.org
+$ git clone --recursive https://github.com/gmt-china/gmt-china.org.git
 $ cd gmt-china.org
-$ git submodule update --init --remote
 $ hugo server
 ```
+
+## 加入我们
+
+参考 [贡献指南](CONTRIBUTIING.md)。

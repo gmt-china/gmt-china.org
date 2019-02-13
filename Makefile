@@ -1,4 +1,4 @@
 build:
-	hugo --minify
+	hugo
 clean:
 	-rm -r public/ resources

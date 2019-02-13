@@ -10,7 +10,7 @@ title = '<i class="fas fa-envelope"></i> 联系我们'
 subtitle = ""
 
 # Order that this section will appear in.
-weight = 100
+weight = 80
 
 +++
 

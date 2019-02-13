@@ -39,19 +39,14 @@
   weight = 7
 
 [[main]]
-  name = "关于"
-  url = "#about"
-  weight = 8
-
-[[main]]
-  name = "联系"
+  name = "联系我们"
   url = "#contact"
-  weight = 9
+  weight = 8
 
 [[main]]
   name = '<i class="fas fa-rss"></i>'
   url = "/index.xml"
-  weight = 10
+  weight = 9
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.

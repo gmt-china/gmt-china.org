@@ -16,4 +16,11 @@ weight = 3
   #overlay_filter = 0.5  # Darken the image. Value in range 0-1.
 +++
 
-欢迎访问 GMT 中文社区 <i class="fas fa-globe-asia"></i>
+欢迎访问 GMT 中文社区。
+
+## 社区目标
+
+- 为GMT中文用户提供优质的GMT学习资源
+- 组织社区成员协同维护GMT中文手册
+- 专注于GMT，保持小众的特色
+- 开展线下培训与聚餐等活动

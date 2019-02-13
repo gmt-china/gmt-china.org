@@ -14,15 +14,30 @@ weight = 30
 
 +++
 
-## [GMT中文手册](https://docs.gmt-china.org/)
+中文社区制作并维护了[GMT中文手册](https://docs.gmt-china.org/)。
 
-- v6.0.0：
-    [在线阅读](https://docs.gmt-china.org/6.0.0/)
-- v5.4.5：
-    [在线阅读](https://docs.gmt-china.org/5.4.5/)
-- v5.4.4：
-    [PDF](https://github.com/gmt-china/GMT_docs/releases/download/5.4.4/GMT_docs.pdf) |
-    [HTML](https://github.com/gmt-china/GMT_docs/releases/download/5.4.4/GMT_docs.zip)
-- v5.3.3：
-    [PDF](https://github.com/gmt-china/GMT_docs/releases/download/5.3.3/GMT_docs.pdf) |
-    [HTML](https://github.com/gmt-china/GMT_docs/releases/download/5.3.3/GMT_docs.zip)
+### 最新版本:
+
+<i class="fab fa-html5"></i>
+在线阅读:
+[v6.0.0](https://docs.gmt-china.org/6.0.0/) |
+[v5.4.5](https://docs.gmt-china.org/5.4.5/)
+<br>
+<i class="far fa-file-pdf"></i>
+PDF 下载:
+[v6.0.0](https://github.com/gmt-china/GMT_docs/raw/gh-pages/6.0.0/GMT_docs.pdf) |
+[v5.4.5](https://github.com/gmt-china/GMT_docs/raw/gh-pages/5.4.5/GMT_docs.pdf)
+
+### 历史版本:
+
+<i class="fas fa-history"></i>
+v5.4.4:
+[PDF](https://github.com/gmt-china/GMT_docs/releases/download/5.4.4/GMT_docs.pdf) |
+[HTML](https://github.com/gmt-china/GMT_docs/releases/download/5.4.4/GMT_docs.zip)
+<br>
+<i class="fas fa-history"></i>
+v5.3.3:
+[PDF](https://github.com/gmt-china/GMT_docs/releases/download/5.3.3/GMT_docs.pdf) |
+[HTML](https://github.com/gmt-china/GMT_docs/releases/download/5.3.3/GMT_docs.zip)
+
+更多历史版本见 [GitHub Release页面](https://github.com/gmt-china/GMT_docs/releases)。

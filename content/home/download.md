@@ -38,19 +38,19 @@ weight = 20
     <div class="featurette-icon"><i class="fab fa-linux"></i></div>
     <h3>Linux</h3>
     <p><strong>GMT源码</strong>:
-    <a href="http://mirrors.ustc.edu.cn/gmt/gmt-5.4.5-src.tar.gz" target="_blank">GMT 5.4.5</a>
+    <a href="http://mirrors.ustc.edu.cn/gmt/gmt-5.4.5-src.tar.gz" target="_blank">v5.4.5</a>
     <br>
     <strong>GSHHG数据</strong>:
-    <a href="http://mirrors.ustc.edu.cn/gmt/gshhg-gmt-2.3.7.tar.gz" target="_blank">GSHHG 2.3.7</a>
+    <a href="http://mirrors.ustc.edu.cn/gmt/gshhg-gmt-2.3.7.tar.gz" target="_blank">v2.3.7</a>
     <br>
     <strong>DCW数据</strong>:
-    <a href="http://mirrors.ustc.edu.cn/gmt/dcw-gmt-1.1.4.tar.gz" target="_blank">DCW 1.1.4</a></p>
-    </div>
+    <a href="http://mirrors.ustc.edu.cn/gmt/dcw-gmt-1.1.4.tar.gz" target="_blank">v1.1.4</a></p>
+  </div>
 
   <div class="col-12 col-sm-4">
     <div class="featurette-icon"><i class="fab fa-apple"></i></div>
     <h3>macOS</h3>
     <p><strong>GMT安装包</strong>:
-    <a href="http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.4.5-darwin-x86_64.dmg" target="_blank">5.4.5</a></p>
+    <a href="http://mirrors.ustc.edu.cn/gmt/bin/gmt-5.4.5-darwin-x86_64.dmg" target="_blank">v5.4.5</a></p>
   </div>
 </div>

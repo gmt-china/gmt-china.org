@@ -19,7 +19,7 @@ weight = 3
 
 {{% row %}}
 
-{{% col 6 %}}
+{{% col "col-md-6" %}}
 **欢迎访问GMT中文社区**。
 
 ## 社区目标
@@ -29,7 +29,7 @@ weight = 3
 - 专注于GMT，保持小众的特色
 - 开展线下培训与聚餐等活动
 {{% /col %}}
-{{% col 6 %}}
+{{% col "col-md-6" %}}
 <a href="http://gmt.soest.hawaii.edu/" target="_blank">
   {{< figure src="/img/GMT_logo.png" >}}
 </a>

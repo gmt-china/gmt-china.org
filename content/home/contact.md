@@ -15,14 +15,14 @@ weight = 80
 +++
 
 {{% row %}}
-{{% col 5 %}}
+{{% col "col-md-5" %}}
 GMT中文社区QQ群：
 
 <i class="fab fa-qq"></i> 二群：791856541
 <br>
 <i class="fab fa-qq"></i> 一群：218905582 (已满)
 {{% /col %}}
-{{% col 3 %}}
+{{% col "col-md-3" %}}
 {{< figure src="/img/QQ-group2.jpg" width="100px">}}
 {{% /col %}}
 {{% /row %}}

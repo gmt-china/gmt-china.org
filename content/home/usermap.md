@@ -17,4 +17,4 @@ weight = 80
 如果想将自己所在单位添加到用户分布图中，请将“城市+单位+经纬度信息”发送至
 <i class="fas fa-envelope"></i> [admin@gmt-china.org](mailto:admin@gmt-china.org)。
 
-{{% google_map "gmt-chinese-users.json" %}}
+{{% google_map "user-map.json" %}}

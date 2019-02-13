@@ -4,7 +4,6 @@ widget = "hero"  # Do not modify this line!
 active = true  # Activate this widget? true/false
 
 title = ""
-#title = "**G**eneric **M**apping **T**ools"
 
 # Order that this section will appear in.
 weight = 3
@@ -20,18 +19,17 @@ weight = 3
 {{% row %}}
 
 {{% col "col-md-6" %}}
-**欢迎访问GMT中文社区**。
+[![GMT logo](/img/GMT_logo.png)](http://gmt.soest.hawaii.edu/)
+{{% /col %}}
+
+{{% col "col-md-6" %}}
+**欢迎访问GMT中文社区 <i class="fas fa-globe-asia"></i>**
 
 ## 社区目标
 
-- 为GMT中文用户提供优质的GMT学习资源
 - 组织社区成员协同维护GMT中文手册
-- 专注于GMT，保持小众的特色
+- 为GMT中文用户提供优质的GMT学习资源
 - 开展线下培训与聚餐等活动
 {{% /col %}}
-{{% col "col-md-6" %}}
-<a href="http://gmt.soest.hawaii.edu/" target="_blank">
-  {{< figure src="/img/GMT_logo.png" >}}
-</a>
-{{% /col %}}
+
 {{% /row %}}

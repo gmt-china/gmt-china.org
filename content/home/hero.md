@@ -30,6 +30,8 @@ weight = 3
 - 开展线下培训与聚餐等活动
 {{% /col %}}
 {{% col 6 %}}
-{{< figure src="/img/GMT_logo.png" >}}
+<a href="http://gmt.soest.hawaii.edu/" target="_blank">
+  {{< figure src="/img/GMT_logo.png" >}}
+</a>
 {{% /col %}}
 {{% /row %}}

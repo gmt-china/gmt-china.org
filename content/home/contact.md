@@ -10,7 +10,7 @@ title = '<i class="fas fa-envelope"></i> 联系我们'
 subtitle = ""
 
 # Order that this section will appear in.
-weight = 80
+weight = 90
 
 +++
 
@@ -34,3 +34,5 @@ GMT中文社区QQ群：
 GitHub：
 
 <i class="fab fa-github"></i> [@gmt-china](https://github.com/gmt-china)
+
+

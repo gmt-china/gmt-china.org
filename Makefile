@@ -1,4 +1,4 @@
 build:
 	hugo
 clean:
-	-rm -r public/ resources
+	-rm -r public/ resources/

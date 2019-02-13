@@ -1,3 +1,3 @@
-<div class="row">
+<div class="row {{ with .Get 0 }} {{ . }} {{ end }}">
 {{ .Inner }}
 </div>

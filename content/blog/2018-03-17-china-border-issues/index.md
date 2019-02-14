@@ -28,15 +28,14 @@ authors:
 
 ## GMT自带中国国界的问题
 
-GMT自带了两套与中国国界相关的数据：
+目前已知的几套国界数据包括：
 
-- GSHHG：全球海岸线、国界、部分省/州界数据
-- DCW：全球行政区划数据，包含洲界、国界、省界
+- [GMT自带的GSHHG数据](https://docs.gmt-china.org/latest/dataset/gshhg/)：全球海岸线、国界、部分省/州界数据
+- [GMT自带的DCW数据](https://docs.gmt-china.org/latest/dataset/dcw/)：全球行政区划数据，包含洲界、国界、省界
+- [GADM数据](https://docs.gmt-china.org/latest/dataset/gadm/)
+- 社区提供的一套[相对准确的国界、省界数据](/example/ex003)
 
-社区也提供了一套相对准确的国界、省界数据，见 [示例三](/example/ex003)。
-
-下面的脚本同时绘制了三套中国国界数据以进行对比。由于GSHHG国界与DCW国界几乎相同，
-所以这里只绘制了DCW和社区提供的国界作为对比。
+下面的脚本绘制了DCW数据和社区提供的国界数据进行对比。
 
 绘图脚本：
 

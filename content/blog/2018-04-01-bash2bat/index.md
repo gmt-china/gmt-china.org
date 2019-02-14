@@ -1,14 +1,14 @@
 ---
-title: "如何将 bash 脚本改成 bat 脚本"
+title: "将 Bash 脚本改成 Bat 脚本"
 date: 2018-04-01
 type: post
+authors:
+    - 赵志远
 categories:
     - GMT技巧
 tags:
-    - bash
-    - bat
-authors:
-    - 赵志远
+    - Windows
+    - Linux
 ---
 
 社区提供的 GMT 绘图脚本多是基于 Linux 下的 bash 脚本，有相当一部分用户并不熟悉
@@ -23,8 +23,9 @@ bash，因此有必要介绍如何将 bash 脚本改成 Windows 下可用的 bat
 3. 引用变量： `$PS` => `%PS%`
 4. 删除文件： `rm gmt.*` => `del gmt.*`
 
-使用 Notepad++ 编辑器编辑脚本可以很简单地利用 `Ctrl+F` 进行搜索替换。
-比如搜索 `#` 并全部替换为 `rem ` ，搜索 `$PS` `$R` `$J` 分别替换为 `%PS%` `%R%` `%J%` 。
+使用编辑器搜索替换功能可以很方便地实现转换。
+比如搜索 `#` 并全部替换为 `rem `，搜索 `$PS`、`$R`、`$J`
+分别替换为 `%PS%`、`%R%`、`%J%`。
 
 当然还有一些比较复杂的语句就需要你对 bat 脚本语言比较熟悉。
 
@@ -41,6 +42,7 @@ gmt makecpt -Crainbow $T1 > 1.cpt
 rem 方法1
 for /f %%i in ('gmt grdinfo world6m.grd -T1000') do set T1=%%i
 gmt makecpt -Crainbow %T1% > 1.cpt
+
 rem 方法2
 gmt grdinfo world6m.grd -T1000 > tmp.txt
 set /p T1=<tmp.txt
@@ -67,7 +69,8 @@ echo 114.50 37.60 >> tmp
 gmt psxy tmp -R -J -Sc0.5c -Gred -W0.5p,black -O -K >> %PS%
 ```
 
-最后，如果脚本中出现了 grep、cut、wc、cat 等命令，可以下载社区提供的 UnixTools
+最后，如果脚本中出现了 grep、cut、wc、cat 等命令，可以下载社区提供的
+[UnixTools](/blog/unix-tools-for-windows/)
 工具包并解压缩到 GMT 安装路径的 bin 目录下，需要注意的是 bash 脚本中的 awk
 需要更改为 gawk，同时单引号需要改为双引号。
 

@@ -3,13 +3,13 @@ title: "Windows 下可用的 Unix 工具"
 date: 2016-10-29
 type: post
 summary: 我们为Windows用户提供了常用的Unix小工具。
+authors:
+    - SeisPider
 categories:
     - GMT工具
 tags:
     - Linux
     - Windows
-authors:
-    - SeisPider
 ---
 
 <i class="fas fa-download"></i> [UnixTools.zip](/datas/UnixTools.zip)

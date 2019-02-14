@@ -19,8 +19,10 @@ GDAL/OGR 是一个地理空间数据的格式转换及处理工具。
 
 GDAL/OGR 的核心分成两个部分：
 
-- GDAL部分可以实现142种光栅数据格式间的互相转换，比如常见的 netCDF、GeoTiff、HDF5、XYZ 等，详见 [GDAL光栅格式列表](http://www.gdal.org/formats_list.html)
-- OGR部分可以实现84种矢量数据格式间的互相转换，比如常见的 Shapefile、GMT、KML、MapInfo、Excel 等，详见 [OGR矢量格式列表](http://www.gdal.org/ogr_formats.html)
+-   GDAL部分可以实现142种光栅/网格数据格式间的互相转换，比如常见的
+    netCDF、GeoTiff、HDF5、XYZ 等，详见 [GDAL光栅格式列表](http://www.gdal.org/formats_list.html)
+-   OGR部分可以实现84种矢量数据格式间的互相转换，比如常见的
+    Shapefile、GMT、KML、MapInfo、Excel 等，详见 [OGR矢量格式列表](http://www.gdal.org/ogr_formats.html)
 
 ## 安装
 
@@ -44,17 +46,22 @@ Ubuntu/Debian 用户:
 
     brew install gdal --with-complete
 
-非 homebrew 用户也可以到 [William Kyngesburye 的网站](http://www.kyngchaos.com/software/frameworks) 下载 dmg 安装包。
+非 homebrew 用户也可以到 [William Kyngesburye 的网站](http://www.kyngchaos.com/software/frameworks)
+下载 dmg 安装包。
 
 ### Windows 用户
 
-Windows 用户可以通过安装 [OSGeo4W](https://trac.osgeo.org/osgeo4w/) 来使用其提供的 GDAL。安装及使用方式如下：
+Windows 用户可以通过安装 [OSGeo4W](https://trac.osgeo.org/osgeo4w/) 来使用
+其提供的 GDAL。安装及使用方式如下：
 
-1. 到 OSGeo4W 官方网站下载 [32位](http://download.osgeo.org/osgeo4w/osgeo4w-setup-x86.exe) 或 [64位](http://download.osgeo.org/osgeo4w/osgeo4w-setup-x86_64.exe) 安装包
-2. 双击=>“Express Desktop Install”=>选择下载地址=>只勾选GDAL=>等待下载安装完成（有经验的用户也可以选择“Advanced Install”以自定义安装）
-3. 安装完成会在桌面生成一个名为OSGeo4W的文件夹，双击文件夹内的快捷链接即可打开一个命令行窗口
-4. 命令行窗口中输入 `ogr2ogr --version` 以确认可以正常使用
-5. 如果只是偶尔使用，建议按照如上方式运行；如果是经常使用，可以将 `C:\OSGeo4W64\bin` 添加到 环境变量 PATH 中
+1.  到 OSGeo4W 官方网站下载 [32位](http://download.osgeo.org/osgeo4w/osgeo4w-setup-x86.exe)
+    或 [64位](http://download.osgeo.org/osgeo4w/osgeo4w-setup-x86_64.exe) 安装包
+2.  双击=>“Express Desktop Install”=>选择下载地址=>只勾选GDAL=>等待下载安装完成
+   （有经验的用户也可以选择“Advanced Install”以自定义安装）
+3.  安装完成会在桌面生成一个名为OSGeo4W的文件夹，双击文件夹内的快捷链接即可打开一个命令行窗口
+4.  命令行窗口中输入 `ogr2ogr --version` 以确认可以正常使用
+5.  如果只是偶尔使用，建议按照如上方式运行；如果是经常使用，可以将 `C:\OSGeo4W64\bin`
+    添加到 环境变量 PATH 中
 
 如果由于某些原因无法使用 OSGeo4W，下面两个软件包中也附带了 GDAL 工具：
 
@@ -63,7 +70,13 @@ Windows 用户可以通过安装 [OSGeo4W](https://trac.osgeo.org/osgeo4w/) 来�
 
 ## 使用
 
-GDAL/OGR 提供了几十个工具，每个工具用法也很丰富。此处只介绍常见工具的简单用法，详细用法请参考 [GDAL工具列表](http://www.gdal.org/gdal_utilities.html) 和 [OGR工具列表](http://www.gdal.org/ogr_utilities.html)。
+GDAL/OGR 提供了几十个工具，每个工具用法也很丰富。此处只介绍常见工具的简单用法，
+详细用法请参考 [GDAL工具列表](http://www.gdal.org/gdal_utilities.html) 和
+[OGR工具列表](http://www.gdal.org/ogr_utilities.html)。
+
+{{% alert note %}}
+以下用法仅在GDAL 2.4.0下测试通过，其他版本的用法可能略有不同。
+{{% /alert %}}
 
 ### ogr2ogr
 
@@ -75,9 +88,9 @@ GDAL/OGR 提供了几十个工具，每个工具用法也很丰富。此处只�
 
 将 Shapefile 格式的数据转换为 GMT 所需要的格式:
 
-    $ ogr2ogr -f GMT CHN_adm0.gmt CHN_adm0.shp
+    $ ogr2ogr -f OGR_GMT CHN_adm0.gmt CHN_adm0.shp
 
-其中， `-f GMT` 表示将输入数据转换为 GMT 格式。
+其中，`-f OGR_GMT` 表示将输入数据转换为 GMT 格式。
 
 ### gdal_translate
 
@@ -86,7 +99,6 @@ GDAL/OGR 提供了几十个工具，每个工具用法也很丰富。此处只�
 查看 `gdal_translate` 支持哪些格式:
 
     $ gdal_translate --formats
-
 
 将 GeoTiff 数据转换为 GMT 所使用的 netCDF 格式:
 

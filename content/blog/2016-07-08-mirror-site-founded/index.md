@@ -6,7 +6,7 @@ summary: "GMT国内镜像正式建成"
 authors:
   - eyou
 categories:
-  - 新闻动态
+  - 社区动态
 tags:
   - 镜像
 ---

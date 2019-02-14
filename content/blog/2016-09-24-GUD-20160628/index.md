@@ -5,10 +5,9 @@ type: post
 authors:
     - 王亮
 categories:
-    - 新闻动态
+    - 社区动态
 tags:
     - GMT User Dinner
-
 image:
     preview_only: true
 ---

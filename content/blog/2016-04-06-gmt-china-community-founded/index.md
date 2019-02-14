@@ -7,7 +7,7 @@ summary: GMT中文社区于今日正式成立了！
 authors:
   - seisman
 categories:
-  - 新闻动态
+  - 社区动态
 ---
 
 GMT的中文用户们，大家好，我是 [seisman](https://seisman.info) 。

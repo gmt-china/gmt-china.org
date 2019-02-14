@@ -5,7 +5,7 @@ type: post
 authors:
     - 罗娜
 categories:
-    - 新闻动态
+    - 社区动态
 tags:
     - 培训
 image:

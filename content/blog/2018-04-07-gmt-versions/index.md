@@ -1,5 +1,5 @@
 ---
-title: "GMT6 要来啦: GMT 各版本间的差异"
+title: "GMT 各大版本间的差异"
 date: 2018-04-07
 type: post
 summary: "GMT4、GMT5以及即将发布的GMT6之间在用法上有什么区别? 我该使用哪一个?"
@@ -17,17 +17,15 @@ GMT 目前存在如下几个大版本:
 
 除此之外，GMT 还为其他常用的编程语言提供了方便的接口：
 
-- [gmtmex](https://github.com/GenericMappingTools/gmtmex)：GMT 的 matlab 接口，基于 GMT5
-- [GMT.jl](https://github.com/GenericMappingTools/GMT.jl)：GMT 的 Julia 接口，基于 GMT5
-- [gmt-python](https://github.com/GenericMappingTools/gmt-python)：GMT 的 Python 接口，基于 GMT6
+- [gmtmex](https://github.com/GenericMappingTools/gmtmex)：GMT 的 matlab 接口，支持GMT5和GMT6
+- [GMT.jl](https://github.com/GenericMappingTools/GMT.jl)：GMT 的 Julia 接口，支持GMT5和GMT6
+- [pygmt](https://github.com/GenericMappingTools/pygmt)：GMT 的 Python 接口，支持GMT6
 
 GMT6 虽然尚未发布，但其已经足够稳定，可以用于日常使用。最主要的是，GMT6 几乎
 完全兼容 GMT5 的语法，且提供了一种更为简洁易用的新写法。
 
 {{% alert info %}}
-对 GMT6 有兴趣的 Linux 用户，可以
-根据 [此文](https://docs.gmt-china.org/appendix/get-gmt-dev/) 获取 GMT6 开发版，
-并根据 [此文](https://docs.gmt-china.org/install/linux/) 即可编译安装并试用 GMT6。
+对 GMT6 有兴趣的 Linux 用户，可以根据 [此文](/blog/install-gmt6/) 安装GMT6的开发版本。
 {{% /alert %}}
 
 本文将通过绘制如下一张简单的图片来展示 GMT 不同版本在绘图脚本上的主要差异。
@@ -51,10 +49,10 @@ GMT6 虽然尚未发布，但其已经足够稳定，可以用于日常使用。
 -   所有 GMT 命令均以 `gmt` 开头，以避免与其他同名的命令冲突
 -   所有 GMT 参数进行了统一分类与命令，比如与文字相关的参数都名为 `FONT_xxx` 、
     与绘图相关的参数都名为 `MAP_xxx`
--   `-B` 选项可重复多次使用， `-BWSen+t` 用于设置整个底图的属性（标题、背景色等），
+-   `-B` 选项可重复多次使用，`-BWSen+t` 用于设置整个底图的属性（标题、背景色等），
     `-Bx` 和 `-By` 则分别设置 X 轴和 Y 轴的轴属性（刻度、标注、标签、单位、前缀等）。
     相比于 GMT4 而言，条理更加清晰
--   增加了颜色透明功能， `red@70` 表示70%透明的红色
+-   增加了颜色透明功能，`red@70` 表示70%透明的红色
 -   可以自动处理多段数据，不再需要 `-m` 选项
 -   绘制箭头的语法不同，新语法有更多的选项，可以得到更多种类的箭头
 -   比例尺语法有变化，即 `-L` 和 `-F` 选项，新语法看上去很复杂，但此语法将比例尺、
@@ -74,13 +72,13 @@ GMT6 相对于 GMT5 做了大量简化，列举如下：
 
 -   所有命令都不再需要 `-K` `-O`，也不需要使用 `>` 或 `>>` 重定向到 PS 文件，
     用户完全不需要意识到 PS 文件的存在
--   只要前面的命令使用过 `-J` 和 `-R` ，则后面的命令不再需要重复 `-J` `-R`
+-   只要前面的命令使用过 `-J` 和 `-R`，则后面的命令不再需要重复 `-J`、`-R`
 -   以 `gmt begin` 开始一张绘图，以 `gmt end` 结束一张绘图
 -   使用 `gmt begin` 时可以指定要生成的图片的文件名以及多种格式
 -   命令名有微调（虽然有变化，但旧命令依然可以使用！）
     -   以 `ps` 开头的命令均省略了 `ps`，比如 `psbasemap` 变成 `basemap`、
         `pscoast` 变成 `coast`
-    -   几个特例： `psxy` 变成 `plot`， `psscale` 变成 `colorbar`
+    -   几个特例： `psxy` 变成 `plot`，`psscale` 变成 `colorbar`
 -   执行 `gmt end` 时自动根据 `gmt begin` 中的设置生成多种格式的图片
 -   不再需要手动清理 `gmt.conf` 和 `gmt.history` 等临时文件
 

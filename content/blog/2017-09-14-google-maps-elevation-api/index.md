@@ -14,7 +14,7 @@ authors:
 在绘制超小区域的地形图时，常需要超高精度的高程数据。
 
 目前已知的公开高程数据中，ASTER GDEM的精度最高，为1弧秒，即约30米一个数据点。
-研究者可以通过 Google Maps Elevation API 获取米级精度的数据。
+可以通过 Google Maps Elevation API 获取米级精度的数据。
 
 ## 数据简介
 
@@ -29,9 +29,8 @@ Google Maps Elevation API 提供地球表面所有位置的海拔高度数据，
 ## 获取密钥 API KEY
 
 想要从Google Maps中获取地形数据，首先需要一个密钥。
-
-1. 访问 [入门指南](https://developers.google.com/maps/documentation/elevation/start?hl=zh-cn) 页面
-2. 点击右上角的“获取密钥”按钮（你可能需要翻墙才能获取密钥）
+可以从 [get API key](https://developers.google.com/maps/documentation/elevation/get-api-key)
+页面开始申请秘钥（需要提供信用卡等信息）。
 
 限额说明：
 
@@ -85,13 +84,14 @@ https://maps.googleapis.com/maps/api/elevation/json?locations=39.7391536,-104.98
 
 ### 批量获取高程
 
-Google Maps 提供了多种客户端以实现批量获取高程。此处以[Python客户端](https://github.com/googlemaps/google-maps-services-python/) 为例。
+Google Maps 提供了多种客户端以实现批量获取高程。
+此处以[Python客户端](https://github.com/googlemaps/google-maps-services-python/) 为例。
 
 1. 安装 Google Map API 的 Python模块:
 
         $ pip install -U googlemaps
 
-2. 获取免费密钥
+2. 获取密钥
 3. 参考如下脚本批量获取高程数据
 
 ``` python

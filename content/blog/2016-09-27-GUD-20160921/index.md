@@ -4,7 +4,7 @@ date: 2016-09-27
 type: post
 summary: GMT中文社区在湖北武汉组织了第二次线下聚餐。
 categories:
-    - 新闻动态
+    - 社区动态
 tags:
     - GMT User Dinner
 authors:

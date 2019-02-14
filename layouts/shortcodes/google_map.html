@@ -21,7 +21,7 @@ function initMap() {
     // popup InfoWindow when click markers
     var infowindow = new google.maps.InfoWindow();
     map.data.addListener('click', function(event) {
-        var popInfo = "<b>" + event.feature.getProperty("city") + "</b><br />" + event.feature.getProperty("name");
+        var popInfo = "<b>" + event.feature.getProperty("name") + "</b><br/>" + event.feature.getProperty("city");
         infowindow.setContent("<div class='popinfo'>"+popInfo+"</div>");
         infowindow.setPosition(event.feature.getGeometry().get());
         infowindow.setOptions({pixelOffset: new google.maps.Size(0,-30)});

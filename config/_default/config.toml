@@ -40,7 +40,8 @@ paginate = 10  # Number of items per page in paginated lists.
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
 ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$",
-               "toml2json.py", "user-map.toml", "author/default-avatar.jpg"]
+               "toml2json.py", "user-map.toml", "author/default-avatar.jpg",
+               "\\.ps$", "\\.eps$", "gmt.history", "gmt.conf"]
 preserveTaxonomyNames = true
 
 [outputs]

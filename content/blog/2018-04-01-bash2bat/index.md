@@ -14,6 +14,8 @@ authors:
 社区提供的 GMT 绘图脚本多是基于 Linux 下的 bash 脚本，有相当一部分用户并不熟悉
 bash，因此有必要介绍如何将 bash 脚本改成 Windows 下可用的 bat 脚本。
 
+<!--more-->
+
 简单来说，将 bash 脚本改成 bat 脚本需要注意以下几点：
 
 1. 注释符号： `#` => `rem`

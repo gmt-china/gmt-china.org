@@ -2,6 +2,7 @@
 title: "一些实用的自定义符号"
 date: 2018-01-03
 type: post
+summary: 我们提供了可用于GMT的自定义符号
 categories:
     - GMT技巧
 tags:

@@ -2,6 +2,7 @@
 title: GMT自带中国国界问题
 date: 2018-03-17
 type: post
+summary: GMT国界与正确国界之间的区别与差异
 categories:
     - 地学数据
 authors:

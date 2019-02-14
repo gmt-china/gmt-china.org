@@ -2,6 +2,7 @@
 title: 利用 Google Maps 获取超高精度高程数据
 date: 2017-09-14
 type: post
+summary: 如何获得米级精度的高程数据?
 categories:
     - 科研工具
 tags:

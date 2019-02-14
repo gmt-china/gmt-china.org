@@ -2,6 +2,7 @@
 title: "GDAL/OGR: 地理空间数据格式转换神器"
 date: 2016-11-17
 type: post
+summary: 介绍GDAL/OGR的功能及其用法
 authors:
     - seisman
 categories:

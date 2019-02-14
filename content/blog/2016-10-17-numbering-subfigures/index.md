@@ -2,6 +2,7 @@
 title: 为子图添加编号
 date: 2016-10-17
 type: post
+summary: 介绍如何为子图添加编号的技巧
 categories:
     - GMT技巧
 authors:

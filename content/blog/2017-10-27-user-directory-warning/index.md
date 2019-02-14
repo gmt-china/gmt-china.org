@@ -1,7 +1,8 @@
 ---
-title: GMT 5 在 Windows 下提示无法创建用户目录的解决办法
+title: GMT5 在 Windows 下提示无法创建用户目录的解决办法
 date: 2017-10-27
 type: post
+summary: 如何解决“无法创建用户目录”的问题?
 categories:
     - GMT技巧
 authors:

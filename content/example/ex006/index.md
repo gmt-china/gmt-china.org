@@ -22,6 +22,6 @@ GMT 的 `psxy` 模块本身并不支持绘制铁路线。为了实现绘制铁�
 先是长度为 `8p` 的白线，然后是长度为 `8p` 的空白。由于线段的空白段是透明的，
 所以会把第一次画的黑色线段露出来，最终实现了铁轨线的效果。
 
-{{< include-code "CN-Railways.sh" bash >}}
+{{< gmt-code "CN-Railways" >}}
 
 {{< figure src="/example/ex006/CN-Railways.png" title="中国铁路线" >}}

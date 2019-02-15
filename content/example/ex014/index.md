@@ -38,4 +38,4 @@ commands:
 
 bash绘图脚本如下，也提供了等效的 [bat脚本](/example/ex014/profile.bat)：
 
-{{< include-code "profile.sh" bash >}}
+{{< gmt-code "profile" >}}

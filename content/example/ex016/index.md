@@ -38,7 +38,7 @@ commands:
 
 bash绘图脚本(gmt5.4.2)如下，也提供了等效的 [bat脚本](/example/ex016/BLOCK.bat)：
 
-{{< include-code "BLOCK.sh" bash >}}
+{{< gmt-code "BLOCK" >}}
 
 ## 参考文献
 

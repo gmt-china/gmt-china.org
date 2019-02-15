@@ -19,7 +19,7 @@ GMT 内置自定义符号如下所示：
 
 绘制自定义符号脚本如下：
 
-{{< include-code "plot_def.sh" bash >}}
+{{< gmt-code "plot_def" >}}
 
 绘图效果如下：
 

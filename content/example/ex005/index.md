@@ -19,6 +19,6 @@ images:
 
 本文提供了中国地震区划数据。
 
-{{< include-code "CN-EQRegion.sh" bash >}}
+{{< gmt-code "CN-EQRegion" >}}
 
 {{< figure src="/example/ex005/CN-EQRegion.png" title="中国地震区域划分" >}}

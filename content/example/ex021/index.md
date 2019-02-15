@@ -28,7 +28,7 @@ commands:
 要实现这个思路的关键在于绘制 1 弧秒数据的时候，怎样才能只覆盖陆地部分，而保留海洋部分。
 实现方法是：gmt 的 pscoast 模块提供了一个 clip 的功能，实现用海岸线进行裁剪。具体请看代码中的注释:
 
-{{< include-code "hawaii.sh" bash >}}
+{{< gmt-code "hawaii" >}}
 
 绘图效果如下:
 

@@ -22,6 +22,6 @@ commands:
 [gps_continuous.txt](/example/ex015/gps_continuous.txt): Velocities of continuous stations with respective to EURASIA plate from 1999-2014
 {{% /alert %}}
 
-{{< include-code "gps.sh" bash >}}
+{{< gmt-code "gps" >}}
 
 {{< figure src="/example/ex015/gps.png" title="GPS速度场" >}}

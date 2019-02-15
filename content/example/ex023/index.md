@@ -22,7 +22,7 @@ commands:
 gmt 的 psbasemap 模块可以实现这一个需求。
 绘图脚本：
 
-{{< include-code "draw-inset-map.sh" bash >}}
+{{< gmt-code "draw-inset-map" >}}
 
 绘图效果如下:
 

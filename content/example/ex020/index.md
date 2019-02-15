@@ -21,7 +21,7 @@ commands:
 
 Bash 绘图脚本如下:
 
-{{< include-code "draw-model.sh" bash >}}
+{{< gmt-code "draw-model" >}}
 
 绘图效果如下:
 

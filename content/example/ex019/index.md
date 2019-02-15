@@ -22,7 +22,7 @@ commands:
 
 Bash 绘图脚本如下:
 
-{{< include-code "profile.sh" bash >}}
+{{< gmt-code "profile" >}}
 
 绘图效果如下:
 

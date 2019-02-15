@@ -29,7 +29,7 @@ commands:
 
 psternary 模块可以实现三角框架和数据投点，代码如下：
 
-{{< include-code "ternary.sh" bash >}}
+{{< gmt-code "ternary" >}}
 
 绘图效果如下:
 

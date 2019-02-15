@@ -33,12 +33,12 @@ commands:
 
 ## -JD 等距圆锥投影
 
-{{< include-code "CN-border-JD.sh" bash >}}
+{{< gmt-code "CN-border-JD" >}}
 {{< figure src="/example/ex003/CN-border-JD.png" title="中国地图" >}}
 
 ## -JM 墨卡托投影
 
-{{< include-code "CN-border-JM.sh" bash >}}
+{{< gmt-code "CN-border-JM" >}}
 {{< figure src="/example/ex003/CN-border-JM.png" title="中国地图" >}}
 
 ## 更新历史

@@ -23,7 +23,7 @@ commands:
 
 绘图脚本如下：
 
-{{< include-code "plot-earth-discontinuities.sh" bash >}}
+{{< gmt-code "earth-discontinuities" >}}
 
 脚本中使用了五个 `psbasemap` 命令分别绘制五个界面。
 

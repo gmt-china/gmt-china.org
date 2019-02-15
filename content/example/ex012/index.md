@@ -23,4 +23,4 @@ M-T图表示地震随时间发展的数量密度和震级大小。M-T图的横�
 
 绘图脚本如下：
 
-{{< include-code "plot-mt.sh" bash >}}
+{{< gmt-code "plot-mt" >}}

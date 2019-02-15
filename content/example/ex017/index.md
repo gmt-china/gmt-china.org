@@ -21,7 +21,7 @@ commands:
 
 Bash 绘图脚本如下:
 
-{{< include-code "subslab.sh" bash >}}
+{{< gmt-code "subslab" >}}
 
 绘图效果如下:
 

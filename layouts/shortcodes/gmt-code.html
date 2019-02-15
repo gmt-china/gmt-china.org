@@ -8,7 +8,7 @@
   {{ $version := index (split .Name ".") 1 }}
   {{ $language := index (split .Name ".") 2 }}
   <li class="nav-item">
-    <a class="gmt-code-tab {{ cond (eq $index 0) "active" "" }}" data-toggle="tab" href="#{{$version}}_{{$language}}">{{ $version }}+{{ $language }} </a>
+      <a class="gmt-code-tab {{ cond (eq $index 0) "active" "" }}" data-toggle="tab" href="#{{ $filename }}_{{$version}}_{{$language}}">{{ $version }}+{{ $language }} </a>
   </li>
   {{ end }}
 </ul>
@@ -17,7 +17,7 @@
   {{ range $index, $element := $.Page.Resources.Match $file_pattern }}
   {{ $version := index (split .Name ".") 1 }}
   {{ $language := index (split .Name ".") 2 }}
-  <div class="tab-pane fade {{ cond (eq $index 0) "active show" "" }}" id="{{ $version }}_{{ $language }}">
+  <div class="tab-pane fade {{ cond (eq $index 0) "active show" "" }}" id="{{ $filename }}_{{ $version }}_{{ $language }}">
   {{ highlight (trim .Content "\n\r") $language "" }}
   </div>
   {{ end }}

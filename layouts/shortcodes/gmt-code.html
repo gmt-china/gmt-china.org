@@ -1,0 +1,24 @@
+<!-- Show GMT codes in tabs -->
+{{ $filename := (.Get 0) }}
+{{ $file_pattern := (printf "%s.GMT?.*" $filename) }}
+
+<ul class="nav nav-tabs">
+  <li class="nav-item gmt-code-tab disable"><i class="fas fa-code"></i> {{ $filename }}</li>
+  {{ range $index, $element := $.Page.Resources.Match $file_pattern }}
+  {{ $version := index (split .Name ".") 1 }}
+  {{ $language := index (split .Name ".") 2 }}
+  <li class="nav-item">
+    <a class="gmt-code-tab {{ cond (eq $index 0) "active" "" }}" data-toggle="tab" href="#{{$version}}_{{$language}}">{{ $version }}+{{ $language }} </a>
+  </li>
+  {{ end }}
+</ul>
+
+<div class="tab-content">
+  {{ range $index, $element := $.Page.Resources.Match $file_pattern }}
+  {{ $version := index (split .Name ".") 1 }}
+  {{ $language := index (split .Name ".") 2 }}
+  <div class="tab-pane fade {{ cond (eq $index 0) "active show" "" }}" id="{{ $version }}_{{ $language }}">
+  {{ highlight (trim .Content "\n\r") $language "" }}
+  </div>
+  {{ end }}
+</div>

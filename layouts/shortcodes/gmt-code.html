@@ -1,24 +1,32 @@
-<!-- Show GMT codes in tabs -->
+<!--
+Show GMT codes in tabs.
+Files are sorted by name desc, so that GMT6.sh is the first.
+-->
+
 {{ $filename := (.Get 0) }}
 {{ $file_pattern := (printf "%s.GMT?.*" $filename) }}
 
 <ul class="nav nav-tabs">
   <li class="nav-item gmt-code-tab disable"><i class="fas fa-code"></i> {{ $filename }}</li>
-  {{ range $index, $element := $.Page.Resources.Match $file_pattern }}
+  {{ with $.Page.Resources.Match $file_pattern }}
+  {{ range $index, $element := (sort . "Name" "desc") }}
   {{ $version := index (split .Name ".") 1 }}
   {{ $language := index (split .Name ".") 2 }}
   <li class="nav-item">
       <a class="gmt-code-tab {{ cond (eq $index 0) "active" "" }}" data-toggle="tab" href="#{{ $filename }}_{{$version}}_{{$language}}">{{ $version }}+{{ $language }} </a>
   </li>
   {{ end }}
+  {{ end }}
 </ul>
 
 <div class="tab-content">
-  {{ range $index, $element := $.Page.Resources.Match $file_pattern }}
+  {{ with $.Page.Resources.Match $file_pattern }}
+  {{ range $index, $element := (sort . "Name" "desc") }}
   {{ $version := index (split .Name ".") 1 }}
   {{ $language := index (split .Name ".") 2 }}
   <div class="tab-pane fade {{ cond (eq $index 0) "active show" "" }}" id="{{ $filename }}_{{ $version }}_{{ $language }}">
   {{ highlight (trim .Content "\n\r") $language "" }}
   </div>
+  {{ end }}
   {{ end }}
 </div>

@@ -35,8 +35,6 @@ commands:
 
 {{< figure src="/example/ex016/BLOCK.png" title="中国大陆及周边活动地块分布图" width="800px">}}
 
-bash绘图脚本(gmt5.4.2)如下，也提供了等效的 [bat脚本](/example/ex016/BLOCK.bat)：
-
 {{< gmt-code "BLOCK" >}}
 
 ## 参考文献

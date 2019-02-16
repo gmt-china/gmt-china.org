@@ -26,7 +26,7 @@ gmt 的 psbasemap 模块可以实现这一个需求。
 
 绘图效果如下:
 
-{{< figure src="draw-inset-map.png" title="东京湾" width="1000px">}}
+{{< figure src="/example/ex023/draw-inset-map.png" title="东京湾" width="1000px">}}
 
 psbasemap 就是在地图上绘制一个新底图（map inset box）。
 -D 选项就是指定新底图的位置，并输出新底图的位置信息，以便后续的命令能获得。

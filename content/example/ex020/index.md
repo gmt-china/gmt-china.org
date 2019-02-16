@@ -24,4 +24,4 @@ Bash 绘图脚本如下:
 
 绘图效果如下:
 
-{{< figure src="model.png" title="绘制速度模型" width="400px">}}
+{{< figure src="/example/ex020/model.png" title="绘制速度模型" width="400px">}}

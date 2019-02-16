@@ -31,4 +31,4 @@ commands:
 
 绘图效果如下:
 
-{{< figure src="hawaii.png" title="夏威夷檀香山" width="1000px">}}
+{{< figure src="/example/ex021/hawaii.png" title="夏威夷檀香山" width="1000px">}}

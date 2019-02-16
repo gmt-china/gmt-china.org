@@ -10,9 +10,9 @@ images:
     - CN-faults.png
 ---
 
-{{% alert info %}}
-数据下载：[CN-border-La.dat](/data/CN-border-La.dat) [CN-faults.dat](/data/CN-faults.dat)
-{{% /alert %}}
+<i class="fas fa-download"></i>
+[CN-border-La.dat](/data/CN-border-La.dat) |
+[CN-faults.dat](/data/CN-faults.dat)
 
 中国断层数据原始来源为邓起东院士等。
 

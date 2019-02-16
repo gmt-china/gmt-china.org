@@ -11,9 +11,8 @@ commands:
     - project
 ---
 
-{{% alert info %}}
-数据下载： [earthquakes.dat](/example/ex014/earthquakes.dat)
-{{% /alert %}}
+<i class="fas fa-download"></i>
+[earthquakes.dat](/example/ex014/earthquakes.dat)
 
 本文展示了如何绘制选定测线的地震剖面图。 `earthquakes.dat` 为地震数据文件，包含三列数据，分别是经度、纬度、深度。
 

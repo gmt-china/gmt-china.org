@@ -15,9 +15,9 @@ commands:
     - pslegend
 ---
 
-{{% alert info %}}
-数据下载：[eq.dat](/example/ex010/eq.dat) [earth_relief_01m.grd](http://mirrors.ustc.edu.cn/gmt/data/)
-{{% /alert %}}
+<i class="fas fa-download"></i>
+[eq.dat](/example/ex010/eq.dat) |
+[earth_relief_01m.grd](http://mirrors.ustc.edu.cn/gmt/data/)
 
 本文展示了如何绘制含中国大陆地区的地形图，同时也展示了如何通过 `awk`+`wc`+`cut` 对数据进行筛选计数，以及如何绘制简单的图例。
 

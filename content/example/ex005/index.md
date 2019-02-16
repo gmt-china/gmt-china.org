@@ -10,12 +10,11 @@ images:
     - CN-EQRegion.png
 ---
 
-{{% alert info %}}
-数据下载：[CN-border-La.dat](/data/CN-border-La.dat) [CN-EQRegion.dat](/data/CN-EQRegion.dat)
-[CN-EQRegion-name.dat](/data/CN-EQRegion-name.dat)
-[CN-EQSubRegion.dat](/data/CN-EQSubRegion.dat)
+<i class="fas fa-download"></i>
+[CN-border-La.dat](/data/CN-border-La.dat) [CN-EQRegion.dat](/data/CN-EQRegion.dat) |
+[CN-EQRegion-name.dat](/data/CN-EQRegion-name.dat) |
+[CN-EQSubRegion.dat](/data/CN-EQSubRegion.dat) |
 [CN-EQSubRegion-name.dat](/data/CN-EQSubRegion-name.dat)
-{{% /alert %}}
 
 本文提供了中国地震区划数据。
 

@@ -8,37 +8,37 @@ set PS=BLOCK.ps
 
 gmt psxy -R%R% -J%J% -T -K > %PS%
 
-REM ============µ×Í¼
+REM ============åº•å›¾
 gmt psbasemap -R%R% -J%J% -Bx10 -By5 -BNEWS -K -O >> %PS%
 gmt pscoast -R%R% -J%J% -Ggray95 -S83/216/238 -A5000 -Dh -K -O>> %PS%
 gmt psxy CN-border-L1.dat -R%R% -J%J% -W0.2p -Gwhite -O -K >> %PS%
 
-REM ============»æÖÆ°å¿é±ß½ç
+REM ============ç»˜åˆ¶æ¿å—è¾¹ç•Œ
 gmt psxy CN-plate-neighbor.dat -R%R% -J%J% -W2.0p,2/138/210 -Sf0.5+t+l -G2/138/210 -O -K >> %PS%
-REM ============»æÖÆÍÆ¶ÏµØ¿é±ß½ç
+REM ============ç»˜åˆ¶æŽ¨æ–­åœ°å—è¾¹ç•Œ
 gmt psxy CN-block-L1-deduced.dat -R%R% -J%J% -W1.0p,2/138/210,- -O -K >> %PS%
-REM ============»æÖÆ¶þ¼¶µØ¿é±ß½ç
+REM ============ç»˜åˆ¶äºŒçº§åœ°å—è¾¹ç•Œ
 gmt psxy CN-block-L2.dat -R%R% -J%J% -W1.0p,orange -O -K >> %PS%
-REM ============»æÖÆÒ»¼¶µØ¿é±ß½ç
+REM ============ç»˜åˆ¶ä¸€çº§åœ°å—è¾¹ç•Œ
 gmt psxy CN-block-L1.dat -R%R% -J%J% -W1.0p,2/138/210 -O -K >> %PS%
 
-REM ============»î¶¯µØ¿é±ê×¢
-echo 90 45 Î÷Óò»î¶¯µØ¿é > blockname
-echo 122 46 ¶«±±ÑÇ»î¶¯µØ¿é >> blockname
-echo 120 35 »ª±±»î¶¯µØ¿é >> blockname
-echo 110 27 »ªÄÏ»î¶¯µØ¿é >> blockname
-echo 90 33 Çà²Ø»î¶¯µØ¿é >> blockname
-echo 97 23 µáÃå»î¶¯µØ¿é >> blockname
+REM ============æ´»åŠ¨åœ°å—æ ‡æ³¨
+echo 90 45 è¥¿åŸŸæ´»åŠ¨åœ°å— > blockname
+echo 122 46 ä¸œåŒ—äºšæ´»åŠ¨åœ°å— >> blockname
+echo 120 35 åŽåŒ—æ´»åŠ¨åœ°å— >> blockname
+echo 110 27 åŽå—æ´»åŠ¨åœ°å— >> blockname
+echo 90 33 é’è—æ´»åŠ¨åœ°å— >> blockname
+echo 97 23 æ»‡ç¼…æ´»åŠ¨åœ°å— >> blockname
 gmt pstext blockname -R%R% -J%J% -F+f10p,37 -O -K >> %PS%
 
-REM ============±ß½çÍ¼Àý
-echo S 0.3i f0.5+t+l 0.4i/0.3c 2/138/210 2.0p,2/138/210 0.7i °å¿é±ß½ç > legend
-echo S 0.3i - 0.50i 2/138/210 1.0p,2/138/210 0.7i  Ò»¼¶µØ¿é±ß½ç >> legend
-echo S 0.3i - 0.44i - 1.0p,2/138/210,- 0.7i  ÍÆ¶ÏµØ¿é±ß½ç >> legend
-echo S 0.3i - 0.50i orange 1.0p,orange 0.7i ¶þ¼¶µØ¿é±ß½ç >> legend
+REM ============è¾¹ç•Œå›¾ä¾‹
+echo S 0.3i f0.5+t+l 0.4i/0.3c 2/138/210 2.0p,2/138/210 0.7i æ¿å—è¾¹ç•Œ > legend
+echo S 0.3i - 0.50i 2/138/210 1.0p,2/138/210 0.7i  ä¸€çº§åœ°å—è¾¹ç•Œ >> legend
+echo S 0.3i - 0.44i - 1.0p,2/138/210,- 0.7i  æŽ¨æ–­åœ°å—è¾¹ç•Œ >> legend
+echo S 0.3i - 0.50i orange 1.0p,orange 0.7i äºŒçº§åœ°å—è¾¹ç•Œ >> legend
 gmt pslegend legend -R%R% -J%J% -DjTL+w1.5i+jTL+o0.1c/0.1c -F+gwhite+p0.5p -O -K --FONT_ANNOT_PRIMARY=8p,37 >> %PS%
 
-REM ============ÄÏº£Öîµº
+REM ============å—æµ·è¯¸å²›
 gmt psbasemap -R%R% -J%J% -DjBR+w2c+t -K -O >> %PS%
 gmt pscoast -R106/121/3/24 -JM2c -Ggray95 -S83/216/238  -A5000 -Dh -K -O >> %PS%
 gmt psxy CN-border-L1.dat -R106/121/3/24 -JM2c -B0 -W0.2p -Gwhite -O -K >> %PS%

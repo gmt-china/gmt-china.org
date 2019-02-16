@@ -10,9 +10,9 @@ images:
     - CN-Railways.png
 ---
 
-{{% alert info %}}
-数据下载：[CN-border-La.dat](/data/CN-border-La.dat) [CN-Railways.dat](/data/CN-Railways.dat)
-{{% /alert %}}
+<i class="fas fa-download"></i>
+[CN-border-La.dat](/data/CN-border-La.dat) |
+[CN-Railways.dat](/data/CN-Railways.dat)
 
 铁路线数据来源于 MapSIS。
 

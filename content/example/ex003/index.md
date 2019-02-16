@@ -17,11 +17,10 @@ commands:
 
 由于 GMT 自带的国界线数据不符合中国领土主张，因而在绘制用于正式图件时用户需要自己准备国界数据。本文提供了笔者自己数字化的几个国界相关数据以及两个绘制中国地图的脚本。
 
-{{% alert info %}}
-数据下载： [CN-border-La.dat](/data/CN-border-La.dat)
-[CN-border-L1.dat](/data/CN-border-L1.dat)
+<i class="fas fa-download"></i>
+[CN-border-La.dat](/data/CN-border-La.dat) |
+[CN-border-L1.dat](/data/CN-border-L1.dat) |
 [ten-dash-line.dat](/data/ten-dash-line.dat)
-{{% /alert %}}
 
 {{% alert info %}}
 1.  无法保证国界数据完全准确或可通过地图审核；

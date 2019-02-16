@@ -10,12 +10,11 @@ commands:
     - psvelo
     - grdvector
 ---
-{{% alert info %}}
-示例数据:
-[速度矢量](/example/ex017/velo.gmt)
-[板块位置](/example/ex017/slab.gmt)
+
+<i class="fas fa-download"></i>
+[速度矢量](/example/ex017/velo.gmt) |
+[板块位置](/example/ex017/slab.gmt) |
 [应力张量](/example/ex017/stresstensor.gmt)
-{{% /alert %}}
 
 本文绘制了速度矢量和应力应变张量主轴
 

@@ -11,12 +11,11 @@ commands:
     - psxy
     - pslegend
 ---
-{{% alert info %}}
-示例数据:
+
+<i class="fas fa-download"></i>
 [震中位置数据](/example/ex019/event.loc.info) |
 [机制解数据](/example/ex019/beachballs.info) |
 [海拔数据](/example/ex019/elev.csv)
-{{% /alert %}}
 
 本文展示了如何同时绘制沿着垂直剖面的海拔变化图、地震分布及震源机制图。
 

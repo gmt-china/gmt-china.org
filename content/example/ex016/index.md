@@ -12,13 +12,12 @@ commands:
     - psxy
 ---
 
-{{% alert info %}}
-数据下载： [CN-plate-neighbor.dat](/example/ex016/CN-plate-neighbor.dat)
-[CN-block-L1.dat](/data/CN-block-L1.dat)
-[CN-block-L1-deduced.dat](/data/CN-block-L1-deduced.dat)
-[CN-block-L2.dat](/data/CN-block-L2.dat)
+<i class="fas fa-download"></i>
+[CN-plate-neighbor.dat](/example/ex016/CN-plate-neighbor.dat) |
+[CN-block-L1.dat](/data/CN-block-L1.dat) |
+[CN-block-L1-deduced.dat](/data/CN-block-L1-deduced.dat) |
+[CN-block-L2.dat](/data/CN-block-L2.dat) |
 [CN-border-L1.dat](/data/CN-border-L1.dat)
-{{% /alert %}}
 
 本文绘制了中国大陆及周边活动地块分布图。
 

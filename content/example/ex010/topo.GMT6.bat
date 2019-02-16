@@ -6,18 +6,17 @@ gmt grdgradient cutTopo.grd -Ne0.7 -A50 -GcutTopo_i.grd
 gmt grd2cpt cutTopo.grd -Cglobe -S-10000/10000/200 -Z -D>colorTopo.cpt
 
 gmt begin topo png
-REM ���Ƶ�ͼ
+REM 绘制底图
 gmt gmtset FORMAT_GEO_MAP=ddd:mm:ssF
 gmt basemap -R70/135/15/55 -JM7i -Bf5a10 -BWesN
 gmt grdimage cutTopo.grd -IcutTopo_i.grd -CcolorTopo.cpt -Q
 gmt coast -Dh -W1/0.2p -I1/0.25p -N1/0.5p
 
-REM ����colorbar
+REM 绘制colorbar
 gmt colorbar -DjCB+w7i/0.15i+o0/-0.5i+h -CcolorTopo.cpt -Bxa2000f400+l"Elevation/m" -G-8000/8000
 
-REM ���𼶻��Ƶ���
+REM 分震级绘制地震
 gawk "{if(($3>=5.0)&&($3<6.0)) print $1,$2,$3*0.04}" %eqfile% > tmp
-REM ͳ��5���������
 for /f "delims=:" %%a in ('findstr/n .* "tmp"') do set M5=%%a
 gmt plot tmp -Sc -Gblue
 gawk "{if(($3>=6.0)&&($3<7.0)) print $1,$2,$3*0.04}" %eqfile% > tmp
@@ -30,7 +29,7 @@ gawk "{if($3>=8.0) print $1,$2,$3*0.06}" %eqfile% > tmp
 for /f "delims=:" %%a in ('findstr/n .* "tmp"') do set M8=%%a
 gmt plot tmp -Sa -Gpurple -W0.4p,black
 
-REM ����ͼ��
+REM 绘制图例
 echo G 0.01i >legend.txt
 echo H 8 4 MAGNITUDE >>legend.txt
 echo C 0/0/255 >>legend.txt

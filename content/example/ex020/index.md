@@ -11,10 +11,9 @@ commands:
     - psxy
     - pslegend
 ---
-{{% alert info %}}
-示例数据:
+
+<i class="fas fa-download"></i>
 [速度模型数据](/example/ex020/model.txt)
-{{% /alert %}}
 
 本文展示了如何绘制地壳速度模型图。示例数据分为 6 列，分别为 地层厚度，S波速度，P波速度，密度，S波Q值和P波Q值，
 绘图脚本只用到了前 3 列数据。

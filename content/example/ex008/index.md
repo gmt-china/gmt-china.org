@@ -10,9 +10,9 @@ images:
     - CN-Rivers.png
 ---
 
-{{% alert info %}}
-数据下载：[CN-border-La.dat](/data/CN-border-La.dat) [CN-Rivers.dat](/data/CN-Rivers.dat)
-{{% /alert %}}
+<i class="fas fa-download"></i>
+[CN-border-La.dat](/data/CN-border-La.dat) |
+[CN-Rivers.dat](/data/CN-Rivers.dat)
 
 {{< gmt-code "CN-Rivers" >}}
 

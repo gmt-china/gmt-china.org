@@ -10,9 +10,9 @@ images:
     - CN-capitals.png
 ---
 
-{{% alert info %}}
-数据下载：[CN-border-La.dat](/data/CN-border-La.dat) [CN-capitals.dat](/data/CN-capitals.dat)
-{{% /alert %}}
+<i class="fas fa-download"></i>
+[CN-border-La.dat](/data/CN-border-La.dat) |
+[CN-capitals.dat](/data/CN-capitals.dat)
 
 本文整理并绘制了中国省会城市的分布图，同时展示了如何巧妙地利用 `pstext` 模块的功能来灵活地放置城市名的位置。
 

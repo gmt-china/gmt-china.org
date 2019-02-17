@@ -39,6 +39,4 @@ commands:
 
 {{< figure src="/example/ex014/seismic-profile.png" title="地震剖面图" width="500px">}}
 
-bash绘图脚本如下，也提供了等效的 [bat脚本](/example/ex014/profile.bat)：
-
 {{< gmt-code "profile" >}}

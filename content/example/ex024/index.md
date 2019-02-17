@@ -2,10 +2,17 @@
 title: "《流浪地球》之GMT绘制三维地形轨迹图"
 date: 2019-02-16
 type: post
+summary: '''
+随着《流浪地球》这一硬核科幻巨作的热播，众网友也是见仁见智纷纷从各自领域去
+考据其细节。热衷于作图的你们是否在一掠而过的镜头中发现了一个酷炫三维轨迹特效呢？
+'''
 authors:
     - eyou
 images:
-    - WanderingView.png
+    - WanderingView.jpg
+
+image:
+  preview_only: true
 ---
 
 <i class="fas fa-download"></i>
@@ -37,7 +44,7 @@ images:
 
 成图效果：
 
-![风雪图](/example/ex024/WanderingView.png)
+![风雪图](/example/ex024/WanderingView.jpg)
 
 为了模拟风雪场景，上图选了一张神之模糊的云海图（cloud.jpg）作为地貌纹理。使用卫星影像（land.png）替代上文，成图效果如下：
 

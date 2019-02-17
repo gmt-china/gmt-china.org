@@ -1,4 +1,5 @@
 DirectoryPath: "public"
 #CheckExternal: false
+IgnoreInternalEmptyHash: true
 IgnoreAltMissing: true
 OutputDir: ".htmltest"

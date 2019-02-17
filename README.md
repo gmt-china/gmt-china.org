@@ -15,4 +15,4 @@ $ hugo server
 
 ## 加入我们
 
-参考 [贡献指南](CONTRIBUTIING.md)。
+参考 [贡献指南](CONTRIBUTING.md)。

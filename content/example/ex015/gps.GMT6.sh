@@ -6,7 +6,7 @@ R=70/135/15/55
 # 准备底图所需的地形数据
 gmt grdcut @earth_relief_06m.grd -R$R -GcutTopo.grd
 gmt grdgradient cutTopo.grd -Ne0.7 -A50 -GcutTopo_i.grd
-gmt grd2cpt cutTopo.grd -Cglobe -S-10000/10000/200 -Z -D > colorTopo.cpt
+gmt grd2cpt cutTopo.grd -Cglobe -T-10000/10000/200 -Z -D > colorTopo.cpt
 
 # 绘制底图
 gmt set FORMAT_GEO_MAP=ddd:mm:ssF
@@ -41,18 +41,18 @@ gmt velo -Se0.05c/0.95/0 -A0.15c+e+p0.75p -Gred -W0.2p,blue << EOF
 123 18 20 0 1 1 0
 EOF
 gmt text -F+f6p+jML -M << EOF
-> 127.5 18 0.25 2c c
-Continuous Station
-1998-2014
+> 127.5 16 0.25 2c c
+Campaign Stations
+2009-2014
 EOF
 
 gmt velo -Se0.05c/0.95/0 -A0.15c+e+p0.75p -Gred -W0.2p,red << EOF
 123 16 20 0 1 1 0
 EOF
 gmt text -F+f6p+jML -M << EOF
-> 127.5 16 0.25 2c c
-Campaign Stations
-2009-2014
+> 127.5 18 0.25 2c c
+Continuous Station
+1998-2014
 EOF
 rm cutTopo*.grd colorTopo.cpt
 gmt end

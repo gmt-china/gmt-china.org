@@ -42,18 +42,18 @@ gmt psvelo -J -R -Se0.05c/0.95/0 -A0.15c+e+p0.75p -Gred -W0.2p,blue -K -O >> $PS
 123 18 20 0 1 1 0
 EOF
 gmt pstext -J -R -F+f6p+jML -M -K -O >> $PS << EOF
-> 127.5 18 0.25 2c c
-Continuous Station
-1998-2014
+> 127.5 16 0.25 2c c
+Campaign Stations
+2009-2014
 EOF
 
 gmt psvelo -J -R -Se0.05c/0.95/0 -A0.15c+e+p0.75p -Gred -W0.2p,red -K -O >> $PS << EOF
 123 16 20 0 1 1 0
 EOF
 gmt pstext -J -R -F+f6p+jML -M -K -O >> $PS << EOF
-> 127.5 16 0.25 2c c
-Campaign Stations
-2009-2014
+> 127.5 18 0.25 2c c
+Continuous Station
+1998-2014
 EOF
 
 gmt psxy -R -J -T -O >> $PS

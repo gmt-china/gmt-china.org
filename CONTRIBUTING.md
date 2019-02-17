@@ -114,11 +114,11 @@ authors:
 
 所有示例都位于 `content/example` 目录下，示例从 ex001 开始顺序编号。
 
-每个文件夹包含一个示例。以示例1为例，示例1的文件夹为 `content/example/ex001/`\ 。
+每个文件夹包含一个示例。以示例1为例，示例1的文件夹为 `content/example/ex001/`。
 该文件夹下需要包含如下信息：
 
 1.  说明文件 `index.md` （必须，详细格式见下面）
-2.  绘图脚本 `xxx.sh` （必须提供bash脚本，也可以提供bat脚本）
+2.  绘图脚本，文件名格式为 `XXX.GMT5.sh`，目前可以接受GMT5、GMT6的bat和bash脚本
 3.  生成的图片 `xxx.png` （必须，以PNG格式为主，如果JPG格式的图片更小，也可以）
 4.  绘图所需数据 `xxx.dat` （可选，数据应尽量小）
 5.  其他地学数据 `xxx.dat` （如果数据可重复利用，比如国界数据，可以将数据放在
@@ -155,7 +155,7 @@ commands:
 1. 这张图画的是什么
 2. 对绘图所使用的核心模块及其核心选项要进行简单描述，要简要说明其功能和原理。
 
-{{< include-code "xxx.sh" bash >}}
+{{< gmt-code "figname_prefix" >}}
 
 {{< figure src="/example/ex001/xxx1.png" title="图片标题" >}}
 ```
@@ -165,7 +165,7 @@ commands:
 1. 文件应使用UTF8编码和Linux换行符
 2. `images` 中列出的图片会展示在 [gallery](http://gmt-china.org/gallery/) 中
 3. `commands` 中可列出当前脚本主要使用的命令
-3. `include-code` 用于将脚本的内容插入到博文中，脚本的路径格式为 `xxx.sh`
+3. `gmt-code` 用于将脚本的内容插入到博文中，脚本的路径格式为 `xxx.sh`
 5. `figure` 用于将图片插入到博文中，图片的路径格式为 `/example/ex001/xxx.png`
 
 ### 绘图脚本规范
@@ -193,11 +193,11 @@ gmt psconvert -A -P -Tg $PS
 rm gmt.*
 ```
 
-1. 必须提供bash脚本，若有bat脚本，也可提供；
-2. 必须严格遵循GMT5语法；
+1. 推荐使用Bash，也可以使用bat或Perl等语言；
+2. GMT5脚本必须严格遵循GMT5语法，不得使用GMT4语法；
+3. GMT6脚本必须使用现代模式，不得使用经典模式；
 3. 加入必要的注释信息，说明某个代码段、某个命令选项的功能及其他重要信息；
 4. 对命令的简要解释要在这部分命令的前一行；
-5. 避免行末有多余空格；
 6. 图片的 PS 文件名需要用变量表示，变量名为 `$PS`
 7. 脚本最后要使用 `gmt psconvert -A -Tg $PS` 将图片转换为PNG格式
 8. 脚本最后使用 `rm -r gmt.*` 删除GMT临时文件

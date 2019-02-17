@@ -1,8 +1,8 @@
 # 三维地形轨迹图(真三维版)
 
-set R=110/125/30/45
-set J=M10c
-set P=135/25
+R=110/125/30/45
+J=M10c
+P=135/25
 
 gmt begin WanderingView png
 gmt set MAP_FRAME_TYPE plain

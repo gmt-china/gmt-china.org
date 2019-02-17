@@ -1,2 +1,5 @@
 public
 resources
+*.ps
+gmt.conf
+gmt.history

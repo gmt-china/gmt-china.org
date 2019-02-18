@@ -9,7 +9,7 @@ authors = ["赵志远"]
 superuser = false
 
 # Role/position
-role = ""
+role = "河北省地震局"
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.

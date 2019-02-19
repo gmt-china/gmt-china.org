@@ -33,14 +33,15 @@ psbasemap 就是在地图上绘制一个新底图（map inset box）。
 -F 选项则是为这个新底图绘制一个矩形的边界（使用 -D 选项后就必须使用 -F 选项）。
 下面说明脚本中这两个选项的具体含义。
 
--DjTL+w6c/7c+o0.2c/0.2c+stmp
+`-DjTL+w6c/7c+o0.2c/0.2c+stmp`
 
-1. -DjTL 定义的是图框放置的位置。TL 表示中间的左边。具体请读者了解 [gmt 的定位概念](https://docs.gmt-china.org/basic/embellishments/#id2)。
-2. +w6c/7c 表示图框的大小为 6 厘米乘以 7 厘米。
-3. +o0.2c/0.2i设置图框水平偏离 0.2c，垂直偏离 0.2c。
-4. +stmp，把图中图的左下角的位置和尺寸输出到文件 tmp 中。后面绘制大地球需要使用其中的参数。
+1.	`-DjTL` 定义的是图框放置的位置。TL 表示顶部的左边。
+	具体请读者了解 [gmt 的定位概念](https://docs.gmt-china.org/latest/basic/embellishments/#id2)。
+2.  `+w6c/7c` 表示图框的大小为 6 厘米乘以 7 厘米。
+3.  `+o0.2c/0.2i` 设置图框水平偏离 0.2c，垂直偏离 0.2c。
+4.  `+stmp`，把图中图的左下角的位置和尺寸输出到文件 tmp 中。后面绘制大地球需要使用其中的参数。
 
--F+gwhite+p1p+c0.1c+s
+`-F+gwhite+p1p+c0.1c+s`
 
 1. +gwhite表示填充白色
 2. +p1p设置画笔的宽度为1p

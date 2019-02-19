@@ -4,7 +4,8 @@ set R=110/125/30/45
 set J=M10c
 set P=135/25
 
-gmt begin WanderingView png
+gmt begin
+gmt figure WanderingView png C-sFONTPATH=C:\windows\fonts
 gmt set MAP_FRAME_TYPE plain
 
 REM 1. DEM数据获取

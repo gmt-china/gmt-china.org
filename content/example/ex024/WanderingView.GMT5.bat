@@ -51,7 +51,7 @@ REM 10. 放个小车
 gmt psimage truck.png -R -J -Dg4.5/2.5+w0.8c+jCM -O -K >> %PS%
 
 gmt psxy -R -J -O -T >> %PS%
-gmt psconvert %PS% -Tg -P -Au
+gmt psconvert %PS% -Tg -P -A -C-sFONTPATH=C:\windows\fonts
 
 del cloud_*.*
 del gmt.*

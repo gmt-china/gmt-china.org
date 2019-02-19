@@ -39,7 +39,7 @@ psbasemap 就是在地图上绘制一个新底图（map inset box）。
 	具体请读者了解 [gmt 的定位概念](https://docs.gmt-china.org/latest/basic/embellishments/#id2)。
 2.  `+w6c/7c` 表示图框的大小为 6 厘米乘以 7 厘米。
 3.  `+o0.2c/0.2i` 设置图框水平偏离 0.2c，垂直偏离 0.2c。
-4.  `+stmp`，把图中图的左下角的位置和尺寸输出到文件 tmp 中。后面绘制大地球需要使用其中的参数。
+4.  `+stmp`，把图中图的左下角的位置和尺寸输出到文件 tmp 中。后面绘制大地图需要使用其中的参数。
 
 `-F+gwhite+p1p+c0.1c+s`
 

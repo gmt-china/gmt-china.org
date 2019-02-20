@@ -5,9 +5,9 @@ echo 3 5 | gmt psxy -R0/10/0/10 -JM4i -B2 -Skcity/0.2i -W0.6p -K > $ps
 echo 5 5 | gmt psxy -R -J -Skcity/0.3i -Gblue -K -O >> $ps
 echo 7 5 | gmt psxy -R -J -Skcity/0.4i -Gred -W1p -K -O >> $ps
 # 绘制指北针符号
-echo 3 8 | gmt psxy -R -J -Skcompass/0.4i -W0.6p -K -O >> $ps
-echo 5 8 | gmt psxy -R -J -Skcompass/0.5i -Gblue -K -O >> $ps
-echo 7 8 | gmt psxy -R -J -Skcompass/0.6i -Gred -W1p -K -O >> $ps
+echo 3 8 0| gmt psxy -R -J -Skcompass/0.4i -W0.6p -K -O >> $ps
+echo 5 8 45| gmt psxy -R -J -Skcompass/0.5i -Gblue -K -O >> $ps
+echo 7 8 90| gmt psxy -R -J -Skcompass/0.6i -Gred -W1p -K -O >> $ps
 # 绘制三角形和五角星符号
 echo 2 2 | gmt psxy -R -J -Sa0.5i -Wblack -Gred -K -O >> $ps
 echo 4 2 | gmt psxy -R -J -St0.5i -Wblack -Ggreen -K -O >> $ps

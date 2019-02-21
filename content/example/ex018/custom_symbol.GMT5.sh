@@ -1,5 +1,5 @@
 #!/bin/bash
-ps=plot_def.ps
+ps=custom_symbol.ps
 
 # 绘制城市符号
 echo 3 5 | gmt psxy -R0/10/0/10 -JM4i -B2 -Skcity/0.2i -W0.6p -K > $ps

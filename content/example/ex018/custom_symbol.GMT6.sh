@@ -1,5 +1,5 @@
 #!/bin/bash
-gmt begin plot_def png
+gmt begin custom_symbol png
 
 # 绘制城市符号
 echo 3 5 | gmt plot -R0/10/0/10 -JM4i -B2 -Skcity/0.2i -W0.6p

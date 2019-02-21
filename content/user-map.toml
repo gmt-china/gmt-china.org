@@ -183,3 +183,7 @@ name = " Lehrstuhl für Astronomische und Physikalische Geodäsie  Technische Un
 city = " Munich"
 coordinates = [11.567722, 48.149944]
 
+[[user]]
+name = "中南大学 地球科学与信息物理学院"
+city = "长沙市"
+coordinates = [112.92615, 28.1722916]

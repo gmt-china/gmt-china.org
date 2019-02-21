@@ -1,0 +1,13 @@
+# Author: Zhaozhiyuan
+# Create: 2018-01
+# Update:
+# Description: Definition file for city symbol. You should give two 
+#                    parameters(lontitude,latitude) in inputfile.
+# Usage: 
+#       This symbol can be used in module 'psxy' with option '-Sk' as :
+#                      '-Skcity/1c'
+#       or in 'pslegend' as : 
+#                      'S 0.2c kcity 0.15i black 0.5p 1c city' 
+
+0	0	1.0	c
+0   0   0.4 c  -Gblack

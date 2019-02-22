@@ -46,7 +46,7 @@ macOS 用户建议用 [homebrew](https://brew.sh/) 安装软件。
 <i class="fas fa-download"></i> [gmt6.rb](gmt6.rb)
 
 下载后执行如下命令安装GMT6:
-```bash
+```
 brew unlink gmt # 临时删除 GMT5
 brew install --HEAD gmt6.rb # 安装 GMT6
 ```
@@ -59,6 +59,12 @@ brew unlink gmt6; brew link gmt
 从GMT5切换回GMT6:
 ```
 brew unlink gmt; brew link gmt6
+```
+
+GMT6 目前还处在密切的发布前更新中，如果想更新，可以先删除，再重新安装:
+```
+brew uninstall gmt6
+brew install --HEAD gmt6.rb
 ```
 
 # Windows 平台

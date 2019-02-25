@@ -1,37 +1,14 @@
+# 安徽
 [[user]]
 name = "中国科学技术大学 地球和空间科学学院"
 city = "合肥市"
 coordinates = [117.270375, 31.841339]
 
-[[user]]
-name = "桂林理工大学 地球科学学院"
-city = "桂林市"
-coordinates = [110.303073, 25.063901]
-
-[[user]]
-name = "中国科学院 测量与地球物理研究所"
-city = "武汉市"
-coordinates = [114.366316, 30.574801]
-
-[[user]]
-name = "中国科学院 广州地球化学研究所"
-city = "广州市"
-coordinates = [113.363330, 23.144246]
-
-[[user]]
-name = "中国地震局地震研究所"
-city = "武汉市"
-coordinates = [114.351956, 30.539620]
-
+# 北京
 [[user]]
 name = "北京大学 地球与空间科学学院"
 city = "北京市"
 coordinates = [116.314260, 39.991768]
-
-[[user]]
-name = "南京大学 地球科学系"
-city = "南京市"
-coordinates = [118.781832, 32.055826]
 
 [[user]]
 name = "中国地震局地球物理研究所"
@@ -39,24 +16,47 @@ city = "北京市"
 coordinates = [116.315618, 39.947662]
 
 [[user]]
-name = "云南大学 资源环境与地球科学学院"
-city = "昆明市"
-coordinates = [102.855505, 24.826814]
-
-[[user]]
-name = "中国地震局 防灾科技学院"
-city = "廊坊市"
-coordinates = [116.799801, 39.952166]
-
-[[user]]
 name = "中国科学院 地质与地球物理研究所"
 city = "北京市"
 coordinates = [116.383207, 39.977771]
 
 [[user]]
-name = "中国地震局工程力学研究所"
-city = "哈尔滨市"
-coordinates = [126.611055, 45.713993]
+name = "中国科学院大学地球科学学院"
+city = "北京"
+coordinates = [116.251417, 39.908198]
+
+# 广东
+[[user]]
+name = "中国科学院 广州地球化学研究所"
+city = "广州市"
+coordinates = [113.363330, 23.144246]
+
+[[user]]
+name = "南方科技大学地球与空间科学系"
+city = "深圳市"
+coordinates = [113.999864, 22.594241]
+
+# 广西
+[[user]]
+name = "桂林理工大学 地球科学学院"
+city = "桂林市"
+coordinates = [110.303073, 25.063901]
+
+[[user]]
+name = "自贡市环境监测中心"
+city = "自贡市"
+coordinates = [104.775043, 29.352350]
+
+# 湖北
+[[user]]
+name = "中国科学院 测量与地球物理研究所"
+city = "武汉市"
+coordinates = [114.366316, 30.574801]
+
+[[user]]
+name = "中国地震局地震研究所"
+city = "武汉市"
+coordinates = [114.351956, 30.539620]
 
 [[user]]
 name = "中国地质大学（武汉） 地球物理与空间信息学院"
@@ -64,24 +64,55 @@ city = "武汉"
 coordinates = [114.399564, 30.518594]
 
 [[user]]
+name = "武汉大学测绘学院"
+city = "武汉市"
+coordinates = [114.360734, 30.541093]
+
+# 四川
+[[user]]
+name = "成都理工大学地球物理学院"
+city = "成都市"
+coordinates = [104.141079, 30.673939]
+
+# 江苏
+[[user]]
+name = "南京大学 地球科学系"
+city = "南京市"
+coordinates = [118.781832, 32.055826]
+
+[[user]]
+name = "中国矿业大学环境与测绘学院"
+city = "徐州市"
+coordinates = [117.145667, 34.218558]
+
+# 云南
+[[user]]
+name = "云南大学 资源环境与地球科学学院"
+city = "昆明市"
+coordinates = [102.855505, 24.826814]
+
+# 河北
+[[user]]
+name = "中国地震局 防灾科技学院"
+city = "廊坊市"
+coordinates = [116.799801, 39.952166]
+
+[[user]]
+name = "河北省地震局红山基准台"
+city = "邢台市"
+coordinates = [114.468140, 37.091660]
+
+# 黑龙江
+[[user]]
+name = "中国地震局工程力学研究所"
+city = "哈尔滨市"
+coordinates = [126.611055, 45.713993]
+
+# 山东
+[[user]]
 name = "山东科技大学 地球科学与工程学院"
 city = "青岛"
 coordinates = [120.124289, 36.000097]
-
-[[user]]
-name = "吉林省龙岗火山监测站"
-city = "白山市"
-coordinates = [127.381000, 42.257600]
-
-[[user]]
-name = "新疆地震局乌什国家数字地震台"
-city = "阿克苏"
-coordinates = [79.211289, 41.203188]
-
-[[user]]
-name = "中国科学院大学地球科学学院"
-city = "北京"
-coordinates = [116.251417, 39.908198]
 
 [[user]]
 name = "中国科学院海洋研究所"
@@ -89,65 +120,53 @@ city = "青岛"
 coordinates = [120.346439, 36.055339]
 
 [[user]]
-name = "宁夏回族自治区地质调查院"
-city = "银川"
-coordinates = [106.273241, 38.475111]
-
-[[user]]
 name = "中国海洋大学海洋地球科学学院"
 city = "青岛"
 coordinates = [120.495551, 36.160428]
 
+# 吉林
 [[user]]
-name = "中国矿业大学环境与测绘学院"
-city = "徐州市"
-coordinates = [117.145667, 34.218558]
+name = "吉林省龙岗火山监测站"
+city = "白山市"
+coordinates = [127.381000, 42.257600]
 
+# 新疆
 [[user]]
-name = "南方科技大学地球与空间科学系"
-city = "深圳市"
-coordinates = [113.999864, 22.594241]
+name = "新疆地震局乌什国家数字地震台"
+city = "阿克苏"
+coordinates = [79.211289, 41.203188]
 
+# 宁夏
 [[user]]
-name = "成都理工大学地球物理学院"
-city = "成都市"
-coordinates = [104.141079, 30.673939]
+name = "宁夏回族自治区地质调查院"
+city = "银川"
+coordinates = [106.273241, 38.475111]
 
-[[user]]
-name = "武汉大学测绘学院"
-city = "武汉市"
-coordinates = [114.360734, 30.541093]
-
-[[user]]
-name = "河北省地震局红山基准台"
-city = "邢台市"
-coordinates = [114.468140, 37.091660]
-
+# 重庆
 [[user]]
 name = "西南大学地理科学学院"
 city = "重庆市"
 coordinates = [106.423750, 29.822202]
 
+# 台湾
 [[user]]
 name = "國立台灣大學地質科學系暨研究所"
 city = "台北市"
 coordinates = [121.537235, 25.014778]
 
-[[user]]
-name = "自贡市环境监测中心"
-city = "自贡市"
-coordinates = [104.775043, 29.352350]
-
+# 河南
 [[user]]
 name = "河南理工大学 测绘学院"
 city = "焦作市"
 coordinates = [113.259205, 35.186359]
 
+# 湖南
 [[user]]
 name = "中南大学 地球科学与信息物理学院"
 city = "长沙市"
 coordinates = [112.92615, 28.1722916]
 
+# 美国
 [[user]]
 name = "Department of Geosciences, State University of New York at Stony Brook"
 city = "Stony Brook"
@@ -159,24 +178,20 @@ city = "Houston"
 coordinates = [-95.345146, 29.722887]
 
 [[user]]
+name = "Department of Earth and Enviromental Sciences, Michigan State Univeristy"
+city = "East Lansing"
+coordinates = [-84.477990, 42.731188]
+
+# 欧洲
+[[user]]
 name = "Geophysikalisches Instiut, Karlsruhe Inistitute of Technology"
 city = "Karlsruhe"
 coordinates = [8.367217, 49.020638]
 
 [[user]]
-name = "Western Australian Centre for Geodesy, Curtin University"
-city = "Perth"
-coordinates = [115.605200, -32.047400]
-
-[[user]]
 name = "School of Geography, Environment and Earth Sciences, Victoria University of Wellington"
 city = "Wellington"
 coordinates = [174.765979, -41.290094]
-
-[[user]]
-name = "Department of Earth and Enviromental Sciences, Michigan State Univeristy"
-city = "East Lansing"
-coordinates = [-84.477990, 42.731188]
 
 [[user]]
 name = "Helmholtz-Zentrum Potsdam Deutsches GeoForschungsZentrum GFZ"
@@ -187,3 +202,9 @@ coordinates = [13.063190, 52.383021]
 name = "Lehrstuhl für Astronomische und Physikalische Geodäsie  Technische Universität München"
 city = "Munich"
 coordinates = [11.567722, 48.149944]
+
+# 澳大利亚
+[[user]]
+name = "Western Australian Centre for Geodesy, Curtin University"
+city = "Perth"
+coordinates = [115.605200, -32.047400]

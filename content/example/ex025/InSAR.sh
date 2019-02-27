@@ -8,7 +8,7 @@ B1=a1
 B2=SWen
 #DEM数据获取及光照梯度计算
 #earth_relief_01m.grd 可从https://mirrors.ustc.edu.cn/gmt/data/下载得到
-gmt grdcut etopo1.grd -R$R -Gtopo.grd
+gmt grdcut earth_relief_01m.grd -R$R -Gtopo.grd
 gmt grdgradient topo.grd -Ne0.8 -A100  -Gtopo.grad
 #制作灰色色标文件g.cpt
 gmt makecpt -Cgray -T-7000/7000/1000 -Z >g.cpt

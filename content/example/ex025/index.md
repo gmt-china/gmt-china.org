@@ -1,8 +1,7 @@
 ---
-title: "绘制形变速度场"
+title: "绘制InSAR形变速率场"
 date: 2019-02-26
 type: post
-summary: 简介
 authors:
     - 杨云飞
 images:
@@ -10,6 +9,7 @@ images:
 image:
     preview_only: true
 ---
+
 <i class="fas fa-download"></i>
 [yn.xyz](yn.xyz)
 

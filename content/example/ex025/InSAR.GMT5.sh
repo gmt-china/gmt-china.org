@@ -21,7 +21,7 @@ gmt grdimage topo.grd -Itopo.grad -R$R -J$J -B$B1 -B$B2 -Cg.cpt -E100 -K -O >> $
 # 把InSAR获取的点数据yn.xyz转化为网格数据yn.grd,并进一步获得对应的色标文件my.cpt
 gmt xyz2grd yn.xyz -Gyn.grd -I0.4m -R
 
-# 自定义一个模板色标文件 HSV值具体含义详见：a
+# 自定义一个模板色标文件 HSV值具体含义详见：
 # https://docs.gmt-china.org/latest/basis/color/#hsv
 cat << EOF > template.cpt
 -50  100-1-1  -30  100-1-1

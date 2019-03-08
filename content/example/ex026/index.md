@@ -14,7 +14,7 @@ image:
 [eastchina.grd](eastchina.grd)
 [FMC.txt](FMC.txt)
 
-此文绘制了西太平洋俯冲带日本本州至中国东北段震中分布图以及俯冲带剖面上的地震分布，地形数据来自Etopo1，地震数据来自GCMT。
+此文绘制了西太平洋俯冲带日本本州至中国东北段震中分布图以及俯冲带剖面上的地震分布，地震数据来自GCMT。
 
 {{< gmt-code "plot_subduction" >}}
 

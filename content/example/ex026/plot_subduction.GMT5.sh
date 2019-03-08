@@ -65,7 +65,7 @@ gmt pstext -R -J -F+f10p+jBC -N -K -O >> $PS << EOF
 EOF
 # 沿测线提取地形高度
 gmt project -C126/42 -E146/40 -G0.1 | gmt grdtrack -G$grd > tmp
-# 将海平面以下填充为颜色
+# 将海平面以下填充为淡蓝色
 gmt psxy -R -J -Wblack -Glightblue -L+y-4000 -K -O >> $PS << EOF
 0 0
 15 0
@@ -83,7 +83,7 @@ gmt psbasemap -R -J -B0 -Bwnes -K -O >> $PS
 # 绘制剖面图
 gmt psbasemap -R0/15/0/700 -JX10c/-4c -Bya200f100+l"Focal depth (km)" -Bxa2f1+l"Distance"+u"\260" -BWS -Y-4.5c -K -O >> $PS
 gmt psbasemap -R -J -B0 -Bne -K -O >> $PS
-# 在剖面图上绘制震源球,剖面宽度为400
+# 在剖面图上绘制震源球,剖面宽度为300
 gmt pscoupe $FM -R -J -Q -L -Sm0.3c -Aa126/42/146/40/90/300/0/700f -Zdepth.cpt -K -O >> $PS
 # 绘制文字标注
 echo 5 400 Benioff zone | gmt pstext -R -J -F+f12p,10,blue=~1p,gray+a30+jBL -K -O >> $PS

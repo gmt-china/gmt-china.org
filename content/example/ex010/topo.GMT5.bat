@@ -8,7 +8,7 @@ gmt grdgradient cutTopo.grd -Ne0.7 -A50 -GcutTopo_i.grd
 gmt grd2cpt cutTopo.grd -Cglobe -S-10000/10000/200 -Z -D>colorTopo.cpt
 
 REM 绘制底图
-gmt gmtset FORMAT_GEO_MAP=ddd:mm:ssF
+gmt set FORMAT_GEO_MAP=ddd:mm:ssF
 gmt psbasemap -R%R% -JM7i -Bf5a10 -BWesN -Xc -Yc -K > %PS%
 gmt grdimage cutTopo.grd -IcutTopo_i.grd -R -J -CcolorTopo.cpt -Q -O -K >>%PS%
 gmt pscoast -R -J -Dh -W1/0.2p -I1/0.25p -N1/0.5p -O -K >>%PS%

@@ -3,11 +3,11 @@ set topodata="earth_relief_06m.grd"
 
 gmt grdcut %topodata% -R70/135/15/55 -GcutTopo.grd
 gmt grdgradient cutTopo.grd -Ne0.7 -A50 -GcutTopo_i.grd
-gmt grd2cpt cutTopo.grd -Cglobe -S-10000/10000/200 -Z -D>colorTopo.cpt
+gmt grd2cpt cutTopo.grd -Cglobe -T-10000/10000/200 -Z -D > colorTopo.cpt
 
 gmt begin topo png
 REM 绘制底图
-gmt gmtset FORMAT_GEO_MAP=ddd:mm:ssF
+gmt set FORMAT_GEO_MAP=ddd:mm:ssF
 gmt basemap -R70/135/15/55 -JM7i -Bf5a10 -BWesN
 gmt grdimage cutTopo.grd -IcutTopo_i.grd -CcolorTopo.cpt -Q
 gmt coast -Dh -W1/0.2p -I1/0.25p -N1/0.5p

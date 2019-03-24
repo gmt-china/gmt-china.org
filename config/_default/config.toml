@@ -12,8 +12,8 @@ title = "GMT中文社区"
 baseurl = "https://gmt-china.org/"
 
 # Enter a copyright notice to display in the site footer.
-# To display a copyright symbol, type `&copy;`.
-copyright = "&copy; 2016–2019 GMT 中文社区"
+# To display a copyright symbol, type `&copy;`. For current year, type `{year}`.
+copyright = "&copy; 2016 – {year} GMT 中文社区"
 
 # Enable analytics by entering your Google Analytics tracking ID
 googleAnalytics = ""

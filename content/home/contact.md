@@ -35,6 +35,10 @@ subtitle = ""
   # Text color (true=light or false=dark).
   text_color_light = false
 
+[design.spacing]
+  # Customize the section spacing. Order is top, right, bottom, left.
+  #padding = ["20px", "0", "20px", "0"]
+
 [advanced]
  # Custom CSS.
  css_style = ""

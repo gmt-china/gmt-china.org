@@ -29,6 +29,10 @@ hero_media = "GMT_logo.png"
 
   # Text color (true=light or false=dark).
   text_color_light = false
+
+[design.spacing]
+  # Customize the section spacing. Order is top, right, bottom, left.
+  #padding = ["20px", "0", "20px", "0"]
 +++
 
 **欢迎访问GMT中文社区 <i class="fas fa-globe-asia"></i>**

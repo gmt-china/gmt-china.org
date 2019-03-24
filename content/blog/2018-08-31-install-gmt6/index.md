@@ -35,9 +35,19 @@ $ cp cmake/ConfigUserTemplate.cmake cmake/ConfigUser.cmake
 $ mkdir build
 $ cd build
 $ cmake ..
-$ make -jx
-$ make -jx install
+$ make -j
+$ make -j install
 ```
+
+GMT6 目前还处在密切的发布前更新中，如果想更新，可以在GMT源码目录下执行::
+
+    git pull origin master
+
+然后cd进入之前的build并执行::
+
+    cmake ..
+    make -j
+    make -j install
 
 # macOS 平台
 

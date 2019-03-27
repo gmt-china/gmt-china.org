@@ -1,8 +1,5 @@
 language: generic
 
-git:
-  depth: 5
-
 install:
   - curl -L https://raw.githubusercontent.com/seisman/install/master/install-hugo.sh | bash
 

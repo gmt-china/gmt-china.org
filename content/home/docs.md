@@ -59,7 +59,7 @@ subtitle = ""
 <br>
 <i class="far fa-file-pdf"></i>
 PDF 下载:
-[v6.0.0](https://docs.gmt-china.org/6.0.0/GMT_docs.pdf)
+[v6.0.0](https://docs.gmt-china.org/6.0.0/GMT_docs.pdf) |
 [v5.4.5](https://docs.gmt-china.org/5.4.5/GMT_docs.pdf)
 
 ### 历史版本:

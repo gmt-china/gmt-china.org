@@ -27,11 +27,11 @@ echo 97 23 滇缅活动地块 >> blockname
 gmt text blockname -F+f10p,37
 
 REM ============边界图例
-echo S 0.3i f0.5+t+l 0.4i/0.3c 2/138/210 2.0p,2/138/210 0.7i 板块边界 > legend
-echo S 0.3i - 0.50i 2/138/210 1.0p,2/138/210 0.7i  一级地块边界 >> legend
-echo S 0.3i - 0.44i - 1.0p,2/138/210,- 0.7i  推断地块边界 >> legend
-echo S 0.3i - 0.50i orange 1.0p,orange 0.7i 二级地块边界 >> legend
-gmt legend legend -DjTL+w1.5i+jTL+o0.1c/0.1c -F+gwhite+p0.5p -O -K --FONT_ANNOT_PRIMARY=8p,37 >> %PS%
+echo S 0.3i f0.5+t+l 0.4i/0.3c 2/138/210 2.0p,2/138/210 0.7i 板块边界 > legend.dat
+echo S 0.3i - 0.50i 2/138/210 1.0p,2/138/210 0.7i  一级地块边界 >> legend.dat
+echo S 0.3i - 0.44i - 1.0p,2/138/210,- 0.7i  推断地块边界 >> legend.dat
+echo S 0.3i - 0.50i orange 1.0p,orange 0.7i 二级地块边界 >> legend.dat
+gmt legend legend.dat -DjTL+w1.5i+jTL+o0.1c/0.1c -F+gwhite+p0.5p --FONT_ANNOT_PRIMARY=8p,37
 
 REM ============南海诸岛
 gmt basemap -DjBR+w2c+t

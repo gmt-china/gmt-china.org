@@ -5,6 +5,6 @@
 {{ $fullpath := delimit (slice "content" $filename) "/" }}
 <pre><code class="language-{{ .Get 1 }} line-numbers">{{ readFile $fullpath }}</code></pre>
 {{ else }}                          <!-- starts without / means relative to current directory -->
-{{ $fullpath := delimit (slice "content" .Page.Dir $filename) "/" }}
+{{ $fullpath := delimit (slice "content" .Page.File.Dir $filename) "/" }}
 <pre><code class="language-{{ .Get 1 }} line-numbers">{{ readFile $fullpath }}</code></pre>
 {{ end }}

@@ -79,7 +79,7 @@ authors:
 
 ### gdb数据库文件合并
 
-根据网友CovMat建议，采用本社区一贯推荐的GDAL/ORG库[GDAL/OGR: 地理空间数据格式转换神器](/blog/gdal-ogr/)将分幅的gdb数据进行批量合并：
+根据网友CovMat建议，采用本社区一贯推荐的GDAL/ORG库（[GDAL/OGR: 地理空间数据格式转换神器](/blog/gdal-ogr/)）将分幅的gdb数据进行批量合并：
 
 {{< gmt-code "merge" >}}
 
@@ -112,5 +112,4 @@ gmt psxy BOUL_sub.gmt -R70/145/3/55 -JM105/35/6.5i > ChinaMap.ps
 ###### 版本更新记录：
 
 - 2019-5-19: 采用网友CovMat建议，将ogr2ogr命令代替ArcPy进行数据集的合并和要素提取，并简化博文图文，突出重点；
-
-2018-4-15 初稿；
+- 2018-4-15：初稿；

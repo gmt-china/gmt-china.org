@@ -1,8 +1,8 @@
-REM 将A49分幅的gdb数据转为一组shp格式的文件，文件夹命名为Merged
-REM 编码为UTF-8以正确显示属性字段中的中文
+REM 鐏忓挜49閸掑棗绠欓惃鍒b閺佺増宓佹潪顑胯礋娑擄拷缂佸墕hp閺嶇厧绱￠惃鍕瀮娴犺绱濋弬鍥︽婢剁懓鎳￠崥宥勮礋Merged
+REM 缂傛牜鐖滄稉绡F-8娴犮儲顒滅涵顔芥▔缁�鍝勭潣閹冪摟濞堝吀鑵戦惃鍕厬閺傦拷
 ogr2ogr -f "ESRI Shapefile" -lco encoding=UTF-8 Merged A49.gdb
 
-REM 将当前目录下所有的gdb数据追加Merged，同类shp文件合并。
+REM 鐏忓棗缍嬮崜宥囨窗瑜版洑绗呴幍锟介張澶屾畱gdb閺佺増宓佹潻钘夊Merged閿涘苯鎮撶猾绫筯p閺傚洣娆㈤崥鍫濊嫙閵嗭拷
 for /f %%i in ('dir /s/b "*.gdb"') do (
 ogr2ogr -f "ESRI Shapefile" -update -append Merged %%i  
 )

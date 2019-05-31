@@ -12,7 +12,7 @@ tags:
     - Windows
 ---
 
-<i class="fas fa-download"></i> [UnixTools.zip](/datas/UnixTools.zip)
+<i class="fas fa-download"></i> [UnixTools.zip](/data/UnixTools.zip)
 
 为满足 Windows 下的 GMT 用户对 Linux 工具的需求，我们将常用的 Linux
 工具打包供 Windows 用户下载使用。

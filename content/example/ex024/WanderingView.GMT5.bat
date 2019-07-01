@@ -25,7 +25,7 @@ gmt grdedit cloud_g.nc -fg -R%R%
 gmt grdedit cloud_b.nc -fg -R%R%
 
 REM 4. 绘制三维地形，叠加jpg纹理
-gmt grdview topo_filter.grd -R%R%/-500/3000 -J%J% -JZ2c -Qi600 -I -Gcloud_r.nc -Gcloud_g.nc -Gcloud_b.nc -p%P% -K > %PS%
+gmt grdview topo_filter.grd -R%R%/-500/3000 -J%J% -JZ2c -Qi600 -I -Gcloud_r.nc,cloud_g.nc,cloud_b.nc -p%P% -K > %PS%
 
 REM 5.在地形上叠加行政区界线，需要先grdtrack获取线条所在高程，再用psxyz画出。
 REM 政区边界在地图边缘被截断，为避免线条不连续，采用-g选项忽略经纬度跨度大于0.5°的点。

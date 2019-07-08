@@ -1,13 +1,13 @@
 #!/bin/bash
-file="./final/merge.shp"
-for i in $(ls *.shp)
+file="./final"
+for i in $(ls -d *.gdb)
 do
- if [ -f "$file" ]
+ if [ ! -d "$file" ]
       then
-           echo "creating final/merge.shp" 
-           ogr2ogr -f ‘ESRI Shapefile’ -update -append $file $i -nln merge
+           echo "creating final filefolder" 
+           ogr2ogr -f 'ESRI Shapefile' $file $i -lco encoding=UTF-8
       else
            echo "merging……"
-      ogr2ogr -f 'ESRI Shapefile' $file $i
+      ogr2ogr -f 'ESRI Shapefile' $file $i -update -append
 fi
 done

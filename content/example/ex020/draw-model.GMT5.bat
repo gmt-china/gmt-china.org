@@ -3,8 +3,8 @@ set model=model.txt
 set PS=model.ps
 gmt psbasemap -R0/10/0/50 -JX8c/-10c -Bx1+l"Velocity (km/s)" -By10+l"Depth (km)" -BWS+t"Crust model" -K -P > %PS%
 gmt psbasemap -R -J -Ben -B0 -K -O >> %PS%
-rem 利用 awk 计算每一层上下边界的深度，提取该层的速度
-rem 每一层上边界的深度即为前几层的厚度累加，下边界的深度为上边界的深度加该层层厚
+rem 鍒╃敤 awk 璁＄畻姣忎竴灞備笂涓嬭竟鐣岀殑娣卞害锛屾彁鍙栬灞傜殑閫熷害
+rem 姣忎竴灞備笂杈圭晫鐨勬繁搴﹀嵆涓哄墠鍑犲眰鐨勫帤搴︾疮鍔狅紝涓嬭竟鐣岀殑娣卞害涓轰笂杈圭晫鐨勬繁搴﹀姞璇ュ眰灞傚帤
 rem Vs
 gawk "BEGIN{d1=0;d2=0}{d2=d2+$1;print $2,d1;print $2,d2;d1=d2;}" %model% | gmt psxy -R -J -W1.5p,blue -K -O >> %PS%
 rem Vp

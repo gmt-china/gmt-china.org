@@ -10,9 +10,6 @@ commands:
     - grdview
 ---
 
-<i class="fas fa-download"></i>
-[topo.dx](/example/ex027/topo.dx)
-
 本文绘制了北纬28°附近三江并流处的三维地形图以及地形剖面图，为读者展示了三维地形及地形剖面的绘制方法。
 
 主要用到 `grdview` 对三维地形进行呈现，`grdtrack` 获取测线地形数据并通过 `psxy` 绘制地形剖面。

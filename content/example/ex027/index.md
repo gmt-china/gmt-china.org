@@ -1,23 +1,23 @@
 ---
-title: »æÖÆÈýÎ¬µØÐÎÍ¼
+title: ç»˜åˆ¶ä¸‰ç»´åœ°å½¢å›¾
 date: 2019-08-22
 type: post
 authors:
-    - ÑîÔÆ·É
+    - æ¨äº‘é£ž
 images:
     - 3DView.jpg
 commands:
     - grdview
 ---
 
-±¾ÎÄ»æÖÆÁË±±Î³28¡ã¸½½üÈý½­²¢Á÷´¦µÄÈýÎ¬µØÐÎÍ¼ÒÔ¼°µØÐÎÆÊÃæÍ¼£¬Îª¶ÁÕßÕ¹Ê¾ÁËÈýÎ¬µØÐÎ¼°µØÐÎÆÊÃæµÄ»æÖÆ·½·¨¡£
+æœ¬æ–‡ç»˜åˆ¶äº†åŒ—çº¬28Â°é™„è¿‘ä¸‰æ±Ÿå¹¶æµå¤„çš„ä¸‰ç»´åœ°å½¢å›¾ä»¥åŠåœ°å½¢å‰–é¢å›¾ï¼Œä¸ºè¯»è€…å±•ç¤ºäº†ä¸‰ç»´åœ°å½¢åŠåœ°å½¢å‰–é¢çš„ç»˜åˆ¶æ–¹æ³•ã€‚
 
-Ö÷ÒªÓÃµ½ `grdview` ¶ÔÈýÎ¬µØÐÎ½øÐÐ³ÊÏÖ£¬`grdtrack` »ñÈ¡²âÏßµØÐÎÊý¾Ý²¢Í¨¹ý `psxy` »æÖÆµØÐÎÆÊÃæ¡£
+ä¸»è¦ç”¨åˆ° `grdview` å¯¹ä¸‰ç»´åœ°å½¢è¿›è¡Œå‘ˆçŽ°ï¼Œ`grdtrack` èŽ·å–æµ‹çº¿åœ°å½¢æ•°æ®å¹¶é€šè¿‡ `psxy` ç»˜åˆ¶åœ°å½¢å‰–é¢ã€‚
 
-»æÍ¼Ð§¹ûÈçÏÂ£º
+ç»˜å›¾æ•ˆæžœå¦‚ä¸‹ï¼š
 
-{{< figure src="/example/ex027/3DView.jpg" title="Èý½­²¢Á÷´¦µÄÈýÎ¬µØÐÎ¼°µØÐÎÆÊÃæÍ¼" width="500px">}}
+{{< figure src="/example/ex027/3DView.jpg" title="ä¸‰æ±Ÿå¹¶æµå¤„çš„ä¸‰ç»´åœ°å½¢åŠåœ°å½¢å‰–é¢å›¾" width="500px">}}
 
-»æÍ¼½Å±¾ÈçÏÂ£º
+ç»˜å›¾è„šæœ¬å¦‚ä¸‹ï¼š
 
 {{< gmt-code "3DView" >}}

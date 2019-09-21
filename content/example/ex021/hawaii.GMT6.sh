@@ -1,6 +1,5 @@
 #!/bin/bash
 gmt begin hawaii png
-PS=hawaii.ps
 landdata=hawaii_land_1s.grd
 oceandata=hawaii_ocean_15s.grd
 cpt=hawaii.cpt

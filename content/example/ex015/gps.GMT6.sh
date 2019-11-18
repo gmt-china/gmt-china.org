@@ -4,19 +4,19 @@ gmt begin gps png
 R=70/135/15/55
 
 # 准备底图所需的地形数据
-gmt grdcut @earth_relief_06m.grd -R$R -GcutTopo.grd
+gmt grdcut @earth_relief_06m -R$R -GcutTopo.grd
 gmt grdgradient cutTopo.grd -Ne0.7 -A50 -GcutTopo_i.grd
-gmt grd2cpt cutTopo.grd -Cglobe -T-10000/10000/200 -Z -D > colorTopo.cpt
+gmt grd2cpt cutTopo.grd -Cglobe -T-10000/10000/200 -Z -D
 
 # 绘制底图
 gmt set FORMAT_GEO_MAP=ddd:mm:ssF
 gmt basemap -R$R -JM18c -Bf5a10 -BWesN
-gmt grdimage cutTopo.grd -IcutTopo_i.grd -CcolorTopo.cpt -Q
+gmt grdimage cutTopo.grd -IcutTopo_i.grd -Q
 # 注：此处使用的中国国界有误，不可用于发表
 gmt coast -ECN+p1p,black,- -W1/0.2p -I1/0.25p
 
 # 绘制colorbar
-gmt colorbar -DjCB+w18c/0.3c+o0/-2.5c+h -CcolorTopo.cpt -BWSEN -Bxa2000f400+l"Elevation/m" -G-8000/8000
+gmt colorbar -DjCB+w18c/0.3c+o0/-2.5c+h -BWSEN -Bxa2000f400+l"Elevation/m" -G-8000/8000
 
 # 绘制GPS速度场
 # -Se后面三参数表示：速度值为1的矢量的长度/置信度0.95/文本的大小
@@ -54,5 +54,5 @@ gmt text -F+f6p+jML -M << EOF
 Continuous Station
 1998-2014
 EOF
-rm cutTopo*.grd colorTopo.cpt
+rm cutTopo*.grd
 gmt end

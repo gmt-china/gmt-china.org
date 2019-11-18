@@ -18,7 +18,6 @@ gmt set FORMAT_GEO_MAP=ddd:mm:ssF
 
 # 绘制底图
 gmt basemap -R0/11/0/700 -JX5i/-2i -BWS -Bya200f100+l"Focal depth (km)" -Bxa2f1+l"Distance"+u"\260"
-gmt basemap -BWSen
 
 # 测线： (130.5,43.5)为起点，(142.5,36.5) 为终点
 # 筛选出距离测线+-1度以内的地震事件
@@ -29,7 +28,7 @@ awk '$4>=70 && $4<300 {print $5,$4,$3*0.04}' $nearloc | gmt plot -Sc -Ggreen -W0
 awk '$4>=300 && $4<1000 {print $5,$4,$3*0.05}' $nearloc | gmt plot -Sc -Gred -W0.1p,black
 
 # 在剖面上绘制部分事件的震源机制
-gmt coupe $beachballs -B -Q -L -Sd0.3 -Aa130.5/43.5/142.5/36.5/90/100/0/700f -Gblack
+gmt coupe $beachballs -Q -L -Sd0.3 -Aa130.5/43.5/142.5/36.5/90/100/0/700f -Gblack
 
 # 绘制图例
 gmt legend -DjBR+w1.2i+l1.2+o0.05i/0.04i -F+g255+p1p << EOF
@@ -67,3 +66,4 @@ gmt text -N -F+f16p,blue << EOF
 1200 1800 WP
 EOF
 gmt end
+rm $nearloc

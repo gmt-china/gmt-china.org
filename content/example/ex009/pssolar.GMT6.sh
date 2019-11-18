@@ -1,6 +1,6 @@
 #!/bin/bash
 
-gmt begin solar pdf
+gmt begin solar png
 # 绘制指定时间晨昏线，太阳位置
 
 # 绘制全球底图及海陆分布
@@ -15,5 +15,5 @@ gmt solar -Tn+d2016-02-09T16:00:00 -Gnavy@80
 gmt solar -Ta+d2016-02-09T16:00:00 -Gnavy@80
 
 # 计算指定时间太阳位置并绘制在底图上
-gmt psolar -I+d2016-02-09T16:00:00 -C | gmt plot -Sksunglasses/1.5c -Gyellow
+gmt solar -I+d2016-02-09T16:00:00 -C | gmt plot -Sksunglasses/1.5c -Gyellow
 gmt end

@@ -18,7 +18,6 @@ gmt set FORMAT_GEO_MAP=ddd:mm:ssF
 
 # 绘制底图
 gmt basemap -R0/11/0/700 -JX5i/-2i -BWS -Bya200f100+l"Focal depth (km)" -Bxa2f1+l"Distance"+u"\260"
-#gmt basemap -BWSen
 
 # 测线： (130.5,43.5)为起点，(142.5,36.5) 为终点
 # 筛选出距离测线+-1度以内的地震事件

@@ -2,8 +2,7 @@ dist: xenial
 language: generic
 
 install:
-  - curl -sSL https://github.com/gohugoio/hugo/releases/download/v0.59.0/hugo_extended_0.59.0_Linux-64bit.tar.gz | tar -xzv hugo
-  #- curl -L https://raw.githubusercontent.com/seisman/install/master/install-hugo.sh | bash
+  - curl -L https://raw.githubusercontent.com/seisman/install/master/install-hugo.sh | bash
 
 script:
   - ./hugo

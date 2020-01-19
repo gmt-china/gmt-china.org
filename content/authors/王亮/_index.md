@@ -9,7 +9,7 @@ authors = ["王亮"]
 superuser = false
 
 # Role/position
-role = "成都理工大学 在读博士"
+role = "成都理工大学 博士候选人"
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.

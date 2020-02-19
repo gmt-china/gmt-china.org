@@ -33,7 +33,7 @@ vscode下载地址为：[官网](https://code.visualstudio.com/Download)
 
 ## 插件安装
 
-vscode通过不同功能的插件实现代码的开发运行、图片文件的预览等等一系列功能。Windows下执行GMT脚本命令，推荐安装的插件包括：
+vscode通过不同功能的插件实现代码的开发运行、图片文件的预览等等一系列功能。执行GMT脚本命令，推荐安装的插件包括：
 
 - **Code Runner** 支持代码一键运行
 - **vscode-pdf** pdf预览插件

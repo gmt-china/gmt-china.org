@@ -87,3 +87,7 @@ GMT脚本建议在独立工作空间（文件夹）中执行，有以下两种�
 - Linux和Mac用户找到` Microsoft VS Code\resources\app\extensions\shellscript\syntaxes `文件夹，下载 [shell-unix-bash.tmLanguage.json](shell-unix-bash.tmLanguage.json) 文件替换原文件后重启 VScode 即可。
 
   {{< figure src="vscode_pic8.png"  width="700px">}}
+
+## 其他
+
+- 不识别basemap之类的命令的问题可以在绘图脚本最前面加上 `export GMT_SESSION_NAME=$$` 解决。

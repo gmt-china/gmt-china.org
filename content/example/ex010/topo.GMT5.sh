@@ -23,7 +23,7 @@ awk '$3>=5.0 && $3<6.0 {print $1,$2,$3*0.04}' $eqfile | gmt psxy -R -J -Sc -Gblu
 M5=`awk '$3>=5.0 && $3<6.0' $eqfile | wc -l | cut -d" " -f1`
 awk '$3>=6.0 && $3<7.0 {print $1,$2,$3*0.04}' $eqfile | gmt psxy -R -J -Sc -Gred -K -O >> $PS
 M6=`awk '$3>=6.0 && $3<7.0' $eqfile | wc -l | cut -d" " -f1`
-awk '$3>=7.0 && $3<8.0 {print $1,$2,$3*0.04}' $eqfile | gmt psxy -R -J -Sc -Ggreen -O -K >> $PS
+awk '$3>=7.0 && $3<8.0 {print $1,$2,$3*0.04}' $eqfile | gmt psxy -R -J -Sa -Ggreen -O -K >> $PS
 M7=`awk '$3>=7.0 && $3<8.0' $eqfile | wc -l | cut -d" " -f1`
 awk '$3>=8.0 {print $1,$2,$3*0.06}' $eqfile | gmt psxy -R -J -Sa -Gpurple -W0.4p,black -O -K >> $PS
 M8=`awk '$3>=8.0' $eqfile | wc -l | cut -d" " -f1`

@@ -53,9 +53,9 @@ subtitle = ""
 {{% col "col-12 col-sm-4" %}}
 
 <div class="featurette-icon"><i class="fab fa-windows"></i></div>
-**GMT v6.0.0**:
-[32位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-6.0.0-win32.exe) |
-[64位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-6.0.0-win64.exe)
+**GMT v6.1.0**:
+[32位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-6.1.0-win32.exe) |
+[64位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-6.1.0-win64.exe)
 </br>
 **Ghostscript 9.50**:
 [32位](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs950/gs950w32.exe)
@@ -68,7 +68,7 @@ subtitle = ""
 {{% col "col-12 col-sm-4" %}}
 <div class="featurette-icon"><i class="fab fa-linux"></i></div>
 **GMT源码**:
-[v6.0.0](http://mirrors.ustc.edu.cn/gmt/gmt-6.0.0-src.tar.gz)
+[v6.1.0](http://mirrors.ustc.edu.cn/gmt/gmt-6.1.0-src.tar.gz)
 <br>
 **GSHHG数据**:
 [v2.3.7](http://mirrors.ustc.edu.cn/gmt/gshhg-gmt-2.3.7.tar.gz)
@@ -80,7 +80,7 @@ subtitle = ""
 {{% col "col-12 col-sm-4" %}}
 <div class="featurette-icon"><i class="fab fa-apple"></i></div>
 **GMT安装包**:
-[v6.0.0](http://mirrors.ustc.edu.cn/gmt/bin/gmt-6.0.0-darwin-x86_64.dmg)
+[v6.1.0](http://mirrors.ustc.edu.cn/gmt/bin/gmt-6.1.0-darwin-x86_64.dmg)
 {{% /col %}}
 
 {{% /row %}}

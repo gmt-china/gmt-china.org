@@ -60,5 +60,6 @@ subtitle = ""
 <br>
 <i class="far fa-file-pdf"></i>
 PDF 下载:
+[v6.1](https://docs.gmt-china.org/6.1/GMT_docs.pdf) |
 [v6.0](https://docs.gmt-china.org/6.0/GMT_docs.pdf) |
 [v5.4](https://docs.gmt-china.org/5.4/GMT_docs.pdf)

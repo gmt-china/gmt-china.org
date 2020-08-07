@@ -54,6 +54,7 @@ subtitle = ""
 
 <i class="fab fa-html5"></i>
 在线阅读:
+[v6.1](https://docs.gmt-china.org/6.1/) |
 [v6.0](https://docs.gmt-china.org/6.0/) |
 [v5.4](https://docs.gmt-china.org/5.4/)
 <br>

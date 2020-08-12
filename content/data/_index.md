@@ -21,11 +21,7 @@ title: 地学数据
 
 ## 地形起伏数据
 
-| 数据名      | 分辨率 | 覆盖范围     | 陆地/海洋  | 下载地址
-|-------------|---------------|--------------|------------|-------------
-| ETOPO1      | 1弧分  | 全球         | 陆地+海洋  | [官方主页](http://www.ngdc.noaa.gov/mgg/global/)
-| GEBCO       | 30弧秒 | 全球         | 陆地+海洋  | [官方主页](http://www.bodc.ac.uk/data/online_delivery/gebco/)
-| SRTM30+     | 30弧秒 | 纬度[-81,81] | 陆地+海洋  | [官方主页](http://topex.ucsd.edu/WWW_html/srtm30_plus.html)
-| SRTM15+     | 15弧秒 | 纬度[-81,81] | 陆地+海洋  | [官方主页](http://topex.ucsd.edu/WWW_html/mar_topo.html)
-| SRTM3       | 3弧秒  | 纬度[-60,60] | 陆地       | [官方主页](http://srtm.csi.cgiar.org/SELECTION/inputCoord.asp)
-| ASTER GDEM  | 1弧秒  | 纬度[-83,83] | 陆地       | [官方主页](https://gdex.cr.usgs.gov/gdex/)
+GMT内置了地形起伏数据：
+
+- GMT6用户：https://docs.gmt-china.org/latest/dataset/earth-relief/
+- GMT5用户: https://docs.gmt-china.org/5.4/dataset/earth_relief/

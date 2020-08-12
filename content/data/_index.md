@@ -21,4 +21,7 @@ title: 地学数据
 
 ## 地形起伏数据
 
-GMT内置了地形起伏数据，见 https://docs.gmt-china.org/latest/dataset/earth-relief/
+GMT内置了地形起伏数据：
+
+- GMT6用户：https://docs.gmt-china.org/latest/dataset/earth-relief/
+- GMT5用户: https://docs.gmt-china.org/5.4/dataset/earth_relief/

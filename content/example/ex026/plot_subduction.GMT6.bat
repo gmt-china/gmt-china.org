@@ -2,17 +2,17 @@ set FM=FMC.txt
 set GRD=eastchina.grd
 gmt begin plot_subduction png A0.5c
 
-	gmt set MAP_FRAME_WIDTH 2p
-	gmt set MAP_FRAME_PEN 0.5p
-	gmt set FONT_ANNOT_PRIMARY 8p
-	gmt set FONT_LABEL 8p
-	gmt set MAP_TICK_LENGTH 0.1c
+    gmt set MAP_FRAME_WIDTH 2p
+    gmt set MAP_FRAME_PEN 0.5p
+    gmt set FONT_ANNOT_PRIMARY 8p
+    gmt set FONT_LABEL 8p
+    gmt set MAP_TICK_LENGTH 0.1c
 
-	rem 左图
-	rem 绘制地形图
-	gmt grdcut @earth_relief_04m.grd -R122/149/30/48 -G%GRD%
-	gmt grdimage %GRD% -R122/149/30/48 -JM12c -Ba -BNWes -Cglobe -I
-	rem 生成地震深度颜色表
+    rem 左图
+    rem 绘制地形图
+    gmt grdcut @earth_relief_04m.grd -R122/149/30/48 -G%GRD%
+    gmt grdimage %GRD% -R122/149/30/48 -JM12c -Ba -BNWes -Cglobe -I
+    rem 生成地震深度颜色表
     echo 0 purple@30 70 purple@30 > depth.cpt
     echo 70 green@30 300 green@30 >> depth.cpt
     echo 300 red@30 800 red@30 >> depth.cpt
@@ -30,7 +30,7 @@ gmt begin plot_subduction png A0.5c
     rem 绘制三个不同深度的震源球放到图例相应位置
     echo 123 33.05 43 3.62 -0.44 -3.18 0.90 2.46 -1.35 24 0 0 > tmp
     echo 126.6 33.05 171 -0.71 -0.26 0.96 0.44 0.81 -0.07 24 0 0 >> tmp
-    echo 130.5 33.05 302 0.34 0.16 -0.50 -0.77 -4.57 -1.58 24 0 0 >> tmp	
+    echo 130.5 33.05 302 0.34 0.16 -0.50 -0.77 -4.57 -1.58 24 0 0 >> tmp    
     gmt meca tmp -Sm0.3c -Zdepth.cpt
     
     rem 右图上
@@ -50,16 +50,16 @@ gmt begin plot_subduction png A0.5c
     gmt plot tmp -i2,3 -Wblack -Ggray -L+y-4000 
     rem 标注地理位置
     echo 2 4000 NE China > tmp 
-    echo 12 4000 NE Honshu >> tmp	
+    echo 12 4000 NE Honshu >> tmp    
     gmt text tmp -F+f10p
     
     rem 右图下
     rem 绘制剖面图
     gmt basemap -R0/15/0/700 -JX10c/-4c -Bya200f100+l"Focal depth (km)" -Bxa2f1+l"Distance"+u"\260" -BWSrt -Y-4.5c
-    rem 在剖面图上绘制震源球,剖面宽度为600
-    gmt coupe %FM% -Q -L -Sm0.3c -Aa126/42/146/40/90/300/0/700f -Zdepth.cpt
     rem 绘制文字标注
     echo 5 400 Benioff zone | gmt text -F+f12p,10,blue=~1p,gray+a30+jBL
+    rem 在剖面图上绘制震源球,剖面宽度为600
+    gmt coupe %FM% -Q -L -Sm0.3c -Aa126/42/146/40/90/300/0/700f -Zdepth.cpt
     rem 绘制图例
     echo H 8 4 Events (Mw \076 4.5) > tmp
     echo S 0.1i c 0.20 purple 0.1p,black 0.25i 0-70 km >> tmp

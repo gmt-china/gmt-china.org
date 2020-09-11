@@ -1,4 +1,4 @@
-set FM=FMC.txt
+ï»¿set FM=FMC.txt
 set GRD=eastchina.grd
 gmt begin plot_subduction png A0.5c
 
@@ -8,59 +8,59 @@ gmt begin plot_subduction png A0.5c
     gmt set FONT_LABEL 8p
     gmt set MAP_TICK_LENGTH 0.1c
 
-    rem ×óÍ¼
-    rem »æÖÆµØÐÎÍ¼
+    rem å·¦å›¾
+    rem ç»˜åˆ¶åœ°å½¢å›¾
     gmt grdcut @earth_relief_04m.grd -R122/149/30/48 -G%GRD%
     gmt grdimage %GRD% -R122/149/30/48 -JM12c -Ba -BNWes -Cglobe -I
-    rem Éú³ÉµØÕðÉî¶ÈÑÕÉ«±í
+    rem ç”Ÿæˆåœ°éœ‡æ·±åº¦é¢œè‰²è¡¨
     echo 0 purple@30 70 purple@30 > depth.cpt
     echo 70 green@30 300 green@30 >> depth.cpt
     echo 300 red@30 800 red@30 >> depth.cpt
-    rem »æÖÆÕðÔ´Çò£¬ÓÃ²»Í¬ÑÕÉ«´ú±í²»Í¬µØÕðÉî¶È
+    rem ç»˜åˆ¶éœ‡æºçƒï¼Œç”¨ä¸åŒé¢œè‰²ä»£è¡¨ä¸åŒåœ°éœ‡æ·±åº¦
     gmt meca %FM% -Sm0.3c -Zdepth.cpt
-    rem Ñ¡È¡²âÏßAB
+    rem é€‰å–æµ‹çº¿AB
     echo 126 42 A > tmp
     echo 146 40 B >> tmp
-    rem »æÖÆ²âÏßAB
+    rem ç»˜åˆ¶æµ‹çº¿AB
     gmt plot tmp -W1p,black,-.-
-    rem ±ê×¢AB
+    rem æ ‡æ³¨AB
     gmt text tmp -F+f10p -D0c/0.2c 
-    rem »æÖÆÍ¼Àý
+    rem ç»˜åˆ¶å›¾ä¾‹
     gmt legend legendLB.txt -F+gazure1@10 -DjBL+w2.2i/1.6i+l1.2 -C0.1i/0.1i
-    rem »æÖÆÈý¸ö²»Í¬Éî¶ÈµÄÕðÔ´Çò·Åµ½Í¼ÀýÏàÓ¦Î»ÖÃ
+    rem ç»˜åˆ¶ä¸‰ä¸ªä¸åŒæ·±åº¦çš„éœ‡æºçƒæ”¾åˆ°å›¾ä¾‹ç›¸åº”ä½ç½®
     echo 123 33.05 43 3.62 -0.44 -3.18 0.90 2.46 -1.35 24 0 0 > tmp
     echo 126.6 33.05 171 -0.71 -0.26 0.96 0.44 0.81 -0.07 24 0 0 >> tmp
     echo 130.5 33.05 302 0.34 0.16 -0.50 -0.77 -4.57 -1.58 24 0 0 >> tmp    
     gmt meca tmp -Sm0.3c -Zdepth.cpt
     
-    rem ÓÒÍ¼ÉÏ
-    rem ÑØ²âÏßAB»æÖÆµØÐÎ¸ß¶È
+    rem å³å›¾ä¸Š
+    rem æ²¿æµ‹çº¿ABç»˜åˆ¶åœ°å½¢é«˜åº¦
     gmt basemap -R0/15/-4000/6000 -JX10c/3c -Bya4000+l"Elevation (m)" -BWrtb -X14c -Y6c
-    rem ±ê×¢ABÎ»ÖÃ
+    rem æ ‡æ³¨ABä½ç½®
     echo 0 7000 A > tmp
     echo 15 7000 B >> tmp
     gmt text tmp -F+f10p+jBC -N
-    rem ÑØ²âÏßÌáÈ¡µØÐÎ¸ß¶È
+    rem æ²¿æµ‹çº¿æå–åœ°å½¢é«˜åº¦
     gmt project -C126/42 -E146/40 -G0.1 | gmt grdtrack -G%GRD% > tmp
-    rem ½«º£Æ½ÃæÒÔÏÂÌî³äÎªµ­À¶É«
+    rem å°†æµ·å¹³é¢ä»¥ä¸‹å¡«å……ä¸ºæ·¡è“è‰²
     echo 0 0 > tmp2 
     echo 15 0 >> tmp2
     gmt plot tmp2 -Wblack -Glightblue -L+y-4000
-    rem ½«µØÐÎÌî³äÎª»ÒÉ«
+    rem å°†åœ°å½¢å¡«å……ä¸ºç°è‰²
     gmt plot tmp -i2,3 -Wblack -Ggray -L+y-4000 
-    rem ±ê×¢µØÀíÎ»ÖÃ
+    rem æ ‡æ³¨åœ°ç†ä½ç½®
     echo 2 4000 NE China > tmp 
     echo 12 4000 NE Honshu >> tmp    
     gmt text tmp -F+f10p
     
-    rem ÓÒÍ¼ÏÂ
-    rem »æÖÆÆÊÃæÍ¼
+    rem å³å›¾ä¸‹
+    rem ç»˜åˆ¶å‰–é¢å›¾
     gmt basemap -R0/15/0/700 -JX10c/-4c -Bya200f100+l"Focal depth (km)" -Bxa2f1+l"Distance"+u"\260" -BWSrt -Y-4.5c
-    rem »æÖÆÎÄ×Ö±ê×¢
+    rem ç»˜åˆ¶æ–‡å­—æ ‡æ³¨
     echo 5 400 Benioff zone | gmt text -F+f12p,10,blue=~1p,gray+a30+jBL
-    rem ÔÚÆÊÃæÍ¼ÉÏ»æÖÆÕðÔ´Çò,ÆÊÃæ¿í¶ÈÎª600
+    rem åœ¨å‰–é¢å›¾ä¸Šç»˜åˆ¶éœ‡æºçƒ,å‰–é¢å®½åº¦ä¸º600
     gmt coupe %FM% -Q -L -Sm0.3c -Aa126/42/146/40/90/300/0/700f -Zdepth.cpt
-    rem »æÖÆÍ¼Àý
+    rem ç»˜åˆ¶å›¾ä¾‹
     echo H 8 4 Events (Mw \076 4.5) > tmp
     echo S 0.1i c 0.20 purple 0.1p,black 0.25i 0-70 km >> tmp
     echo S 0.1i c 0.20 green 0.1p,black 0.25i 70-300 km >> tmp

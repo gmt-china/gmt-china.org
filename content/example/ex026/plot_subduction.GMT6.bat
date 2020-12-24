@@ -1,4 +1,4 @@
-ï»¿set FM=FMC.txt
+set FM=FMC.txt
 set GRD=eastchina.grd
 gmt begin plot_subduction png A0.5c
 
@@ -8,60 +8,80 @@ gmt begin plot_subduction png A0.5c
     gmt set FONT_LABEL 8p
     gmt set MAP_TICK_LENGTH 0.1c
 
-    rem å·¦å›¾
-    rem ç»˜åˆ¶åœ°å½¢å›¾
+    rem ×óÍ¼
+    rem »æÖÆµØÐÎÍ¼
     gmt grdcut @earth_relief_04m.grd -R122/149/30/48 -G%GRD%
     gmt grdimage %GRD% -R122/149/30/48 -JM12c -Ba -BNWes -Cglobe -I
-    rem ç”Ÿæˆåœ°éœ‡æ·±åº¦é¢œè‰²è¡¨
+    rem Éú³ÉµØÕðÉî¶ÈÑÕÉ«±í
     echo 0 purple@30 70 purple@30 > depth.cpt
     echo 70 green@30 300 green@30 >> depth.cpt
     echo 300 red@30 800 red@30 >> depth.cpt
-    rem ç»˜åˆ¶éœ‡æºçƒï¼Œç”¨ä¸åŒé¢œè‰²ä»£è¡¨ä¸åŒåœ°éœ‡æ·±åº¦
+    rem »æÖÆÕðÔ´Çò£¬ÓÃ²»Í¬ÑÕÉ«´ú±í²»Í¬µØÕðÉî¶È
     gmt meca %FM% -Sm0.3c -Zdepth.cpt
-    rem é€‰å–æµ‹çº¿AB
+    rem Ñ¡È¡²âÏßAB
     echo 126 42 A > tmp
     echo 146 40 B >> tmp
-    rem ç»˜åˆ¶æµ‹çº¿AB
+    rem »æÖÆ²âÏßAB
     gmt plot tmp -W1p,black,-.-
-    rem æ ‡æ³¨AB
+    rem ±ê×¢AB
     gmt text tmp -F+f10p -D0c/0.2c 
-    rem ç»˜åˆ¶å›¾ä¾‹
-    gmt legend legendLB.txt -F+gazure1@10 -DjBL+w2.2i/1.6i+l1.2 -C0.1i/0.1i
-    rem ç»˜åˆ¶ä¸‰ä¸ªä¸åŒæ·±åº¦çš„éœ‡æºçƒæ”¾åˆ°å›¾ä¾‹ç›¸åº”ä½ç½®
+    rem »æÖÆÍ¼Àý
+    echo H 10,0 Earthquake Location > tmp
+    echo L 6,0 C (2000-2010) >> tmp
+    echo G 0.1c >> tmp
+    echo L 8,0 C Magnitude(Mw) >> tmp
+    echo G 0.1c >> tmp
+    echo N 4 >> tmp
+    echo S 0.1i c 0.10i - black 0.2i 5 >> tmp
+    echo S 0.1i c 0.11i - black 0.2i 6 >> tmp
+    echo S 0.1i c 0.12i - black 0.2i 7 >> tmp
+    echo S 0.1i c 0.13i - black 0.2i 8 >> tmp
+    echo N 1 >> tmp
+    echo G 0.1c >> tmp
+    echo L 8,0 C Depth(km) >> tmp
+    echo G 0.1c >> tmp
+    echo N 3 >> tmp
+    echo L 7,0 R @;purple;0-70km@;; >> tmp
+    echo L 7,0 R @;green;70-300km@;;  >> tmp
+    echo L 7,0 R @;red;300-660km@;;  >> tmp
+    echo G 0.7c >> tmp
+    echo B globe 0.3i 0.08i+ml -Bxa10000+l"Topo(m)" --FONT_ANNOT_PRIMARY=6p --MAP_FRAME_WIDTH=1p >> tmp
+    gmt legend tmp -F+gazure1@10 -DjBL+w2.2i/1.6i+l1.2 -C0.1i/0.1i
+    rem »æÖÆÈý¸ö²»Í¬Éî¶ÈµÄÕðÔ´Çò·Åµ½Í¼ÀýÏàÓ¦Î»ÖÃ
     echo 123 33.05 43 3.62 -0.44 -3.18 0.90 2.46 -1.35 24 0 0 > tmp
     echo 126.6 33.05 171 -0.71 -0.26 0.96 0.44 0.81 -0.07 24 0 0 >> tmp
     echo 130.5 33.05 302 0.34 0.16 -0.50 -0.77 -4.57 -1.58 24 0 0 >> tmp    
     gmt meca tmp -Sm0.3c -Zdepth.cpt
     
-    rem å³å›¾ä¸Š
-    rem æ²¿æµ‹çº¿ABç»˜åˆ¶åœ°å½¢é«˜åº¦
+    rem ÓÒÍ¼ÉÏ
+    rem ÑØ²âÏßAB»æÖÆµØÐÎ¸ß¶È
     gmt basemap -R0/15/-4000/6000 -JX10c/3c -Bya4000+l"Elevation (m)" -BWrtb -X14c -Y6c
-    rem æ ‡æ³¨ABä½ç½®
+    rem ±ê×¢ABÎ»ÖÃ
     echo 0 7000 A > tmp
     echo 15 7000 B >> tmp
     gmt text tmp -F+f10p+jBC -N
-    rem æ²¿æµ‹çº¿æå–åœ°å½¢é«˜åº¦
+    rem ÑØ²âÏßÌáÈ¡µØÐÎ¸ß¶È
     gmt project -C126/42 -E146/40 -G0.1 | gmt grdtrack -G%GRD% > tmp
-    rem å°†æµ·å¹³é¢ä»¥ä¸‹å¡«å……ä¸ºæ·¡è“è‰²
+    rem ½«º£Æ½ÃæÒÔÏÂÌî³äÎªµ­À¶É«
     echo 0 0 > tmp2 
     echo 15 0 >> tmp2
     gmt plot tmp2 -Wblack -Glightblue -L+y-4000
-    rem å°†åœ°å½¢å¡«å……ä¸ºç°è‰²
+    rem ½«µØÐÎÌî³äÎª»ÒÉ«
     gmt plot tmp -i2,3 -Wblack -Ggray -L+y-4000 
-    rem æ ‡æ³¨åœ°ç†ä½ç½®
+    rem ±ê×¢µØÀíÎ»ÖÃ
     echo 2 4000 NE China > tmp 
     echo 12 4000 NE Honshu >> tmp    
     gmt text tmp -F+f10p
     
-    rem å³å›¾ä¸‹
-    rem ç»˜åˆ¶å‰–é¢å›¾
+    rem ÓÒÍ¼ÏÂ
+    rem »æÖÆÆÊÃæÍ¼
     gmt basemap -R0/15/0/700 -JX10c/-4c -Bya200f100+l"Focal depth (km)" -Bxa2f1+l"Distance"+u"\260" -BWSrt -Y-4.5c
-    rem ç»˜åˆ¶æ–‡å­—æ ‡æ³¨
+    rem »æÖÆÎÄ×Ö±ê×¢
     echo 5 400 Benioff zone | gmt text -F+f12p,10,blue=~1p,gray+a30+jBL
-    rem åœ¨å‰–é¢å›¾ä¸Šç»˜åˆ¶éœ‡æºçƒ,å‰–é¢å®½åº¦ä¸º600
+    rem ÔÚÆÊÃæÍ¼ÉÏ»æÖÆÕðÔ´Çò,ÆÊÃæ¿í¶ÈÎª600
     gmt coupe %FM% -Q -L -Sm0.3c -Aa126/42/146/40/90/300/0/700f -Zdepth.cpt
-    rem ç»˜åˆ¶å›¾ä¾‹
-    echo H 8 4 Events (Mw \076 4.5) > tmp
+    rem »æÖÆÍ¼Àý
+    echo H 8,4 Events (Mw \076 4.5) > tmp
     echo S 0.1i c 0.20 purple 0.1p,black 0.25i 0-70 km >> tmp
     echo S 0.1i c 0.20 green 0.1p,black 0.25i 70-300 km >> tmp
     echo S 0.1i c 0.20 red 0.1p,black 0.25i 300-700 km >> tmp
@@ -69,4 +89,3 @@ gmt begin plot_subduction png A0.5c
 
 gmt end show
 del %GRD% depth.cpt tmp*
-pause

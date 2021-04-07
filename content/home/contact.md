@@ -51,12 +51,15 @@ subtitle = ""
 {{% col "col-md-5" %}}
 GMT中文社区QQ群：
 
-<i class="fab fa-qq"></i> 二群：791856541
+<i class="fab fa-qq"></i> 一群：218905582
 <br>
-<i class="fab fa-qq"></i> 一群：218905582 (已满)
+<i class="fab fa-qq"></i> 二群：791856541
 {{% /col %}}
 {{% col "col-md-3" %}}
-{{< figure src="/img/QQ-group2.jpg" width="100px">}}
+{{< figure src="/img/QQ-group1.png" width="200px">}}
+{{% /col %}}
+{{% col "col-md-3" %}}
+{{< figure src="/img/QQ-group2.png" width="200px">}}
 {{% /col %}}
 {{% /row %}}
 

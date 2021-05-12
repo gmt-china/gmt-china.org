@@ -71,6 +71,11 @@ GMT脚本建议在独立工作空间（文件夹）中执行，有以下两种�
    若本机安装了Bash终端，vscode也可识别并自动选择bash终端来执行bash脚本。也可通过手工切换，或多个终端切换执行：
 
    {{< figure src="vscode_pic6.png"  width="700px">}}
+   
+> 请注意，如果你运行的是bat脚本，请一定要在上图的“切换终端”中选择 cmd，绝对不要使用 PowerShell。
+>
+> 如果你运行的是bash脚本，则必须在 `gmt begin` 之前添加一行 `export GMT_SESSION_NAME=$$` ，否则脚本运行将出现错误。
+> 详情请参阅[GMT中文手册的begin模块说明页面](https://docs.gmt-china.org/latest/module/begin/#unix-shell)
 
    为提高编码效率，推荐使用快捷键进行代码注释、代码运行、窗格切换等操作。键盘单击F1，调出vscode的命令面板，输入”shortcut“检索出快捷键编辑命令：
 

@@ -4,7 +4,7 @@ J=M9c
 View=150/40
 PS=3DView.ps
 
-gmt grdcut -R$R @earth_relief_04m.grd -Gtopo.grd
+gmt grdcut -R$R @earth_relief_04m -Gtopo.grd
 # 生成临时颜色文件
 gmt grd2cpt topo.grd -Crainbow -Z > tmp.cpt
 # 生成三维地形图

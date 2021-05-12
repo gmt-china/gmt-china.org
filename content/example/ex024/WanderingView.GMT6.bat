@@ -9,8 +9,7 @@ gmt figure WanderingView png C-sFONTPATH=C:\windows\fonts
 gmt set MAP_FRAME_TYPE plain
 
 REM 1. DEM数据获取
-REM earth_relief_01m.grd 可从https://mirrors.ustc.edu.cn/gmt/data/下载得到
-gmt grdcut @earth_relief_01m.grd -R%R% -Gtopo.grd
+gmt grdcut @earth_relief_01m -R%R% -Gtopo.grd
 
 REM 2. 中值滤波平滑地形，平滑直径50km
 gmt grdfilter topo.grd -Fm50 -D4 -Gtopo_filter.grd

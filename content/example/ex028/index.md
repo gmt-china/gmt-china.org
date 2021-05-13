@@ -3,7 +3,7 @@ title: GMT 制作GIF动画
 date: 2021-05-12
 type: post
 authors:
-    - baby
+    - 杨磊
 images:
     - one_figure_more_color.png
 ---
@@ -149,9 +149,3 @@ rm gmt.* h_f.txt smooth_track* t.d
 ### 注意点
 
 - [GraphicsMagick](http://www.graphicsmagick.org)是从[ImageMagick](https://imagemagick.org/)中分离出来的，推荐下载ImageMagick。
-
-### 原文链接
-
-原文转载自作者公众号
-
-![](QR.jpg)

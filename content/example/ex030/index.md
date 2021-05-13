@@ -3,7 +3,7 @@ title: GMT动画案例讲解
 date: 2021-05-12
 type: post
 authors:
-    - baby
+    - 杨磊
 images:
     - anim01.gif
 ---
@@ -109,9 +109,3 @@ Paul还制作了一个更为复杂的动画视频，加入了地形和光照，�
 <center>Pacific Earthquakes in 2018</center>
 
 >The movie took ~1 hour to render on a 24-core MacPro 2013.
-
-### 原文链接
-
-原文转载自作者公众号
-
-![](QR.jpg)

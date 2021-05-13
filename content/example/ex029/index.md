@@ -3,7 +3,7 @@ title: GMT用于功率谱分析
 date: 2021-05-12
 type: post
 authors:
-    - baby
+    - 杨磊
 images:
     - power1D.png
 ---
@@ -98,9 +98,3 @@ std(tmp)^2 % 这是MATLAB自带函数的方差计算
 - 关于[variance-preserving spectra](https://selipot.github.io/blog/variance-preserving-spectra/)，VPS不能很准确的用于寻找周期。例如，在PSD中，两个周期不同但振幅系统的波，在VPS中的幅度就不一样了，VPS改变了PSD形状。
 - [Mathmaticas](https://www.sciencedirect.com/topics/mathematics/power-spectral-density)
 - [能量信号、功率信号、频谱、能量谱、功率谱、及一些定理](https://www.cnblogs.com/htj10/p/8638275.html)
-
-### 原文链接
-
-原文转载自作者公众号
-
-![](QR.jpg)

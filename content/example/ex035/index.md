@@ -3,7 +3,7 @@ title: GMT以公里为单位绘制线的宽度
 date: 2021-05-12
 type: post
 authors:
-    - baby
+    - 杨磊
 images:
     - xmd.png
 ---
@@ -61,9 +61,3 @@ rm  *.txt *.conf *.history
 ![](xmd.png)
 
 图中圆的直径的5km（通过`-SE-`），圆的采样间隔也是5km（通过`sample1d`），线的宽度为5km（通过`scale`），结果一致。
-
-### 原文链接
-
-原文转载自作者公众号
-
-![](QR.jpg)

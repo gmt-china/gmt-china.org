@@ -3,7 +3,7 @@ title: gmt 绘制遥感TIFF影像
 date: 2021-05-12
 type: post
 authors:
-    - baby
+    - 杨磊
 images:
     - image.png
 ---
@@ -102,9 +102,3 @@ echo  120:26:30 36:02:57 | gmt psxy -Sa0.1c -Gred -R -J -O  >> $PS
 gmt psconvert $PS -A -P -Tf
 
 ```
-
-### 原文链接
-
-原文转载自作者公众号
-
-![](QR.jpg)

@@ -3,7 +3,7 @@ title: gmt 绘制UTM投影数据
 date: 2021-05-12
 type: post
 authors:
-    - baby
+    - 杨磊
 images:
     - utm.png
 ---
@@ -95,9 +95,3 @@ GEOGCS["unnamed ellipse",
 ## 数据获取
 
 https://www.jianguoyun.com/p/Ddn04lUQ2PCQBximq-cD
-
-### 原文链接
-
-原文转载自作者公众号
-
-![](QR.jpg)

@@ -3,7 +3,7 @@ title: wavenumber的模拟计算(二)
 date: 2021-05-12
 type: post
 authors:
-    - baby
+    - 杨磊
 images:
     - testgrd.png
 ---
@@ -89,9 +89,3 @@ gmt psconvert  $ps -P -Tg -A
 
 ## 参考
 [wavenumber的模拟计算](https://yangleir.github.io/2020/02/15/wavenumber/)
-
-### 原文链接
-
-原文转载自作者公众号
-
-![](QR.jpg)

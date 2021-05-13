@@ -3,7 +3,7 @@ title: GMT pswiggle的使用例子
 date: 2021-05-12
 type: post
 authors:
-    - baby
+    - 杨磊
 images:
     - mapwiddge.png
 ---
@@ -45,9 +45,3 @@ rm *.dat
 ```
 
 ![](example_30.png)
-
-### 原文链接
-
-原文转载自作者公众号
-
-![](QR.jpg)

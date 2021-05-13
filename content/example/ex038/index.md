@@ -3,7 +3,7 @@ title: GMT计算卫星高度计交叉点差异
 date: 2021-05-12
 type: post
 authors:
-    - baby
+    - 杨磊
 images:
     - distribution.png
 ---
@@ -102,9 +102,3 @@ gmt psconvert crossover.ps -A -P -Tg
 
 示例数据和代码以在GitHub托管：
 https://github.com/GenericAltimetryTools/CalAlti/tree/master/crossover
-
-### 原文链接
-
-原文转载自作者公众号
-
-![](QR.jpg)

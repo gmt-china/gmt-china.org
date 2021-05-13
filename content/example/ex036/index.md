@@ -3,7 +3,7 @@ title: wavenumber的模拟计算
 date: 2021-05-12
 type: post
 authors:
-    - baby
+    - 杨磊
 images:
     - gf-fft.png
 ---
@@ -174,9 +174,3 @@ gmt psconvert mss.ps -A -P -Tg
 - 默认的计算方向是the radial direction 
 - 波的传播方向可以通过kx和ky的波长计算，atan(ky/kx)。
 - 波的径向传播方向只能通过径向的FFT计算，不可以简单的相加kx和ky。
-
-### 原文链接
-
-原文转载自作者公众号
-
-![](QR.jpg)

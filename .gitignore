@@ -1,5 +1,14 @@
-public
-resources
+# Website
+public/
+resources/
+
+# GMT
 *.ps
 gmt.conf
 gmt.history
+
+# VS Code
+.vscode
+
+# macOS
+.DS_Store

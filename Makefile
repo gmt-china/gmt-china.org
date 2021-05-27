@@ -1,5 +1,10 @@
+all: build
+
 build:
 	hugo
+
+server:
+	hugo server
 
 clean:
 	-rm -r public/ resources/

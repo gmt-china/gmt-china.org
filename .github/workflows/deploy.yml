@@ -5,7 +5,7 @@ name: Deploy
 
 # Run on main branch only
 on:
-  pull_request: # enable pull_request for testing
+  # pull_request: # enable pull_request for testing
   push:
     branches:
       - master

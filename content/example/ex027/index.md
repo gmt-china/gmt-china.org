@@ -5,7 +5,7 @@ type: post
 authors:
     - 杨云飞
 images:
-    - Three-DView.jpg
+    - 3DView.jpg
 commands:
     - grdview
 ---
@@ -16,8 +16,8 @@ commands:
 
 绘图效果如下：
 
-{{< figure src="/example/ex027/Three-DView.jpg" title="三江并流处的三维地形及地形剖面图" width="500px">}}
+{{< figure src="/example/ex027/3DView.jpg" title="三江并流处的三维地形及地形剖面图" width="500px">}}
 
 绘图脚本如下：
 
-{{< gmt-code "Three-DView" >}}
+{{< gmt-code "3DView" >}}

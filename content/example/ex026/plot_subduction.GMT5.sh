@@ -10,7 +10,7 @@ gmt set MAP_TICK_LENGTH 0.1c
 
 # 左图
 # 绘制地形图
-gmt grdcut @earth_relief_04m -R122/149/30/48 -G$grd
+gmt grdcut @earth_relief_04m.grd -R122/149/30/48 -G$grd
 gmt grdimage $grd -R122/149/30/48 -JM12c -Ba -BNWes -Cglobe -I -K > $PS
 # 生成地震深度颜色表
 echo 0 purple@30 70 purple@30 > depth.cpt

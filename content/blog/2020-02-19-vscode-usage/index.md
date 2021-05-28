@@ -60,7 +60,7 @@ GMT脚本建议在独立工作空间（文件夹）中执行，有以下两种�
 
    {{< figure src="vscode_gif1.gif"  width="700px">}}
 
-   含有中文的脚本需要设置编码为GBK，否则会出现乱码：点击右下角的编码按钮，再选择”**重新打开编码（Reopen with Encoding）**“，选择**中文简体GBK**编码。
+   含有中文的脚本需要设置编码为GB2312，否则会出现乱码：点击右下角的编码按钮，再选择“**重新打开编码（Reopen with Encoding）**”，选择**中文简体GB2312**编码。
 
    {{< figure src="vscode_pic5.png" width="700px">}}
 

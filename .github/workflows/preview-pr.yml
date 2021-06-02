@@ -15,7 +15,7 @@ jobs:
 
       - name: Checkout
         uses: actions/checkout@v2.3.4
-        with: 
+        with:
           submodules: 'true'
 
       - name: Setup Hugo
@@ -23,6 +23,11 @@ jobs:
         with:
           hugo-version: 0.83.1
           extended: true
+
+      - name: Change Hugo baseurl so that PR preview works
+        run: |
+           sed -i 's#https://gmt-china.org/#https://gmt-china.org/sitepreview/gmt-china/gmt-china.org/${{ github.head_ref }}/#' config/_default/config.toml
+
 
       - name: Build the website
         run: make all
@@ -59,7 +64,7 @@ jobs:
           body: |
             This comment was written by the Continuous Documentation bot!
 
-            - **Preview**: https://gmt-china.github.io/sitepreviewhttps/${{ github.repository }}/${{ github.head_ref }}/index.html
+            - **Preview**: https://gmt-china.github.io/sitepreview/${{ github.repository }}/${{ github.head_ref }}/index.html
             - **Commit hash**: ${{ github.event.pull_request.head.sha }}
         if: github.event.pull_request.head.repo.full_name == github.repository && steps.fc.outputs.comment-id == 0
 

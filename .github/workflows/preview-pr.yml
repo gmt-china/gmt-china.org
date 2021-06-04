@@ -27,6 +27,7 @@ jobs:
       - name: Change Hugo baseurl so that PR preview works
         run: |
            sed -i 's#https://gmt-china.org/#https://gmt-china.github.io/sitepreview/gmt-china/gmt-china.org/${{ github.head_ref }}/#' config/_default/config.toml
+           rm content/CNAME
 
       - name: Build the website
         run: make all

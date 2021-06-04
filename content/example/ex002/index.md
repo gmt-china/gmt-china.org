@@ -11,6 +11,8 @@ images:
 commands:
     - psbasemap
     - pstext
+redirect: https://docs.gmt-china.org/latest/examples/ex002/
+
 ---
 
 在利用地震波研究地球深部结构时，经常需要绘制震相在深度剖面下的射线路径，

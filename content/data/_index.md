@@ -2,6 +2,12 @@
 title: 地学数据
 ---
 
+{{% alert note %}}
+请参考社区维护的[中国地理空间数据集](https://github.com/gmt-china/china-geospatial-data)
+以及[GMT中文手册：中国地学数据集](https://docs.gmt-china.org/latest/dataset-CN/)。
+本网站的数据集将不再维护。
+{{% /alert %}}
+
 - [CN-border-La.dat](/data/CN-border-La.dat): 中国国界、省界、十段线以及南海诸岛
 - [CN-border-L1.dat](/data/CN-border-L1.dat): 国界、十段线以及南海诸岛数据（不含省界数据）
 - [ten-dash-line.dat](/data/ten-dash-line.dat): 仅包含十段线数据

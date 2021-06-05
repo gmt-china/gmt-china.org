@@ -4,7 +4,7 @@ title: 地学数据
 
 {{% alert note %}}
 请参考社区维护的[中国地理空间数据集](https://github.com/gmt-china/china-geospatial-data)
-以及[GMT中文手册：中国地学数据集](https://docs.gmt-china.org/latest/dataset-CN/)。
+以及[GMT中文手册：中国地理空间数据集](https://docs.gmt-china.org/latest/dataset-CN/)。
 本网站的数据集将不再维护。
 {{% /alert %}}
 

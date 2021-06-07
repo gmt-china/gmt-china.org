@@ -13,6 +13,8 @@ images:
 commands:
     - pscoast
     - psxy
+redirect: https://docs.gmt-china.org/latest/dataset-CN/CN-border/
+    
 ---
 
 由于 GMT 自带的国界线数据不符合中国领土主张，因而在绘制用于正式图件时用户需要

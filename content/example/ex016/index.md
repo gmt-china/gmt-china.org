@@ -9,7 +9,9 @@ authors:
 images:
     - BLOCK.png
 commands:
-    - psxy
+    - psxy    
+redirect: https://docs.gmt-china.org/latest/dataset-CN/CN-block/
+
 ---
 
 <i class="fas fa-download"></i>

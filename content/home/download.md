@@ -57,9 +57,9 @@ subtitle = ""
 [32位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-6.2.0-win32.exe) |
 [64位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-6.2.0-win64.exe)
 </br>
-**Ghostscript 9.50**:
-[32位](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs950/gs950w32.exe)
-[64位](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs950/gs950w64.exe)
+**Ghostscript 9.54.0**:
+[32位](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs9540/gs9540w32.exe)
+[64位](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs9540/gs9540w64.exe)
 </br>
 **UnixTools**:
 [UnixTools.zip](/data/UnixTools.zip)

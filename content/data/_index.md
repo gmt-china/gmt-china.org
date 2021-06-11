@@ -2,6 +2,12 @@
 title: 地学数据
 ---
 
+{{% alert note %}}
+请参考社区维护的[中国地理空间数据集](https://github.com/gmt-china/china-geospatial-data)
+以及[GMT中文手册：中国地理空间数据集](https://docs.gmt-china.org/latest/dataset-CN/)。
+本网站的数据集将不再维护。
+{{% /alert %}}
+
 - [CN-border-La.dat](/data/CN-border-La.dat): 中国国界、省界、十段线以及南海诸岛
 - [CN-border-L1.dat](/data/CN-border-L1.dat): 国界、十段线以及南海诸岛数据（不含省界数据）
 - [ten-dash-line.dat](/data/ten-dash-line.dat): 仅包含十段线数据
@@ -16,12 +22,3 @@ title: 地学数据
 - [CN-block-L1.dat](/data/CN-block-L1.dat): 中国大陆一级地块边界数据
 - [CN-block-L1-deduced.dat](/data/CN-block-L1-deduced.dat): 中国大陆一级地块推断边界数据
 - [CN-block-L2.dat](/data/CN-block-L2.dat): 中国大陆二级地块边界数据
-
----
-
-## 地形起伏数据
-
-GMT内置了地形起伏数据：
-
-- GMT6用户：https://docs.gmt-china.org/latest/dataset/earth-relief/
-- GMT5用户: https://docs.gmt-china.org/5.4/dataset/earth_relief/

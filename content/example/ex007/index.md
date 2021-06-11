@@ -8,6 +8,8 @@ authors:
     - eyou
 images:
     - CN-faults.png
+redirect: https://docs.gmt-china.org/latest/dataset-CN/CN-faults/
+    
 ---
 
 <i class="fas fa-download"></i>

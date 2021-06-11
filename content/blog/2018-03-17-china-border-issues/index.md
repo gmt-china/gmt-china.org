@@ -7,6 +7,8 @@ categories:
     - 地学数据
 authors:
     - seisman
+redirect: https://docs.gmt-china.org/latest/dataset-CN/CN-border/
+
 ---
 
 众所周知，中国与周边国家或地区之间存在领土争议，这是一个很敏感的政治问题。

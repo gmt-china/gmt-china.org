@@ -25,12 +25,12 @@
 
 [[main]]
   name = "图库"
-  url = "/gallery/"
+  url = "gallery/"
   weight = 5
 
 [[main]]
   name = "数据集"
-  url = "/data/"
+  url = "data/"
   weight = 6
 
 [[main]]
@@ -50,7 +50,7 @@
 
 [[main]]
   name = '<i class="fas fa-rss"></i>'
-  url = "/index.xml"
+  url = "index.xml"
   weight = 10
 
 # Link to a PDF of your resume/CV from the menu.

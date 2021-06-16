@@ -9,6 +9,8 @@ images:
     - def.png
 commands:
     - psxy
+redirect: https://docs.gmt-china.org/latest/module/plot/#gmt
+   
 ---
 
 GMT 官方目前内置了 40 个自定义符号，如下所示：

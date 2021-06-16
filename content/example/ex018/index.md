@@ -9,7 +9,7 @@ images:
     - def.png
 commands:
     - psxy
-redirect: https://docs.gmt-china.org/latest/module/plot/#gmt
+redirect: https://docs.gmt-china.org/latest/module/plot/#gmt-custom-symbols
    
 ---
 

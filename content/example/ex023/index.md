@@ -8,6 +8,8 @@ images:
     - draw-inset-map.png
 commands:
     - psbasemap
+redirect: https://docs.gmt-china.org/latest/tutorial/inset/
+
 ---
 
 如果绘制的地图区域范围很小，读者可能不清楚所画区域的位置。

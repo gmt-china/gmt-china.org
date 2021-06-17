@@ -8,6 +8,8 @@ images:
     - ternary.png
 commands:
     - psternary
+redirect: https://docs.gmt-china.org/latest/module/ternary/#gmt-ternary-example
+    
 ---
 
 <i class="fas fa-download"></i>

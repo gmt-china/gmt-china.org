@@ -11,6 +11,8 @@ images:
 commands:
     - psmeca
     - psscale
+redirect: https://docs.gmt-china.org/latest/module/meca/#gmt-meca-cpt-example
+    
 ---
 
 本示例展示了如何绘制震源球的分布图。震级的大小由震源球的大小来表征，

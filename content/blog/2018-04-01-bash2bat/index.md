@@ -9,6 +9,8 @@ categories:
 tags:
     - Windows
     - Linux
+redirect: https://docs.gmt-china.org/latest/tutorial/scripting/
+    
 ---
 
 社区提供的 GMT 绘图脚本多是基于 Linux 下的 bash 脚本，有相当一部分用户并不熟悉

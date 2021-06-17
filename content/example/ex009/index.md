@@ -9,6 +9,8 @@ images:
 commands:
     - psxy
     - pssolar
+redirect: https://docs.gmt-china.org/latest/module/solar/#gmt-solar-example
+    
 ---
 
 <i class="fas fa-download"></i>

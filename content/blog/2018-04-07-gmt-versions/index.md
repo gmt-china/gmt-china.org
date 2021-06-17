@@ -7,6 +7,8 @@ authors:
   - seisman
 categories:
   - GMT技巧
+redirect: https://docs.gmt-china.org/latest/migrating/
+  
 ---
 
 GMT 目前存在如下几个大版本:

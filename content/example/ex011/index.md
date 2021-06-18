@@ -10,6 +10,8 @@ commands:
     - psbasemap
     - pstext
     - psxy
+redirect: https://docs.gmt-china.org/latest/examples/ex011/
+    
 ---
 
 在以台站为核心的研究中（例如接收函数、S波分裂等），经常需要绘制以台站为中心的

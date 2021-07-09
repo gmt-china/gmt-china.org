@@ -9,7 +9,9 @@ categories:
     - GMT工具
 tags:
     - Linux
-    - Windows
+    - Windows    
+redirect: https://docs.gmt-china.org/latest/install/windows/#unixtools
+
 ---
 
 <i class="fas fa-download"></i> [UnixTools.zip](/data/UnixTools.zip)

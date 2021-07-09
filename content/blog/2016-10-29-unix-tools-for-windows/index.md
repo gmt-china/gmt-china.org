@@ -10,7 +10,7 @@ categories:
 tags:
     - Linux
     - Windows    
-redirect: https://docs.gmt-china.org/latest/install/windows/#id1
+redirect: https://docs.gmt-china.org/latest/install/windows/#unixtools
 
 ---
 

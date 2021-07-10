@@ -20,7 +20,7 @@ redirect: https://docs.gmt-china.org/latest/install/windows/#unixtools
 工具打包供 Windows 用户下载使用。
 
 直接下载 UnixTools.zip 并将解压得到的 exe 文件复制到
-GMT 的 bin 目录即可（比如默认的 `C:\programs\gmt5\bin`）。
+GMT 的 `bin` 目录即可（比如默认的 `C:\programs\gmt5\bin`）。
 
 软件包中包含如下程序：
 

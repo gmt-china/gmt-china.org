@@ -54,6 +54,8 @@ GMT中文社区QQ群：
 <i class="fab fa-qq"></i> 一群：218905582
 <br>
 <i class="fab fa-qq"></i> 二群：791856541
+<br>
+[**入群须知!**](/blog/community-guide/)
 {{% /col %}}
 {{% col "col-md-3" %}}
 {{< figure src="/img/QQ-group1.png" width="200px">}}

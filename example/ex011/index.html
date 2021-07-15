@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.3.1">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="田冬冬">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="在以台站为核心的研究中（例如接收函数、S波分裂等），经常需要绘制以台站为中心的 地震分布图，以展示地震相对于台站的距离以及方位角分布。 下面是绘">
+
+  
+  <link rel="alternate" hreflang="zh-Hans" href="https://gmt-china.org/example/ex011/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarized-light.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarized-light.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.min.e8bc2e30d41affd83d8c1d34d8c6357d.css">
+
+  
+    
+    
+    
+    
+      
+    
+    
+    
+    <link rel="stylesheet" href="/css/academic.2240d95af5ce84fc7912df1be70e1d8b.css">
+  
+
+  
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://gmt-china.org/example/ex011/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="GMT中文社区">
+  <meta property="og:url" content="https://gmt-china.org/example/ex011/">
+  <meta property="og:title" content="事件相对台站的震中距方位角分布图 | GMT中文社区">
+  <meta property="og:description" content="在以台站为核心的研究中（例如接收函数、S波分裂等），经常需要绘制以台站为中心的 地震分布图，以展示地震相对于台站的距离以及方位角分布。 下面是绘"><meta property="og:image" content="https://gmt-china.org/img/icon-192.png">
+  <meta property="og:locale" content="zh-Hans">
+  
+  <meta property="article:published_time" content="2017-04-11T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2017-04-11T00:00:00&#43;00:00">
+  
+
+  
+
+  
+<meta http-equiv="refresh" content="0; URL=https://docs.gmt-china.org/latest/examples/ex011/" />
+
+
+  <title>事件相对台站的震中距方位角分布图 | GMT中文社区</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>搜索</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="搜索..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">GMT中文社区</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="切换导航">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#">
+            
+            <span>首页</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#download">
+            
+            <span>下载</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#docs">
+            
+            <span>中文手册</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts">
+            
+            <span>博客</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/gallery/">
+            
+            <span>图库</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/data/">
+            
+            <span>数据集</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#people">
+            
+            <span>贡献者</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#usermap">
+            
+            <span>用户分布</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact">
+            
+            <span>联系我们</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/index.xml">
+            
+            <span><i class="fas fa-rss"></i></span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">事件相对台站的震中距方位角分布图</h1>
+
+  
+
+  
+    
+
+
+
+<meta content="2017-04-11 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2017-04-11 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/lxrat/">lxrat</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>2017年04月11日</time>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=&amp;url="
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u="
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=&amp;title="
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=&amp;title="
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=&amp;body=">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      <p>在以台站为核心的研究中（例如接收函数、S波分裂等），经常需要绘制以台站为中心的
+地震分布图，以展示地震相对于台站的距离以及方位角分布。</p>
+
+<p>下面是绘图所使用的bash脚本：
+
+
+
+
+
+<ul class="nav nav-tabs">
+  <li class="nav-item gmt-code-tab disable"><i class="fas fa-code"></i> map</li>
+  
+  
+  
+  
+  <li class="nav-item">
+      <a class="gmt-code-tab active" data-toggle="tab" href="#map_GMT6_sh">GMT6+sh </a>
+  </li>
+  
+  
+  
+  <li class="nav-item">
+      <a class="gmt-code-tab " data-toggle="tab" href="#map_GMT5_sh">GMT5+sh </a>
+  </li>
+  
+  
+</ul>
+
+<div class="tab-content">
+  
+  
+  
+  
+  <div class="tab-pane fade active show" id="map_GMT6_sh">
+  <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#!/bin/bash
+</span><span style="color:#75715e"></span><span style="color:#75715e"># 假定台站位于 105/30 处</span>
+stlo<span style="color:#f92672">=</span><span style="color:#ae81ff">105</span>
+stla<span style="color:#f92672">=</span><span style="color:#ae81ff">30</span>
+max_distance<span style="color:#f92672">=</span><span style="color:#ae81ff">90</span>
+width<span style="color:#f92672">=</span>10c  <span style="color:#75715e"># 图片宽度</span>
+<span style="color:#75715e"># 使用-JE投影，其后面的四个参数分别是:</span>
+<span style="color:#75715e">#   中心经度/中心纬度/最大震中距/图片宽度</span>
+J<span style="color:#f92672">=</span>E$stlo/$stla/$max_distance/$width
+
+gmt begin map png
+<span style="color:#75715e"># 绘制底图</span>
+gmt coast -J$J -Rg -A10000 -Ggrey
+
+<span style="color:#75715e"># 利用 basemap 绘制图中的径向线</span>
+gmt set FORMAT_GEO_MAP<span style="color:#f92672">=</span>+D
+gmt basemap -R0/360/0/90 -JPa$width -Bxa60g60 -Bya180
+
+<span style="color:#75715e"># 绘制台站位置（红色三角形）</span>
+echo $stlo $stla | gmt plot -J$J -Rg -St0.15i -Gred
+<span style="color:#75715e"># 绘制地震震源位置</span>
+gmt plot -Sc0.05i -Gblue <span style="color:#e6db74">&lt;&lt; EOF
+</span><span style="color:#e6db74">145 30
+</span><span style="color:#e6db74">160 40
+</span><span style="color:#e6db74">60 40
+</span><span style="color:#e6db74">80 -10
+</span><span style="color:#e6db74">EOF</span>
+
+<span style="color:#75715e"># 绘制30和60度等震中距线</span>
+echo $stlo $stla <span style="color:#ae81ff">6672</span> | gmt plot -SE- -W1p,red
+echo $stlo $stla <span style="color:#ae81ff">13344</span> | gmt plot -SE- -W1p,red
+
+<span style="color:#75715e"># 在30, 60, 90处添加文字</span>
+<span style="color:#75715e"># !!! 输入文件的第二列0, -30, -60 需要根据台站的实际纬度进行微调 !!!</span>
+gmt text -D0c/0.3c <span style="color:#e6db74">&lt;&lt; EOF
+</span><span style="color:#e6db74">$stlo 0 30\232
+</span><span style="color:#e6db74">$stlo -30 60\232
+</span><span style="color:#e6db74">$stlo -60 90\232
+</span><span style="color:#e6db74">EOF</span>
+gmt end</code></pre></div>
+  </div>
+  
+  
+  
+  <div class="tab-pane fade " id="map_GMT5_sh">
+  <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#!/bin/bash
+</span><span style="color:#75715e"></span>PS<span style="color:#f92672">=</span>map.ps
+R<span style="color:#f92672">=</span>g
+<span style="color:#75715e"># 假定台站位于 105/30 处</span>
+stlo<span style="color:#f92672">=</span><span style="color:#ae81ff">105</span>
+stla<span style="color:#f92672">=</span><span style="color:#ae81ff">30</span>
+max_distance<span style="color:#f92672">=</span><span style="color:#ae81ff">90</span>
+width<span style="color:#f92672">=</span>10c  <span style="color:#75715e"># 图片宽度</span>
+<span style="color:#75715e"># 使用-JE投影，其后面的四个参数分别是:</span>
+<span style="color:#75715e">#   中心经度/中心纬度/最大震中距/图片宽度</span>
+J<span style="color:#f92672">=</span>E$stlo/$stla/$max_distance/$width
+
+<span style="color:#75715e"># 绘制底图</span>
+gmt pscoast -J$J -R$R -A10000 -Ggrey -K &gt; $PS
+
+<span style="color:#75715e"># 利用 psbasemap 绘制图中的径向线</span>
+gmt set FORMAT_GEO_MAP<span style="color:#f92672">=</span>+D
+gmt psbasemap -R0/360/0/90 -JPa$width -Bxa60g60 -Bya180 -K -O &gt;&gt; $PS
+
+<span style="color:#75715e"># 绘制台站位置（红色三角形）</span>
+echo $stlo $stla | gmt psxy -J$J -R$R -St0.15i -Gred -K -O &gt;&gt; $PS
+<span style="color:#75715e"># 绘制地震震源位置</span>
+gmt psxy -J$J -R$R -Sc0.05i -Gblue -K -O &gt;&gt; $PS <span style="color:#e6db74">&lt;&lt; EOF
+</span><span style="color:#e6db74">145 30
+</span><span style="color:#e6db74">160 40
+</span><span style="color:#e6db74">60 40
+</span><span style="color:#e6db74">80 -10
+</span><span style="color:#e6db74">EOF</span>
+
+<span style="color:#75715e"># 绘制30和60度等震中距线</span>
+echo $stlo $stla <span style="color:#ae81ff">6672</span> | gmt psxy -J$J -R$R -SE- -K -O -W1p,red &gt;&gt; $PS
+echo $stlo $stla <span style="color:#ae81ff">13344</span> | gmt psxy -J$J -R$R -SE- -K -O -W1p,red &gt;&gt; $PS
+
+<span style="color:#75715e"># 在30, 60, 90处添加文字</span>
+<span style="color:#75715e"># !!! 输入文件的第二列0, -30, -60 需要根据台站的实际纬度进行微调 !!!</span>
+gmt pstext -J$J -R$R -D0c/0.3c -K -O &gt;&gt; $PS <span style="color:#e6db74">&lt;&lt; EOF
+</span><span style="color:#e6db74">$stlo 0 30\232
+</span><span style="color:#e6db74">$stlo -30 60\232
+</span><span style="color:#e6db74">$stlo -60 90\232
+</span><span style="color:#e6db74">EOF</span>
+
+gmt psxy -J$J -R$R -T -O &gt;&gt; $PS
+gmt psconvert -A -P -Tg $PS
+rm gmt.*</code></pre></div>
+  </div>
+  
+  
+</div>
+</p>
+
+<p>绘图效果：
+
+
+
+<figure>
+
+<img src="/example/ex011/map.png" />
+
+
+
+<figcaption data-pre="图" data-post=":" >
+  <h4>事件相对台站的震中距方位角分布图</h4>
+  
+</figcaption>
+
+</figure></p>
+
+    </div>
+
+    
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+      
+      <img class="portrait mr-3" src="/authors/lxrat/avatar_hu2358911a59c99fb751f5f286a6bba554_108116_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="/authors/lxrat/">lxrat</a></h5>
+      <h6 class="card-subtitle">中国地质大学 在读研究生</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+    
+
+    
+    <div class="article-widget">
+      
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">下一页</div>
+    <a href="/example/ex012/" rel="next">绘制M-T图</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">上一页</div>
+    <a href="/example/ex010/" rel="prev">含中国大陆地区的地形图</a>
+  </div>
+  
+</div>
+
+    </div>
+    
+
+    
+<section id="comments">
+  <div id="gitalk-container"></div>
+
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+<script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: 'b2dfca9a4bfad764aa2b',
+    clientSecret: '4ae5ddcd25c6b6d6bc07ac39201ea417054a530a',
+    owner: 'gmt-china',
+    repo: 'gitalk',
+    admin: ['zhaozhiyuan1989','seisman','wangliang1989'],
+    id: md5(location.pathname),
+    body: location.href,
+  });
+  gitalk.render('gitalk-container');
+</script>
+
+</section>
+
+
+
+  </div>
+</article>
+
+<div class="container">
+  <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    &copy; 2016 – 2021 GMT中文社区 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+</div>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">引用</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> 复制
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> 下载
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/dos.min.js"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "搜索...",
+        'results': "搜索结果",
+        'no_results': "没有找到结果"
+      };
+      const content_type = {
+        'post': "文章",
+        'project': "项目",
+        'publication' : "出版物",
+        'talk' : "演讲"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.eeb855c70a08cf40f8f8d58c82fa7d5e.js"></script>
+
+  </body>
+</html>
+

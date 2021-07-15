@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>数据下载 on GMT中文社区</title>
+    <link>https://gmt-china.org/tags/%E6%95%B0%E6%8D%AE%E4%B8%8B%E8%BD%BD/</link>
+    <description>Recent content in 数据下载 on GMT中文社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <copyright>&amp;copy; 2016 – {year} GMT中文社区</copyright>
+    <lastBuildDate>Thu, 14 Sep 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://gmt-china.org/tags/%E6%95%B0%E6%8D%AE%E4%B8%8B%E8%BD%BD/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>利用 Google Maps 获取超高精度高程数据</title>
+      <link>https://gmt-china.org/blog/google-maps-elevation-api/</link>
+      <pubDate>Thu, 14 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/google-maps-elevation-api/</guid>
+      <description>如何获得米级精度的高程数据?</description>
+    </item>
+    
+  </channel>
+</rss>

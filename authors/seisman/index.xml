@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GMT中文社区</title>
+    <link>https://gmt-china.org/authors/seisman/</link>
+    <description>Recent content on GMT中文社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <copyright>&amp;copy; 2016 – {year} GMT中文社区</copyright>
+    <lastBuildDate>Sat, 07 Apr 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://gmt-china.org/authors/seisman/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GMT 各大版本间的差异</title>
+      <link>https://gmt-china.org/blog/gmt-versions/</link>
+      <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/gmt-versions/</guid>
+      <description>GMT4、GMT5以及即将发布的GMT6之间在用法上有什么区别? 我该使用哪一个?</description>
+    </item>
+    
+    <item>
+      <title>GMT自带中国国界问题</title>
+      <link>https://gmt-china.org/blog/china-border-issues/</link>
+      <pubDate>Sat, 17 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/china-border-issues/</guid>
+      <description>GMT国界与正确国界之间的区别与差异</description>
+    </item>
+    
+    <item>
+      <title>GMT 中文社区第三次线下聚餐</title>
+      <link>https://gmt-china.org/blog/gud-20171017/</link>
+      <pubDate>Tue, 17 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/gud-20171017/</guid>
+      <description>2017年10月，GMT中文社区在北京举行了第三个线下聚餐。</description>
+    </item>
+    
+    <item>
+      <title>GMT 中文社区 QQ 群入群须知</title>
+      <link>https://gmt-china.org/blog/community-guide/</link>
+      <pubDate>Wed, 23 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/community-guide/</guid>
+      <description>如何在 QQ 群中正确提问？</description>
+    </item>
+    
+    <item>
+      <title>GDAL/OGR: 地理空间数据格式转换神器</title>
+      <link>https://gmt-china.org/blog/gdal-ogr/</link>
+      <pubDate>Mon, 07 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/gdal-ogr/</guid>
+      <description>介绍GDAL/OGR的功能及其用法</description>
+    </item>
+    
+    <item>
+      <title>绘制地球内部主要界面</title>
+      <link>https://gmt-china.org/example/ex002/</link>
+      <pubDate>Wed, 31 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex002/</guid>
+      <description>在利用地震波研究地球深部结构时，经常需要绘制震相在深度剖面下的射线路径， 同时也需要绘制地球内部的主要界面。 震相的射线路径可以用 TauP 提供的 taup_path 命令</description>
+    </item>
+    
+    <item>
+      <title>GMT中文社区正式成立</title>
+      <link>https://gmt-china.org/blog/gmt-china-community-founded/</link>
+      <pubDate>Wed, 06 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/gmt-china-community-founded/</guid>
+      <description>GMT中文社区于今日正式成立了！</description>
+    </item>
+    
+  </channel>
+</rss>

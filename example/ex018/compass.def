@@ -1,0 +1,21 @@
+# Author: Zhaozhiyuan
+# Create: 2018-01
+# Update: 2018-12
+# Description: Definition file for compass symbol. You must give three 
+#                    parameters(lontitude,latitude and rotate degree) in inputfile.
+# Usage: 
+#       This symbol can be used in module 'psxy' with option '-Sk' as :
+#                      '-Skcompass/1c'
+#       or in 'pslegend' as : 
+#                      'S 0.2c kcompass 0.15i black 0.5p 1c compass' 
+
+N: 1 a
+$1 R
+-90 R
+0	    0.5  M -Gblack 
+0.25  -0.5  D
+0     -0.3  D  
+0     -0.3  M 
+-0.25 -0.5  D   
+0     0.5  D
+

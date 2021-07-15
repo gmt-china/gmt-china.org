@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GMT中文社区</title>
+    <link>https://gmt-china.org/authors/%E7%8E%8B%E6%9D%B0/</link>
+    <description>Recent content on GMT中文社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <copyright>&amp;copy; 2016 – {year} GMT中文社区</copyright>
+    <lastBuildDate>Sun, 17 Sep 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://gmt-china.org/authors/%E7%8E%8B%E6%9D%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>中国大陆及周边活动地块分布图</title>
+      <link>https://gmt-china.org/example/ex016/</link>
+      <pubDate>Sun, 17 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex016/</guid>
+      <description>CN-plate-neighbor.dat | CN-block-L1.dat | CN-block-L1-deduced.dat | CN-block-L2.dat | CN-border-L1.dat 本文绘制了中国大陆及周边活动地块分布图。 CN-plate-neighbor.dat 为中国大陆周边板块边界数据 CN-block-L1.dat 为一级地块边界数据 CN-block-L1-deduced.dat 为一级地块推断边界数据 CN-block-L2.dat 为二级地</description>
+    </item>
+    
+  </channel>
+</rss>

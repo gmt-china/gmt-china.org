@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on GMT中文社区</title>
+    <link>https://gmt-china.org/tags/</link>
+    <description>Recent content in Tags on GMT中文社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <copyright>&amp;copy; 2016 – {year} GMT中文社区</copyright>
+    <lastBuildDate>Wed, 19 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://gmt-china.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux</title>
+      <link>https://gmt-china.org/tags/linux/</link>
+      <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mac</title>
+      <link>https://gmt-china.org/tags/mac/</link>
+      <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/tags/mac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows</title>
+      <link>https://gmt-china.org/tags/windows/</link>
+      <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/tags/windows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>聚餐</title>
+      <link>https://gmt-china.org/tags/%E8%81%9A%E9%A4%90/</link>
+      <pubDate>Tue, 17 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/tags/%E8%81%9A%E9%A4%90/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>数据下载</title>
+      <link>https://gmt-china.org/tags/%E6%95%B0%E6%8D%AE%E4%B8%8B%E8%BD%BD/</link>
+      <pubDate>Thu, 14 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/tags/%E6%95%B0%E6%8D%AE%E4%B8%8B%E8%BD%BD/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>文献下载</title>
+      <link>https://gmt-china.org/tags/%E6%96%87%E7%8C%AE%E4%B8%8B%E8%BD%BD/</link>
+      <pubDate>Sat, 12 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/tags/%E6%96%87%E7%8C%AE%E4%B8%8B%E8%BD%BD/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>地形图</title>
+      <link>https://gmt-china.org/tags/%E5%9C%B0%E5%BD%A2%E5%9B%BE/</link>
+      <pubDate>Thu, 24 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/tags/%E5%9C%B0%E5%BD%A2%E5%9B%BE/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>格式转换</title>
+      <link>https://gmt-china.org/tags/%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2/</link>
+      <pubDate>Mon, 07 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/tags/%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>地学数据</title>
+      <link>https://gmt-china.org/tags/%E5%9C%B0%E5%AD%A6%E6%95%B0%E6%8D%AE/</link>
+      <pubDate>Tue, 25 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/tags/%E5%9C%B0%E5%AD%A6%E6%95%B0%E6%8D%AE/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>震源球</title>
+      <link>https://gmt-china.org/tags/%E9%9C%87%E6%BA%90%E7%90%83/</link>
+      <pubDate>Mon, 03 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/tags/%E9%9C%87%E6%BA%90%E7%90%83/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GMT User Dinner</title>
+      <link>https://gmt-china.org/tags/gmt-user-dinner/</link>
+      <pubDate>Tue, 27 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/tags/gmt-user-dinner/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>培训</title>
+      <link>https://gmt-china.org/tags/%E5%9F%B9%E8%AE%AD/</link>
+      <pubDate>Sun, 25 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/tags/%E5%9F%B9%E8%AE%AD/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>射线</title>
+      <link>https://gmt-china.org/tags/%E5%B0%84%E7%BA%BF/</link>
+      <pubDate>Wed, 31 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/tags/%E5%B0%84%E7%BA%BF/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>镜像</title>
+      <link>https://gmt-china.org/tags/%E9%95%9C%E5%83%8F/</link>
+      <pubDate>Fri, 08 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/tags/%E9%95%9C%E5%83%8F/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

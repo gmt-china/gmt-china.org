@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GMT中文社区</title>
+    <link>https://gmt-china.org/authors/seispider/</link>
+    <description>Recent content on GMT中文社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <copyright>&amp;copy; 2016 – {year} GMT中文社区</copyright>
+    <lastBuildDate>Sat, 07 Apr 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://gmt-china.org/authors/seispider/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>绘制含地形起伏的地震剖面图</title>
+      <link>https://gmt-china.org/example/ex019/</link>
+      <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex019/</guid>
+      <description>震中位置数据 | 机制解数据 | 海拔数据 本文展示了如何同时绘制沿着垂直剖面的海拔变化图、地震分布及震源机制图。 Bash 绘图脚本如下: profile GMT6+sh GMT5+sh #!/bin/bash gmt begin profile png R=0/11/0/700 J=X5i/-2i</description>
+    </item>
+    
+    <item>
+      <title>矢量及应力应变张量绘制</title>
+      <link>https://gmt-china.org/example/ex017/</link>
+      <pubDate>Fri, 13 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex017/</guid>
+      <description>速度矢量 | 板块位置 | 应力张量 本文绘制了速度矢量和应力应变张量主轴 Bash 绘图脚本如下: subslab GMT6+sh GMT5+sh #!/usr/bin/env sh gmt begin subslab png ps=subslab.ps J=X-4i/-4i R=0/400/0/400 I=10/10 # 绘制底图 gmt basemap -R$R -JX-4i/-4i -Bxaf+l&amp;#34;X [km]&amp;#34; -Byaf+l&amp;#34;Depth [km]&amp;#34; -BEnSw+t&amp;#34;Mantle Velocity&amp;#34; # 将</description>
+    </item>
+    
+    <item>
+      <title>利用 Google Maps 获取超高精度高程数据</title>
+      <link>https://gmt-china.org/blog/google-maps-elevation-api/</link>
+      <pubDate>Thu, 14 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/google-maps-elevation-api/</guid>
+      <description>如何获得米级精度的高程数据?</description>
+    </item>
+    
+    <item>
+      <title>使用sci-hub下载文献</title>
+      <link>https://gmt-china.org/blog/sci-hub/</link>
+      <pubDate>Sat, 12 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/sci-hub/</guid>
+      <description>教你如何用sci-hub下载文献</description>
+    </item>
+    
+    <item>
+      <title>Windows 下可用的 Unix 工具</title>
+      <link>https://gmt-china.org/blog/unix-tools-for-windows/</link>
+      <pubDate>Sat, 29 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/unix-tools-for-windows/</guid>
+      <description>我们为Windows用户提供了常用的Unix小工具。</description>
+    </item>
+    
+  </channel>
+</rss>

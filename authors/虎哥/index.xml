@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GMT中文社区</title>
+    <link>https://gmt-china.org/authors/%E8%99%8E%E5%93%A5/</link>
+    <description>Recent content on GMT中文社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <copyright>&amp;copy; 2016 – {year} GMT中文社区</copyright>
+    <lastBuildDate>Tue, 01 Nov 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://gmt-china.org/authors/%E8%99%8E%E5%93%A5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>绘制晨昏线及太阳位置</title>
+      <link>https://gmt-china.org/example/ex009/</link>
+      <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex009/</guid>
+      <description>sunglasses.eps 本文利用 GMT 5.3 中新增的 pssolar 模块绘制了晨昏线并计算得到太阳的位置， 同时利用 psxy 的新增功能，直接将 eps 格式的太阳图片绘制在指定位置。 pssolar GMT6+sh GMT5+sh #!/bin/bash gmt begin solar png #</description>
+    </item>
+    
+  </channel>
+</rss>

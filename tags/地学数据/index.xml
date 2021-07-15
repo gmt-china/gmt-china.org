@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>地学数据 on GMT中文社区</title>
+    <link>https://gmt-china.org/tags/%E5%9C%B0%E5%AD%A6%E6%95%B0%E6%8D%AE/</link>
+    <description>Recent content in 地学数据 on GMT中文社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <copyright>&amp;copy; 2016 – {year} GMT中文社区</copyright>
+    <lastBuildDate>Tue, 25 Oct 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://gmt-china.org/tags/%E5%9C%B0%E5%AD%A6%E6%95%B0%E6%8D%AE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>中国一级河流数据</title>
+      <link>https://gmt-china.org/example/ex008/</link>
+      <pubDate>Tue, 25 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex008/</guid>
+      <description>CN-border-La.dat | CN-Rivers.dat CN-Rivers GMT6+sh GMT5+sh #!/bin/bash gmt begin CN-Rivers png gmt set MAP_GRID_PEN_PRIMARY 0.25p,gray,2_2:1 gmt set FORMAT_GEO_MAP ddd:mm:ssF MAP_FRAME_WIDTH 3p gmt set FONT_ANNOT_PRIMARY 7p # 绘制中国地图 gmt coast -JM105/35/6.5i -R70/138/13/56 -G244/243/239 -S167/194/223 -B10f5g10 -Lg85/17.5+c17.5+w800k+f+u gmt plot CN-border-La.dat -W0.5p # 绘制一级河流数据 gmt plot CN-Rivers.dat -W1p,blue # 绘制南海区域 gmt basemap -JM1.1i -R105/123/3/24 -B0 -X5.4i</description>
+    </item>
+    
+    <item>
+      <title>中国地震区域划分</title>
+      <link>https://gmt-china.org/example/ex005/</link>
+      <pubDate>Tue, 25 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex005/</guid>
+      <description>CN-border-La.dat CN-EQRegion.dat | CN-EQRegion-name.dat | CN-EQSubRegion.dat | CN-EQSubRegion-name.dat 本文提供了中国地震区划数据。 CN-EQRegion GMT6+sh GMT5+sh #!/bin/bash gmt begin CN-EQRegion png gmt set MAP_GRID_PEN_PRIMARY 0.25p,gray,2_2:1 gmt set FORMAT_GEO_MAP ddd:mm:ssF MAP_FRAME_WIDTH 3p gmt set FONT_ANNOT_PRIMARY 7p # 绘制中国地图 gmt coast -JM105/6.5i -R65/145/12/56 -G244/243/239 -S167/194/223 -B10f5g10 -Lg85/17.5+c17.5+w500k+f+u gmt plot CN-border-La.dat -W0p,gray70 # 绘制地震亚区</description>
+    </item>
+    
+    <item>
+      <title>中国断层数据</title>
+      <link>https://gmt-china.org/example/ex007/</link>
+      <pubDate>Tue, 25 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex007/</guid>
+      <description>CN-border-La.dat | CN-faults.dat CN-faults GMT6+sh GMT5+sh #!/bin/bash gmt begin CN-faults png gmt set MAP_GRID_PEN_PRIMARY 0.25p,gray,2_2:1 gmt set FORMAT_GEO_MAP ddd:mm:ssF MAP_FRAME_WIDTH 3p gmt set FONT_ANNOT_PRIMARY 7p # 绘制中国地图 gmt coast -JM105/35/6.5i -R70/138/13/56 -G244/243/239 -S167/194/223 -B10f5g10 -Lg85/17.5+c17.5+w800k+f+u gmt plot CN-border-La.dat -W0.5p # 绘制断层数据 gmt plot CN-faults.dat -W0.5p,blue # 绘制南海区域 gmt basemap -JM1.1i -R105/123/3/24 -B0 -X5.4i --MAP_FRAME_TYPE=plain --MAP_FRAME_PEN=1p</description>
+    </item>
+    
+    <item>
+      <title>中国铁路线</title>
+      <link>https://gmt-china.org/example/ex006/</link>
+      <pubDate>Tue, 25 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex006/</guid>
+      <description>CN-border-La.dat | CN-Railways.dat 铁路线数据来源于 MapSIS。 GMT 的 psxy 模块本身并不支持绘制铁路线。为了实现绘制铁路线的效果，此处采取的 技巧是是条线画两遍。如下脚本中第一</description>
+    </item>
+    
+    <item>
+      <title>中国省会城市分布图</title>
+      <link>https://gmt-china.org/example/ex004/</link>
+      <pubDate>Mon, 24 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex004/</guid>
+      <description>CN-border-La.dat | CN-capitals.dat 本文整理并绘制了中国省会城市的分布图，同时展示了如何巧妙地利用 pstext 模块的功能来灵活地放置城市名的位置。 绘图脚本如下： CN-capitals GMT6+sh GMT5+sh #!/bin/bash gmt begin CN-capitals png gmt set</description>
+    </item>
+    
+    <item>
+      <title>中国国界、省界及十段线</title>
+      <link>https://gmt-china.org/example/ex003/</link>
+      <pubDate>Sun, 23 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex003/</guid>
+      <description>由于 GMT 自带的国界线数据不符合中国领土主张，因而在绘制用于正式图件时用户需要 自己准备国界数据。本文提供了笔者自己数字化的几个国界相关数据以及两</description>
+    </item>
+    
+  </channel>
+</rss>

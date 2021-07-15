@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>戴宗辉 on GMT中文社区</title>
+    <link>https://gmt-china.org/authors/%E6%88%B4%E5%AE%97%E8%BE%89/</link>
+    <description>Recent content in 戴宗辉 on GMT中文社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <copyright>&amp;copy; 2016 – {year} GMT中文社区</copyright>
+    <lastBuildDate>Sat, 29 Jul 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://gmt-china.org/authors/%E6%88%B4%E5%AE%97%E8%BE%89/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>绘制M-T图</title>
+      <link>https://gmt-china.org/example/ex012/</link>
+      <pubDate>Sat, 29 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex012/</guid>
+      <description>mt.dat M-T图表示地震随时间发展的数量密度和震级大小。M-T图的横轴是时间，纵轴是震级。 图中每一条竖线代表一次地震，竖线的位置表示了地震发生的时</description>
+    </item>
+    
+  </channel>
+</rss>

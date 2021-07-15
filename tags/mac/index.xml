@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mac on GMT中文社区</title>
+    <link>https://gmt-china.org/tags/mac/</link>
+    <description>Recent content in Mac on GMT中文社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <copyright>&amp;copy; 2016 – {year} GMT中文社区</copyright>
+    <lastBuildDate>Wed, 19 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://gmt-china.org/tags/mac/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GMT脚本执行利器——VS Code</title>
+      <link>https://gmt-china.org/blog/vscode-usage/</link>
+      <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/vscode-usage/</guid>
+      <description>Visual Studio Code，简称vscode，是微软推出的一款免费、轻量且功能强大的编辑器。vscode除一键执行、语法高亮、分屏显示外，还可实现bat/</description>
+    </item>
+    
+  </channel>
+</rss>

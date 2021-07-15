@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>陆好健 on GMT中文社区</title>
+    <link>https://gmt-china.org/authors/%E9%99%86%E5%A5%BD%E5%81%A5/</link>
+    <description>Recent content in 陆好健 on GMT中文社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <copyright>&amp;copy; 2016 – {year} GMT中文社区</copyright>
+    <lastBuildDate>Tue, 26 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://gmt-china.org/authors/%E9%99%86%E5%A5%BD%E5%81%A5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>绘制InSAR形变速率场</title>
+      <link>https://gmt-china.org/example/ex025/</link>
+      <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex025/</guid>
+      <description>yn.xyz 此文是利用Sentinel-1数据，基于InSAR方法获取断裂带及邻近区域构造地壳形变速率，其方向为LOS雷达的视线方向 yn.xyz格式数</description>
+    </item>
+    
+  </channel>
+</rss>

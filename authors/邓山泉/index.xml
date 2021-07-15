@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GMT中文社区</title>
+    <link>https://gmt-china.org/authors/%E9%82%93%E5%B1%B1%E6%B3%89/</link>
+    <description>Recent content on GMT中文社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <copyright>&amp;copy; 2016 – {year} GMT中文社区</copyright>
+    <lastBuildDate>Sun, 17 Sep 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://gmt-china.org/authors/%E9%82%93%E5%B1%B1%E6%B3%89/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>中国大陆及周边活动地块分布图</title>
+      <link>https://gmt-china.org/example/ex016/</link>
+      <pubDate>Sun, 17 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex016/</guid>
+      <description>CN-plate-neighbor.dat | CN-block-L1.dat | CN-block-L1-deduced.dat | CN-block-L2.dat | CN-border-L1.dat 本文绘制了中国大陆及周边活动地块分布图。 CN-plate-neighbor.dat 为中国大陆周边板块边界数据 CN-block-L1.dat 为一级地块边界数据 CN-block-L1-deduced.dat 为一级地块推断边界数据 CN-block-L2.dat 为二级地</description>
+    </item>
+    
+    <item>
+      <title>绘制指定测线的地震剖面图</title>
+      <link>https://gmt-china.org/example/ex014/</link>
+      <pubDate>Tue, 15 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex014/</guid>
+      <description>earthquakes.dat 本文展示了如何绘制选定测线的地震剖面图。 earthquakes.dat 为地震数据文件， 包含三列数据，分别是经度、纬度、深度。 图（a）绘制了区域范围内的地震震中分布图，</description>
+    </item>
+    
+    <item>
+      <title>含中国大陆地区的地形图</title>
+      <link>https://gmt-china.org/example/ex010/</link>
+      <pubDate>Thu, 24 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex010/</guid>
+      <description>eq.dat | earth_relief_01m.grd 本文展示了如何绘制含中国大陆地区的地形图，同时也展示了如何通过 awk+wc+cut 对数据进行筛选计数，以及如何绘制简单的图例。 下面是绘图所使用的脚本： topo</description>
+    </item>
+    
+  </channel>
+</rss>

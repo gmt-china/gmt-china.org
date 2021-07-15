@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GMT中文社区</title>
+    <link>https://gmt-china.org/authors/%E7%8E%8B%E4%BA%AE/</link>
+    <description>Recent content on GMT中文社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <copyright>&amp;copy; 2016 – {year} GMT中文社区</copyright>
+    <lastBuildDate>Wed, 23 Jan 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://gmt-china.org/authors/%E7%8E%8B%E4%BA%AE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>绘制图中图</title>
+      <link>https://gmt-china.org/example/ex023/</link>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex023/</guid>
+      <description>如果绘制的地图区域范围很小，读者可能不清楚所画区域的位置。 这时，往往需要在地图的一角，绘制一个图中图表示区域的位置。 解决这个问题的整体思路应</description>
+    </item>
+    
+    <item>
+      <title>用两套地形数据绘制夏威夷岛地形起伏图</title>
+      <link>https://gmt-china.org/example/ex021/</link>
+      <pubDate>Wed, 05 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex021/</guid>
+      <description>陆地地形文件 | 海底地形文件 | 配色文件 夏威夷岛是夏威夷群岛的最大岛。 现在我们想绘制檀香山的地形。我们希望地形的精度尽可能的高，以得到最清晰的地</description>
+    </item>
+    
+    <item>
+      <title>GMT 中文社区第三次线下聚餐</title>
+      <link>https://gmt-china.org/blog/gud-20171017/</link>
+      <pubDate>Tue, 17 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/gud-20171017/</guid>
+      <description>2017年10月，GMT中文社区在北京举行了第三个线下聚餐。</description>
+    </item>
+    
+    <item>
+      <title>投稿须知</title>
+      <link>https://gmt-china.org/blog/instructions-for-authors/</link>
+      <pubDate>Thu, 17 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/instructions-for-authors/</guid>
+      <description>如何向GMT中文社区投稿?</description>
+    </item>
+    
+    <item>
+      <title>绘制等高线图和剖面图</title>
+      <link>https://gmt-china.org/example/ex013/</link>
+      <pubDate>Mon, 14 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex013/</guid>
+      <description>maunakea.grd 冒纳凯阿火山位于夏威夷群岛，是形成夏威夷岛的五座火山之一，是从结构体底部到顶部的全球最高峰。 这里，我们尝试为冒纳凯阿火山绘制等高线地图和高</description>
+    </item>
+    
+    <item>
+      <title>绘制M-T图</title>
+      <link>https://gmt-china.org/example/ex012/</link>
+      <pubDate>Sat, 29 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex012/</guid>
+      <description>mt.dat M-T图表示地震随时间发展的数量密度和震级大小。M-T图的横轴是时间，纵轴是震级。 图中每一条竖线代表一次地震，竖线的位置表示了地震发生的时</description>
+    </item>
+    
+    <item>
+      <title>震源机制分布图</title>
+      <link>https://gmt-china.org/example/ex001/</link>
+      <pubDate>Mon, 03 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex001/</guid>
+      <description>本示例展示了如何绘制震源球的分布图。震级的大小由震源球的大小来表征， 震源的深度则由震源球的压缩象限的颜色表示。 beachball GMT6+sh GMT5+sh #!/bin/bash # 绘制震源机制分布图，</description>
+    </item>
+    
+    <item>
+      <title>GMT中文社区首次线下聚餐</title>
+      <link>https://gmt-china.org/blog/gud-20160628/</link>
+      <pubDate>Sat, 24 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/gud-20160628/</guid>
+      <description>&lt;p&gt;2016年6月28日，GMT中文社区在北京举行了首次GMT用户线下聚餐（GMT User Dinner，简称GUD）。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

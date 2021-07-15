@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GMT中文社区</title>
+    <link>https://gmt-china.org/authors/%E7%BD%97%E5%A8%9C/</link>
+    <description>Recent content on GMT中文社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <copyright>&amp;copy; 2016 – {year} GMT中文社区</copyright>
+    <lastBuildDate>Tue, 27 Sep 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://gmt-china.org/authors/%E7%BD%97%E5%A8%9C/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GMT中文社区第二次线下聚餐</title>
+      <link>https://gmt-china.org/blog/gud-20160921/</link>
+      <pubDate>Tue, 27 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/gud-20160921/</guid>
+      <description>GMT中文社区在湖北武汉组织了第二次线下聚餐。</description>
+    </item>
+    
+    <item>
+      <title>GMT中文社区首次线下培训</title>
+      <link>https://gmt-china.org/blog/gmtcon-20160921/</link>
+      <pubDate>Sun, 25 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/gmtcon-20160921/</guid>
+      <description>&lt;p&gt;2016年9月21至22日，GMT中文社区协同中国地震局地震研究所和中国地震局地壳形变学科
+技术管理组举行了首次GMT线下培训活动。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>震源球 on GMT中文社区</title>
+    <link>https://gmt-china.org/tags/%E9%9C%87%E6%BA%90%E7%90%83/</link>
+    <description>Recent content in 震源球 on GMT中文社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <copyright>&amp;copy; 2016 – {year} GMT中文社区</copyright>
+    <lastBuildDate>Mon, 03 Oct 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://gmt-china.org/tags/%E9%9C%87%E6%BA%90%E7%90%83/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>震源机制分布图</title>
+      <link>https://gmt-china.org/example/ex001/</link>
+      <pubDate>Mon, 03 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex001/</guid>
+      <description>本示例展示了如何绘制震源球的分布图。震级的大小由震源球的大小来表征， 震源的深度则由震源球的压缩象限的颜色表示。 beachball GMT6+sh GMT5+sh #!/bin/bash # 绘制震源机制分布图，</description>
+    </item>
+    
+  </channel>
+</rss>

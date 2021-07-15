@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GMT中文社区</title>
+    <link>https://gmt-china.org/authors/%E6%9D%8E%E9%BB%8E%E6%98%8E/</link>
+    <description>Recent content on GMT中文社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <copyright>&amp;copy; 2016 – {year} GMT中文社区</copyright>
+    <lastBuildDate>Tue, 22 Jan 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://gmt-china.org/authors/%E6%9D%8E%E9%BB%8E%E6%98%8E/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>地球化学三角图解的绘制</title>
+      <link>https://gmt-china.org/example/ex022/</link>
+      <pubDate>Tue, 22 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex022/</guid>
+      <description>三角图解文件 | 曲线坐标数据 三角图解有很多种，这里仅讨论一下地球化学上常用的地球化学图解用 GMT 的实现方法。 该三角图解引自Mukul R. Bhatia &amp;amp; Keith A.W. Crook, 1986,</description>
+    </item>
+    
+    <item>
+      <title>绘制GPS速度场</title>
+      <link>https://gmt-china.org/example/ex015/</link>
+      <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex015/</guid>
+      <description>本示例展示了如何利用psvelo模块绘制GPS速度场。 示例中所使用的GPS数据来自于 Zhao et al., Geod. Geodyn., 2015 的补充材料。 本示例仅用于演示，不保证数据的完</description>
+    </item>
+    
+  </channel>
+</rss>

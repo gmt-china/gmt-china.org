@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>社区规范 on GMT中文社区</title>
+    <link>https://gmt-china.org/categories/%E7%A4%BE%E5%8C%BA%E8%A7%84%E8%8C%83/</link>
+    <description>Recent content in 社区规范 on GMT中文社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <copyright>&amp;copy; 2016 – {year} GMT中文社区</copyright>
+    <lastBuildDate>Wed, 23 Aug 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://gmt-china.org/categories/%E7%A4%BE%E5%8C%BA%E8%A7%84%E8%8C%83/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GMT 中文社区 QQ 群入群须知</title>
+      <link>https://gmt-china.org/blog/community-guide/</link>
+      <pubDate>Wed, 23 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/community-guide/</guid>
+      <description>如何在 QQ 群中正确提问？</description>
+    </item>
+    
+    <item>
+      <title>投稿须知</title>
+      <link>https://gmt-china.org/blog/instructions-for-authors/</link>
+      <pubDate>Thu, 17 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/instructions-for-authors/</guid>
+      <description>如何向GMT中文社区投稿?</description>
+    </item>
+    
+  </channel>
+</rss>

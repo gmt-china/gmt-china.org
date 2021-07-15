@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.3.1">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="田冬冬">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="GMT4、GMT5以及即将发布的GMT6之间在用法上有什么区别? 我该使用哪一个?">
+
+  
+  <link rel="alternate" hreflang="zh-Hans" href="https://gmt-china.org/blog/gmt-versions/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarized-light.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarized-light.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.min.e8bc2e30d41affd83d8c1d34d8c6357d.css">
+
+  
+    
+    
+    
+    
+      
+    
+    
+    
+    <link rel="stylesheet" href="/css/academic.2240d95af5ce84fc7912df1be70e1d8b.css">
+  
+
+  
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://gmt-china.org/blog/gmt-versions/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="GMT中文社区">
+  <meta property="og:url" content="https://gmt-china.org/blog/gmt-versions/">
+  <meta property="og:title" content="GMT 各大版本间的差异 | GMT中文社区">
+  <meta property="og:description" content="GMT4、GMT5以及即将发布的GMT6之间在用法上有什么区别? 我该使用哪一个?"><meta property="og:image" content="https://gmt-china.org/img/icon-192.png">
+  <meta property="og:locale" content="zh-Hans">
+  
+  <meta property="article:published_time" content="2018-04-07T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2018-04-07T00:00:00&#43;00:00">
+  
+
+  
+
+  
+<meta http-equiv="refresh" content="0; URL=https://docs.gmt-china.org/latest/migrating/" />
+
+
+  <title>GMT 各大版本间的差异 | GMT中文社区</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>搜索</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="搜索..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">GMT中文社区</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="切换导航">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#">
+            
+            <span>首页</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#download">
+            
+            <span>下载</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#docs">
+            
+            <span>中文手册</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts">
+            
+            <span>博客</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/gallery/">
+            
+            <span>图库</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/data/">
+            
+            <span>数据集</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#people">
+            
+            <span>贡献者</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#usermap">
+            
+            <span>用户分布</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact">
+            
+            <span>联系我们</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/index.xml">
+            
+            <span><i class="fas fa-rss"></i></span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">GMT 各大版本间的差异</h1>
+
+  
+
+  
+    
+
+
+
+<meta content="2018-04-07 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2018-04-07 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/seisman/">田冬冬</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>2018年04月07日</time>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    <a href="">GMT技巧</a></span>
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=&amp;url="
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u="
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=&amp;title="
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=&amp;title="
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=&amp;body=">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<p>GMT 目前存在如下几个大版本:</p>
+
+<ul>
+<li><a href="https://www.soest.hawaii.edu/gmt/" target="_blank">GMT4</a>：最新版本为 GMT 4.5.18，也是最终版本，已不再维护更新；</li>
+<li><a href="http://gmt.soest.hawaii.edu/doc/5.4.5/" target="_blank">GMT5</a>：最新版本为 GMT 5.4.5，是目前的主流版本</li>
+<li><a href="http://gmt.soest.hawaii.edu/doc/latest/" target="_blank">GMT6</a>：正在开发中的版本，预计未来一年内会发发布第一个正式版</li>
+</ul>
+
+<p>除此之外，GMT 还为其他常用的编程语言提供了方便的接口：</p>
+
+<ul>
+<li><a href="https://github.com/GenericMappingTools/gmtmex" target="_blank">gmtmex</a>：GMT 的 matlab 接口，支持GMT5和GMT6</li>
+<li><a href="https://github.com/GenericMappingTools/GMT.jl" target="_blank">GMT.jl</a>：GMT 的 Julia 接口，支持GMT5和GMT6</li>
+<li><a href="https://github.com/GenericMappingTools/pygmt" target="_blank">pygmt</a>：GMT 的 Python 接口，支持GMT6</li>
+</ul>
+
+<p>GMT6 虽然尚未发布，但其已经足够稳定，可以用于日常使用。最主要的是，GMT6 几乎
+完全兼容 GMT5 的语法，且提供了一种更为简洁易用的新写法。</p>
+
+<p>本文将通过绘制如下一张简单的图片来展示 GMT 不同版本在绘图脚本上的主要差异。
+需要注意，本文不可能详细介绍 GMT 各版本之间的主要差异，本文的主要目的是为了
+演示 GMT6 新语法的简洁性。</p>
+
+
+
+
+<figure>
+
+<img src="/blog/gmt-versions/gmt-map.png" />
+
+
+</figure>
+
+<h2 id="gmt4">GMT4</h2>
+
+<p>下面的脚本展示了如何在GMT4下绘制上图。脚本中的注释信息简单介绍了每句命令的含义，
+选项的具体含义不是本文重点，不再赘述。</p>
+
+
+
+
+                          
+
+<pre><code class="language-bash line-numbers">#!/bin/bash
+PS=gmt-map.ps
+
+J=X10c/10c
+R=0/10/0/10
+
+# 修改GMT默认参数
+gmtset HEADER_FONT Helvetica-Bold HEADER_FONT_SIZE 24p
+
+# 写入PS文件头
+psxy -J$J -R$R -K -T &gt; $PS
+
+# 绘制底图
+psbasemap -J$J -R$R -Ba2f1:X::,km:/a2f1:=$::Y:WSen:.&#34;Simple Basemap&#34;: -K -O &gt;&gt; $PS
+
+# 绘制两个五角星
+psxy -J$J -R$R -Sa1c -Gred -K -O &gt;&gt; $PS &lt;&lt; EOF
+1 1
+2 2
+EOF
+
+# 绘制线段
+psxy -J$J -R$R -W1p -m -K -O &gt;&gt; $PS &lt;&lt; EOF
+&gt; -W2p,red
+3 3
+3.5 4
+&gt; -W2p,blue,-
+4 4
+4 6
+EOF
+
+# 绘制箭头
+psxy -J$J -R$R -Sv -Gred -K -O &gt;&gt; $PS &lt;&lt; EOF
+5 5 30 1
+EOF
+
+# 绘制地图及其比例尺
+R=70/138/13/56
+J=M105/35/12.4c
+pscoast -J$J -R$R -Df -A1000 -B10/10:.&#39;China Map&#39;: -W1/1p -N1/1p -Lf128/20/20/1000k&#43;u -X12c -K -O &gt;&gt; $PS
+
+# 写入PS文件尾
+psxy -J$J -R$R -O -T &gt;&gt; $PS
+
+# 将图片转换为PDF格式
+ps2raster -A -P -Tf $PS
+
+# 清理当前目录下的临时文件
+rm .gmtdefaults4 .gmtcommands4
+</code></pre>
+
+
+
+<h2 id="gmt5">GMT5</h2>
+
+<p>下面的脚本展示了如何在 GMT5 下绘制上图。将 GMT5 与 GMT4 的脚本相比，会发现如下
+几个主要的区别：</p>
+
+<ul>
+<li>所有 GMT 命令均以 <code>gmt</code> 开头，以避免与其他同名的命令冲突</li>
+<li>所有 GMT 参数进行了统一分类与命令，比如与文字相关的参数都名为 <code>FONT_xxx</code> 、
+与绘图相关的参数都名为 <code>MAP_xxx</code></li>
+<li><code>-B</code> 选项可重复多次使用，<code>-BWSen+t</code> 用于设置整个底图的属性（标题、背景色等），
+<code>-Bx</code> 和 <code>-By</code> 则分别设置 X 轴和 Y 轴的轴属性（刻度、标注、标签、单位、前缀等）。
+相比于 GMT4 而言，条理更加清晰</li>
+<li>增加了颜色透明功能，<code>red@70</code> 表示70%透明的红色</li>
+<li>可以自动处理多段数据，不再需要 <code>-m</code> 选项</li>
+<li>绘制箭头的语法不同，新语法有更多的选项，可以得到更多种类的箭头</li>
+<li>比例尺语法有变化，即 <code>-L</code> 和 <code>-F</code> 选项，新语法看上去很复杂，但此语法将比例尺、
+colorbar、指南针等修饰物的语法做了统一，且一旦理解之后，可以很灵活地在图上
+任意位置放置这些修饰物</li>
+<li>图片转换命令从 <code>ps2raster</code> 改成了 <code>psconvert</code></li>
+<li>配置文件和命令历史文件的文件名变成了 <code>gmt.conf</code> 和 <code>gmt.history</code></li>
+</ul>
+
+
+
+
+                          
+
+<pre><code class="language-bash line-numbers">#!/bin/bash
+PS=gmt-map.ps
+
+J=X10c/10c
+R=0/10/0/10
+
+# 参数名变化
+gmt set FONT_TITLE=24p,Helvetica-Bold
+gmt psxy -J$J -R$R -K -T &gt; $PS
+
+# -B选项语法不同
+gmt psbasemap -J$J -R$R -Bxaf&#43;lX&#43;u&#39; km&#39; -Byaf&#43;p&#39;$ &#39;&#43;lY -BWSen&#43;t&#34;Simple Basemap&#34; -K -O &gt;&gt; $PS
+
+# 颜色透明功能
+gmt psxy -J$J -R$R -Sa1c -Gred@70 -K -O &gt;&gt; $PS &lt;&lt; EOF
+1 1
+2 2
+EOF
+
+# 不再需要-m选项
+gmt psxy -J$J -R$R -W1p -K -O &gt;&gt; $PS &lt;&lt; EOF
+&gt; -W2p,red
+3 3
+3.5 4
+&gt; -W2p,blue,-
+4 4
+4 6
+EOF
+
+# 绘制箭头语法改变
+gmt psxy -J$J -R$R -Sv0.4c&#43;e -Gred -K -O &gt;&gt; $PS &lt;&lt; EOF
+5 5 30 1
+EOF
+
+R=70/138/13/56
+J=M105/35/12.4c
+
+# 绘制比例尺语法改变
+gmt pscoast -J$J -R$R -Df -A1000 -Baf -B&#43;t&#39;China Map&#39; -W1/1p -N1/1p -LjBR&#43;c20&#43;o1c/1c&#43;f&#43;w1000k&#43;u -F&#43;glightblue -X12c -K -O &gt;&gt; $PS
+
+gmt psxy -J$J -R$R -O -T &gt;&gt; $PS
+
+# ps2raster 改为 psconvert
+gmt psconvert -A -P -Tf $PS
+
+# 临时文件的文件名变化
+rm gmt.conf gmt.history
+</code></pre>
+
+
+
+<h2 id="gmt6">GMT6</h2>
+
+<p>GMT6 尚未发布，但 GMT6 完全兼容 GMT5。上面的 GMT5 绘图脚本可以不做任何修改地在
+GMT6 下使用。除此之外，GMT6 还引入了一种全新的“现代模式”，大大简化了脚本。</p>
+
+<p>GMT6 相对于 GMT5 做了大量简化，列举如下：</p>
+
+<ul>
+<li>所有命令都不再需要 <code>-K</code> <code>-O</code>，也不需要使用 <code>&gt;</code> 或 <code>&gt;&gt;</code> 重定向到 PS 文件，
+用户完全不需要意识到 PS 文件的存在</li>
+<li>只要前面的命令使用过 <code>-J</code> 和 <code>-R</code>，则后面的命令不再需要重复 <code>-J</code>、<code>-R</code></li>
+<li>以 <code>gmt begin</code> 开始一张绘图，以 <code>gmt end</code> 结束一张绘图</li>
+<li>使用 <code>gmt begin</code> 时可以指定要生成的图片的文件名以及多种格式</li>
+<li>命令名有微调（虽然有变化，但旧命令依然可以使用！）
+
+<ul>
+<li>以 <code>ps</code> 开头的命令均省略了 <code>ps</code>，比如 <code>psbasemap</code> 变成 <code>basemap</code>、
+<code>pscoast</code> 变成 <code>coast</code></li>
+<li>几个特例： <code>psxy</code> 变成 <code>plot</code>，<code>psscale</code> 变成 <code>colorbar</code></li>
+</ul></li>
+<li>执行 <code>gmt end</code> 时自动根据 <code>gmt begin</code> 中的设置生成多种格式的图片</li>
+<li>不再需要手动清理 <code>gmt.conf</code> 和 <code>gmt.history</code> 等临时文件</li>
+</ul>
+
+
+
+
+                          
+
+<pre><code class="language-bash line-numbers">#!/bin/bash
+
+# gmt begin 指定图片名为 gmt-map，指定图片格式为pdf、png和jpg
+gmt begin gmt-map pdf,png,jpg
+gmt set FONT_TITLE=24p,Helvetica-Bold
+
+# psbasemap -&gt; basemap
+# 省略 -K -O &gt;&gt; xxx.ps
+gmt basemap -JX10c/10c -R0/10/0/10 -Bxaf&#43;lX&#43;u&#39; km&#39; -Byaf&#43;p&#39;$ &#39;&#43;lY -BWSen&#43;t&#34;Simple Basemap&#34;
+
+# psxy -&gt; plot
+# 省略 -J -R -K -O &gt;&gt; xxx.ps
+gmt plot -Sa1c -Gred@70 &lt;&lt; EOF
+1 1
+2 2
+EOF
+gmt plot -W1p &lt;&lt; EOF
+&gt; -W2p,red
+3 3
+3.5 4
+&gt; -W2p,blue,-
+4 4
+4 6
+EOF
+gmt plot -Sv0.4c&#43;e -Gred &lt;&lt; EOF
+5 5 30 1
+EOF
+
+# pscoast -&gt; coast
+# 省略 -K -O &gt;&gt; xxx.ps
+# 此处绘制了新底图，所以需要再次指定 -J -R
+gmt coast -JM105/35/12.4c -R70/138/13/56 -Df -A1000 -Baf -B&#43;t&#39;China Map&#39; -W1/1p -N1/1p -LjBR&#43;c20&#43;o1c/1c&#43;f&#43;w1000k&#43;u -F&#43;glightblue -X12c
+
+# gmt end自动生成多种格式的图片
+gmt end
+</code></pre>
+
+
+
+    </div>
+
+    
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+      
+      <img class="portrait mr-3" src="/authors/seisman/avatar_hu100a98b67a1d5419ea422f460edae8cc_249634_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="/authors/seisman/">田冬冬</a></h5>
+      <h6 class="card-subtitle">密西根州立大学 博士后</h6>
+      <p class="card-text" itemprop="description">GMT中文社区创立者及主要维护者，SeisMan博客博主。</p>
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/seisman" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://seisman.info/" target="_blank" rel="noopener">
+              <i class="fas fa-globe"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          <li>
+            <a itemprop="sameAs" href="mailto:tiandong@msu.edu" >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="http://orcid.org/0000-0001-7967-1197" target="_blank" rel="noopener">
+              <i class="ai ai-orcid"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://scholar.google.com/citations?user=VITag6sAAAAJ" target="_blank" rel="noopener">
+              <i class="ai ai-google-scholar"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://www.researchgate.net/profile/Dongdong_Tian" target="_blank" rel="noopener">
+              <i class="ai ai-researchgate"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+    
+
+    
+    <div class="article-widget">
+      
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">下一页</div>
+    <a href="/blog/national-geographic-database/" rel="next">2017版1:100万全国标准基础地理数据！你值得拥有</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">上一页</div>
+    <a href="/blog/bash2bat/" rel="prev">将 Bash 脚本改成 Bat 脚本</a>
+  </div>
+  
+</div>
+
+    </div>
+    
+
+    
+<section id="comments">
+  <div id="gitalk-container"></div>
+
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+<script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: 'b2dfca9a4bfad764aa2b',
+    clientSecret: '4ae5ddcd25c6b6d6bc07ac39201ea417054a530a',
+    owner: 'gmt-china',
+    repo: 'gitalk',
+    admin: ['zhaozhiyuan1989','seisman','wangliang1989'],
+    id: md5(location.pathname),
+    body: location.href,
+  });
+  gitalk.render('gitalk-container');
+</script>
+
+</section>
+
+
+
+  </div>
+</article>
+
+<div class="container">
+  <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    &copy; 2016 – 2021 GMT中文社区 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+</div>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">引用</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> 复制
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> 下载
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/dos.min.js"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "搜索...",
+        'results': "搜索结果",
+        'no_results': "没有找到结果"
+      };
+      const content_type = {
+        'post': "文章",
+        'project': "项目",
+        'publication' : "出版物",
+        'talk' : "演讲"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.eeb855c70a08cf40f8f8d58c82fa7d5e.js"></script>
+
+  </body>
+</html>
+

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GMT中文社区</title>
+    <link>https://gmt-china.org/authors/%E8%B5%B5%E5%BF%97%E8%BF%9C/</link>
+    <description>Recent content on GMT中文社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <copyright>&amp;copy; 2016 – {year} GMT中文社区</copyright>
+    <lastBuildDate>Wed, 19 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://gmt-china.org/authors/%E8%B5%B5%E5%BF%97%E8%BF%9C/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GMT脚本执行利器——VS Code</title>
+      <link>https://gmt-china.org/blog/vscode-usage/</link>
+      <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/vscode-usage/</guid>
+      <description>Visual Studio Code，简称vscode，是微软推出的一款免费、轻量且功能强大的编辑器。vscode除一键执行、语法高亮、分屏显示外，还可实现bat/</description>
+    </item>
+    
+    <item>
+      <title>绘制俯冲带地震分布</title>
+      <link>https://gmt-china.org/example/ex026/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex026/</guid>
+      <description>FMC.txt 此文绘制了西太平洋俯冲带日本本州至中国东北段震中分布图以及俯冲带剖面上的地震分布，地震数据来自GCMT。 plot_subduction GMT6+bat GMT5+sh set FM=FMC.txt set GRD=eastchina.grd gmt begin plot_subduction png A0.5c gmt set MAP_FRAME_WIDTH 2p gmt</description>
+    </item>
+    
+    <item>
+      <title>绘制速度模型</title>
+      <link>https://gmt-china.org/example/ex020/</link>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex020/</guid>
+      <description>速度模型数据 本文展示了如何绘制地壳速度模型图。示例数据分为 6 列，分别为 地层厚度，S波速度， P波速度，密度，S波Q值和P波Q值，绘图脚本只用到</description>
+    </item>
+    
+    <item>
+      <title>将 Bash 脚本改成 Bat 脚本</title>
+      <link>https://gmt-china.org/blog/bash2bat/</link>
+      <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/bash2bat/</guid>
+      <description>&lt;p&gt;社区提供的 GMT 绘图脚本多是基于 Linux 下的 bash 脚本，有相当一部分用户并不熟悉
+bash，因此有必要介绍如何将 bash 脚本改成 Windows 下可用的 bat 脚本。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>GMT5在Windows下提示无法创建用户目录的解决办法</title>
+      <link>https://gmt-china.org/blog/user-directory-warning/</link>
+      <pubDate>Fri, 27 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/user-directory-warning/</guid>
+      <description>如何解决“无法创建用户目录”的问题?</description>
+    </item>
+    
+    <item>
+      <title>绘制自定义符号</title>
+      <link>https://gmt-china.org/example/ex018/</link>
+      <pubDate>Fri, 13 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex018/</guid>
+      <description>GMT 官方目前内置了 40 个自定义符号，如下所示： GMT 内置自定义符号 但是对于广大用户来说，这些自定义符号仍然远远无法满足需求。 因此，社区在这里 持续更新</description>
+    </item>
+    
+    <item>
+      <title>含中国大陆地区的地形图</title>
+      <link>https://gmt-china.org/example/ex010/</link>
+      <pubDate>Thu, 24 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex010/</guid>
+      <description>eq.dat | earth_relief_01m.grd 本文展示了如何绘制含中国大陆地区的地形图，同时也展示了如何通过 awk+wc+cut 对数据进行筛选计数，以及如何绘制简单的图例。 下面是绘图所使用的脚本： topo</description>
+    </item>
+    
+  </channel>
+</rss>

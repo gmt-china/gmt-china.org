@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>聚餐 on GMT中文社区</title>
+    <link>https://gmt-china.org/tags/%E8%81%9A%E9%A4%90/</link>
+    <description>Recent content in 聚餐 on GMT中文社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <copyright>&amp;copy; 2016 – {year} GMT中文社区</copyright>
+    <lastBuildDate>Tue, 17 Oct 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://gmt-china.org/tags/%E8%81%9A%E9%A4%90/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GMT 中文社区第三次线下聚餐</title>
+      <link>https://gmt-china.org/blog/gud-20171017/</link>
+      <pubDate>Tue, 17 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/gud-20171017/</guid>
+      <description>2017年10月，GMT中文社区在北京举行了第三个线下聚餐。</description>
+    </item>
+    
+  </channel>
+</rss>

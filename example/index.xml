@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>示例 on GMT中文社区</title>
+    <link>https://gmt-china.org/example/</link>
+    <description>Recent content in 示例 on GMT中文社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <copyright>&amp;copy; 2016 – {year} GMT中文社区</copyright>
+    <lastBuildDate>Thu, 22 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://gmt-china.org/example/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>绘制三维地形图</title>
+      <link>https://gmt-china.org/example/ex027/</link>
+      <pubDate>Thu, 22 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex027/</guid>
+      <description>本文绘制了北纬28°附近三江并流处的三维地形图以及地形剖面图，为读者展示了三维地形及地形剖面的绘制方法。 主要用到 grdview 对三维地形进行呈现，grd</description>
+    </item>
+    
+    <item>
+      <title>绘制俯冲带地震分布</title>
+      <link>https://gmt-china.org/example/ex026/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex026/</guid>
+      <description>FMC.txt 此文绘制了西太平洋俯冲带日本本州至中国东北段震中分布图以及俯冲带剖面上的地震分布，地震数据来自GCMT。 plot_subduction GMT6+bat GMT5+sh set FM=FMC.txt set GRD=eastchina.grd gmt begin plot_subduction png A0.5c gmt set MAP_FRAME_WIDTH 2p gmt</description>
+    </item>
+    
+    <item>
+      <title>绘制InSAR形变速率场</title>
+      <link>https://gmt-china.org/example/ex025/</link>
+      <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex025/</guid>
+      <description>yn.xyz 此文是利用Sentinel-1数据，基于InSAR方法获取断裂带及邻近区域构造地壳形变速率，其方向为LOS雷达的视线方向 yn.xyz格式数</description>
+    </item>
+    
+    <item>
+      <title>《流浪地球》之GMT绘制三维地形轨迹图</title>
+      <link>https://gmt-china.org/example/ex024/</link>
+      <pubDate>Sat, 16 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex024/</guid>
+      <description>随着《流浪地球》这一硬核科幻巨作的热播，众网友也是见仁见智纷纷从各自领域去 考据其细节。热衷于作图的你们是否在一掠而过的镜头中发现了一个酷炫三维轨迹特效呢？</description>
+    </item>
+    
+    <item>
+      <title>绘制图中图</title>
+      <link>https://gmt-china.org/example/ex023/</link>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex023/</guid>
+      <description>如果绘制的地图区域范围很小，读者可能不清楚所画区域的位置。 这时，往往需要在地图的一角，绘制一个图中图表示区域的位置。 解决这个问题的整体思路应</description>
+    </item>
+    
+    <item>
+      <title>地球化学三角图解的绘制</title>
+      <link>https://gmt-china.org/example/ex022/</link>
+      <pubDate>Tue, 22 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex022/</guid>
+      <description>三角图解文件 | 曲线坐标数据 三角图解有很多种，这里仅讨论一下地球化学上常用的地球化学图解用 GMT 的实现方法。 该三角图解引自Mukul R. Bhatia &amp;amp; Keith A.W. Crook, 1986,</description>
+    </item>
+    
+    <item>
+      <title>用两套地形数据绘制夏威夷岛地形起伏图</title>
+      <link>https://gmt-china.org/example/ex021/</link>
+      <pubDate>Wed, 05 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex021/</guid>
+      <description>陆地地形文件 | 海底地形文件 | 配色文件 夏威夷岛是夏威夷群岛的最大岛。 现在我们想绘制檀香山的地形。我们希望地形的精度尽可能的高，以得到最清晰的地</description>
+    </item>
+    
+    <item>
+      <title>绘制速度模型</title>
+      <link>https://gmt-china.org/example/ex020/</link>
+      <pubDate>Wed, 18 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex020/</guid>
+      <description>速度模型数据 本文展示了如何绘制地壳速度模型图。示例数据分为 6 列，分别为 地层厚度，S波速度， P波速度，密度，S波Q值和P波Q值，绘图脚本只用到</description>
+    </item>
+    
+    <item>
+      <title>绘制含地形起伏的地震剖面图</title>
+      <link>https://gmt-china.org/example/ex019/</link>
+      <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex019/</guid>
+      <description>震中位置数据 | 机制解数据 | 海拔数据 本文展示了如何同时绘制沿着垂直剖面的海拔变化图、地震分布及震源机制图。 Bash 绘图脚本如下: profile GMT6+sh GMT5+sh #!/bin/bash gmt begin profile png R=0/11/0/700 J=X5i/-2i</description>
+    </item>
+    
+    <item>
+      <title>矢量及应力应变张量绘制</title>
+      <link>https://gmt-china.org/example/ex017/</link>
+      <pubDate>Fri, 13 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex017/</guid>
+      <description>速度矢量 | 板块位置 | 应力张量 本文绘制了速度矢量和应力应变张量主轴 Bash 绘图脚本如下: subslab GMT6+sh GMT5+sh #!/usr/bin/env sh gmt begin subslab png ps=subslab.ps J=X-4i/-4i R=0/400/0/400 I=10/10 # 绘制底图 gmt basemap -R$R -JX-4i/-4i -Bxaf+l&amp;#34;X [km]&amp;#34; -Byaf+l&amp;#34;Depth [km]&amp;#34; -BEnSw+t&amp;#34;Mantle Velocity&amp;#34; # 将</description>
+    </item>
+    
+    <item>
+      <title>绘制自定义符号</title>
+      <link>https://gmt-china.org/example/ex018/</link>
+      <pubDate>Fri, 13 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex018/</guid>
+      <description>GMT 官方目前内置了 40 个自定义符号，如下所示： GMT 内置自定义符号 但是对于广大用户来说，这些自定义符号仍然远远无法满足需求。 因此，社区在这里 持续更新</description>
+    </item>
+    
+    <item>
+      <title>中国大陆及周边活动地块分布图</title>
+      <link>https://gmt-china.org/example/ex016/</link>
+      <pubDate>Sun, 17 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex016/</guid>
+      <description>CN-plate-neighbor.dat | CN-block-L1.dat | CN-block-L1-deduced.dat | CN-block-L2.dat | CN-border-L1.dat 本文绘制了中国大陆及周边活动地块分布图。 CN-plate-neighbor.dat 为中国大陆周边板块边界数据 CN-block-L1.dat 为一级地块边界数据 CN-block-L1-deduced.dat 为一级地块推断边界数据 CN-block-L2.dat 为二级地</description>
+    </item>
+    
+    <item>
+      <title>绘制GPS速度场</title>
+      <link>https://gmt-china.org/example/ex015/</link>
+      <pubDate>Thu, 07 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex015/</guid>
+      <description>本示例展示了如何利用psvelo模块绘制GPS速度场。 示例中所使用的GPS数据来自于 Zhao et al., Geod. Geodyn., 2015 的补充材料。 本示例仅用于演示，不保证数据的完</description>
+    </item>
+    
+    <item>
+      <title>绘制指定测线的地震剖面图</title>
+      <link>https://gmt-china.org/example/ex014/</link>
+      <pubDate>Tue, 15 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex014/</guid>
+      <description>earthquakes.dat 本文展示了如何绘制选定测线的地震剖面图。 earthquakes.dat 为地震数据文件， 包含三列数据，分别是经度、纬度、深度。 图（a）绘制了区域范围内的地震震中分布图，</description>
+    </item>
+    
+    <item>
+      <title>绘制等高线图和剖面图</title>
+      <link>https://gmt-china.org/example/ex013/</link>
+      <pubDate>Mon, 14 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex013/</guid>
+      <description>maunakea.grd 冒纳凯阿火山位于夏威夷群岛，是形成夏威夷岛的五座火山之一，是从结构体底部到顶部的全球最高峰。 这里，我们尝试为冒纳凯阿火山绘制等高线地图和高</description>
+    </item>
+    
+    <item>
+      <title>绘制M-T图</title>
+      <link>https://gmt-china.org/example/ex012/</link>
+      <pubDate>Sat, 29 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex012/</guid>
+      <description>mt.dat M-T图表示地震随时间发展的数量密度和震级大小。M-T图的横轴是时间，纵轴是震级。 图中每一条竖线代表一次地震，竖线的位置表示了地震发生的时</description>
+    </item>
+    
+    <item>
+      <title>事件相对台站的震中距方位角分布图</title>
+      <link>https://gmt-china.org/example/ex011/</link>
+      <pubDate>Tue, 11 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex011/</guid>
+      <description>在以台站为核心的研究中（例如接收函数、S波分裂等），经常需要绘制以台站为中心的 地震分布图，以展示地震相对于台站的距离以及方位角分布。 下面是绘</description>
+    </item>
+    
+    <item>
+      <title>含中国大陆地区的地形图</title>
+      <link>https://gmt-china.org/example/ex010/</link>
+      <pubDate>Thu, 24 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex010/</guid>
+      <description>eq.dat | earth_relief_01m.grd 本文展示了如何绘制含中国大陆地区的地形图，同时也展示了如何通过 awk+wc+cut 对数据进行筛选计数，以及如何绘制简单的图例。 下面是绘图所使用的脚本： topo</description>
+    </item>
+    
+    <item>
+      <title>绘制晨昏线及太阳位置</title>
+      <link>https://gmt-china.org/example/ex009/</link>
+      <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex009/</guid>
+      <description>sunglasses.eps 本文利用 GMT 5.3 中新增的 pssolar 模块绘制了晨昏线并计算得到太阳的位置， 同时利用 psxy 的新增功能，直接将 eps 格式的太阳图片绘制在指定位置。 pssolar GMT6+sh GMT5+sh #!/bin/bash gmt begin solar png #</description>
+    </item>
+    
+    <item>
+      <title>中国一级河流数据</title>
+      <link>https://gmt-china.org/example/ex008/</link>
+      <pubDate>Tue, 25 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex008/</guid>
+      <description>CN-border-La.dat | CN-Rivers.dat CN-Rivers GMT6+sh GMT5+sh #!/bin/bash gmt begin CN-Rivers png gmt set MAP_GRID_PEN_PRIMARY 0.25p,gray,2_2:1 gmt set FORMAT_GEO_MAP ddd:mm:ssF MAP_FRAME_WIDTH 3p gmt set FONT_ANNOT_PRIMARY 7p # 绘制中国地图 gmt coast -JM105/35/6.5i -R70/138/13/56 -G244/243/239 -S167/194/223 -B10f5g10 -Lg85/17.5+c17.5+w800k+f+u gmt plot CN-border-La.dat -W0.5p # 绘制一级河流数据 gmt plot CN-Rivers.dat -W1p,blue # 绘制南海区域 gmt basemap -JM1.1i -R105/123/3/24 -B0 -X5.4i</description>
+    </item>
+    
+    <item>
+      <title>中国地震区域划分</title>
+      <link>https://gmt-china.org/example/ex005/</link>
+      <pubDate>Tue, 25 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex005/</guid>
+      <description>CN-border-La.dat CN-EQRegion.dat | CN-EQRegion-name.dat | CN-EQSubRegion.dat | CN-EQSubRegion-name.dat 本文提供了中国地震区划数据。 CN-EQRegion GMT6+sh GMT5+sh #!/bin/bash gmt begin CN-EQRegion png gmt set MAP_GRID_PEN_PRIMARY 0.25p,gray,2_2:1 gmt set FORMAT_GEO_MAP ddd:mm:ssF MAP_FRAME_WIDTH 3p gmt set FONT_ANNOT_PRIMARY 7p # 绘制中国地图 gmt coast -JM105/6.5i -R65/145/12/56 -G244/243/239 -S167/194/223 -B10f5g10 -Lg85/17.5+c17.5+w500k+f+u gmt plot CN-border-La.dat -W0p,gray70 # 绘制地震亚区</description>
+    </item>
+    
+    <item>
+      <title>中国断层数据</title>
+      <link>https://gmt-china.org/example/ex007/</link>
+      <pubDate>Tue, 25 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex007/</guid>
+      <description>CN-border-La.dat | CN-faults.dat CN-faults GMT6+sh GMT5+sh #!/bin/bash gmt begin CN-faults png gmt set MAP_GRID_PEN_PRIMARY 0.25p,gray,2_2:1 gmt set FORMAT_GEO_MAP ddd:mm:ssF MAP_FRAME_WIDTH 3p gmt set FONT_ANNOT_PRIMARY 7p # 绘制中国地图 gmt coast -JM105/35/6.5i -R70/138/13/56 -G244/243/239 -S167/194/223 -B10f5g10 -Lg85/17.5+c17.5+w800k+f+u gmt plot CN-border-La.dat -W0.5p # 绘制断层数据 gmt plot CN-faults.dat -W0.5p,blue # 绘制南海区域 gmt basemap -JM1.1i -R105/123/3/24 -B0 -X5.4i --MAP_FRAME_TYPE=plain --MAP_FRAME_PEN=1p</description>
+    </item>
+    
+    <item>
+      <title>中国铁路线</title>
+      <link>https://gmt-china.org/example/ex006/</link>
+      <pubDate>Tue, 25 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex006/</guid>
+      <description>CN-border-La.dat | CN-Railways.dat 铁路线数据来源于 MapSIS。 GMT 的 psxy 模块本身并不支持绘制铁路线。为了实现绘制铁路线的效果，此处采取的 技巧是是条线画两遍。如下脚本中第一</description>
+    </item>
+    
+    <item>
+      <title>中国省会城市分布图</title>
+      <link>https://gmt-china.org/example/ex004/</link>
+      <pubDate>Mon, 24 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex004/</guid>
+      <description>CN-border-La.dat | CN-capitals.dat 本文整理并绘制了中国省会城市的分布图，同时展示了如何巧妙地利用 pstext 模块的功能来灵活地放置城市名的位置。 绘图脚本如下： CN-capitals GMT6+sh GMT5+sh #!/bin/bash gmt begin CN-capitals png gmt set</description>
+    </item>
+    
+    <item>
+      <title>中国国界、省界及十段线</title>
+      <link>https://gmt-china.org/example/ex003/</link>
+      <pubDate>Sun, 23 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex003/</guid>
+      <description>由于 GMT 自带的国界线数据不符合中国领土主张，因而在绘制用于正式图件时用户需要 自己准备国界数据。本文提供了笔者自己数字化的几个国界相关数据以及两</description>
+    </item>
+    
+    <item>
+      <title>震源机制分布图</title>
+      <link>https://gmt-china.org/example/ex001/</link>
+      <pubDate>Mon, 03 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex001/</guid>
+      <description>本示例展示了如何绘制震源球的分布图。震级的大小由震源球的大小来表征， 震源的深度则由震源球的压缩象限的颜色表示。 beachball GMT6+sh GMT5+sh #!/bin/bash # 绘制震源机制分布图，</description>
+    </item>
+    
+    <item>
+      <title>绘制地球内部主要界面</title>
+      <link>https://gmt-china.org/example/ex002/</link>
+      <pubDate>Wed, 31 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex002/</guid>
+      <description>在利用地震波研究地球深部结构时，经常需要绘制震相在深度剖面下的射线路径， 同时也需要绘制地球内部的主要界面。 震相的射线路径可以用 TauP 提供的 taup_path 命令</description>
+    </item>
+    
+  </channel>
+</rss>

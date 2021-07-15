@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>射线 on GMT中文社区</title>
+    <link>https://gmt-china.org/tags/%E5%B0%84%E7%BA%BF/</link>
+    <description>Recent content in 射线 on GMT中文社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <copyright>&amp;copy; 2016 – {year} GMT中文社区</copyright>
+    <lastBuildDate>Wed, 31 Aug 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://gmt-china.org/tags/%E5%B0%84%E7%BA%BF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>绘制地球内部主要界面</title>
+      <link>https://gmt-china.org/example/ex002/</link>
+      <pubDate>Wed, 31 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex002/</guid>
+      <description>在利用地震波研究地球深部结构时，经常需要绘制震相在深度剖面下的射线路径， 同时也需要绘制地球内部的主要界面。 震相的射线路径可以用 TauP 提供的 taup_path 命令</description>
+    </item>
+    
+  </channel>
+</rss>

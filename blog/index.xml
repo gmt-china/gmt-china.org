@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>博客 on GMT中文社区</title>
+    <link>https://gmt-china.org/blog/</link>
+    <description>Recent content in 博客 on GMT中文社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <copyright>&amp;copy; 2016 – {year} GMT中文社区</copyright>
+    <lastBuildDate>Wed, 19 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://gmt-china.org/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GMT脚本执行利器——VS Code</title>
+      <link>https://gmt-china.org/blog/vscode-usage/</link>
+      <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/vscode-usage/</guid>
+      <description>Visual Studio Code，简称vscode，是微软推出的一款免费、轻量且功能强大的编辑器。vscode除一键执行、语法高亮、分屏显示外，还可实现bat/</description>
+    </item>
+    
+    <item>
+      <title>2017版1:100万全国标准基础地理数据！你值得拥有</title>
+      <link>https://gmt-china.org/blog/national-geographic-database/</link>
+      <pubDate>Sun, 15 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/national-geographic-database/</guid>
+      <description>&lt;p&gt;本文介绍国家标准地理数据的获取以及处理为 GMT 支持格式的方法。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>GMT 各大版本间的差异</title>
+      <link>https://gmt-china.org/blog/gmt-versions/</link>
+      <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/gmt-versions/</guid>
+      <description>GMT4、GMT5以及即将发布的GMT6之间在用法上有什么区别? 我该使用哪一个?</description>
+    </item>
+    
+    <item>
+      <title>将 Bash 脚本改成 Bat 脚本</title>
+      <link>https://gmt-china.org/blog/bash2bat/</link>
+      <pubDate>Sun, 01 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/bash2bat/</guid>
+      <description>&lt;p&gt;社区提供的 GMT 绘图脚本多是基于 Linux 下的 bash 脚本，有相当一部分用户并不熟悉
+bash，因此有必要介绍如何将 bash 脚本改成 Windows 下可用的 bat 脚本。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>GMT自带中国国界问题</title>
+      <link>https://gmt-china.org/blog/china-border-issues/</link>
+      <pubDate>Sat, 17 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/china-border-issues/</guid>
+      <description>GMT国界与正确国界之间的区别与差异</description>
+    </item>
+    
+    <item>
+      <title>GMT5在Windows下提示无法创建用户目录的解决办法</title>
+      <link>https://gmt-china.org/blog/user-directory-warning/</link>
+      <pubDate>Fri, 27 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/user-directory-warning/</guid>
+      <description>如何解决“无法创建用户目录”的问题?</description>
+    </item>
+    
+    <item>
+      <title>GMT 中文社区第三次线下聚餐</title>
+      <link>https://gmt-china.org/blog/gud-20171017/</link>
+      <pubDate>Tue, 17 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/gud-20171017/</guid>
+      <description>2017年10月，GMT中文社区在北京举行了第三个线下聚餐。</description>
+    </item>
+    
+    <item>
+      <title>利用 Google Maps 获取超高精度高程数据</title>
+      <link>https://gmt-china.org/blog/google-maps-elevation-api/</link>
+      <pubDate>Thu, 14 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/google-maps-elevation-api/</guid>
+      <description>如何获得米级精度的高程数据?</description>
+    </item>
+    
+    <item>
+      <title>GMT 中文社区 QQ 群入群须知</title>
+      <link>https://gmt-china.org/blog/community-guide/</link>
+      <pubDate>Wed, 23 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/community-guide/</guid>
+      <description>如何在 QQ 群中正确提问？</description>
+    </item>
+    
+    <item>
+      <title>投稿须知</title>
+      <link>https://gmt-china.org/blog/instructions-for-authors/</link>
+      <pubDate>Thu, 17 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/instructions-for-authors/</guid>
+      <description>如何向GMT中文社区投稿?</description>
+    </item>
+    
+    <item>
+      <title>使用sci-hub下载文献</title>
+      <link>https://gmt-china.org/blog/sci-hub/</link>
+      <pubDate>Sat, 12 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/sci-hub/</guid>
+      <description>教你如何用sci-hub下载文献</description>
+    </item>
+    
+    <item>
+      <title>GDAL/OGR: 地理空间数据格式转换神器</title>
+      <link>https://gmt-china.org/blog/gdal-ogr/</link>
+      <pubDate>Mon, 07 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/gdal-ogr/</guid>
+      <description>介绍GDAL/OGR的功能及其用法</description>
+    </item>
+    
+    <item>
+      <title>Windows 下可用的 Unix 工具</title>
+      <link>https://gmt-china.org/blog/unix-tools-for-windows/</link>
+      <pubDate>Sat, 29 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/unix-tools-for-windows/</guid>
+      <description>我们为Windows用户提供了常用的Unix小工具。</description>
+    </item>
+    
+    <item>
+      <title>GMT中文社区第二次线下聚餐</title>
+      <link>https://gmt-china.org/blog/gud-20160921/</link>
+      <pubDate>Tue, 27 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/gud-20160921/</guid>
+      <description>GMT中文社区在湖北武汉组织了第二次线下聚餐。</description>
+    </item>
+    
+    <item>
+      <title>GMT中文社区首次线下培训</title>
+      <link>https://gmt-china.org/blog/gmtcon-20160921/</link>
+      <pubDate>Sun, 25 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/gmtcon-20160921/</guid>
+      <description>&lt;p&gt;2016年9月21至22日，GMT中文社区协同中国地震局地震研究所和中国地震局地壳形变学科
+技术管理组举行了首次GMT线下培训活动。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>GMT中文社区首次线下聚餐</title>
+      <link>https://gmt-china.org/blog/gud-20160628/</link>
+      <pubDate>Sat, 24 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/gud-20160628/</guid>
+      <description>&lt;p&gt;2016年6月28日，GMT中文社区在北京举行了首次GMT用户线下聚餐（GMT User Dinner，简称GUD）。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>GMT国内镜像正式建成</title>
+      <link>https://gmt-china.org/blog/mirror-site-founded/</link>
+      <pubDate>Fri, 08 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/mirror-site-founded/</guid>
+      <description>GMT国内镜像正式建成</description>
+    </item>
+    
+    <item>
+      <title>GMT中文社区正式成立</title>
+      <link>https://gmt-china.org/blog/gmt-china-community-founded/</link>
+      <pubDate>Wed, 06 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/gmt-china-community-founded/</guid>
+      <description>GMT中文社区于今日正式成立了！</description>
+    </item>
+    
+  </channel>
+</rss>

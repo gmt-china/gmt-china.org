@@ -1,0 +1,951 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GMT中文社区</title>
+    <link>https://gmt-china.org/</link>
+    <description>Recent content on GMT中文社区</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>zh-Hans</language>
+    <copyright>&amp;copy; 2016 – {year} GMT中文社区</copyright>
+    <lastBuildDate>Wed, 19 Feb 2020 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://gmt-china.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>博客</title>
+      <link>https://gmt-china.org/blog/</link>
+      <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>示例</title>
+      <link>https://gmt-china.org/example/</link>
+      <pubDate>Thu, 22 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>图库</title>
+      <link>https://gmt-china.org/gallery/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/gallery/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    请参考社区维护的&lt;a href=&#34;https://docs.gmt-china.org/latest/examples/&#34; target=&#34;_blank&#34;&gt;GMT中文手册：绘图实例&lt;/a&gt;。
+本网站的旧图库将不再维护。 &lt;strong&gt;使用旧图库的示例代码，在新版的 GMT 下可能将出现报错、无法运行等问题。&lt;/strong&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;gallery&#34;&gt;
+  &lt;div class=&#34;row&#34;&gt;
+      
+      
+      
+      
+      
+       
+          
+          
+          &lt;div class=&#34;clearfix visible-lg visible-md&#34;&gt;&lt;/div&gt;
+          
+           
+          
+          
+          &lt;div class=&#34;clearfix visible-lg visible-md&#34;&gt;&lt;/div&gt;
+          
+           
+          
+          
+          &lt;div class=&#34;clearfix visible-lg visible-md&#34;&gt;&lt;/div&gt;
+          
+           
+          
+          
+          &lt;div class=&#34;clearfix visible-lg visible-md&#34;&gt;&lt;/div&gt;
+          
+           
+          
+          
+          &lt;div class=&#34;clearfix visible-lg visible-md&#34;&gt;&lt;/div&gt;
+          
+           
+          
+          
+          &lt;div class=&#34;clearfix visible-lg visible-md&#34;&gt;&lt;/div&gt;
+          
+           
+          
+          
+          &lt;div class=&#34;clearfix visible-lg visible-md&#34;&gt;&lt;/div&gt;
+          
+           
+          
+          
+          &lt;div class=&#34;clearfix visible-lg visible-md&#34;&gt;&lt;/div&gt;
+          
+           
+          
+          
+          &lt;div class=&#34;clearfix visible-lg visible-md&#34;&gt;&lt;/div&gt;
+          
+           
+          
+          
+          &lt;div class=&#34;clearfix visible-lg visible-md&#34;&gt;&lt;/div&gt;
+          
+          
+      
+      
+      
+      
+       
+          
+          
+              
+              &lt;div class=&#34;col-sm-6 col-md-4 col-lg-4&#34;&gt;
+                  &lt;div class=&#34;thumbnail&#34;&gt;
+                      &lt;figure&gt;
+                          &lt;a href=&#34;https://gmt-china.org/example/ex027/&#34; target=&#34;_blank&#34;&gt;
+                              &lt;img src=&#34;https://gmt-china.org/example/ex027/Three-DView_hu99e0fc5d598cd5acbee322e571484c6a_620688_300x0_resize_q90_lanczos.jpg&#34; alt=&#34;绘制三维地形图&#34;&gt;
+                          &lt;/a&gt;
+                          &lt;figcaption&gt;绘制三维地形图&lt;/figcaption&gt;
+                      &lt;/figure&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+          
+          
+          
+      
+      
+      
+      
+       
+          
+          
+              
+              &lt;div class=&#34;col-sm-6 col-md-4 col-lg-4&#34;&gt;
+                  &lt;div class=&#34;thumbnail&#34;&gt;
+                      &lt;figure&gt;
+                          &lt;a href=&#34;https://gmt-china.org/example/ex026/&#34; target=&#34;_blank&#34;&gt;
+                              &lt;img src=&#34;https://gmt-china.org/example/ex026/plot_subduction_hube03f8de4ea9dadf2155c20708894ba6_874444_300x0_resize_lanczos_2.png&#34; alt=&#34;绘制俯冲带地震分布&#34;&gt;
+                          &lt;/a&gt;
+                          &lt;figcaption&gt;绘制俯冲带地震分布&lt;/figcaption&gt;
+                      &lt;/figure&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+          
+          
+          
+      
+      
+      
+      
+       
+          
+          
+              
+              &lt;div class=&#34;col-sm-6 col-md-4 col-lg-4&#34;&gt;
+                  &lt;div class=&#34;thumbnail&#34;&gt;
+                      &lt;figure&gt;
+                          &lt;a href=&#34;https://gmt-china.org/example/ex025/&#34; target=&#34;_blank&#34;&gt;
+                              &lt;img src=&#34;https://gmt-china.org/example/ex025/InSAR_hu9cdd0bd2cc7a4440860f0fde56e1fc0c_293723_300x0_resize_lanczos_2.png&#34; alt=&#34;绘制InSAR形变速率场&#34;&gt;
+                          &lt;/a&gt;
+                          &lt;figcaption&gt;绘制InSAR形变速率场&lt;/figcaption&gt;
+                      &lt;/figure&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+          
+          
+          &lt;div class=&#34;clearfix visible-lg visible-md&#34;&gt;&lt;/div&gt;
+          
+           
+          
+          
+          &lt;div class=&#34;clearfix visible-lg visible-md&#34;&gt;&lt;/div&gt;
+          
+          
+      
+      
+      
+      
+       
+          
+          
+          &lt;div class=&#34;clearfix visible-lg visible-md&#34;&gt;&lt;/div&gt;
+          
+           
+          
+          
+              
+              &lt;div class=&#34;col-sm-6 col-md-4 col-lg-4&#34;&gt;
+                  &lt;div class=&#34;thumbnail&#34;&gt;
+                      &lt;figure&gt;
+                          &lt;a href=&#34;https://gmt-china.org/example/ex024/&#34; target=&#34;_blank&#34;&gt;
+                              &lt;img src=&#34;https://gmt-china.org/example/ex024/WanderingView_huce8a6d61ba78aeec6d8483d88607b0ae_251979_300x0_resize_q90_lanczos.jpg&#34; alt=&#34;《流浪地球》之GMT绘制三维地形轨迹图&#34;&gt;
+                          &lt;/a&gt;
+                          &lt;figcaption&gt;《流浪地球》之GMT绘制三维地形轨迹图&lt;/figcaption&gt;
+                      &lt;/figure&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+          
+          
+           
+          
+          
+           
+          
+          
+           
+          
+          
+           
+          
+          
+           
+          
+          
+           
+          
+          
+          
+      
+      
+      
+      
+       
+          
+          
+              
+              &lt;div class=&#34;col-sm-6 col-md-4 col-lg-4&#34;&gt;
+                  &lt;div class=&#34;thumbnail&#34;&gt;
+                      &lt;figure&gt;
+                          &lt;a href=&#34;https://gmt-china.org/example/ex023/&#34; target=&#34;_blank&#34;&gt;
+                              &lt;img src=&#34;https://gmt-china.org/example/ex023/draw-inset-map_hu3748ecd85f0c79f419269d56f651f567_125604_300x0_resize_lanczos_2.png&#34; alt=&#34;绘制图中图&#34;&gt;
+                          &lt;/a&gt;
+                          &lt;figcaption&gt;绘制图中图&lt;/figcaption&gt;
+                      &lt;/figure&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+          
+          
+          
+      
+      
+      
+      
+       
+          
+          
+           
+          
+          
+              
+              &lt;div class=&#34;col-sm-6 col-md-4 col-lg-4&#34;&gt;
+                  &lt;div class=&#34;thumbnail&#34;&gt;
+                      &lt;figure&gt;
+                          &lt;a href=&#34;https://gmt-china.org/example/ex022/&#34; target=&#34;_blank&#34;&gt;
+                              &lt;img src=&#34;https://gmt-china.org/example/ex022/ternary_huf7487f1ade4b37c0e2e1967791dc282b_27010_300x0_resize_lanczos_2.png&#34; alt=&#34;地球化学三角图解的绘制&#34;&gt;
+                          &lt;/a&gt;
+                          &lt;figcaption&gt;地球化学三角图解的绘制&lt;/figcaption&gt;
+                      &lt;/figure&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+          
+          
+          &lt;div class=&#34;clearfix visible-lg visible-md&#34;&gt;&lt;/div&gt;
+          
+          
+      
+      
+      
+      
+       
+          
+          
+          &lt;div class=&#34;clearfix visible-lg visible-md&#34;&gt;&lt;/div&gt;
+          
+           
+          
+          
+              
+              &lt;div class=&#34;col-sm-6 col-md-4 col-lg-4&#34;&gt;
+                  &lt;div class=&#34;thumbnail&#34;&gt;
+                      &lt;figure&gt;
+                          &lt;a href=&#34;https://gmt-china.org/example/ex021/&#34; target=&#34;_blank&#34;&gt;
+                              &lt;img src=&#34;https://gmt-china.org/example/ex021/hawaii_hue935258b38edcfc2a8608f730cf0bd3f_1339101_300x0_resize_lanczos_2.png&#34; alt=&#34;用两套地形数据绘制夏威夷岛地形起伏图&#34;&gt;
+                          &lt;/a&gt;
+                          &lt;figcaption&gt;用两套地形数据绘制夏威夷岛地形起伏图&lt;/figcaption&gt;
+                      &lt;/figure&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+          
+          
+          
+      
+      
+      
+      
+       
+          
+          
+              
+              &lt;div class=&#34;col-sm-6 col-md-4 col-lg-4&#34;&gt;
+                  &lt;div class=&#34;thumbnail&#34;&gt;
+                      &lt;figure&gt;
+                          &lt;a href=&#34;https://gmt-china.org/example/ex020/&#34; target=&#34;_blank&#34;&gt;
+                              &lt;img src=&#34;https://gmt-china.org/example/ex020/model_huf12b99fbea8036f40dd8869b0b5cbb6d_17089_300x0_resize_lanczos_2.png&#34; alt=&#34;绘制速度模型&#34;&gt;
+                          &lt;/a&gt;
+                          &lt;figcaption&gt;绘制速度模型&lt;/figcaption&gt;
+                      &lt;/figure&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+          
+          
+          
+      
+      
+      
+      
+       
+          
+          
+           
+          
+          
+           
+          
+          
+          
+      
+      
+      
+      
+       
+          
+          
+          
+      
+      
+      
+      
+       
+          
+          
+              
+              &lt;div class=&#34;col-sm-6 col-md-4 col-lg-4&#34;&gt;
+                  &lt;div class=&#34;thumbnail&#34;&gt;
+                      &lt;figure&gt;
+                          &lt;a href=&#34;https://gmt-china.org/example/ex019/&#34; target=&#34;_blank&#34;&gt;
+                              &lt;img src=&#34;https://gmt-china.org/example/ex019/profile_hu7182886a91b60489db4853e1f8a82077_124762_300x0_resize_lanczos_2.png&#34; alt=&#34;绘制含地形起伏的地震剖面图&#34;&gt;
+                          &lt;/a&gt;
+                          &lt;figcaption&gt;绘制含地形起伏的地震剖面图&lt;/figcaption&gt;
+                      &lt;/figure&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+          
+          
+          &lt;div class=&#34;clearfix visible-lg visible-md&#34;&gt;&lt;/div&gt;
+          
+          
+      
+      
+      
+      
+      
+      
+      
+      
+      
+       
+          
+          
+          &lt;div class=&#34;clearfix visible-lg visible-md&#34;&gt;&lt;/div&gt;
+          
+          
+      
+      
+      
+      
+      
+      
+      
+      
+      
+       
+          
+          
+          &lt;div class=&#34;clearfix visible-lg visible-md&#34;&gt;&lt;/div&gt;
+          
+           
+          
+          
+          &lt;div class=&#34;clearfix visible-lg visible-md&#34;&gt;&lt;/div&gt;
+          
+           
+          
+          
+          &lt;div class=&#34;clearfix visible-lg visible-md&#34;&gt;&lt;/div&gt;
+          
+          
+      
+      
+      
+      
+       
+          
+          
+              
+              &lt;div class=&#34;col-sm-6 col-md-4 col-lg-4&#34;&gt;
+                  &lt;div class=&#34;thumbnail&#34;&gt;
+                      &lt;figure&gt;
+                          &lt;a href=&#34;https://gmt-china.org/example/ex017/&#34; target=&#34;_blank&#34;&gt;
+                              &lt;img src=&#34;https://gmt-china.org/example/ex017/subslab_huc10b288cc6f3e8c23cd5b60b24285ebe_84554_300x0_resize_lanczos_2.png&#34; alt=&#34;矢量及应力应变张量绘制&#34;&gt;
+                          &lt;/a&gt;
+                          &lt;figcaption&gt;矢量及应力应变张量绘制&lt;/figcaption&gt;
+                      &lt;/figure&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+          
+          
+          
+      
+      
+      
+      
+       
+          
+          
+              
+              &lt;div class=&#34;col-sm-6 col-md-4 col-lg-4&#34;&gt;
+                  &lt;div class=&#34;thumbnail&#34;&gt;
+                      &lt;figure&gt;
+                          &lt;a href=&#34;https://gmt-china.org/example/ex018/&#34; target=&#34;_blank&#34;&gt;
+                              &lt;img src=&#34;https://gmt-china.org/example/ex018/custom_symbol_hu0ead61ddedef491d94fdacc7f3a076da_21920_300x0_resize_lanczos_2.png&#34; alt=&#34;绘制自定义符号&#34;&gt;
+                          &lt;/a&gt;
+                          &lt;figcaption&gt;绘制自定义符号&lt;/figcaption&gt;
+                      &lt;/figure&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+          
+          
+           
+          
+          
+              
+              &lt;div class=&#34;col-sm-6 col-md-4 col-lg-4&#34;&gt;
+                  &lt;div class=&#34;thumbnail&#34;&gt;
+                      &lt;figure&gt;
+                          &lt;a href=&#34;https://gmt-china.org/example/ex018/&#34; target=&#34;_blank&#34;&gt;
+                              &lt;img src=&#34;https://gmt-china.org/example/ex018/def_hu6bf7e0da7f0c69d10537ac8ff62b4847_127502_300x0_resize_lanczos_2.png&#34; alt=&#34;绘制自定义符号&#34;&gt;
+                          &lt;/a&gt;
+                          &lt;figcaption&gt;绘制自定义符号&lt;/figcaption&gt;
+                      &lt;/figure&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+          
+          
+          &lt;div class=&#34;clearfix visible-lg visible-md&#34;&gt;&lt;/div&gt;
+          
+          
+      
+      
+      
+      
+       
+          
+          
+              
+              &lt;div class=&#34;col-sm-6 col-md-4 col-lg-4&#34;&gt;
+                  &lt;div class=&#34;thumbnail&#34;&gt;
+                      &lt;figure&gt;
+                          &lt;a href=&#34;https://gmt-china.org/example/ex016/&#34; target=&#34;_blank&#34;&gt;
+                              &lt;img src=&#34;https://gmt-china.org/example/ex016/BLOCK_hu7e828603d9f63278ef3373af57916ee5_120933_300x0_resize_lanczos_2.png&#34; alt=&#34;中国大陆及周边活动地块分布图&#34;&gt;
+                          &lt;/a&gt;
+                          &lt;figcaption&gt;中国大陆及周边活动地块分布图&lt;/figcaption&gt;
+                      &lt;/figure&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+          
+          
+           
+          
+          
+          
+      
+      
+      
+      
+      
+      
+      
+      
+      
+       
+          
+          
+              
+              &lt;div class=&#34;col-sm-6 col-md-4 col-lg-4&#34;&gt;
+                  &lt;div class=&#34;thumbnail&#34;&gt;
+                      &lt;figure&gt;
+                          &lt;a href=&#34;https://gmt-china.org/example/ex015/&#34; target=&#34;_blank&#34;&gt;
+                              &lt;img src=&#34;https://gmt-china.org/example/ex015/gps_hu8c66f0ffe7d627d0adc4e3ff3fee9805_1755905_300x0_resize_lanczos_2.png&#34; alt=&#34;绘制GPS速度场&#34;&gt;
+                          &lt;/a&gt;
+                          &lt;figcaption&gt;绘制GPS速度场&lt;/figcaption&gt;
+                      &lt;/figure&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+          
+          
+          
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+       
+          
+          
+              
+              &lt;div class=&#34;col-sm-6 col-md-4 col-lg-4&#34;&gt;
+                  &lt;div class=&#34;thumbnail&#34;&gt;
+                      &lt;figure&gt;
+                          &lt;a href=&#34;https://gmt-china.org/example/ex014/&#34; target=&#34;_blank&#34;&gt;
+                              &lt;img src=&#34;https://gmt-china.org/example/ex014/seismic-profile_hu56a923276be77846bf3fd16898c48ff1_135096_300x0_resize_lanczos_2.png&#34; alt=&#34;绘制指定测线的地震剖面图&#34;&gt;
+                          &lt;/a&gt;
+                          &lt;figcaption&gt;绘制指定测线的地震剖面图&lt;/figcaption&gt;
+                      &lt;/figure&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+          
+          
+          &lt;div class=&#34;clearfix visible-lg visible-md&#34;&gt;&lt;/div&gt;
+          
+          
+      
+      
+      
+      
+       
+          
+          
+              
+              &lt;div class=&#34;col-sm-6 col-md-4 col-lg-4&#34;&gt;
+                  &lt;div class=&#34;thumbnail&#34;&gt;
+                      &lt;figure&gt;
+                          &lt;a href=&#34;https://gmt-china.org/example/ex013/&#34; target=&#34;_blank&#34;&gt;
+                              &lt;img src=&#34;https://gmt-china.org/example/ex013/maunakea_hu8779a2f528e121c565177d250d85dc0a_167336_300x0_resize_lanczos_2.png&#34; alt=&#34;绘制等高线图和剖面图&#34;&gt;
+                          &lt;/a&gt;
+                          &lt;figcaption&gt;绘制等高线图和剖面图&lt;/figcaption&gt;
+                      &lt;/figure&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+          
+          
+          
+      
+      
+      
+      
+       
+          
+          
+           
+          
+          
+           
+          
+          
+          
+      
+      
+      
+      
+       
+          
+          
+              
+              &lt;div class=&#34;col-sm-6 col-md-4 col-lg-4&#34;&gt;
+                  &lt;div class=&#34;thumbnail&#34;&gt;
+                      &lt;figure&gt;
+                          &lt;a href=&#34;https://gmt-china.org/example/ex012/&#34; target=&#34;_blank&#34;&gt;
+                              &lt;img src=&#34;https://gmt-china.org/example/ex012/mt_hu459f7b2d8618b35b54c5b0c1a7dc8bf5_13937_300x0_resize_lanczos_2.png&#34; alt=&#34;绘制M-T图&#34;&gt;
+                          &lt;/a&gt;
+                          &lt;figcaption&gt;绘制M-T图&lt;/figcaption&gt;
+                      &lt;/figure&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+          
+          
+          
+      
+      
+      
+      
+       
+          
+          
+              
+              &lt;div class=&#34;col-sm-6 col-md-4 col-lg-4&#34;&gt;
+                  &lt;div class=&#34;thumbnail&#34;&gt;
+                      &lt;figure&gt;
+                          &lt;a href=&#34;https://gmt-china.org/example/ex011/&#34; target=&#34;_blank&#34;&gt;
+                              &lt;img src=&#34;https://gmt-china.org/example/ex011/map_hu4b76eac8070cfd92ccbafbabc7d78c02_48973_300x0_resize_lanczos_2.png&#34; alt=&#34;事件相对台站的震中距方位角分布图&#34;&gt;
+                          &lt;/a&gt;
+                          &lt;figcaption&gt;事件相对台站的震中距方位角分布图&lt;/figcaption&gt;
+                      &lt;/figure&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+          
+          
+          &lt;div class=&#34;clearfix visible-lg visible-md&#34;&gt;&lt;/div&gt;
+          
+          
+      
+      
+      
+      
+       
+          
+          
+              
+              &lt;div class=&#34;col-sm-6 col-md-4 col-lg-4&#34;&gt;
+                  &lt;div class=&#34;thumbnail&#34;&gt;
+                      &lt;figure&gt;
+                          &lt;a href=&#34;https://gmt-china.org/example/ex010/&#34; target=&#34;_blank&#34;&gt;
+                              &lt;img src=&#34;https://gmt-china.org/example/ex010/topo_hu512ddeca25148ec291991c8f10fc13db_1302252_300x0_resize_lanczos_2.png&#34; alt=&#34;含中国大陆地区的地形图&#34;&gt;
+                          &lt;/a&gt;
+                          &lt;figcaption&gt;含中国大陆地区的地形图&lt;/figcaption&gt;
+                      &lt;/figure&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+          
+          
+          
+      
+      
+      
+      
+      
+      
+      
+      
+      
+       
+          
+          
+              
+              &lt;div class=&#34;col-sm-6 col-md-4 col-lg-4&#34;&gt;
+                  &lt;div class=&#34;thumbnail&#34;&gt;
+                      &lt;figure&gt;
+                          &lt;a href=&#34;https://gmt-china.org/example/ex009/&#34; target=&#34;_blank&#34;&gt;
+                              &lt;img src=&#34;https://gmt-china.org/example/ex009/solar_hub29837731b745b89f8e48b3bd2c8de05_117813_300x0_resize_lanczos_2.png&#34; alt=&#34;绘制晨昏线及太阳位置&#34;&gt;
+                          &lt;/a&gt;
+                          &lt;figcaption&gt;绘制晨昏线及太阳位置&lt;/figcaption&gt;
+                      &lt;/figure&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+          
+          
+          
+      
+      
+      
+      
+      
+      
+      
+      
+      
+       
+          
+          
+              
+              &lt;div class=&#34;col-sm-6 col-md-4 col-lg-4&#34;&gt;
+                  &lt;div class=&#34;thumbnail&#34;&gt;
+                      &lt;figure&gt;
+                          &lt;a href=&#34;https://gmt-china.org/example/ex008/&#34; target=&#34;_blank&#34;&gt;
+                              &lt;img src=&#34;https://gmt-china.org/example/ex008/CN-Rivers_hua72239fb44f376f920a31e933ccbf25a_121189_300x0_resize_lanczos_2.png&#34; alt=&#34;中国一级河流数据&#34;&gt;
+                          &lt;/a&gt;
+                          &lt;figcaption&gt;中国一级河流数据&lt;/figcaption&gt;
+                      &lt;/figure&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+          
+          
+          &lt;div class=&#34;clearfix visible-lg visible-md&#34;&gt;&lt;/div&gt;
+          
+          
+      
+      
+      
+      
+       
+          
+          
+              
+              &lt;div class=&#34;col-sm-6 col-md-4 col-lg-4&#34;&gt;
+                  &lt;div class=&#34;thumbnail&#34;&gt;
+                      &lt;figure&gt;
+                          &lt;a href=&#34;https://gmt-china.org/example/ex005/&#34; target=&#34;_blank&#34;&gt;
+                              &lt;img src=&#34;https://gmt-china.org/example/ex005/CN-EQRegion_hu51d6111e61d3f5aa1594aed3e4d98094_141435_300x0_resize_lanczos_2.png&#34; alt=&#34;中国地震区域划分&#34;&gt;
+                          &lt;/a&gt;
+                          &lt;figcaption&gt;中国地震区域划分&lt;/figcaption&gt;
+                      &lt;/figure&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+          
+          
+          
+      
+      
+      
+      
+       
+          
+          
+              
+              &lt;div class=&#34;col-sm-6 col-md-4 col-lg-4&#34;&gt;
+                  &lt;div class=&#34;thumbnail&#34;&gt;
+                      &lt;figure&gt;
+                          &lt;a href=&#34;https://gmt-china.org/example/ex007/&#34; target=&#34;_blank&#34;&gt;
+                              &lt;img src=&#34;https://gmt-china.org/example/ex007/CN-faults_hu473424a60f8b42f34622f5bf0e1fef1d_185954_300x0_resize_lanczos_2.png&#34; alt=&#34;中国断层数据&#34;&gt;
+                          &lt;/a&gt;
+                          &lt;figcaption&gt;中国断层数据&lt;/figcaption&gt;
+                      &lt;/figure&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+          
+          
+          
+      
+      
+      
+      
+       
+          
+          
+              
+              &lt;div class=&#34;col-sm-6 col-md-4 col-lg-4&#34;&gt;
+                  &lt;div class=&#34;thumbnail&#34;&gt;
+                      &lt;figure&gt;
+                          &lt;a href=&#34;https://gmt-china.org/example/ex006/&#34; target=&#34;_blank&#34;&gt;
+                              &lt;img src=&#34;https://gmt-china.org/example/ex006/CN-Railways_hu55c3d46f408fa138e010e257756a72d5_143967_300x0_resize_lanczos_2.png&#34; alt=&#34;中国铁路线&#34;&gt;
+                          &lt;/a&gt;
+                          &lt;figcaption&gt;中国铁路线&lt;/figcaption&gt;
+                      &lt;/figure&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+          
+          
+          &lt;div class=&#34;clearfix visible-lg visible-md&#34;&gt;&lt;/div&gt;
+          
+          
+      
+      
+      
+      
+       
+          
+          
+              
+              &lt;div class=&#34;col-sm-6 col-md-4 col-lg-4&#34;&gt;
+                  &lt;div class=&#34;thumbnail&#34;&gt;
+                      &lt;figure&gt;
+                          &lt;a href=&#34;https://gmt-china.org/example/ex004/&#34; target=&#34;_blank&#34;&gt;
+                              &lt;img src=&#34;https://gmt-china.org/example/ex004/CN-capitals_hu74714a7f4326242319d84f0a3d096fab_126328_300x0_resize_lanczos_2.png&#34; alt=&#34;中国省会城市分布图&#34;&gt;
+                          &lt;/a&gt;
+                          &lt;figcaption&gt;中国省会城市分布图&lt;/figcaption&gt;
+                      &lt;/figure&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+          
+          
+          
+      
+      
+      
+      
+       
+          
+          
+              
+              &lt;div class=&#34;col-sm-6 col-md-4 col-lg-4&#34;&gt;
+                  &lt;div class=&#34;thumbnail&#34;&gt;
+                      &lt;figure&gt;
+                          &lt;a href=&#34;https://gmt-china.org/example/ex003/&#34; target=&#34;_blank&#34;&gt;
+                              &lt;img src=&#34;https://gmt-china.org/example/ex003/CN-border-JD_hu6c55fc62fc053000e4a942d4672b9cdb_79064_300x0_resize_lanczos_2.png&#34; alt=&#34;中国国界、省界及十段线&#34;&gt;
+                          &lt;/a&gt;
+                          &lt;figcaption&gt;中国国界、省界及十段线&lt;/figcaption&gt;
+                      &lt;/figure&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+          
+          
+           
+          
+          
+              
+              &lt;div class=&#34;col-sm-6 col-md-4 col-lg-4&#34;&gt;
+                  &lt;div class=&#34;thumbnail&#34;&gt;
+                      &lt;figure&gt;
+                          &lt;a href=&#34;https://gmt-china.org/example/ex003/&#34; target=&#34;_blank&#34;&gt;
+                              &lt;img src=&#34;https://gmt-china.org/example/ex003/CN-border-JM_hu1ac8c47142bc530de16b6c0a56e7c6b3_70814_300x0_resize_lanczos_2.png&#34; alt=&#34;中国国界、省界及十段线&#34;&gt;
+                          &lt;/a&gt;
+                          &lt;figcaption&gt;中国国界、省界及十段线&lt;/figcaption&gt;
+                      &lt;/figure&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+          
+          
+          &lt;div class=&#34;clearfix visible-lg visible-md&#34;&gt;&lt;/div&gt;
+          
+          
+      
+      
+      
+      
+       
+          
+          
+              
+              &lt;div class=&#34;col-sm-6 col-md-4 col-lg-4&#34;&gt;
+                  &lt;div class=&#34;thumbnail&#34;&gt;
+                      &lt;figure&gt;
+                          &lt;a href=&#34;https://gmt-china.org/example/ex001/&#34; target=&#34;_blank&#34;&gt;
+                              &lt;img src=&#34;https://gmt-china.org/example/ex001/beachball_hu3f33ac138406033d60b7b76cd086e93d_36411_300x0_resize_lanczos_2.png&#34; alt=&#34;震源机制分布图&#34;&gt;
+                          &lt;/a&gt;
+                          &lt;figcaption&gt;震源机制分布图&lt;/figcaption&gt;
+                      &lt;/figure&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+          
+          
+          
+      
+      
+      
+      
+       
+          
+          
+          
+      
+      
+      
+      
+       
+          
+          
+           
+          
+          
+           
+          
+          
+           
+          
+          
+           
+          
+          
+          
+      
+      
+      
+      
+       
+          
+          
+           
+          
+          
+          
+      
+      
+      
+      
+       
+          
+          
+              
+              &lt;div class=&#34;col-sm-6 col-md-4 col-lg-4&#34;&gt;
+                  &lt;div class=&#34;thumbnail&#34;&gt;
+                      &lt;figure&gt;
+                          &lt;a href=&#34;https://gmt-china.org/example/ex002/&#34; target=&#34;_blank&#34;&gt;
+                              &lt;img src=&#34;https://gmt-china.org/example/ex002/earth-discontinuities_hu6eee45d9370576df7a54f747d3c8e400_22167_300x0_resize_lanczos_2.png&#34; alt=&#34;绘制地球内部主要界面&#34;&gt;
+                          &lt;/a&gt;
+                          &lt;figcaption&gt;绘制地球内部主要界面&lt;/figcaption&gt;
+                      &lt;/figure&gt;
+                  &lt;/div&gt;
+              &lt;/div&gt;
+          
+          
+          
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+  &lt;/div&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>地学数据</title>
+      <link>https://gmt-china.org/data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/data/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    请参考社区维护的&lt;a href=&#34;https://github.com/gmt-china/china-geospatial-data&#34; target=&#34;_blank&#34;&gt;中国地理空间数据集&lt;/a&gt;
+以及&lt;a href=&#34;https://docs.gmt-china.org/latest/dataset-CN/&#34; target=&#34;_blank&#34;&gt;GMT中文手册：中国地理空间数据集&lt;/a&gt;。
+本网站的数据集将不再维护。
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://gmt-china.org/data/CN-border-La.dat&#34;&gt;CN-border-La.dat&lt;/a&gt;: 中国国界、省界、十段线以及南海诸岛&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gmt-china.org/data/CN-border-L1.dat&#34;&gt;CN-border-L1.dat&lt;/a&gt;: 国界、十段线以及南海诸岛数据（不含省界数据）&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gmt-china.org/data/ten-dash-line.dat&#34;&gt;ten-dash-line.dat&lt;/a&gt;: 仅包含十段线数据&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gmt-china.org/data/CN-capitals.dat&#34;&gt;CN-capitals.dat&lt;/a&gt;: 中国省会城市坐标&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gmt-china.org/data/CN-EQRegion.dat&#34;&gt;CN-EQRegion.dat&lt;/a&gt;: 中国地震区域划分边界数据&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gmt-china.org/data/CN-EQRegion-name.dat&#34;&gt;CN-EQRegion-name.dat&lt;/a&gt;: 中国地震区域划分名称数据&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gmt-china.org/data/CN-EQSubRegion.dat&#34;&gt;CN-EQSubRegion.dat&lt;/a&gt;: 中国地震区域划分亚区边界数据&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gmt-china.org/data/CN-EQSubRegion-name.dat&#34;&gt;CN-EQSubRegion-name.dat&lt;/a&gt;: 中国地震区域划分亚区边界数据&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gmt-china.org/data/CN-faults.dat&#34;&gt;CN-faults.dat&lt;/a&gt;: 中国断层数据&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gmt-china.org/data/CN-Railways.dat&#34;&gt;CN-Railways.dat&lt;/a&gt;: 中国铁路线&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gmt-china.org/data/CN-Rivers.dat&#34;&gt;CN-Rivers.dat&lt;/a&gt;: 中国一级河流数据&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gmt-china.org/data/CN-block-L1.dat&#34;&gt;CN-block-L1.dat&lt;/a&gt;: 中国大陆一级地块边界数据&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gmt-china.org/data/CN-block-L1-deduced.dat&#34;&gt;CN-block-L1-deduced.dat&lt;/a&gt;: 中国大陆一级地块推断边界数据&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gmt-china.org/data/CN-block-L2.dat&#34;&gt;CN-block-L2.dat&lt;/a&gt;: 中国大陆二级地块边界数据&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>科研工具 on GMT中文社区</title>
+    <link>https://gmt-china.org/categories/%E7%A7%91%E7%A0%94%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in 科研工具 on GMT中文社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <copyright>&amp;copy; 2016 – {year} GMT中文社区</copyright>
+    <lastBuildDate>Thu, 14 Sep 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://gmt-china.org/categories/%E7%A7%91%E7%A0%94%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>利用 Google Maps 获取超高精度高程数据</title>
+      <link>https://gmt-china.org/blog/google-maps-elevation-api/</link>
+      <pubDate>Thu, 14 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/google-maps-elevation-api/</guid>
+      <description>如何获得米级精度的高程数据?</description>
+    </item>
+    
+    <item>
+      <title>使用sci-hub下载文献</title>
+      <link>https://gmt-china.org/blog/sci-hub/</link>
+      <pubDate>Sat, 12 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/sci-hub/</guid>
+      <description>教你如何用sci-hub下载文献</description>
+    </item>
+    
+  </channel>
+</rss>

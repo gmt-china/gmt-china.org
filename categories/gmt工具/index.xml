@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GMT工具 on GMT中文社区</title>
+    <link>https://gmt-china.org/categories/gmt%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in GMT工具 on GMT中文社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <copyright>&amp;copy; 2016 – {year} GMT中文社区</copyright>
+    <lastBuildDate>Mon, 07 Nov 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://gmt-china.org/categories/gmt%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GDAL/OGR: 地理空间数据格式转换神器</title>
+      <link>https://gmt-china.org/blog/gdal-ogr/</link>
+      <pubDate>Mon, 07 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/gdal-ogr/</guid>
+      <description>介绍GDAL/OGR的功能及其用法</description>
+    </item>
+    
+    <item>
+      <title>Windows 下可用的 Unix 工具</title>
+      <link>https://gmt-china.org/blog/unix-tools-for-windows/</link>
+      <pubDate>Sat, 29 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/blog/unix-tools-for-windows/</guid>
+      <description>我们为Windows用户提供了常用的Unix小工具。</description>
+    </item>
+    
+  </channel>
+</rss>

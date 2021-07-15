@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>杨云飞 on GMT中文社区</title>
+    <link>https://gmt-china.org/authors/%E6%9D%A8%E4%BA%91%E9%A3%9E/</link>
+    <description>Recent content in 杨云飞 on GMT中文社区</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <copyright>&amp;copy; 2016 – {year} GMT中文社区</copyright>
+    <lastBuildDate>Thu, 22 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://gmt-china.org/authors/%E6%9D%A8%E4%BA%91%E9%A3%9E/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>绘制三维地形图</title>
+      <link>https://gmt-china.org/example/ex027/</link>
+      <pubDate>Thu, 22 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex027/</guid>
+      <description>本文绘制了北纬28°附近三江并流处的三维地形图以及地形剖面图，为读者展示了三维地形及地形剖面的绘制方法。 主要用到 grdview 对三维地形进行呈现，grd</description>
+    </item>
+    
+    <item>
+      <title>绘制InSAR形变速率场</title>
+      <link>https://gmt-china.org/example/ex025/</link>
+      <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://gmt-china.org/example/ex025/</guid>
+      <description>yn.xyz 此文是利用Sentinel-1数据，基于InSAR方法获取断裂带及邻近区域构造地壳形变速率，其方向为LOS雷达的视线方向 yn.xyz格式数</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.3.1">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="田冬冬">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="如何获得米级精度的高程数据?">
+
+  
+  <link rel="alternate" hreflang="zh-Hans" href="https://gmt-china.org/blog/google-maps-elevation-api/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarized-light.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/solarized-light.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.min.e8bc2e30d41affd83d8c1d34d8c6357d.css">
+
+  
+    
+    
+    
+    
+      
+    
+    
+    
+    <link rel="stylesheet" href="/css/academic.2240d95af5ce84fc7912df1be70e1d8b.css">
+  
+
+  
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://gmt-china.org/blog/google-maps-elevation-api/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="GMT中文社区">
+  <meta property="og:url" content="https://gmt-china.org/blog/google-maps-elevation-api/">
+  <meta property="og:title" content="利用 Google Maps 获取超高精度高程数据 | GMT中文社区">
+  <meta property="og:description" content="如何获得米级精度的高程数据?"><meta property="og:image" content="https://gmt-china.org/img/icon-192.png">
+  <meta property="og:locale" content="zh-Hans">
+  
+  <meta property="article:published_time" content="2017-09-14T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2017-09-14T00:00:00&#43;00:00">
+  
+
+  
+
+  
+
+
+  <title>利用 Google Maps 获取超高精度高程数据 | GMT中文社区</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>搜索</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="搜索..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">GMT中文社区</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="切换导航">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#">
+            
+            <span>首页</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#download">
+            
+            <span>下载</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#docs">
+            
+            <span>中文手册</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts">
+            
+            <span>博客</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/gallery/">
+            
+            <span>图库</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/data/">
+            
+            <span>数据集</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#people">
+            
+            <span>贡献者</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#usermap">
+            
+            <span>用户分布</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact">
+            
+            <span>联系我们</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/index.xml">
+            
+            <span><i class="fas fa-rss"></i></span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">利用 Google Maps 获取超高精度高程数据</h1>
+
+  
+
+  
+    
+
+
+
+<meta content="2017-09-14 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2017-09-14 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/seispider/">肖晓</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>2017年09月14日</time>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder"></i>
+    <a href="">科研工具</a></span>
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=&amp;url="
+         target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u="
+         target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=&amp;title="
+         target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=&amp;title="
+         target="_blank" rel="noopener">
+        <i class="fab fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=&amp;body=">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<p>在绘制超小区域的地形图时，常需要超高精度的高程数据。</p>
+
+<p>目前已知的公开高程数据中，ASTER GDEM的精度最高，为1弧秒，即约30米一个数据点。
+可以通过 Google Maps Elevation API 获取米级精度的数据。</p>
+
+<h2 id="数据简介">数据简介</h2>
+
+<p>Google Maps Elevation API 提供地球表面所有位置的海拔高度数据，包括海床上的深度位
+置（此类位置返回负值）。</p>
+
+<p>官方文档：</p>
+
+<ul>
+<li><a href="https://developers.google.com/maps/documentation/elevation/start?hl=zh-cn" target="_blank">入门指南</a></li>
+<li><a href="https://developers.google.com/maps/documentation/elevation/intro?hl=zh-cn" target="_blank">开发人员指南</a></li>
+</ul>
+
+<h2 id="获取密钥-api-key">获取密钥 API KEY</h2>
+
+<p>想要从Google Maps中获取地形数据，首先需要一个密钥。
+可以从 <a href="https://developers.google.com/maps/documentation/elevation/get-api-key" target="_blank">get API key</a>
+页面开始申请秘钥（需要提供信用卡等信息）。</p>
+
+<p>限额说明：</p>
+
+<ul>
+<li>每个用户最多可能只能申请10个免费密钥</li>
+<li>每个密钥每天2500次免费请求</li>
+<li>每次请求最多512个位置</li>
+<li>每秒最多50次请求</li>
+</ul>
+
+<h2 id="使用说明">使用说明</h2>
+
+<h3 id="获取单点高程">获取单点高程</h3>
+
+<p>通过简单的网络请求即可获取单点的高程：</p>
+<pre><code>https://maps.googleapis.com/maps/api/elevation/json?locations=39.7391536,-104.9847034&amp;key=YOUR_API_KEY</code></pre>
+<p>其中：</p>
+
+<ul>
+<li><code>locations=39.7391536,-104.9847034</code> 指定了要获取高程的经纬度，纬度和经度之间用逗号分隔；</li>
+<li><code>key=YOU_API_KEY</code> 指定了用户密钥，用户需要将自己申请的密钥替换 <code>YOU_API_KEY</code></li>
+</ul>
+
+<p>将上面的链接复制到浏览器中，即可得到返回值为::</p>
+<pre><code>{
+   &#34;results&#34; : [
+        {
+            &#34;elevation&#34; : 1608.637939453125,
+            &#34;location&#34; : {
+                &#34;lat&#34; : 39.73915360,
+                &#34;lng&#34; : -104.98470340
+            },
+            &#34;resolution&#34; : 4.771975994110107
+        }
+   ],
+   &#34;status&#34; : &#34;OK&#34;
+}</code></pre>
+<p>从中可以看到这一点的海拔高度是 1608.637939453125 米（小数点后几位可能都没有意义）。
+resolution给出了该点高程的分辨率值，即内插海拔高度的数据点之间的最大距离，以米为单位。</p>
+
+<h3 id="获取多点高程">获取多点高程</h3>
+
+<p>也可以在一次网络请求中获取多个点的高程，多个位置之间用 <code>|</code> 分隔即可。例如：</p>
+<pre><code>https://maps.googleapis.com/maps/api/elevation/json?locations=39.7391536,-104.9847034|36.455556,-116.866667&amp;key=YOUR_API_KEY</code></pre>
+<p>但一次请求中的位置不能超过512个。</p>
+
+<h3 id="批量获取高程">批量获取高程</h3>
+
+<p>Google Maps 提供了多种客户端以实现批量获取高程。
+此处以<a href="https://github.com/googlemaps/google-maps-services-python/" target="_blank">Python客户端</a> 为例。</p>
+
+<ol>
+<li><p>安装 Google Map API 的 Python模块:</p>
+<pre><code>$ pip install -U googlemaps</code></pre></li>
+
+<li><p>获取密钥</p></li>
+
+<li><p>参考如下脚本批量获取高程数据</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#!/usr/bin/env python</span>
+<span style="color:#75715e"># -*- coding: utf-8 -*-</span>
+
+<span style="color:#f92672">import</span> googlemaps
+<span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">request_elevation</span>(xmin, xmax, xinc, ymin, ymax, yinc, maxnum<span style="color:#f92672">=</span><span style="color:#ae81ff">512</span>):
+<span style="color:#e6db74">&#34;&#34;&#34;Request elevation and return them with a list
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">Parameter
+</span><span style="color:#e6db74">=========
+</span><span style="color:#e6db74">xmin : float
+</span><span style="color:#e6db74">    minimum longitude, unit is degree
+</span><span style="color:#e6db74">xmax : float
+</span><span style="color:#e6db74">    maximum longitude, unit is degree
+</span><span style="color:#e6db74">xinc : float
+</span><span style="color:#e6db74">    increment of longitude
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">ymin : float
+</span><span style="color:#e6db74">    minimum latitude, unit is degree
+</span><span style="color:#e6db74">ymax : float
+</span><span style="color:#e6db74">    maximum latitude, unit is degree
+</span><span style="color:#e6db74">yinc : float
+</span><span style="color:#e6db74">    increment of latitude
+</span><span style="color:#e6db74">maxnum : int
+</span><span style="color:#e6db74">    point number of one request, maximum value is 512
+</span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+
+xlist <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>arange(xmin, xmax, xinc)
+ylist <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>arange(ymin, ymax, yinc)
+points <span style="color:#f92672">=</span> [(y, x) <span style="color:#66d9ef">for</span> y <span style="color:#f92672">in</span> ylist <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> xlist]
+
+requestnum <span style="color:#f92672">=</span> int(np<span style="color:#f92672">.</span>floor(len(points) <span style="color:#f92672">/</span> maxnum) <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>)
+npoints <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>array_split(points, requestnum)
+<span style="color:#66d9ef">if</span> requestnum <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">2500</span>:
+    print(<span style="color:#e6db74">&#34;Error: Request number exceed! Change grid or region.&#34;</span>)
+
+<span style="color:#66d9ef">return</span> [gmaps<span style="color:#f92672">.</span>elevation(locations<span style="color:#f92672">=</span>loc<span style="color:#f92672">.</span>tolist()) <span style="color:#66d9ef">for</span> loc <span style="color:#f92672">in</span> npoints]
+
+
+<span style="color:#75715e"># 设置要下载高程数据的经度范围、纬度范围以及网格间隔</span>
+xmin, xmax, xinc <span style="color:#f92672">=</span> <span style="color:#ae81ff">120.000</span>, <span style="color:#ae81ff">129.005</span>, <span style="color:#ae81ff">0.00005</span>
+ymin, ymax, yinc <span style="color:#f92672">=</span> <span style="color:#ae81ff">30.000</span>, <span style="color:#ae81ff">30.005</span>, <span style="color:#ae81ff">0.00005</span>
+
+gmaps <span style="color:#f92672">=</span> googlemaps<span style="color:#f92672">.</span>Client(key<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;YOU_API_KEY&#39;</span>)
+
+<span style="color:#75715e"># Obtain all elevations</span>
+<span style="color:#75715e"># 请设置 maxnum 确保每一次请求的数据点数不超过 512 个以控制请求字符串长度</span>
+elevations <span style="color:#f92672">=</span> request_elevation(xmin, xmax, xinc, ymin, ymax, yinc, maxnum<span style="color:#f92672">=</span><span style="color:#ae81ff">512</span>)
+
+<span style="color:#75715e"># output data with format `longitude   latitude elevation resolution`</span>
+<span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;Elevations.dat&#34;</span>, <span style="color:#e6db74">&#34;w&#34;</span>) <span style="color:#66d9ef">as</span> f:
+<span style="color:#66d9ef">for</span> loclist <span style="color:#f92672">in</span> elevations:
+    <span style="color:#66d9ef">for</span> subloc <span style="color:#f92672">in</span> loclist:
+        outputstr <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{:.5f}</span><span style="color:#e6db74">  </span><span style="color:#e6db74">{:.5f}</span><span style="color:#e6db74">  </span><span style="color:#e6db74">{:.5f}</span><span style="color:#e6db74">  </span><span style="color:#e6db74">{:.5f}</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>format(
+            subloc[<span style="color:#e6db74">&#39;location&#39;</span>][<span style="color:#e6db74">&#39;lng&#39;</span>],
+            subloc[<span style="color:#e6db74">&#39;location&#39;</span>][<span style="color:#e6db74">&#39;lat&#39;</span>],
+            subloc[<span style="color:#e6db74">&#39;elevation&#39;</span>],
+            subloc[<span style="color:#e6db74">&#39;resolution&#39;</span>])
+        f<span style="color:#f92672">.</span>writelines(outputstr)</code></pre></div></li>
+</ol>
+
+    </div>
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="">数据下载</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+      
+      <img class="portrait mr-3" src="/authors/seispider/avatar_hue51b0b35b48ac51799a3e4f0eef53e57_41026_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="/authors/seispider/">肖晓</a></h5>
+      <h6 class="card-subtitle">中国科学技术大学 在读研究生</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/SeisPider" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="http://seispider.top/" target="_blank" rel="noopener">
+              <i class="fas fa-globe"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+          <li>
+            <a itemprop="sameAs" href="mailto:xiaox.seis@gmail.com" >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+    
+
+    
+    <div class="article-widget">
+      
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">下一页</div>
+    <a href="/blog/gud-20171017/" rel="next">GMT 中文社区第三次线下聚餐</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">上一页</div>
+    <a href="/blog/community-guide/" rel="prev">GMT 中文社区 QQ 群入群须知</a>
+  </div>
+  
+</div>
+
+    </div>
+    
+
+    
+<section id="comments">
+  <div id="gitalk-container"></div>
+
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+<script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: 'b2dfca9a4bfad764aa2b',
+    clientSecret: '4ae5ddcd25c6b6d6bc07ac39201ea417054a530a',
+    owner: 'gmt-china',
+    repo: 'gitalk',
+    admin: ['zhaozhiyuan1989','seisman','wangliang1989'],
+    id: md5(location.pathname),
+    body: location.href,
+  });
+  gitalk.render('gitalk-container');
+</script>
+
+</section>
+
+
+
+  </div>
+</article>
+
+<div class="container">
+  <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    &copy; 2016 – 2021 GMT中文社区 &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+</div>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">引用</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> 复制
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> 下载
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/dos.min.js"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "搜索...",
+        'results': "搜索结果",
+        'no_results': "没有找到结果"
+      };
+      const content_type = {
+        'post': "文章",
+        'project': "项目",
+        'publication' : "出版物",
+        'talk' : "演讲"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.eeb855c70a08cf40f8f8d58c82fa7d5e.js"></script>
+
+  </body>
+</html>
+

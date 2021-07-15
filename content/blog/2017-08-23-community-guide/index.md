@@ -1,8 +1,8 @@
 ---
-title: GMT中文社区QQ群入群须知
+title: GMT 中文社区 QQ 群入群须知
 date: 2017-08-23
 type: post
-summary: 如何在QQ群中正确提问？
+summary: 如何在 QQ 群中正确提问？
 authors:
     - seisman
 categories:
@@ -15,15 +15,15 @@ categories:
 <br>
 <i class="fab fa-qq"></i>  二群：791856541
 
-GMT中文社区群是一个相对活跃且学术氛围浓厚的群。本文是GMT中文社区群的入群须知，
-也是GMT中文社区的提问规范。希望所有群友可以阅读并遵守以下规范来营造更好的群环境。
+GMT 中文社区群是一个相对活跃且学术氛围浓厚的群。本文是 GMT 中文社区群的入群须知，
+也是 GMT 中文社区的提问规范。希望所有群友可以阅读并遵守以下规范来营造更好的群环境。
 
 {{% row %}}
 
 {{% col "col-md-6" %}}
 #### 群内可以做的事
 
-- GMT相关问题
+- GMT 相关问题
 - 其他地学软件相关问题
 - 地学科研相关问题
 - 求助文献
@@ -47,22 +47,22 @@ GMT中文社区群是一个相对活跃且学术氛围浓厚的群。本文是GM
 需要他人帮忙下载文献时，请先使用 sci-hub 工具自行尝试下载
 （[sci-hub教程](/blog/sci-hub/)）。
 
-对于中文文献或sci-hub无法下载的文献，方可在群中寻找帮助。求助文献时，请先明确
-告知“使用sci-hub无法下载该文章”并提供文章的官方链接。若找不到官方链接，则提供
+对于中文文献或 sci-hub 无法下载的文献，方可在群中寻找帮助。求助文献时，请先明确
+告知“使用 sci-hub无 法下载该文章”并提供文章的官方链接。若找不到官方链接，则提供
 文章的标题、作者、期刊、年份等信息。
 
 求助文献示例如下：
 
 {{% alert info %}}
-文献求助！我已经尝试用sci-hub下载但依然下载不到。文章链接为: XXXXXXX。谢谢。
+文献求助！我已经尝试用 sci-hub 下载但依然下载不到。文章链接为: XXXXXXX。谢谢。
 {{% /alert %}}
 
 ## 安装类问题
 
-如果你在安装GMT的过程中遇到问题，请参照下面的模板提问。
+如果你在安装 GMT 的过程中遇到问题，请参照下面的模板提问。
 
 {{% alert info %}}
-我在安装GMT的时候遇到了问题，请问该如何解决？谢谢。
+我在安装 GMT 的时候遇到了问题，请问该如何解决？谢谢。
 
 - **操作系统是**: Windows XP | Windows 7 | Ubuntu | CentOS | macOS ...
 - **要安装的GMT版本是**: GMT 4.5.16 | GMT 5.4.2 ...
@@ -120,10 +120,10 @@ GMT中文社区群是一个相对活跃且学术氛围浓厚的群。本文是GM
 
 推荐的一些文档：
 
-- [GMT中文社区图库](/gallery/)
-- [GMT中文社区博客](/blog/)
-- [GMT中文手册](https://docs.gmt-china.org/)
-- [GMT官方文档](http://gmt.soest.hawaii.edu/projects/gmt/wiki/Documentation)
+- [GMT 中文社区：图库](/gallery/)
+- [GMT 中文社区：博客](/blog/)
+- [GMT 中文手册](https://docs.gmt-china.org/)
+- [GMT 官方文档](https://docs.generic-mapping-tools.org/latest/)
 
 ### 提问技巧
 

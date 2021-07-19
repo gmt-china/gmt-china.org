@@ -113,13 +113,13 @@ authors:
 
 ### 博文正文
 
-`gmt-code` 用于将脚本的内容插入到博文中，脚本的路径格式为 `xxx.sh`\ ：
+`gmt-code` 用于将脚本的内容插入到博文中，脚本的路径格式为 `xxx.sh`：
 
 ```
 {{< gmt-code "figname_prefix" >}}
 ```
 
-`figure` 用于将图片插入到博文中，图片的路径格式为 `/blog/20xx-xx-xx/xxx.png`\ ：
+`figure` 用于将图片插入到博文中，图片的路径格式为 `/blog/20xx-xx-xx/xxx.png`：
 
 ```
 {{< figure src="/blog/20xx-xx-xx/xxx.png" title="图片标题" >}}
@@ -128,8 +128,8 @@ authors:
 
 ### 博文绘图脚本
 
-请参考[GMT 中文手册：贡献指南](https://docs.gmt-china.org/latest/contributing/)
-中描述的绘图示例风格，表写绘图脚本。
+请参考 [GMT 中文手册：贡献指南](https://docs.gmt-china.org/latest/contributing/)
+中描述的绘图示例风格编写绘图脚本。
 
 脚本示例如下:
 ```

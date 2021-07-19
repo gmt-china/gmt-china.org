@@ -11,9 +11,7 @@ authors:
     - 王亮
 ---
 
-GMT 中文社区欢迎读者投稿，投稿者请将稿件发送至 [admin@gmt-china.org](mailto:admin@gmt-china.org) 。
-
-投稿分为两类：博文和示例。
+GMT 中文社区欢迎读者投稿，稿件包括博文和绘图实例等。
 
 ## 博文的要求
 
@@ -26,21 +24,25 @@ GMT 中文社区欢迎读者投稿，投稿者请将稿件发送至 [admin@gmt-c
 5. GMT 中可以用到的地学数据
 6. 其他
 
-## 示例的要求
+可以通过如下几种方式投稿：
 
-示例是讲授用 GMT 绘制一个具有典型性的绘图作品的简短文章。
+1. 直接提交 [Pull Request](https://github.com/gmt-china/gmt-china.org/pulls)
+   （不熟悉 Pull Request 的读者可以参考 [Pull Request 流程](https://seismo-learn.org/contributing/pull-request/)
+2. 在 GitHub 上的源码仓库下提交 [Issue](https://github.com/gmt-china/gmt-china.org/issues)
+3. 将稿件发送至 [admin@gmt-china.org](mailto:admin@gmt-china.org)
 
-投稿的示例，应包含如下内容：
+{{% alert note %}}
+建议将 GMT 使用技巧、相关的工具以及地学数据等与 GMT 使用和科研相关的稿件，
+直接投稿至 [GMT 中文手册](https://docs.gmt-china.org/latest/)。
+具体方法请参考[GMT 中文手册：贡献指南](https://docs.gmt-china.org/latest/contributing/)。
+{{% /alert %}}
 
-1. 绘图脚本（请包含必要的注释信息）
-2. 绘图所需的必要数据（请避免使用太大的数据）
-3. 最终生成的效果图（PDF、PNG 或 JPG 格式）
-4. 示例说明文档（请说明绘图的含义以及核心模块的核心选项的简单描述）
+## 绘图实例的要求
 
-注意事项：
-
-1. 本社区的脚本是用 Bash 写的 GMT 脚本，不满足此条件也可投稿，社区维护者会酌情处理；
-2. 绘图中所使用的数据若有来源，请标注出来；
+实例是用 GMT 绘制一个具有典型性的图件。社区绘图示例已迁移至
+[GMT 中文手册：绘图实例](https://docs.gmt-china.org/latest/examples/)中维护。
+请参考[GMT 中文手册：贡献指南](https://docs.gmt-china.org/latest/contributing/)，
+直接向中文手册提交绘图实例。
 
 ## 权益
 

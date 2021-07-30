@@ -9,6 +9,8 @@ categories:
     - GMT工具
 tags:
     - 格式转换
+redirect: https://docs.gmt-china.org/latest/utilities/gdal/
+
 ---
 
 GDAL/OGR 是一个地理空间数据的格式转换及处理工具。

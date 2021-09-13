@@ -30,6 +30,7 @@ jobs:
       with:
         # 429: Too many requests
         args: >
+          --base https://gmt-china.org/
           --accept 429
           --exclude "http://localhost:1313/"
           --verbose

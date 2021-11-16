@@ -83,13 +83,3 @@ GMT脚本建议在独立工作空间（文件夹）中执行，有以下两种�
    {{< figure src="vscode_pic7.png"  width="700px">}}
 
    我们可以查询或自定义众多快捷键，包括但不限于行注释（Add Line Comment/Remove Line Comment）、窗口分割（View: Split Editor Down/Right/Up/Left）、窗口关闭（View：Close Editor）等。
-
-## 代码高亮设置
-
-这里介绍的方法为简易版，无法自行配置颜色，而且在不同的主题中代码高亮颜色会有区别。
-
-- Windows用户下载 [replace_vscode.bat](replace_vscode.bat)及[batchfile.tmLanguage.json](batchfile.tmLanguage.json)文件后，双击`replace_vscode.bat`并重启vscode即可。
-
-- Linux和Mac用户找到` Microsoft VS Code\resources\app\extensions\shellscript\syntaxes `文件夹，下载 [shell-unix-bash.tmLanguage.json](shell-unix-bash.tmLanguage.json) 文件替换原文件后重启 VScode 即可。
-
-  {{< figure src="vscode_pic8.png"  width="700px">}}

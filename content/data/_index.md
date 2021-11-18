@@ -1,5 +1,6 @@
 ---
 title: 地学数据
+redirect: https://docs.gmt-china.org/latest/dataset-CN/
 ---
 
 {{% alert note %}}

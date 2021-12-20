@@ -54,8 +54,8 @@ subtitle = ""
 
 <div class="featurette-icon"><i class="fab fa-windows"></i></div>
 **GMT v6.3.0**:
-[32位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-6.3.0-win32.exe) |
-[64位](http://mirrors.ustc.edu.cn/gmt/bin/gmt-6.3.0-win64.exe)
+[32位](https://mirrors.ustc.edu.cn/gmt/bin/gmt-6.3.0-win32.exe) |
+[64位](https://mirrors.ustc.edu.cn/gmt/bin/gmt-6.3.0-win64.exe)
 </br>
 **Ghostscript 9.55.0**:
 [32位](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs9550/gs9550w32.exe)
@@ -68,10 +68,10 @@ subtitle = ""
 {{% col "col-12 col-sm-4" %}}
 <div class="featurette-icon"><i class="fab fa-linux"></i></div>
 **GMT源码**:
-[v6.3.0](http://mirrors.ustc.edu.cn/gmt/gmt-6.3.0-src.tar.gz)
+[v6.3.0](https://mirrors.ustc.edu.cn/gmt/gmt-6.3.0-src.tar.gz)
 <br>
 **GSHHG数据**:
-[v2.3.7](http://mirrors.ustc.edu.cn/gmt/gshhg-gmt-2.3.7.tar.gz)
+[v2.3.7](https://mirrors.ustc.edu.cn/gmt/gshhg-gmt-2.3.7.tar.gz)
 <br>
 **DCW数据**:
 [v2.0.2](https://github.com/GenericMappingTools/dcw-gmt/releases/download/2.0.2/dcw-gmt-2.0.2.tar.gz)
@@ -80,8 +80,8 @@ subtitle = ""
 {{% col "col-12 col-sm-4" %}}
 <div class="featurette-icon"><i class="fab fa-apple"></i></div>
 **GMT v6.3.0安装包**:
-[Intel](http://mirrors.ustc.edu.cn/gmt/bin/gmt-6.3.0-darwin-x86_64.dmg) |
-[ARM](http://mirrors.ustc.edu.cn/gmt/bin/gmt-6.3.0-darwin-arm64.dmg)
+[Intel](https://mirrors.ustc.edu.cn/gmt/bin/gmt-6.3.0-darwin-x86_64.dmg) |
+[ARM](https://mirrors.ustc.edu.cn/gmt/bin/gmt-6.3.0-darwin-arm64.dmg)
 {{% /col %}}
 
 {{% /row %}}

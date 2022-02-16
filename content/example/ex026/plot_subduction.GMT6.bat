@@ -17,7 +17,7 @@ gmt begin plot_subduction png A0.5c
     echo 70 green@30 300 green@30 >> depth.cpt
     echo 300 red@30 800 red@30 >> depth.cpt
     rem 绘制震源球，用不同颜色代表不同地震深度
-    gmt meca %FM% -Sm0.3c -Zdepth.cpt
+    gmt meca %FM% -Sm0.3c -Cdepth.cpt
     rem 选取测线AB
     echo 126 42 A > tmp
     echo 146 40 B >> tmp
@@ -51,7 +51,7 @@ gmt begin plot_subduction png A0.5c
     echo 123 33.05 43 3.62 -0.44 -3.18 0.90 2.46 -1.35 24 0 0 > tmp
     echo 126.6 33.05 171 -0.71 -0.26 0.96 0.44 0.81 -0.07 24 0 0 >> tmp
     echo 130.5 33.05 302 0.34 0.16 -0.50 -0.77 -4.57 -1.58 24 0 0 >> tmp    
-    gmt meca tmp -Sm0.3c -Zdepth.cpt
+    gmt meca tmp -Sm0.3c -Cdepth.cpt
     
     rem 右图上
     rem 沿测线AB绘制地形高度

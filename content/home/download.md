@@ -61,8 +61,6 @@ subtitle = ""
 [32位](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs9550/gs9550w32.exe)
 [64位](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs9550/gs9550w64.exe)
 </br>
-**UnixTools**:
-[UnixTools.zip](/data/UnixTools.zip)
 {{% /col %}}
 
 {{% col "col-12 col-sm-4" %}}

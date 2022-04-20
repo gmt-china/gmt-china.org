@@ -29,11 +29,6 @@
   weight = 5
 
 [[main]]
-  name = "数据集"
-  url = "data/"
-  weight = 6
-
-[[main]]
   name = "贡献者"
   url = "#people"
   weight = 7

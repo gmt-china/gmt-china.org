@@ -9,7 +9,7 @@ authors = ["seisman"]
 superuser = true
 
 # Role/position
-role = "密西根州立大学 博士后"
+role = "中国地质大学(武汉) 教授"
 
 # Organizations/Affiliations
 #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.

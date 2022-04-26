@@ -24,11 +24,6 @@
   weight = 4
 
 [[main]]
-  name = "图库"
-  url = "gallery/"
-  weight = 5
-
-[[main]]
   name = "贡献者"
   url = "#people"
   weight = 7

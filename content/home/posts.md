@@ -10,8 +10,6 @@ weight = 40  # Order that this section will appear.
 title = '<i class="fas fa-blog"></i> 最新博文'
 subtitle = '''
 [查看全部博文 <i class="fas fa-angle-right"></i>](blog/)
-<br/>
-[查看全部示例 <i class="fas fa-angle-right"></i>](example/)
 '''
 
 [content]

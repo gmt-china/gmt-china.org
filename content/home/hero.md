@@ -35,10 +35,10 @@ hero_media = "GMT_logo.png"
   #padding = ["20px", "0", "20px", "0"]
 +++
 
-**欢迎访问GMT中文社区 <i class="fas fa-globe-asia"></i>**
+**欢迎访问 GMT 中文社区 <i class="fas fa-globe-asia"></i>**
 
 ## 社区目标
 
-- 组织社区成员协同维护GMT中文手册
-- 为GMT中文用户提供优质的GMT学习资源
+- 组织社区成员协同维护 GMT 中文手册
+- 为 GMT 中文用户提供优质的 GMT 学习资源
 - 开展线下培训与聚餐等活动

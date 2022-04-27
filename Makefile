@@ -7,7 +7,7 @@ server:
 	hugo server
 
 clean:
-	-rm -r public/ resources/
+	-rm -rf public/ resources/ assets/jsconfig.json
 	find . -name "*.ps" -delete
 	find . -name "gmt.conf" -delete
 	find . -name "gmt.history" -delete

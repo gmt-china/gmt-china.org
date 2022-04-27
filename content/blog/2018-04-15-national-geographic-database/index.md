@@ -18,10 +18,10 @@ authors:
 - 数据集内容简介
 - 数据集要素合并、提取及格式转换
 
-{{% alert info %}}
+{{% callout info %}}
 本文仅供个人科研作图参考。若使用者编制的地图需向社会公开的，请务必遵守
 《地图管理条例》有关规定依法履行地图审核程序。
-{{% /alert %}}
+{{% /callout %}}
 
 ## 数据概况
 
@@ -81,7 +81,7 @@ authors:
 
 根据网友CovMat建议，采用本社区一贯推荐的GDAL/ORG库（[GDAL/OGR: 地理空间数据格式转换神器](/blog/gdal-ogr/)）将分幅的gdb数据进行批量合并：
 
-{{< gmt-code "merge" >}}
+{{< includecode "merge.GMT5.sh" "bash" >}}
 
 若安装有python环境，还可选择`ogrmerge.py`工具进行批量的格式转换和合并，详见[ogrmerge使用手册](https://www.gdal.org/ogrmerge.html)。
 

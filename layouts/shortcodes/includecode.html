@@ -1,0 +1,5 @@
+{{- $filename := (path.Join (path.Dir .Page.File.Path) (.Get 0)) -}}
+{{- $language := .Get 1 -}}
+{{- $options := .Get 2 -}}
+{{- $fileContents := readFile $filename | safeHTML -}}
+{{- highlight $fileContents $language $options -}}

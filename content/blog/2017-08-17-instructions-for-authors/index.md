@@ -31,11 +31,11 @@ GMT 中文社区欢迎读者投稿，稿件包括博文和绘图实例等。
 2. 在 GitHub 上的源码仓库下提交 [Issue](https://github.com/gmt-china/gmt-china.org/issues)
 3. 将稿件发送至 [admin@gmt-china.org](mailto:admin@gmt-china.org)
 
-{{% alert note %}}
+{{% callout note %}}
 建议将 GMT 使用技巧、相关的工具以及地学数据等与 GMT 使用和科研相关的稿件，
 直接投稿至 [GMT 中文手册](https://docs.gmt-china.org/latest/)。
 具体方法请参考[GMT 中文手册：贡献指南](https://docs.gmt-china.org/latest/contributing/)。
-{{% /alert %}}
+{{% /callout %}}
 
 ## 绘图实例的要求
 

@@ -7,7 +7,7 @@
 ## 编译网站
 
 ```
-$ git clone --recursive https://github.com/gmt-china/gmt-china.org.git
+$ git clone --depth=5 https://github.com/gmt-china/gmt-china.org.git
 $ cd gmt-china.org
 $ hugo server
 ```

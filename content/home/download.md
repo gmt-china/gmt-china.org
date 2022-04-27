@@ -1,9 +1,9 @@
 +++
 # A Demo section created with the Blank widget.
-# Any elements can be added in the body: https://sourcethemes.com/academic/docs/writing-markdown-latex/
+# Any elements can be added in the body: https://wowchemy.com/docs/writing-markdown-latex/
 # Add more sections by duplicating this file and customizing to your requirements.
 
-widget = "blank"  # See https://sourcethemes.com/academic/docs/page-builder/
+widget = "blank"  # See https://wowchemy.com/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 20  # Order that this section will appear.
@@ -25,19 +25,22 @@ subtitle = ""
   # color = "navy"
 
   # Background gradient.
-  # gradient_start = "DeepSkyBlue"
-  # gradient_end = "SkyBlue"
+  # gradient_start = "DarkGreen"
+  # gradient_end = "ForestGreen"
 
   # Background image.
-  # image = "headers/bubbles-wide.jpg"  # Name of image in `static/img/`.
+  # image = "image.jpg"  # Name of image in `static/media/`.
   # image_darken = 0.6  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
+  # image_size = "cover"  #  Options are `cover` (default), `contain`, or `actual` size.
+  # image_position = "center"  # Options include `left`, `center` (default), or `right`.
+  # image_parallax = true  # Use a fun parallax-like fixed background effect? true/false
 
   # Text color (true=light or false=dark).
   text_color_light = false
 
 [design.spacing]
   # Customize the section spacing. Order is top, right, bottom, left.
-  #padding = ["20px", "0", "20px", "0"]
+  # padding = ["20px", "0", "20px", "0"]
 
 [advanced]
  # Custom CSS.
@@ -45,14 +48,13 @@ subtitle = ""
 
  # CSS class.
  css_class = ""
-
 +++
 
 {{% row "featurette" %}}
 
 {{% col "col-12 col-sm-4" %}}
-
 <div class="featurette-icon"><i class="fab fa-windows"></i></div>
+
 **GMT v6.3.0**:
 [32位](https://mirrors.ustc.edu.cn/gmt/bin/gmt-6.3.0-win32.exe) |
 [64位](https://mirrors.ustc.edu.cn/gmt/bin/gmt-6.3.0-win64.exe)
@@ -65,6 +67,7 @@ subtitle = ""
 
 {{% col "col-12 col-sm-4" %}}
 <div class="featurette-icon"><i class="fab fa-linux"></i></div>
+
 **GMT源码**:
 [v6.3.0](https://mirrors.ustc.edu.cn/gmt/gmt-6.3.0-src.tar.gz)
 <br>
@@ -73,10 +76,12 @@ subtitle = ""
 <br>
 **DCW数据**:
 [v2.0.2](https://github.com/GenericMappingTools/dcw-gmt/releases/download/2.0.2/dcw-gmt-2.0.2.tar.gz)
+
 {{% /col %}}
 
 {{% col "col-12 col-sm-4" %}}
 <div class="featurette-icon"><i class="fab fa-apple"></i></div>
+
 **GMT v6.3.0安装包**:
 [Intel](https://mirrors.ustc.edu.cn/gmt/bin/gmt-6.3.0-darwin-x86_64.dmg) |
 [ARM](https://mirrors.ustc.edu.cn/gmt/bin/gmt-6.3.0-darwin-arm64.dmg)

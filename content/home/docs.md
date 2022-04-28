@@ -50,22 +50,29 @@ subtitle = ""
  css_class = ""
 +++
 
-中文社区制作并维护了[GMT中文手册](https://docs.gmt-china.org/)。
+中文社区制作并维护了 [GMT 中文手册](https://docs.gmt-china.org/)。
 
-### 最新版本:
+{{% row %}}
+{{% col "col-md-5" %}}
 
-<i class="fab fa-html5"></i>
-在线阅读:
-[v6.3](https://docs.gmt-china.org/latest/) |
-[v6.2](https://docs.gmt-china.org/6.2/) |
-[v6.1](https://docs.gmt-china.org/6.1/) |
-[v6.0](https://docs.gmt-china.org/6.0/) |
-[v5.4](https://docs.gmt-china.org/5.4/)
-<br>
-<i class="far fa-file-pdf"></i>
-PDF 下载:
-[v6.3](https://docs.gmt-china.org/6.3/GMT_docs.pdf) |
-[v6.2](https://docs.gmt-china.org/6.2/GMT_docs.pdf) |
-[v6.1](https://docs.gmt-china.org/6.1/GMT_docs.pdf) |
-[v6.0](https://docs.gmt-china.org/6.0/GMT_docs.pdf) |
-[v5.4](https://docs.gmt-china.org/5.4/GMT_docs.pdf)
+#### <i class="fab fa-html5"></i> 在线阅读
+
+- [v6.3](https://docs.gmt-china.org/latest/)
+- [v6.2](https://docs.gmt-china.org/6.2/)
+- [v6.1](https://docs.gmt-china.org/6.1/)
+- [v6.0](https://docs.gmt-china.org/6.0/)
+- [v5.4](https://docs.gmt-china.org/5.4/)
+
+{{%/ col %}}
+{{% col "col-md-5" %}}
+
+#### <i class="far fa-file-pdf"></i> PDF 下载
+
+- [v6.3](https://docs.gmt-china.org/6.3/GMT_docs.pdf)
+- [v6.2](https://docs.gmt-china.org/6.2/GMT_docs.pdf)
+- [v6.1](https://docs.gmt-china.org/6.1/GMT_docs.pdf)
+- [v6.0](https://docs.gmt-china.org/6.0/GMT_docs.pdf)
+- [v5.4](https://docs.gmt-china.org/5.4/GMT_docs.pdf)
+
+{{%/ col %}}
+{{%/ row %}}

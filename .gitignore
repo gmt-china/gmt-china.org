@@ -4,11 +4,6 @@ resources/
 assets/jsconfig.json
 .hugo_build.lock
 
-# GMT
-*.ps
-gmt.conf
-gmt.history
-
 # VS Code
 .vscode
 

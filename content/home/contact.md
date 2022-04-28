@@ -70,8 +70,8 @@ GMT 中文社区 QQ 群：
 
 社区建议及投稿方式：
 
-- 在 GitHub <i class="fab fa-github"></i> [@gmt-china](https://github.com/gmt-china) 上
-  提交 [Issue](https://github.com/gmt-china/gmt-china.org/issues)、
+- 在 <i class="fab fa-github"></i> GitHub [@gmt-china](https://github.com/gmt-china) 上提交
+  [Issue](https://github.com/gmt-china/gmt-china.org/issues)、
   [Pull Request](https://github.com/gmt-china/gmt-china.org/pulls)
   或[参与讨论](https://github.com/gmt-china/gmt-china.org/discussions)
 - 在 QQ 群中留言

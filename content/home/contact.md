@@ -50,24 +50,6 @@ subtitle = ""
  css_class = ""
 +++
 
-{{% row %}}
-{{% col "col-md-5" %}}
-GMT 中文社区 QQ 群：
-
-<i class="fab fa-qq"></i> 一群：218905582
-<br>
-<i class="fab fa-qq"></i> 二群：791856541
-<br>
-[**入群须知!**](/blog/community-guide/)
-{{% /col %}}
-{{% col "col-md-3" %}}
-{{< figure src="/media/QQ-group1.png" width="200px">}}
-{{% /col %}}
-{{% col "col-md-3" %}}
-{{< figure src="/media/QQ-group2.png" width="200px">}}
-{{% /col %}}
-{{% /row %}}
-
 社区建议及投稿方式：
 
 - 在 <i class="fab fa-github"></i> GitHub [@gmt-china](https://github.com/gmt-china) 上提交
@@ -76,3 +58,18 @@ GMT 中文社区 QQ 群：
   或[参与讨论](https://github.com/gmt-china/gmt-china.org/discussions)
 - 在 QQ 群中留言
 - 邮件联系 <i class="fas fa-envelope"></i> [admin@gmt-china.org](mailto:admin@gmt-china.org)
+
+{{% row %}}
+{{% col "col-md-5" %}}
+GMT 中文社区 QQ 群【入群前请先阅读[**入群须知!**](/blog/community-guide/)】：
+- <i class="fab fa-qq"></i> 一群：218905582
+- <i class="fab fa-qq"></i> 二群：791856541
+
+{{% /col %}}
+{{% col "col-md-3" %}}
+{{< figure src="/media/QQ-group1.png" width="200px">}}
+{{% /col %}}
+{{% col "col-md-3" %}}
+{{< figure src="/media/QQ-group2.png" width="200px">}}
+{{% /col %}}
+{{% /row %}}

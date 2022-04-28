@@ -68,10 +68,11 @@ GMT 中文社区 QQ 群：
 {{% /col %}}
 {{% /row %}}
 
-社区建议及投稿请联系：
+社区建议及投稿方式：
 
-<i class="fas fa-envelope"></i> [admin@gmt-china.org](mailto:admin@gmt-china.org)
-
-GitHub：
-
-<i class="fab fa-github"></i> [@gmt-china](https://github.com/gmt-china)
+- 在 <i class="fab fa-github"></i> GitHub [@gmt-china](https://github.com/gmt-china) 上提交
+  [Issue](https://github.com/gmt-china/gmt-china.org/issues)、
+  [Pull Request](https://github.com/gmt-china/gmt-china.org/pulls)
+  或[参与讨论](https://github.com/gmt-china/gmt-china.org/discussions)
+- 在 QQ 群中留言
+- 邮件联系 <i class="fas fa-envelope"></i> [admin@gmt-china.org](mailto:admin@gmt-china.org)

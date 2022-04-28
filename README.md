@@ -20,8 +20,8 @@
 2.  下载网站源码
 
     ```
-    git clone --depth=5 https://github.com/gmt-china/gmt-china.org.git
-    cd gmt-china.org/
+    $ git clone --depth=5 https://github.com/gmt-china/gmt-china.org.git
+    $ cd gmt-china.org/
     ```
 
 3.  终端执行 `hugo server` 然后浏览器打开 `localhost:1313` 即可在本地查看网页效果

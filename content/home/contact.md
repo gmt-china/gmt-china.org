@@ -50,15 +50,20 @@ subtitle = ""
  css_class = ""
 +++
 
+社区建议及投稿请联系：
+
+<i class="fas fa-envelope"></i> [admin@gmt-china.org](mailto:admin@gmt-china.org)
+
+GitHub：
+
+<i class="fab fa-github"></i> [@gmt-china](https://github.com/gmt-china)
+
 {{% row %}}
 {{% col "col-md-5" %}}
-GMT 中文社区 QQ 群：
+GMT 中文社区 QQ 群【入群前请先阅读[**入群须知!**](/blog/community-guide/)】：
+- <i class="fab fa-qq"></i> 一群：218905582
+- <i class="fab fa-qq"></i> 二群：791856541
 
-<i class="fab fa-qq"></i> 一群：218905582
-<br>
-<i class="fab fa-qq"></i> 二群：791856541
-<br>
-[**入群须知!**](/blog/community-guide/)
 {{% /col %}}
 {{% col "col-md-3" %}}
 {{< figure src="/media/QQ-group1.png" width="200px">}}
@@ -67,11 +72,3 @@ GMT 中文社区 QQ 群：
 {{< figure src="/media/QQ-group2.png" width="200px">}}
 {{% /col %}}
 {{% /row %}}
-
-社区建议及投稿请联系：
-
-<i class="fas fa-envelope"></i> [admin@gmt-china.org](mailto:admin@gmt-china.org)
-
-GitHub：
-
-<i class="fab fa-github"></i> [@gmt-china](https://github.com/gmt-china)

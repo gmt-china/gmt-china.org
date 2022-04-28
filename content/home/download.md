@@ -75,7 +75,7 @@ subtitle = ""
 [v2.3.7](https://mirrors.ustc.edu.cn/gmt/gshhg-gmt-2.3.7.tar.gz)
 <br>
 **DCW 数据**:
-[v2.1.0](https://github.com/GenericMappingTools/dcw-gmt/releases/download/2.1.0/dcw-gmt-2.1.0.tar.gz)
+[v2.1.0](https://mirrors.ustc.edu.cn/gmt/dcw-gmt-2.1.0.tar.gz)
 
 {{% /col %}}
 

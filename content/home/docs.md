@@ -50,8 +50,6 @@ subtitle = ""
  css_class = ""
 +++
 
-中文社区制作并维护了 [GMT 中文手册](https://docs.gmt-china.org/)。
-
 {{% row %}}
 {{% col "col-md-5" %}}
 

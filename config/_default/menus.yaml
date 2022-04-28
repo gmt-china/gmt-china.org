@@ -16,6 +16,12 @@ main:
   - name: 博客
     url: '#posts'
     weight: 4
+  - name: 地学数据集
+    url: 'https://docs.gmt-china.org/latest/dataset-CN/'
+    weight: 5
+  - name: 图库
+    url: 'https://docs.gmt-china.org/latest/examples/'
+    weight: 6
   - name: 联系我们
     url: '#contact'
     weight: 9

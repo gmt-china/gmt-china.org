@@ -52,7 +52,7 @@ subtitle = ""
 
 {{% row %}}
 {{% col "col-md-5" %}}
-GMT中文社区QQ群：
+GMT 中文社区 QQ 群：
 
 <i class="fab fa-qq"></i> 一群：218905582
 <br>

@@ -20,7 +20,7 @@ main:
     url: 'https://docs.gmt-china.org/latest/dataset-CN/'
     weight: 5
   - name: 图库
-    url: 'https://docs.gmt-china.org/latest/examples/'
+    url: 'https://docs.gmt-china.org/latest/gallery/'
     weight: 6
   - name: 联系我们
     url: '#contact'

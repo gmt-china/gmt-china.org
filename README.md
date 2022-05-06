@@ -15,7 +15,7 @@
 
     用户可以访问 Hugo 的 [Release](https://github.com/gohugoio/hugo/releases) 页面，
     根据自己的操作系统，下载以 `hugo_extended` 开头的安装包，解压得到二进制文件
-    ``hugo`` 可直接使用。
+    `hugo` 可直接使用。
 
 2.  下载网站源码
 

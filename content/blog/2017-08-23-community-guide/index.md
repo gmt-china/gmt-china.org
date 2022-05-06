@@ -11,7 +11,7 @@ categories:
 
 欢迎加入“地学GMT中文社区群”：
 
-<i class="fab fa-qq"></i>  一群：218905582 (已满)
+<i class="fab fa-qq"></i>  一群：218905582
 <br>
 <i class="fab fa-qq"></i>  二群：791856541
 
@@ -120,8 +120,7 @@ GMT 中文社区群是一个相对活跃且学术氛围浓厚的群。本文是 
 
 推荐的一些文档：
 
-- [GMT 中文社区：图库](/gallery/)
-- [GMT 中文社区：博客](/blog/)
+- [GMT 中文社区：图库](https://docs.gmt-china.org/latest/gallery/)
 - [GMT 中文手册](https://docs.gmt-china.org/)
 - [GMT 官方文档](https://docs.generic-mapping-tools.org/latest/)
 

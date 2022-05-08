@@ -32,6 +32,8 @@ jobs:
         args: >
           --accept 429
           --exclude "http://localhost:1313/"
+          --exclude "^mailto:"
+          --exclude "^https://fonts.gstatic.com/"
           --verbose
           "repository/**/*.md"
           "website/**/*.html"

@@ -36,7 +36,7 @@ GMT 中文社区欢迎读者投稿，稿件包括博文和绘图实例等。
 ## 绘图实例的要求
 
 实例是用 GMT 绘制一个具有典型性的图件。社区绘图示例已迁移至
-[GMT 中文手册：绘图实例](https://docs.gmt-china.org/latest/examples/)中维护。
+[GMT 中文手册：绘图实例](https://docs.gmt-china.org/latest/gallery/)中维护。
 请参考[GMT 中文手册：贡献指南](https://docs.gmt-china.org/latest/contributing/)，
 直接向中文手册提交绘图实例。
 

@@ -15,7 +15,7 @@ appearance:
 
 marketing:
   seo:
-    site_type: Person
+    site_type: Organization
     local_business_type: ''
     org_name: ''
     description: '面向GMT中文用户的小众社区'

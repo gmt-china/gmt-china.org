@@ -90,4 +90,5 @@ subtitle = ""
 
 ----
 
-老版本的源码和安装包可以从 https://mirrors.ustc.edu.cn/gmt 下载。
+老版本的源码和安装包可以从 [GMT 科大镜像](https://mirrors.ustc.edu.cn/gmt)
+以及其子目录 `bin` 和 `legacy` 下获取。

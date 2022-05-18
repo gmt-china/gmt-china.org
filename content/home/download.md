@@ -87,3 +87,7 @@ subtitle = ""
 {{% /col %}}
 
 {{% /row %}}
+
+----
+
+老版本的源码和安装包可以从 https://mirrors.ustc.edu.cn/gmt 下载。

@@ -49,6 +49,9 @@ subtitle = ""
  css_class = ""
 +++
 
+GMT 中文社区有[一群志愿者](https://github.com/orgs/gmt-china/people)共同维护，
+欢迎更多的 GMT 用户加入维护者的行列。
+
 社区建议及投稿方式：
 
 - 在 <i class="fab fa-github"></i> GitHub [@gmt-china](https://github.com/gmt-china) 上提交

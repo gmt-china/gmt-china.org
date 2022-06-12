@@ -28,5 +28,5 @@ GMT 源码包镜像中包含了 GMT 源码软件包以及 GSHHG 和 DCW 数据�
 镜像地址：[https://mirrors.ustc.edu.cn/gmtdata/](https://mirrors.ustc.edu.cn/gmtdata/)
 
 GMT 远程数据镜像中提供了全球地形起伏等地学数据。该镜像的使用方法可以参考
-https://docs.gmt-china.org/latest/dataset/usage/。
+[https://docs.gmt-china.org/latest/dataset/usage/](https://docs.gmt-china.org/latest/dataset/usage/)。
 

@@ -31,7 +31,7 @@ https://whereisscihub.now.sh/
 
 要下载一篇文章，需要知道如下两个信息中的至少一个：
 
-1.  文献的官方网址，比如 http://www.sciencedirect.com/science/article/pii/0031920181900467，
+1.  文献的官方网址，比如 http://www.sciencedirect.com/science/article/pii/0031920181900467,
     可以通过 Google Scholar 等网站搜索得到
 2.  文献的DOI，比如 `10.1016/0031-9201(81)90046-7`，可以从文章的官方网站上找到，
     现在大多数文章的参考文献也要求给出DOI信息

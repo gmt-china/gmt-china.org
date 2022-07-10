@@ -31,7 +31,7 @@ https://whereisscihub.now.sh/
 
 要下载一篇文章，需要知道如下两个信息中的至少一个：
 
-1.  文献的官方网址，比如 http://www.sciencedirect.com/science/article/pii/0031920181900467,
+1.  文献的官方网址，比如 https://www.sciencedirect.com/science/article/pii/0031920181900467,
     可以通过 Google Scholar 等网站搜索得到
 2.  文献的DOI，比如 `10.1016/0031-9201(81)90046-7`，可以从文章的官方网站上找到，
     现在大多数文章的参考文献也要求给出DOI信息
@@ -43,7 +43,7 @@ https://whereisscihub.now.sh/
 
 ### 到 sci-hub 网站下载
 
-访问 sci-hub 网址，比如 http://sci-hub.tw/ ，如下图所示：
+访问 sci-hub 网址，比如 https://sci-hub.tw/ ，如下图所示：
 
 ![sci-hub主页](sci-hub-homepage.jpg)
 
@@ -53,15 +53,15 @@ https://whereisscihub.now.sh/
 
 打开文章对应的网址，在域名的后面加上 sci-hub 的域名，比如 `.sci-hub.tw` 即可。
 
-例如，这篇文章的网址是 http://www.sciencedirect.com/science/article/pii/0031920181900467 ，
+例如，这篇文章的网址是 https://www.sciencedirect.com/science/article/pii/0031920181900467 ，
 在域名的后面加上 sci-hub 的域名，变成：
-http://www.sciencedirect.com.sci-hub.tw/science/article/pii/0031920181900467
+https://www.sciencedirect.com.sci-hub.tw/science/article/pii/0031920181900467
 即可直接下载文章全文。
 
 ### 直接利用DOI下载全文
 
 已知文章DOI的前提下，直接在 sci-hub 域名后面加上 DOI 即可，比如直接访问
-http://sci-hub.tw/10.1016/0031-9201(81)90046-7 即可下载文章全文。
+https://sci-hub.tw/10.1016/0031-9201(81)90046-7 即可下载文章全文。
 
 ## 注意事项
 

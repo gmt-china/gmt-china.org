@@ -34,6 +34,7 @@ jobs:
           --exclude "http://localhost:1313/"
           --exclude "^mailto:"
           --exclude "^https://fonts.gstatic.com/"
+          --exclude "^https://www.sciencedirect.com/"
           --exclude "file:///"
           --verbose
           "repository/**/*.md"

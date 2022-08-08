@@ -43,7 +43,7 @@ https://whereisscihub.now.sh/
 
 ### 到 sci-hub 网站下载
 
-访问 sci-hub 网址，比如 https://sci-hub.tw/ ，如下图所示：
+访问 sci-hub 网址，比如 https://sci.hubg.org/ ，如下图所示：
 
 ![sci-hub主页](sci-hub-homepage.jpg)
 
@@ -51,17 +51,17 @@ https://whereisscihub.now.sh/
 
 ### 直接利用网址下载全文
 
-打开文章对应的网址，在域名的后面加上 sci-hub 的域名，比如 `.sci-hub.tw` 即可。
+打开文章对应的网址，在域名的后面加上 sci-hub 的域名，比如 `sci.hubg.org` 即可。
 
 例如，这篇文章的网址是 https://www.sciencedirect.com/science/article/pii/0031920181900467 ，
 在域名的后面加上 sci-hub 的域名，变成：
-https://www.sciencedirect.com.sci-hub.tw/science/article/pii/0031920181900467
+https://www.sciencedirect.com.sci.hubg.org/science/article/pii/0031920181900467
 即可直接下载文章全文。
 
 ### 直接利用DOI下载全文
 
 已知文章DOI的前提下，直接在 sci-hub 域名后面加上 DOI 即可，比如直接访问
-https://sci-hub.tw/10.1016/0031-9201(81)90046-7 即可下载文章全文。
+https://sci.hubg.org/10.1016/0031-9201(81)90046-7 即可下载文章全文。
 
 ## 注意事项
 

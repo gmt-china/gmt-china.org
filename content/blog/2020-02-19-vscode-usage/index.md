@@ -42,11 +42,9 @@ vscode通过不同功能的插件实现代码的开发运行、图片文件的�
 
 {{< figure src="vscode_pic2.png"  width="700px">}}
 
-为支持中文脚本，Code Runner中需要设置终端输出：
+在 Extensions 菜单中，点击 Code Runner 插件的**齿轮**图标，弹出菜单中选择“**Extension Settings**”，勾选以下三个选项。不勾选这三个选项可能会导致无法正确执行 GMT 脚本。
 
-在Extensions菜单中，点击Code Runner插件的**齿轮**图标，弹出菜单中选择“**Extension Settings**”，勾选“**Run in Terminal**”。另外勾选“ **Save File Before Run**”，可在执行脚本之前先自动保存。
-
-{{< figure src="vscode_pic3.png" width="700px">}}
+{{< figure src="vscode_pic3.jpg" width="700px">}}
 
 ## vscode执行GMT脚本过程
 

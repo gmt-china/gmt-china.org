@@ -79,7 +79,7 @@ authors:
 
 ### gdb数据库文件合并
 
-根据网友CovMat建议，采用本社区一贯推荐的GDAL/ORG库（[GDAL/OGR: 地理空间数据格式转换神器](/blog/gdal-ogr/)）将分幅的gdb数据进行批量合并：
+采用本社区一贯推荐的[GDAL/ORG库](https://docs.gmt-china.org/latest/utilities/gdal/)将分幅的gdb数据进行批量合并：
 
 {{< includecode "merge.GMT5.sh" "bash" >}}
 
@@ -102,7 +102,9 @@ ogr2ogr -f GMT -where "GB=620201 or GB=620202 or GB=250200" BOUL_sub.gmt BOUL.sh
 最后GMT绘图如下：
 
 ```
-gmt psxy BOUL_sub.gmt -R70/145/3/55 -JM105/35/6.5i > ChinaMap.ps
+gmt begin ChinaMap
+    gmt plot BOUL_sub.gmt -R70/145/3/55 -JM105/35/6.5i 
+gmt end show
 ```
 
 绘图结果：

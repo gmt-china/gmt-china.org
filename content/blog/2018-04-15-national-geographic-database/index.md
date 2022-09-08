@@ -79,13 +79,57 @@ authors:
 
 ### gdb数据库文件合并
 
-采用本社区一贯推荐的[GDAL/ORG库](https://docs.gmt-china.org/latest/utilities/gdal/)将分幅的gdb数据进行批量合并：
+采用本社区一贯推荐的[GDAL/ORG库](https://docs.gmt-china.org/latest/utilities/gdal/)将分幅的gdb数据进行批量合并。
+首先解压所有下载的压缩包，得到以`.gdb`结尾的目录。目录名类似`H51.gdb`、`I49.gdb`等。
+然后在这些目录的上级目录执行以下脚本：
 
-{{< includecode "merge.GMT5.sh" "bash" >}}
+Linux系统：
+{{< includecode "merge.GMT6.sh" "bash" >}}
+
+Windows系统：
+{{< includecode "merge.GMT6.bat" "batch" >}}
 
 若安装有python环境，还可选择`ogrmerge.py`工具进行批量的格式转换和合并，详见[ogrmerge使用手册](https://www.gdal.org/ogrmerge.html)。
 
 该节将分幅的交通、水系、边界等12类要素分别合并为全国一张图，最后转为12个shp文件。
+
+### 查询GB代码
+
+使用`ogrinfo`可以查询shp文件内包含哪些GB代码的要素。例如以下命令查询`BOUL.shp`：
+
+```
+ogrinfo -sql "SELECT distinct GB FROM BOUL" BOUL.shp
+```
+
+查询结果为：
+
+```
+INFO: Open of `BOUL.shp'
+      using driver `ESRI Shapefile' successful.
+
+Layer name: BOUL
+Geometry: None
+Feature Count: 5
+Layer SRS WKT:
+(unknown)
+GB: Integer (9.0)
+OGRFeature(BOUL):0
+  GB (Integer) = 250200
+
+OGRFeature(BOUL):1
+  GB (Integer) = 650201
+
+OGRFeature(BOUL):2
+  GB (Integer) = 640200
+
+OGRFeature(BOUL):3
+  GB (Integer) = 260100
+
+OGRFeature(BOUL):4
+  GB (Integer) = 630200
+```
+
+该文件包含海岸线(250200)、已定县级行政区界(650201)、地、市、州级行政区界(640200)、水系交汇处(260100)、省级界线(630200)。
 
 ### 提取某类要素
 
@@ -93,7 +137,7 @@ authors:
 
 例如：
 
-上文行政区划`BOUL`图层中GB代码`620201`、`620202`、`250200`分别为已定国界、未定国界和海岸线，那么提取数据并转化为GMT格式的命令为：
+行政区划`BOUL`图层中GB代码`620201`、`620202`、`250200`分别为已定国界、未定国界和海岸线，那么提取数据并转化为GMT格式的命令为：
 
 ```
 ogr2ogr -f GMT -where "GB=620201 or GB=620202 or GB=250200" BOUL_sub.gmt BOUL.shp

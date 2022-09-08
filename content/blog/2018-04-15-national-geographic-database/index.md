@@ -182,3 +182,21 @@ ogr2ogr -f GMT -where "CLASS='AK'" AGNP.gmt AGNP.shp
 121.257111875 28.8522451100001
 ...
 ```
+
+以 Windows 系统为例，首先将以上数据的编码转换为GB2312，再使用以下代码绘制：
+
+```
+gmt begin AGNP jpg
+  gmt set PS_CHAR_ENCODING Standard+
+
+  gmt basemap -R120/121/28/29 -JM10c -Baf
+  gmt grdimage @earth_relief_03s -Cgeo
+  gmt plot -Sc0.2c -Gred -W0p,black AGNP.gmt
+  chcp 936
+  gmt convert AGNP.gmt -a2="NAME" | gmt text -F+f10p,40+jTL -D0.15c/0.3c -Gwhite
+gmt end
+```
+
+绘图结果：
+
+![AGNP](AGNP.jpg)

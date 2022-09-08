@@ -167,10 +167,7 @@ ogr2ogr -f GMT -where "CLASS='AK'" AGNP.gmt AGNP.shp
 最后转换成的GMT格式数据如下：
 
 ```
-# @VGMT1.0 @GPOINT
-# REGION_STUB                                                             
-# @Jp"+proj=longlat +ellps=GRS80 +no_defs"
-# @Jw"GEOGCS[\"GCS_CGCS_2000\",DATUM[\"D_2000\",SPHEROID[\"S_2000\",6378137,298.257222101004]],PRIMEM[\"Greenwich\",0],UNIT[\"Degree\",0.0174532925199433],AXIS[\"Longitude\",EAST],AXIS[\"Latitude\",NORTH]]"
+...
 # @NCLASS|NAME|PINYIN|GNID|XZNAME
 # @Tstring|string|string|string|string
 # FEATURE_DATA

@@ -190,7 +190,7 @@ gmt begin AGNP jpg
   gmt set PS_CHAR_ENCODING Standard+
 
   gmt basemap -R120/121/28/29 -JM10c -Baf
-  gmt grdimage @earth_relief_03s -Cgeo
+  gmt grdimage @earth_relief_15s -Cgeo
   gmt plot -Sc0.2c -Gred -W0p,black AGNP.gmt
   chcp 936
   gmt convert AGNP.gmt -a2="NAME" | gmt text -F+f10p,40+jTL -D0.15c/0.3c -Gwhite

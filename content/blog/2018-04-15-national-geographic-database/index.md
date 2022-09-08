@@ -5,7 +5,8 @@ type: post
 categories:
     - 地学数据
 authors:
-    - eyou，陈箫翰
+    - eyou
+    - 陈箫翰
 ---
 
 本文介绍国家标准地理数据的获取以及处理为 GMT 支持格式的方法。

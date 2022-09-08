@@ -1,11 +1,12 @@
 ---
 title: 2021版1:100万全国标准基础地理数据！你值得拥有
-date: 2022-08-22
+date: 2022-09-08
 type: post
 categories:
     - 地学数据
 authors:
     - eyou
+    - 陈箫翰
 ---
 
 本文介绍国家标准地理数据的获取以及处理为 GMT 支持格式的方法。
@@ -69,6 +70,31 @@ authors:
 
 其他各图层内不同要素的分类编码可参考基础地理信息要素分类与代码（GB/T 13923-2006）。
 
+此外，常用的还有 **AGNP 各级行政地名和城乡居民地坐标（点）图层**
+
+行政地名点以政府驻地来定位，无GB码，以CLASS类别区分：
+
+行政地名点类型                               | CLASS类别
+------------------------------------------ | --------
+国名                                         | AA
+省（直辖市、自治区、特别行政区）行政地名          | AB
+自治州、盟、地区行政地名                        | AC
+地级市行政地名                                | AD
+县级市行政地名                                | AE
+县（自治县、旗、自治旗、地级市市辖区）级市行政地名 | AF
+县辖区及县级行政区域的派出机构地名               | AG
+街道办事处地名                                | AH
+镇行政地名                                   | AI
+乡行政地名                                   | AJ
+建制村地名                                   | AK
+城镇区片、小区名                              | BA
+自然村、屯、片村、村民小组名                    | BB
+牧点、渔点、棚房名                            | BC
+其它                                        | BD
+党政机关、党派团体名                          | CA
+企事业单位名                                  | CB
+农、林、牧、渔场                              | CC
+
 ## 数据处理
 
 从网站上直接下载的数据是分图幅的 geodatabase(gdb) 数据库文件，如果需要用 GMT画“全国一张图”，需要：
@@ -87,49 +113,25 @@ Linux系统：
 {{< includecode "merge.GMT6.sh" "bash" >}}
 
 Windows系统：
-{{< includecode "merge.GMT6.bat" "batch" >}}
+{{< includecode "merge.GMT6.bat" "bat" >}}
 
 若安装有python环境，还可选择`ogrmerge.py`工具进行批量的格式转换和合并，详见[ogrmerge使用手册](https://www.gdal.org/ogrmerge.html)。
 
 该节将分幅的交通、水系、边界等12类要素分别合并为全国一张图，最后转为12个shp文件。
 
-### 查询GB代码
+### 查询GB代码与CLASS类别
 
-使用`ogrinfo`可以查询shp文件内包含哪些GB代码的要素。例如以下命令查询`BOUL.shp`：
+使用`ogrinfo`可以查询shp文件内包含哪些要素。例如以下命令查询`BOUL.shp`中包含的GB代码：
 
 ```
 ogrinfo -sql "SELECT distinct GB FROM BOUL" BOUL.shp
 ```
 
-查询结果为：
+而以下命令则查询`AGNP.shp`中包含的CLASS类别：
 
 ```
-INFO: Open of `BOUL.shp'
-      using driver `ESRI Shapefile' successful.
-
-Layer name: BOUL
-Geometry: None
-Feature Count: 5
-Layer SRS WKT:
-(unknown)
-GB: Integer (9.0)
-OGRFeature(BOUL):0
-  GB (Integer) = 250200
-
-OGRFeature(BOUL):1
-  GB (Integer) = 650201
-
-OGRFeature(BOUL):2
-  GB (Integer) = 640200
-
-OGRFeature(BOUL):3
-  GB (Integer) = 260100
-
-OGRFeature(BOUL):4
-  GB (Integer) = 630200
+ogrinfo -sql "SELECT distinct CLASS FROM AGNP" AGNP.shp
 ```
-
-该文件包含海岸线(250200)、已定县级行政区界(650201)、地、市、州级行政区界(640200)、水系交汇处(260100)、省级界线(630200)。
 
 ### 提取某类要素
 
@@ -155,7 +157,46 @@ gmt end show
 
 ![ChinaMap](09.ChinaMap.png)
 
-###### 版本更新记录：
+如果想要提取行政地名点`AGNP`图层中的建制村信息（对应CLASS为AK），则使用：
 
-- 2019-5-19: 采用网友CovMat建议，将ogr2ogr命令代替ArcPy进行数据集的合并和要素提取，并简化博文图文，突出重点；
-- 2018-4-15：初稿；
+```
+ogr2ogr -f GMT -where "CLASS='AK'" AGNP.gmt AGNP.shp
+```
+
+注意因为CLASS类别为字符串，所以此处`AK`需要加上引号。GB代码为整型数因而不需要加引号。
+
+最后转换成的GMT格式数据如下：
+
+```
+...
+# @NCLASS|NAME|PINYIN|GNID|XZNAME
+# @Tstring|string|string|string|string
+# FEATURE_DATA
+# @DAK|岙里王村|Aoliwangcun|330226114037|胡陈乡
+121.68517089 29.388652295
+# @DAK|坝头村|Batoucun|331022000000|亭旁镇
+121.310746425 29.0109724900001
+# @DAK|白岩村|Baiyancun|331082111028|尤溪镇
+120.971417165 28.7226002200001
+# @DAK|柏树下村|Baishuxiacun|331082116042|邵家渡街道
+121.257111875 28.8522451100001
+...
+```
+
+以 Windows 系统为例，首先将以上数据的编码转换为GB2312，再使用以下代码绘制：
+
+```
+gmt begin AGNP jpg
+  gmt set PS_CHAR_ENCODING Standard+
+
+  gmt basemap -R120/121/28/29 -JM10c -Baf
+  gmt grdimage @earth_relief_15s -Cgeo
+  gmt plot -Sc0.2c -Gred -W0p,black AGNP.gmt
+  chcp 936
+  gmt convert AGNP.gmt -a2="NAME" | gmt text -F+f10p,40+jTL -D0.15c/0.3c -Gwhite
+gmt end
+```
+
+绘图结果：
+
+![AGNP](AGNP.jpg)

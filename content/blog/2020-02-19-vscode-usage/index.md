@@ -37,6 +37,8 @@ vscode通过不同功能的插件实现代码的开发运行、图片文件的�
 
 - **Code Runner** 支持代码一键运行
 - **vscode-pdf** pdf预览插件
+- **gmt** gmt代码高亮插件
+- **gmt-quick-code** gmt代码自动补全插件（目前只支持Linux系统的bash）
 
 插件安装方式：打开**Extensions**扩展插件菜单，搜索对应插件，点击安装。安装成功之后，**Install**图标将变为**齿轮**，可点击该齿轮，修改插件属性。已安装启用的插件都可在**Extension**中查看设置。
 
@@ -45,6 +47,12 @@ vscode通过不同功能的插件实现代码的开发运行、图片文件的�
 在 Extensions 菜单中，点击 Code Runner 插件的**齿轮**图标，弹出菜单中选择“**Extension Settings**”，勾选以下三个选项。不勾选这三个选项可能会导致无法正确执行 GMT 脚本。
 
 {{< figure src="vscode_pic3.jpg" width="700px">}}
+
+gmt代码高亮插件和代码自动补全插件可根据需要安装
+
+{{< figure src="vscode_pic8.jpg" width="700px">}}
+
+{{< figure src="vscode_pic9.jpg" width="700px">}}
 
 ## vscode执行GMT脚本过程
 

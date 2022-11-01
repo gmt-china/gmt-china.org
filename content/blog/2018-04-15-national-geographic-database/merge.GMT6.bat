@@ -6,3 +6,5 @@ REM 将当前目录下剩余所有的gdb数据追加Merged，同类shp文件合�
 for /f %%i in ('dir /b "*.gdb"') do (
 ogr2ogr -f "ESRI Shapefile" -update -append Merged %%i
 )
+
+pause

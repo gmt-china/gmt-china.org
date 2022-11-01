@@ -112,7 +112,7 @@ authors:
 Linux系统：
 {{< includecode "merge.GMT6.sh" "bash" >}}
 
-Windows系统：
+Windows系统。注意必须保存为 bat 文件执行，直接复制粘贴到 cmd 中会出现报错：
 {{< includecode "merge.GMT6.bat" "bat" >}}
 
 若安装有python环境，还可选择`ogrmerge.py`工具进行批量的格式转换和合并，详见[ogrmerge使用手册](https://www.gdal.org/ogrmerge.html)。

@@ -54,13 +54,11 @@ subtitle = ""
 {{% col "col-12 col-sm-4" %}}
 <div class="featurette-icon"><i class="fab fa-windows"></i></div>
 
-**GMT v6.4.0**:
-[32 位](https://mirrors.ustc.edu.cn/gmt/bin/gmt-6.4.0-win32.exe) |
-[64 位](https://mirrors.ustc.edu.cn/gmt/bin/gmt-6.4.0-win64.exe)
+**GMT v6.5.0**:
+[64 位](https://mirrors.ustc.edu.cn/gmt/bin/gmt-6.5.0-win64.exe)
 </br>
-**Ghostscript 9.56.1**:
-[32 位](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs9561/gs9561w32.exe) |
-[64 位](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs9561/gs9561w64.exe)
+**Ghostscript 10.03.0**:
+[64 位](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10030/gs10030w64.exe)
 </br>
 {{% /col %}}
 
@@ -68,22 +66,22 @@ subtitle = ""
 <div class="featurette-icon"><i class="fab fa-linux"></i></div>
 
 **GMT 源码**:
-[v6.4.0](https://mirrors.ustc.edu.cn/gmt/gmt-6.4.0-src.tar.gz)
+[v6.5.0](https://mirrors.ustc.edu.cn/gmt/gmt-6.5.0-src.tar.gz)
 <br>
 **GSHHG 数据**:
 [v2.3.7](https://mirrors.ustc.edu.cn/gmt/gshhg-gmt-2.3.7.tar.gz)
 <br>
 **DCW 数据**:
-[v2.1.1](https://mirrors.ustc.edu.cn/gmt/dcw-gmt-2.1.1.tar.gz)
+[v2.1.2](https://mirrors.ustc.edu.cn/gmt/dcw-gmt-2.1.2.tar.gz)
 
 {{% /col %}}
 
 {{% col "col-12 col-sm-4" %}}
 <div class="featurette-icon"><i class="fab fa-apple"></i></div>
 
-**GMT v6.4.0 安装包**:
-[Intel](https://mirrors.ustc.edu.cn/gmt/bin/gmt-6.4.0-darwin-x86_64.dmg) |
-[ARM](https://mirrors.ustc.edu.cn/gmt/bin/gmt-6.4.0-darwin-arm64.dmg)
+**GMT v6.5.0 安装包**:
+[Intel](https://mirrors.ustc.edu.cn/gmt/bin/gmt-6.5.0-darwin-x86_64.dmg) |
+[ARM](https://mirrors.ustc.edu.cn/gmt/bin/gmt-6.5.0-darwin-arm64.dmg)
 {{% /col %}}
 
 {{% /row %}}

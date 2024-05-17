@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>培训 | GMT 中文社区</title>
+    <link>https://gmt-china.org/tag/%E5%9F%B9%E8%AE%AD/</link>
+      <atom:link href="https://gmt-china.org/tag/%E5%9F%B9%E8%AE%AD/index.xml" rel="self" type="application/rss+xml" />
+    <description>培训</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-Hans</language><lastBuildDate>Sun, 25 Sep 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://gmt-china.org/media/icon_hub7ca0b5404c6d576559b2bd22c64b0e5_1747_512x512_fill_lanczos_center_3.png</url>
+      <title>培训</title>
+      <link>https://gmt-china.org/tag/%E5%9F%B9%E8%AE%AD/</link>
+    </image>
+    
+    <item>
+      <title>GMT中文社区首次线下培训</title>
+      <link>https://gmt-china.org/blog/gmtcon-20160921/</link>
+      <pubDate>Sun, 25 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>https://gmt-china.org/blog/gmtcon-20160921/</guid>
+      <description>&lt;p&gt;2016年9月21至22日，GMT中文社区协同中国地震局地震研究所和中国地震局地壳形变学科
+技术管理组举行了首次GMT线下培训活动。&lt;/p&gt;
+&lt;p&gt;此次培训邀请了田冬冬（中国科学技术大学在读博士，社区 ID：知名不具）、
+单斌（中国地质大学特任教授，社区 ID：Bins）和
+刘珠妹（中国地震局地震研究所，社区 ID：忆尤）三位老师在湖北省地震局21楼报告厅
+做了《GMT入门、基础及进阶》、《GMT应用与科技论文写作》、《地学常见GMT图件模板讲解》
+专题培训讲座，来自全国地震系统的学员和慕名人士共计120余人参加了此次培训。&lt;/p&gt;
+&lt;p&gt;此次培训考虑到培训人员GMT操作能力差异巨大，为了尽可能地照顾到所有培训人员的需求，
+经过一个月精心调研准备，从内容、思路、绘图技巧等方面综合考虑，确定了此次GMT专题
+讲座的最终主题。&lt;/p&gt;
+&lt;p&gt;21日上午田冬冬博士首先介绍了GMT的概念、开发团队、GMT的版本等，
+随后对GMT基础知识、配置文件、常用命令进行了详细讲解，最后总结了GMT学习方法及
+学习资源，对GMT中文社区创建初衷、社区功能、未来发展等做了阐述，并呼吁各位
+仁人志士加入到GMT社区的设计和日常维护中。&lt;/p&gt;
+&lt;p&gt;单斌教授对GMT做了简单介绍，随后深入浅出的介绍了GMT常用选项、常用命令、shell脚本
+编写等，并对GMT在科技论文中的应用做了具体实例讲解，提供了科技论文写作技巧。
+最后具神指出了GMT5和GMT4的语法命令区别，对学习兴趣、专业优势等和大家做了深入
+分享交流。&lt;/p&gt;
+&lt;p&gt;22日下午刘珠妹老师对地学常见GMT图件模板进行了讲解，刘老师首先讲授了怎样读懂脚本的
+使用平台、脚本版本、脚本结构等内容，然后讲授了编写绘图脚本的6个基本步骤，
+介绍了自由空气异常图、布格异常图等几种常用绘图模板，讨论了中文支持、脚本批量运行、
+二次开发等GMT绘图技巧，刘老师强调在学习过程中，应对照样例修改参数，
+具体问题具体分析，带着问题去找答案。&lt;/p&gt;
+&lt;p&gt;此次GMT专题培训授课内容全面、专题性比较强、课程安排比较合理，通过此次培训，
+推广了GMT的使用范围，提高了GMT软件在日常工作中实际操作应用能力，
+促进了GMT群和GMT中文社区的未来更快更好发展，加强了GMT群成员的交流，
+此次培训取得了预期效果，期待下一次培训的召开。&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;田冬冬&#34; srcset=&#34;
+               /blog/gmtcon-20160921/GMTCon20160921-1_hufa6f9c68e54c09f4a62327e6e8aed350_291187_a1cddd8a933b616ce400f1cd3bafa169.webp 400w,
+               /blog/gmtcon-20160921/GMTCon20160921-1_hufa6f9c68e54c09f4a62327e6e8aed350_291187_634952eb6d3a5ed90d01f7bc2da7b39c.webp 760w,
+               /blog/gmtcon-20160921/GMTCon20160921-1_hufa6f9c68e54c09f4a62327e6e8aed350_291187_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/gmtcon-20160921/GMTCon20160921-1_hufa6f9c68e54c09f4a62327e6e8aed350_291187_a1cddd8a933b616ce400f1cd3bafa169.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;507&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;单斌&#34; srcset=&#34;
+               /blog/gmtcon-20160921/GMTCon20160921-2_huefac1f45a4af092d8acbd9d28a43f6fa_284705_b610a6dbd02d6bd3fe37e69f3690ba67.webp 400w,
+               /blog/gmtcon-20160921/GMTCon20160921-2_huefac1f45a4af092d8acbd9d28a43f6fa_284705_ea991405a89c79a8581223ef9d158306.webp 760w,
+               /blog/gmtcon-20160921/GMTCon20160921-2_huefac1f45a4af092d8acbd9d28a43f6fa_284705_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/gmtcon-20160921/GMTCon20160921-2_huefac1f45a4af092d8acbd9d28a43f6fa_284705_b610a6dbd02d6bd3fe37e69f3690ba67.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;507&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;刘珠妹&#34; srcset=&#34;
+               /blog/gmtcon-20160921/GMTCon20160921-3_huaeb15ebfc4264d19b0e8b4d9d90c92f7_358187_d7f100080f647723124ef986160a5f7f.webp 400w,
+               /blog/gmtcon-20160921/GMTCon20160921-3_huaeb15ebfc4264d19b0e8b4d9d90c92f7_358187_4909b792319b47c09538fe6493a11efc.webp 760w,
+               /blog/gmtcon-20160921/GMTCon20160921-3_huaeb15ebfc4264d19b0e8b4d9d90c92f7_358187_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/gmtcon-20160921/GMTCon20160921-3_huaeb15ebfc4264d19b0e8b4d9d90c92f7_358187_d7f100080f647723124ef986160a5f7f.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;507&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;现场互动&#34; srcset=&#34;
+               /blog/gmtcon-20160921/GMTCon20160921-4_hu544bc5678527035feead4557d8b92eb3_385829_a9f53c46857e33169bb542ecd11e6f4f.webp 400w,
+               /blog/gmtcon-20160921/GMTCon20160921-4_hu544bc5678527035feead4557d8b92eb3_385829_c41273b7e4f2317ce0d1c9a4a9570f5a.webp 760w,
+               /blog/gmtcon-20160921/GMTCon20160921-4_hu544bc5678527035feead4557d8b92eb3_385829_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/gmtcon-20160921/GMTCon20160921-4_hu544bc5678527035feead4557d8b92eb3_385829_a9f53c46857e33169bb542ecd11e6f4f.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;507&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

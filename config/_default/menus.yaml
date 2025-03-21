@@ -17,7 +17,7 @@ main:
     url: '#posts'
     weight: 4
   - name: 地学数据集
-    url: 'https://docs.gmt-china.org/latest/dataset-CN/'
+    url: 'https://docs.gmt-china.org/latest/dataset/'
     weight: 5
   - name: 图库
     url: 'https://docs.gmt-china.org/latest/gallery/'

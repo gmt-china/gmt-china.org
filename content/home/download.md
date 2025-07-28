@@ -90,7 +90,7 @@ subtitle = ""
 
 ----
 
-MacOS系统最新版的安装方法请参阅 [中文手册](https://docs.gmt-china.org/latest/install/macOS/)。
+MacOS系统最新版GMT的安装方法请参阅 [中文手册](https://docs.gmt-china.org/latest/install/macOS/)。
 
 老版本的源码和安装包可以从 [GMT 科大镜像](https://mirrors.ustc.edu.cn/gmt)
 以及其子目录 `bin` 和 `legacy` 下获取。

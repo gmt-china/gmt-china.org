@@ -80,7 +80,7 @@ subtitle = ""
 <div class="featurette-icon"><i class="fab fa-apple"></i></div>
 
 **GMT v6.6.0**及其之后的新版本不再提供安装包
-
+<br>
 **GMT v6.5.0 安装包**:
 [Intel](https://mirrors.ustc.edu.cn/gmt/bin/gmt-6.5.0-darwin-x86_64.dmg) |
 [ARM](https://mirrors.ustc.edu.cn/gmt/bin/gmt-6.5.0-darwin-arm64.dmg)

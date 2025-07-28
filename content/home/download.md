@@ -54,11 +54,11 @@ subtitle = ""
 {{% col "col-12 col-sm-4" %}}
 <div class="featurette-icon"><i class="fab fa-windows"></i></div>
 
-**GMT v6.5.0**:
-[64 位](https://mirrors.ustc.edu.cn/gmt/bin/gmt-6.5.0-win64.exe)
+**GMT v6.6.0**:
+[64 位](https://mirrors.ustc.edu.cn/gmt/bin/gmt-6.6.0-win64.exe)
 </br>
-**Ghostscript 10.03.0**:
-[64 位](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10030/gs10030w64.exe)
+**Ghostscript 10.05.1**:
+[64 位](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10051/gs10051w64.exe)
 </br>
 {{% /col %}}
 
@@ -66,18 +66,20 @@ subtitle = ""
 <div class="featurette-icon"><i class="fab fa-linux"></i></div>
 
 **GMT 源码**:
-[v6.5.0](https://mirrors.ustc.edu.cn/gmt/gmt-6.5.0-src.tar.gz)
+[v6.6.0](https://mirrors.ustc.edu.cn/gmt/gmt-6.6.0-src.tar.gz)
 <br>
 **GSHHG 数据**:
 [v2.3.7](https://mirrors.ustc.edu.cn/gmt/gshhg-gmt-2.3.7.tar.gz)
 <br>
 **DCW 数据**:
-[v2.1.2](https://mirrors.ustc.edu.cn/gmt/dcw-gmt-2.1.2.tar.gz)
+[v2.2.0](https://mirrors.ustc.edu.cn/gmt/dcw-gmt-2.2.0.tar.gz)
 
 {{% /col %}}
 
 {{% col "col-12 col-sm-4" %}}
 <div class="featurette-icon"><i class="fab fa-apple"></i></div>
+
+**GMT v6.6.0**及其之后的新版本不再提供安装包
 
 **GMT v6.5.0 安装包**:
 [Intel](https://mirrors.ustc.edu.cn/gmt/bin/gmt-6.5.0-darwin-x86_64.dmg) |
@@ -87,6 +89,8 @@ subtitle = ""
 {{% /row %}}
 
 ----
+
+MacOS系统最新版的安装方法请参阅 [中文手册](https://docs.gmt-china.org/latest/install/macOS/)。
 
 老版本的源码和安装包可以从 [GMT 科大镜像](https://mirrors.ustc.edu.cn/gmt)
 以及其子目录 `bin` 和 `legacy` 下获取。

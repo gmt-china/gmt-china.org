@@ -54,7 +54,8 @@ subtitle = ""
 
 #### <i class="fab fa-html5"></i> 在线阅读
 
-- [最新版](https://docs.gmt-china.org/latest/)
+- [最新版 v6.6](https://docs.gmt-china.org/latest/)
+- [v6.5](https://docs.gmt-china.org/6.5/)
 - [v6.4](https://docs.gmt-china.org/6.4/)
 - [v6.3](https://docs.gmt-china.org/6.3/)
 - [v6.2](https://docs.gmt-china.org/6.2/)
@@ -67,7 +68,8 @@ subtitle = ""
 
 #### <i class="far fa-file-pdf"></i> PDF 下载
 
-- [最新版](https://docs.gmt-china.org/6.4/GMT_docs.pdf)
+- [最新版 v6.6](https://docs.gmt-china.org/6.6/GMT_docs.pdf)
+- [v6.5](https://docs.gmt-china.org/6.5/GMT_docs.pdf)
 - [v6.4](https://docs.gmt-china.org/6.4/GMT_docs.pdf)
 - [v6.3](https://docs.gmt-china.org/6.3/GMT_docs.pdf)
 - [v6.2](https://docs.gmt-china.org/6.2/GMT_docs.pdf)

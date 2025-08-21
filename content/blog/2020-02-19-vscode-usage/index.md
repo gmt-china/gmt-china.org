@@ -1,10 +1,11 @@
 ---
 title: "GMT脚本执行利器——VS Code"
-date: 2020-02-19
+date: 2025-08-21
 type: post
 authors:
     - 刘珠妹
     - 赵志远
+    - 陈箫翰
 categories:
     - GMT技巧
 tags:
@@ -56,30 +57,27 @@ GMT脚本建议在独立工作空间（文件夹）中执行，有以下两种�
 
 - 或者，在文件夹上右键，选择“**通过Code打开**”：
 
-   {{< figure src="vscode_gif1.gif"  width="700px">}}
+{{< figure src="vscode_gif1.gif"  width="700px">}}
 
-   含有中文的脚本需要设置编码为GB2312，否则会出现乱码：点击右下角的编码按钮，
-   再选择“**重新打开编码（Reopen with Encoding）**”，选择**中文简体GB2312**编码。
+含有中文的脚本需要设置编码为GB2312，否则会出现乱码：点击右下角的编码按钮，
+再选择“**重新打开编码（Reopen with Encoding）**”，选择**中文简体GB2312**编码。
 
-   {{< figure src="vscode_pic5.png" width="700px">}}
+{{< figure src="vscode_pic5.png" width="700px">}}
 
-   执行脚本可选择脚本页面右上方三角符号（Alt+F1），脚本运行信息显示在下方Terminal终端窗体。若想同时预览生成结果，可增加编辑窗口（Split Editor），两个窗口分别显示脚本和运行结果。
+执行脚本可选择脚本页面右上方三角符号（Alt+F1），脚本运行信息显示在下方Terminal终端窗体。若想同时预览生成结果，可增加编辑窗口（Split Editor），两个窗口分别显示脚本和运行结果。
 
-   {{< figure src="vscode_gif2.gif"  width="700px">}}
+{{< figure src="vscode_gif2.gif"  width="700px">}}
 
-   若本机安装了Bash终端，vscode也可识别并自动选择bash终端来执行bash脚本。也可通过手工切换，或多个终端切换执行：
+若本机安装了Bash终端，vscode也可通过手工切换终端执行 bash 脚本。
 
-   {{< figure src="vscode_pic6_1.jpg"  width="700px">}}
+{{< figure src="vscode_pic6_1.jpg"  width="700px">}}
 
-   {{< figure src="vscode_pic6_2.jpg"  width="700px">}}
+如果你运行的是 bash 脚本，则必须在 `gmt begin` 之前添加一行 `export GMT_SESSION_NAME=$$` ，否则脚本运行将出现错误。
 
-   请注意，如果你运行的是 bat 脚本，请点击上图终端窗口的加号旁边的向下箭头，然后点击“选择默认配置文件”。在出现的选项中选择“Command Prompt”。绝对不要使用 PowerShell。
+详情请参阅[GMT中文手册的begin模块说明页面](https://docs.gmt-china.org/latest/module/begin/#unix-shell)
 
-> 如果你运行的是 bash 脚本，则必须在 `gmt begin` 之前添加一行 `export GMT_SESSION_NAME=$$` ，否则脚本运行将出现错误。
-> 详情请参阅[GMT中文手册的begin模块说明页面](https://docs.gmt-china.org/latest/module/begin/#unix-shell)
+为提高编码效率，推荐使用快捷键进行代码注释、代码运行、窗格切换等操作。键盘单击F1，调出vscode的命令面板，输入”shortcut“检索出快捷键编辑命令：
 
-   为提高编码效率，推荐使用快捷键进行代码注释、代码运行、窗格切换等操作。键盘单击F1，调出vscode的命令面板，输入”shortcut“检索出快捷键编辑命令：
+{{< figure src="vscode_pic7.png"  width="700px">}}
 
-   {{< figure src="vscode_pic7.png"  width="700px">}}
-
-   我们可以查询或自定义众多快捷键，包括但不限于行注释（Add Line Comment/Remove Line Comment）、窗口分割（View: Split Editor Down/Right/Up/Left）、窗口关闭（View：Close Editor）等。
+我们可以查询或自定义众多快捷键，包括但不限于行注释（Add Line Comment/Remove Line Comment）、窗口分割（View: Split Editor Down/Right/Up/Left）、窗口关闭（View：Close Editor）等。

@@ -30,7 +30,7 @@ jobs:
       with:
         # 429: Too many requests
         args: >
-          --accept 429
+          --accept 200,429
           --exclude "http://localhost:1313/"
           --exclude "^mailto:"
           --exclude "^https://fonts.gstatic.com/"

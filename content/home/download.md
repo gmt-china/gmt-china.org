@@ -7,7 +7,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 20  # Order that this section will appear.
 
-title = '<i class="fas fa-download"></i> 下载'
+title = '<i class="fas fa-download"></i> 下载安装'
 subtitle = ""
 
 [design]

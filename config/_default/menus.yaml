@@ -7,7 +7,7 @@ main:
   - name: 首页
     url: '#'
     weight: 1
-  - name: 下载
+  - name: 下载安装
     url: '#download'
     weight: 2
   - name: 中文手册

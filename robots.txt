@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://gmt-china.org/sitemap.xml

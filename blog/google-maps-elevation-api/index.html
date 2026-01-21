@@ -1,0 +1,1321 @@
+<!DOCTYPE html><html lang="zh-Hans" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.5.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="如何获得米级精度的高程数据?" />
+
+  
+  <link rel="alternate" hreflang="zh-Hans" href="https://gmt-china.org/blog/google-maps-elevation-api/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.1052fab8b7700a3dc49ee23683097d66.css" />
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hub7ca0b5404c6d576559b2bd22c64b0e5_1747_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hub7ca0b5404c6d576559b2bd22c64b0e5_1747_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://gmt-china.org/blog/google-maps-elevation-api/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="GMT 中文社区" />
+  <meta property="og:url" content="https://gmt-china.org/blog/google-maps-elevation-api/" />
+  <meta property="og:title" content="利用 Google Maps 获取超高精度高程数据 | GMT 中文社区" />
+  <meta property="og:description" content="如何获得米级精度的高程数据?" /><meta property="og:image" content="https://gmt-china.org/media/icon_hub7ca0b5404c6d576559b2bd22c64b0e5_1747_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://gmt-china.org/media/icon_hub7ca0b5404c6d576559b2bd22c64b0e5_1747_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="zh-Hans" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2017-09-14T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2017-09-14T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://gmt-china.org/blog/google-maps-elevation-api/"
+  },
+  "headline": "利用 Google Maps 获取超高精度高程数据",
+  
+  "datePublished": "2017-09-14T00:00:00Z",
+  "dateModified": "2017-09-14T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "SeisPider"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "GMT 中文社区",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://gmt-china.org/media/icon_hub7ca0b5404c6d576559b2bd22c64b0e5_1747_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "如何获得米级精度的高程数据?"
+}
+</script>
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>利用 Google Maps 获取超高精度高程数据 | GMT 中文社区</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="efaa66fad2fb83e9770afdc54bf43b81" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.2ed908358299dd7ab553faae685c746c.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>搜索</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="搜索..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="搜索...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">GMT 中文社区</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="切换导航">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">GMT 中文社区</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#"><span>首页</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#download"><span>下载安装</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#docs"><span>中文手册</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#posts"><span>博客</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+              
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="https://docs.gmt-china.org/latest/dataset/" target="_blank" rel="noopener"><span>地学数据集</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+              
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="https://docs.gmt-china.org/latest/gallery/" target="_blank" rel="noopener"><span>图库</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>联系我们</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/index.xml"><span><i class="fas fa-rss"></i></span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="搜索"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>浅色</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>深色</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>自动</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>利用 Google Maps 获取超高精度高程数据</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/authors/seispider/">SeisPider</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    2017年09月14日
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    2 分钟阅读时长
+  </span>
+  
+
+  
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/category/%E7%A7%91%E7%A0%94%E5%B7%A5%E5%85%B7/">科研工具</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>在绘制超小区域的地形图时，常需要超高精度的高程数据。</p>
+<p>目前已知的公开高程数据中，ASTER GDEM的精度最高，为1弧秒，即约30米一个数据点。
+可以通过 Google Maps Elevation API 获取米级精度的数据。</p>
+<h2 id="数据简介">数据简介</h2>
+<p>Google Maps Elevation API 提供地球表面所有位置的海拔高度数据，包括海床上的深度位
+置（此类位置返回负值）。</p>
+<p>官方文档：</p>
+<ul>
+<li><a href="https://developers.google.com/maps/documentation/elevation/start?hl=zh-cn" target="_blank" rel="noopener">入门指南</a></li>
+<li><a href="https://developers.google.com/maps/documentation/elevation/intro?hl=zh-cn" target="_blank" rel="noopener">开发人员指南</a></li>
+</ul>
+<h2 id="获取密钥-api-key">获取密钥 API KEY</h2>
+<p>想要从Google Maps中获取地形数据，首先需要一个密钥。
+可以从 <a href="https://developers.google.com/maps/documentation/elevation/get-api-key" target="_blank" rel="noopener">get API key</a>
+页面开始申请秘钥（需要提供信用卡等信息）。</p>
+<p>限额说明：</p>
+<ul>
+<li>每个用户最多可能只能申请10个免费密钥</li>
+<li>每个密钥每天2500次免费请求</li>
+<li>每次请求最多512个位置</li>
+<li>每秒最多50次请求</li>
+</ul>
+<h2 id="使用说明">使用说明</h2>
+<h3 id="获取单点高程">获取单点高程</h3>
+<p>通过简单的网络请求即可获取单点的高程：</p>
+<pre tabindex="0"><code>https://maps.googleapis.com/maps/api/elevation/json?locations=39.7391536,-104.9847034&amp;key=YOUR_API_KEY
+</code></pre><p>其中：</p>
+<ul>
+<li><code>locations=39.7391536,-104.9847034</code> 指定了要获取高程的经纬度，纬度和经度之间用逗号分隔；</li>
+<li><code>key=YOU_API_KEY</code> 指定了用户密钥，用户需要将自己申请的密钥替换 <code>YOU_API_KEY</code></li>
+</ul>
+<p>将上面的链接复制到浏览器中，即可得到返回值为::</p>
+<pre><code>{
+   &quot;results&quot; : [
+        {
+            &quot;elevation&quot; : 1608.637939453125,
+            &quot;location&quot; : {
+                &quot;lat&quot; : 39.73915360,
+                &quot;lng&quot; : -104.98470340
+            },
+            &quot;resolution&quot; : 4.771975994110107
+        }
+   ],
+   &quot;status&quot; : &quot;OK&quot;
+}
+</code></pre>
+<p>从中可以看到这一点的海拔高度是 1608.637939453125 米（小数点后几位可能都没有意义）。
+resolution给出了该点高程的分辨率值，即内插海拔高度的数据点之间的最大距离，以米为单位。</p>
+<h3 id="获取多点高程">获取多点高程</h3>
+<p>也可以在一次网络请求中获取多个点的高程，多个位置之间用 <code>|</code> 分隔即可。例如：</p>
+<pre tabindex="0"><code>https://maps.googleapis.com/maps/api/elevation/json?locations=39.7391536,-104.9847034|36.455556,-116.866667&amp;key=YOUR_API_KEY
+</code></pre><p>但一次请求中的位置不能超过512个。</p>
+<h3 id="批量获取高程">批量获取高程</h3>
+<p>Google Maps 提供了多种客户端以实现批量获取高程。
+此处以<a href="https://github.com/googlemaps/google-maps-services-python/" target="_blank" rel="noopener">Python客户端</a> 为例。</p>
+<ol>
+<li>
+<p>安装 Google Map API 的 Python模块:</p>
+<pre><code> $ pip install -U googlemaps
+</code></pre>
+</li>
+<li>
+<p>获取密钥</p>
+</li>
+<li>
+<p>参考如下脚本批量获取高程数据</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="ch">#!/usr/bin/env python</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># -*- coding: utf-8 -*-</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">googlemaps</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">request_elevation</span><span class="p">(</span><span class="n">xmin</span><span class="p">,</span> <span class="n">xmax</span><span class="p">,</span> <span class="n">xinc</span><span class="p">,</span> <span class="n">ymin</span><span class="p">,</span> <span class="n">ymax</span><span class="p">,</span> <span class="n">yinc</span><span class="p">,</span> <span class="n">maxnum</span><span class="o">=</span><span class="mi">512</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;Request elevation and return them with a list
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    Parameter
+</span></span></span><span class="line"><span class="cl"><span class="s2">    =========
+</span></span></span><span class="line"><span class="cl"><span class="s2">    xmin : float
+</span></span></span><span class="line"><span class="cl"><span class="s2">        minimum longitude, unit is degree
+</span></span></span><span class="line"><span class="cl"><span class="s2">    xmax : float
+</span></span></span><span class="line"><span class="cl"><span class="s2">        maximum longitude, unit is degree
+</span></span></span><span class="line"><span class="cl"><span class="s2">    xinc : float
+</span></span></span><span class="line"><span class="cl"><span class="s2">        increment of longitude
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">    ymin : float
+</span></span></span><span class="line"><span class="cl"><span class="s2">        minimum latitude, unit is degree
+</span></span></span><span class="line"><span class="cl"><span class="s2">    ymax : float
+</span></span></span><span class="line"><span class="cl"><span class="s2">        maximum latitude, unit is degree
+</span></span></span><span class="line"><span class="cl"><span class="s2">    yinc : float
+</span></span></span><span class="line"><span class="cl"><span class="s2">        increment of latitude
+</span></span></span><span class="line"><span class="cl"><span class="s2">    maxnum : int
+</span></span></span><span class="line"><span class="cl"><span class="s2">        point number of one request, maximum value is 512
+</span></span></span><span class="line"><span class="cl"><span class="s2">    &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">xlist</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">xmin</span><span class="p">,</span> <span class="n">xmax</span><span class="p">,</span> <span class="n">xinc</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ylist</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">ymin</span><span class="p">,</span> <span class="n">ymax</span><span class="p">,</span> <span class="n">yinc</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">points</span> <span class="o">=</span> <span class="p">[(</span><span class="n">y</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">ylist</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">xlist</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">requestnum</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">points</span><span class="p">)</span> <span class="o">/</span> <span class="n">maxnum</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">npoints</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array_split</span><span class="p">(</span><span class="n">points</span><span class="p">,</span> <span class="n">requestnum</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">requestnum</span> <span class="o">&gt;</span> <span class="mi">2500</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Error: Request number exceed! Change grid or region.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">[</span><span class="n">gmaps</span><span class="o">.</span><span class="n">elevation</span><span class="p">(</span><span class="n">locations</span><span class="o">=</span><span class="n">loc</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span> <span class="k">for</span> <span class="n">loc</span> <span class="ow">in</span> <span class="n">npoints</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 设置要下载高程数据的经度范围、纬度范围以及网格间隔</span>
+</span></span><span class="line"><span class="cl"><span class="n">xmin</span><span class="p">,</span> <span class="n">xmax</span><span class="p">,</span> <span class="n">xinc</span> <span class="o">=</span> <span class="mf">120.000</span><span class="p">,</span> <span class="mf">129.005</span><span class="p">,</span> <span class="mf">0.00005</span>
+</span></span><span class="line"><span class="cl"><span class="n">ymin</span><span class="p">,</span> <span class="n">ymax</span><span class="p">,</span> <span class="n">yinc</span> <span class="o">=</span> <span class="mf">30.000</span><span class="p">,</span> <span class="mf">30.005</span><span class="p">,</span> <span class="mf">0.00005</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">gmaps</span> <span class="o">=</span> <span class="n">googlemaps</span><span class="o">.</span><span class="n">Client</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="s1">&#39;YOU_API_KEY&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Obtain all elevations</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 请设置 maxnum 确保每一次请求的数据点数不超过 512 个以控制请求字符串长度</span>
+</span></span><span class="line"><span class="cl"><span class="n">elevations</span> <span class="o">=</span> <span class="n">request_elevation</span><span class="p">(</span><span class="n">xmin</span><span class="p">,</span> <span class="n">xmax</span><span class="p">,</span> <span class="n">xinc</span><span class="p">,</span> <span class="n">ymin</span><span class="p">,</span> <span class="n">ymax</span><span class="p">,</span> <span class="n">yinc</span><span class="p">,</span> <span class="n">maxnum</span><span class="o">=</span><span class="mi">512</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># output data with format `longitude   latitude elevation resolution`</span>
+</span></span><span class="line"><span class="cl"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;Elevations.dat&#34;</span><span class="p">,</span> <span class="s2">&#34;w&#34;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">loclist</span> <span class="ow">in</span> <span class="n">elevations</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">subloc</span> <span class="ow">in</span> <span class="n">loclist</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">outputstr</span> <span class="o">=</span> <span class="s2">&#34;</span><span class="si">{:.5f}</span><span class="s2">  </span><span class="si">{:.5f}</span><span class="s2">  </span><span class="si">{:.5f}</span><span class="s2">  </span><span class="si">{:.5f}</span><span class="se">\n</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="n">subloc</span><span class="p">[</span><span class="s1">&#39;location&#39;</span><span class="p">][</span><span class="s1">&#39;lng&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                <span class="n">subloc</span><span class="p">[</span><span class="s1">&#39;location&#39;</span><span class="p">][</span><span class="s1">&#39;lat&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                <span class="n">subloc</span><span class="p">[</span><span class="s1">&#39;elevation&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                <span class="n">subloc</span><span class="p">[</span><span class="s1">&#39;resolution&#39;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">            <span class="n">f</span><span class="o">.</span><span class="n">writelines</span><span class="p">(</span><span class="n">outputstr</span><span class="p">)</span>
+</span></span></code></pre></div>
+    </div>
+
+    
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/%E6%95%B0%E6%8D%AE%E4%B8%8B%E8%BD%BD/">数据下载</a>
+  
+</div>
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://gmt-china.org/blog/google-maps-elevation-api/&amp;text=%e5%88%a9%e7%94%a8%20Google%20Maps%20%e8%8e%b7%e5%8f%96%e8%b6%85%e9%ab%98%e7%b2%be%e5%ba%a6%e9%ab%98%e7%a8%8b%e6%95%b0%e6%8d%ae" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://gmt-china.org/blog/google-maps-elevation-api/&amp;t=%e5%88%a9%e7%94%a8%20Google%20Maps%20%e8%8e%b7%e5%8f%96%e8%b6%85%e9%ab%98%e7%b2%be%e5%ba%a6%e9%ab%98%e7%a8%8b%e6%95%b0%e6%8d%ae" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=%e5%88%a9%e7%94%a8%20Google%20Maps%20%e8%8e%b7%e5%8f%96%e8%b6%85%e9%ab%98%e7%b2%be%e5%ba%a6%e9%ab%98%e7%a8%8b%e6%95%b0%e6%8d%ae&amp;body=https://gmt-china.org/blog/google-maps-elevation-api/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://gmt-china.org/blog/google-maps-elevation-api/&amp;title=%e5%88%a9%e7%94%a8%20Google%20Maps%20%e8%8e%b7%e5%8f%96%e8%b6%85%e9%ab%98%e7%b2%be%e5%ba%a6%e9%ab%98%e7%a8%8b%e6%95%b0%e6%8d%ae" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=%e5%88%a9%e7%94%a8%20Google%20Maps%20%e8%8e%b7%e5%8f%96%e8%b6%85%e9%ab%98%e7%b2%be%e5%ba%a6%e9%ab%98%e7%a8%8b%e6%95%b0%e6%8d%ae%20https://gmt-china.org/blog/google-maps-elevation-api/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://gmt-china.org/blog/google-maps-elevation-api/&amp;title=%e5%88%a9%e7%94%a8%20Google%20Maps%20%e8%8e%b7%e5%8f%96%e8%b6%85%e9%ab%98%e7%b2%be%e5%ba%a6%e9%ab%98%e7%a8%8b%e6%95%b0%e6%8d%ae" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2016 – 2026 GMT中文社区.
+  </p>
+  
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      由<a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a>支持发布——免费<a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">开源</a>网站，为创作者赋能。
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.fab8b449b814cc9f95b22fcf2e45f05b.js"></script>
+
+    
+    
+    
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js" integrity="sha512-Ypjm0o7jOxAd4hpdoppSEN0TQOC19UtPAqD+4s5AlXmUvbmmS/YMxYqAqarQYyxTnB6/rqip9qcxlNB/3U9Wdg==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/bash.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+
+    
+    
+    
+    <script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+    
+    
+      <script src="/js/wowchemy-headroom.c251366b4128fd5e6b046d4c97a62a51.js" type="module"></script>
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/zh/js/wowchemy.min.5dd6318d852b1d2dade11ec83bf2a2ae.js"></script>
+
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+</body>
+</html>

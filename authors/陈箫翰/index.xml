@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>陈箫翰 | GMT 中文社区</title>
+    <link>https://gmt-china.org/authors/%E9%99%88%E7%AE%AB%E7%BF%B0/</link>
+      <atom:link href="https://gmt-china.org/authors/%E9%99%88%E7%AE%AB%E7%BF%B0/index.xml" rel="self" type="application/rss+xml" />
+    <description>陈箫翰</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-Hans</language><lastBuildDate>Wed, 19 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://gmt-china.org/media/icon_hub7ca0b5404c6d576559b2bd22c64b0e5_1747_512x512_fill_lanczos_center_3.png</url>
+      <title>陈箫翰</title>
+      <link>https://gmt-china.org/authors/%E9%99%88%E7%AE%AB%E7%BF%B0/</link>
+    </image>
+    
+    <item>
+      <title>GMT脚本执行利器——VS Code</title>
+      <link>https://gmt-china.org/blog/vscode-usage/</link>
+      <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://gmt-china.org/blog/vscode-usage/</guid>
+      <description>&lt;p&gt;Visual Studio Code，简称vscode，是微软推出的一款免费、轻量且功能强大的编辑器。vscode除一键执行、语法高亮、分屏显示外，还可实现bat/bash脚本的顺滑切换运行、jpg/gif/pdf等成图结果实时预览、脚本报错信息显示，非常适合全平台下执行GMT脚本。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注：vscode是跨平台软件，支持linux/Mac/Windows平台。本文以windows为例介绍其使用方法。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;vscode安装&#34;&gt;vscode安装&lt;/h2&gt;
+&lt;p&gt;vscode下载地址为：&lt;a href=&#34;https://code.visualstudio.com/Download&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;官网&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;安装中建议勾选下图中两项，目的是添加右键打开的快捷方式。&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /blog/vscode-usage/vscode_pic1_hucb35951264cbdf2376d8edbcacdd6732_28749_99ccf0ce316679dbb85f71d2699f5b04.webp 400w,
+               /blog/vscode-usage/vscode_pic1_hucb35951264cbdf2376d8edbcacdd6732_28749_67dc23844f9c7e8b13001d2f9034723b.webp 760w,
+               /blog/vscode-usage/vscode_pic1_hucb35951264cbdf2376d8edbcacdd6732_28749_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/vscode-usage/vscode_pic1_hucb35951264cbdf2376d8edbcacdd6732_28749_99ccf0ce316679dbb85f71d2699f5b04.webp&#34;
+               width=&#34;600px&#34;
+               height=&#34;564&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;安装完成之后有三种打开vscode的方式：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;开始菜单中，直接找到Visual Studio Code应用程序打开。&lt;/li&gt;
+&lt;li&gt;直接在对应脚本或工作文件夹点击右键，选择“&lt;strong&gt;通过Code打开（Open with Code）&lt;/strong&gt;”。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+R&lt;/code&gt;打开运行窗口，输入&lt;code&gt;code&lt;/code&gt; (前提是重启后，vscode已加入PATH路径)。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;插件安装&#34;&gt;插件安装&lt;/h2&gt;
+&lt;p&gt;vscode通过不同功能的插件实现代码的开发运行、图片文件的预览等等一系列功能。执行GMT脚本命令，推荐安装的插件包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Code Runner&lt;/strong&gt; 支持代码一键运行&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;vscode-pdf&lt;/strong&gt; pdf预览插件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;插件安装方式：打开&lt;strong&gt;Extensions&lt;/strong&gt;扩展插件菜单，搜索对应插件，点击安装。安装成功之后，&lt;strong&gt;Install&lt;/strong&gt;图标将变为&lt;strong&gt;齿轮&lt;/strong&gt;，可点击该齿轮，修改插件属性。已安装启用的插件都可在&lt;strong&gt;Extension&lt;/strong&gt;中查看设置。&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /blog/vscode-usage/vscode_pic2_hu2329616a440bb5d23159f8d74be2bc11_35260_095f9504e48845b4e693738d1d58f598.webp 400w,
+               /blog/vscode-usage/vscode_pic2_hu2329616a440bb5d23159f8d74be2bc11_35260_fde4e5938fbaa3df4a8dc87913bdb3f7.webp 760w,
+               /blog/vscode-usage/vscode_pic2_hu2329616a440bb5d23159f8d74be2bc11_35260_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/vscode-usage/vscode_pic2_hu2329616a440bb5d23159f8d74be2bc11_35260_095f9504e48845b4e693738d1d58f598.webp&#34;
+               width=&#34;700px&#34;
+               height=&#34;390&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;在 Extensions 菜单中，点击 Code Runner 插件的&lt;strong&gt;齿轮&lt;/strong&gt;图标，弹出菜单中选择“&lt;strong&gt;Extension Settings&lt;/strong&gt;”，勾选以下三个选项。不勾选这三个选项可能会导致无法正确执行 GMT 脚本。&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /blog/vscode-usage/vscode_pic3_hu805dad31df5a0e1c82582be035c398c2_86805_899e50487b02fa8bea5fd67347ebb54b.webp 400w,
+               /blog/vscode-usage/vscode_pic3_hu805dad31df5a0e1c82582be035c398c2_86805_c099fdcfad8aa58bf9c9abb224610a3e.webp 760w,
+               /blog/vscode-usage/vscode_pic3_hu805dad31df5a0e1c82582be035c398c2_86805_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/vscode-usage/vscode_pic3_hu805dad31df5a0e1c82582be035c398c2_86805_899e50487b02fa8bea5fd67347ebb54b.webp&#34;
+               width=&#34;700px&#34;
+               height=&#34;512&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;vscode执行gmt脚本过程&#34;&gt;vscode执行GMT脚本过程&lt;/h2&gt;
+&lt;p&gt;GMT脚本建议在独立工作空间（文件夹）中执行，有以下两种方式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在vscode中的Explore资源管理器菜单，选择“&lt;strong&gt;打开文件夹&lt;/strong&gt;“：&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /blog/vscode-usage/vscode_pic4_hu78227551c349f3d4eb61fdcd2af84b6c_33549_26f81e0a6b2037bc8f52972a91f46547.webp 400w,
+               /blog/vscode-usage/vscode_pic4_hu78227551c349f3d4eb61fdcd2af84b6c_33549_fee2d67c43da811798cef37ff1a012e5.webp 760w,
+               /blog/vscode-usage/vscode_pic4_hu78227551c349f3d4eb61fdcd2af84b6c_33549_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/vscode-usage/vscode_pic4_hu78227551c349f3d4eb61fdcd2af84b6c_33549_26f81e0a6b2037bc8f52972a91f46547.webp&#34;
+               width=&#34;500px&#34;
+               height=&#34;496&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;或者，在文件夹上右键，选择“&lt;strong&gt;通过Code打开&lt;/strong&gt;”：&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34;
+           src=&#34;https://gmt-china.org/blog/vscode-usage/vscode_gif1.gif&#34;
+           loading=&#34;lazy&#34; data-zoomable width=&#34;700px&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;含有中文的脚本需要设置编码为GB2312，否则会出现乱码：点击右下角的编码按钮，
+再选择“&lt;strong&gt;重新打开编码（Reopen with Encoding）&lt;/strong&gt;”，选择&lt;strong&gt;中文简体GB2312&lt;/strong&gt;编码。&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /blog/vscode-usage/vscode_pic5_hu3793052ad46ce1e1ef53104830a5d6dc_25246_4a73760aac727161bb55633ac5a23757.webp 400w,
+               /blog/vscode-usage/vscode_pic5_hu3793052ad46ce1e1ef53104830a5d6dc_25246_2c893c00e0e25eb290d851070ff8e056.webp 760w,
+               /blog/vscode-usage/vscode_pic5_hu3793052ad46ce1e1ef53104830a5d6dc_25246_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/vscode-usage/vscode_pic5_hu3793052ad46ce1e1ef53104830a5d6dc_25246_4a73760aac727161bb55633ac5a23757.webp&#34;
+               width=&#34;700px&#34;
+               height=&#34;463&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;执行脚本可选择脚本页面右上方三角符号（Alt+F1），脚本运行信息显示在下方Terminal终端窗体。若想同时预览生成结果，可增加编辑窗口（Split Editor），两个窗口分别显示脚本和运行结果。&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34;
+           src=&#34;https://gmt-china.org/blog/vscode-usage/vscode_gif2.gif&#34;
+           loading=&#34;lazy&#34; data-zoomable width=&#34;700px&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;若本机安装了Bash终端，vscode也可通过手工切换终端执行 bash 脚本。&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /blog/vscode-usage/vscode_pic6_1_hub3658aa8be61f9c3974d53027e7dff9b_53784_b1bf8ea9f43b6b3a864f12a79b9040d7.webp 400w,
+               /blog/vscode-usage/vscode_pic6_1_hub3658aa8be61f9c3974d53027e7dff9b_53784_f24839a5ca3b6217a783b9e911a26052.webp 760w,
+               /blog/vscode-usage/vscode_pic6_1_hub3658aa8be61f9c3974d53027e7dff9b_53784_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/vscode-usage/vscode_pic6_1_hub3658aa8be61f9c3974d53027e7dff9b_53784_b1bf8ea9f43b6b3a864f12a79b9040d7.webp&#34;
+               width=&#34;700px&#34;
+               height=&#34;584&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;如果你运行的是 bash 脚本，则必须在 &lt;code&gt;gmt begin&lt;/code&gt; 之前添加一行 &lt;code&gt;export GMT_SESSION_NAME=$$&lt;/code&gt; ，否则脚本运行将出现错误。&lt;/p&gt;
+&lt;p&gt;详情请参阅&lt;a href=&#34;https://docs.gmt-china.org/latest/module/begin/#unix-shell&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GMT中文手册的begin模块说明页面&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;为提高编码效率，推荐使用快捷键进行代码注释、代码运行、窗格切换等操作。键盘单击F1，调出vscode的命令面板，输入”shortcut“检索出快捷键编辑命令：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /blog/vscode-usage/vscode_pic7_huae9f90fb19d6dc42e8fc95d2da0c1f96_59482_48aed408e36b9e3b00617ba0470a7118.webp 400w,
+               /blog/vscode-usage/vscode_pic7_huae9f90fb19d6dc42e8fc95d2da0c1f96_59482_cba50ff60e6d58a2e48673aefb5fe653.webp 760w,
+               /blog/vscode-usage/vscode_pic7_huae9f90fb19d6dc42e8fc95d2da0c1f96_59482_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/vscode-usage/vscode_pic7_huae9f90fb19d6dc42e8fc95d2da0c1f96_59482_48aed408e36b9e3b00617ba0470a7118.webp&#34;
+               width=&#34;700px&#34;
+               height=&#34;215&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;我们可以查询或自定义众多快捷键，包括但不限于行注释（Add Line Comment/Remove Line Comment）、窗口分割（View: Split Editor Down/Right/Up/Left）、窗口关闭（View：Close Editor）等。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2021版1:100万全国标准基础地理数据！你值得拥有</title>
+      <link>https://gmt-china.org/blog/national-geographic-database/</link>
+      <pubDate>Sun, 15 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>https://gmt-china.org/blog/national-geographic-database/</guid>
+      <description>&lt;p&gt;本文介绍国家标准地理数据的获取以及处理为 GMT 支持格式的方法。&lt;/p&gt;
+&lt;p&gt;具体包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;国家标准1:100万（非涉密）基础地理数据的申请、下载&lt;/li&gt;
+&lt;li&gt;数据集内容简介&lt;/li&gt;
+&lt;li&gt;数据集要素合并、提取及格式转换&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;alert alert-info&#34;&gt;
+  &lt;div&gt;
+    本文仅供个人科研作图参考。若使用者编制的地图需向社会公开的，请务必遵守
+《地图管理条例》有关规定依法履行地图审核程序。
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;数据概况&#34;&gt;数据概况&lt;/h2&gt;
+&lt;p&gt;国家基础地理信息中心于2017年11月份开始免费向公众提供全国1:100万非涉密的全国基础地理数据库。目前数据最新为2021版。该数据库：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;共77幅DLG数据集，包括全国陆地范围以及台湾岛、海南岛、钓鱼岛、南海诸岛在内的主要岛屿及其临近海域。&lt;/li&gt;
+&lt;li&gt;包括水系、居民地及设施、公路铁路、行政边界、地名等5个数据集12个数据层。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;数据更多介绍可访问&lt;a href=&#34;http://www.webmap.cn/commres.do?method=result100W&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;全国地理信息资源目录服务系统&lt;/a&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;数据获取&#34;&gt;数据获取&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;进入&lt;a href=&#34;http://www.webmap.cn&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;全国地理信息资源目录服务系统&lt;/a&gt;，点右上角“注册”。已注册用户直接登陆。&lt;/li&gt;
+&lt;li&gt;在“数据下载”栏目中，点击进入“1：100万全国基础地理信息数据库”。&lt;/li&gt;
+&lt;li&gt;该数据集下有77个图幅产品。可选择一两个图幅，或全部选中，加入成果车。&lt;/li&gt;
+&lt;li&gt;结算，填写订单中的个人信息，&lt;strong&gt;验证手机号&lt;/strong&gt;，下载数据。
+**注：**若未提示验证手机，换个firefox浏览器试试。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;数据集内容简介&#34;&gt;数据集内容简介&lt;/h2&gt;
+&lt;p&gt;该数据集包括5类12个要素集，如下图所示：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-全国基础地理数据库数据集&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;全国基础地理数据库数据集&#34; srcset=&#34;
+               /blog/national-geographic-database/01.datalist_huf3ea7e69a9c5248598ec01115e2b1c27_77037_58b4b82665dbe53f9bce57ac84e2ac38.webp 400w,
+               /blog/national-geographic-database/01.datalist_huf3ea7e69a9c5248598ec01115e2b1c27_77037_7d8a566b65f496628f042f40cef71c1f.webp 760w,
+               /blog/national-geographic-database/01.datalist_huf3ea7e69a9c5248598ec01115e2b1c27_77037_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/national-geographic-database/01.datalist_huf3ea7e69a9c5248598ec01115e2b1c27_77037_58b4b82665dbe53f9bce57ac84e2ac38.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;282&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      全国基础地理数据库数据集
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;每个要素集内又包括不同等级的自然地理要素，以BOUL要素集（图层）为例：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BOUL 中国及邻区各级行政界限（线）图层&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;BOUL&#34; srcset=&#34;
+               /blog/national-geographic-database/05.BOUL_huea9dd9a475ac6eb0176f34a75d227dc2_578086_62c837662175a9416e739767493ef576.webp 400w,
+               /blog/national-geographic-database/05.BOUL_huea9dd9a475ac6eb0176f34a75d227dc2_578086_53f1dec19259504f4a8e8d1ee184c1a3.webp 760w,
+               /blog/national-geographic-database/05.BOUL_huea9dd9a475ac6eb0176f34a75d227dc2_578086_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/national-geographic-database/05.BOUL_huea9dd9a475ac6eb0176f34a75d227dc2_578086_62c837662175a9416e739767493ef576.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;616&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;该数据集包括各级行政区界线，以GB码进行区分：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;行政区界类型&lt;/th&gt;
+&lt;th&gt;GB码&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;海岸线&lt;/td&gt;
+&lt;td&gt;250200&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;水系交汇处&lt;/td&gt;
+&lt;td&gt;260100&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;外国地区国界线&lt;/td&gt;
+&lt;td&gt;610200&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;国界线(已定)&lt;/td&gt;
+&lt;td&gt;620201&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;国界线(未定)&lt;/td&gt;
+&lt;td&gt;620202&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;省级界线&lt;/td&gt;
+&lt;td&gt;630200&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;特别行政区界&lt;/td&gt;
+&lt;td&gt;630400&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;地、市、州级行政区界&lt;/td&gt;
+&lt;td&gt;640200&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;县级行政区界&lt;/td&gt;
+&lt;td&gt;650200&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;特殊地区界限&lt;/td&gt;
+&lt;td&gt;670202&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;其他各图层内不同要素的分类编码可参考基础地理信息要素分类与代码（GB/T 13923-2006）。&lt;/p&gt;
+&lt;p&gt;此外，常用的还有 &lt;strong&gt;AGNP 各级行政地名和城乡居民地坐标（点）图层&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;行政地名点以政府驻地来定位，无GB码，以CLASS类别区分：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;行政地名点类型&lt;/th&gt;
+&lt;th&gt;CLASS类别&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;国名&lt;/td&gt;
+&lt;td&gt;AA&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;省（直辖市、自治区、特别行政区）行政地名&lt;/td&gt;
+&lt;td&gt;AB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;自治州、盟、地区行政地名&lt;/td&gt;
+&lt;td&gt;AC&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;地级市行政地名&lt;/td&gt;
+&lt;td&gt;AD&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;县级市行政地名&lt;/td&gt;
+&lt;td&gt;AE&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;县（自治县、旗、自治旗、地级市市辖区）级市行政地名&lt;/td&gt;
+&lt;td&gt;AF&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;县辖区及县级行政区域的派出机构地名&lt;/td&gt;
+&lt;td&gt;AG&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;街道办事处地名&lt;/td&gt;
+&lt;td&gt;AH&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;镇行政地名&lt;/td&gt;
+&lt;td&gt;AI&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;乡行政地名&lt;/td&gt;
+&lt;td&gt;AJ&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;建制村地名&lt;/td&gt;
+&lt;td&gt;AK&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;城镇区片、小区名&lt;/td&gt;
+&lt;td&gt;BA&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;自然村、屯、片村、村民小组名&lt;/td&gt;
+&lt;td&gt;BB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;牧点、渔点、棚房名&lt;/td&gt;
+&lt;td&gt;BC&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;其它&lt;/td&gt;
+&lt;td&gt;BD&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;党政机关、党派团体名&lt;/td&gt;
+&lt;td&gt;CA&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;企事业单位名&lt;/td&gt;
+&lt;td&gt;CB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;农、林、牧、渔场&lt;/td&gt;
+&lt;td&gt;CC&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;数据处理&#34;&gt;数据处理&lt;/h2&gt;
+&lt;p&gt;从网站上直接下载的数据是分图幅的 geodatabase(gdb) 数据库文件，如果需要用 GMT画“全国一张图”，需要：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;合并77个gdb文件中的同类要素&lt;/li&gt;
+&lt;li&gt;提取某类要素中的某个等级数据&lt;/li&gt;
+&lt;li&gt;转为gmt识别的文本格式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;gdb数据库文件合并&#34;&gt;gdb数据库文件合并&lt;/h3&gt;
+&lt;p&gt;采用本社区一贯推荐的&lt;a href=&#34;https://docs.gmt-china.org/latest/utilities/gdal/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GDAL/ORG库&lt;/a&gt;将分幅的gdb数据进行批量合并。
+首先解压所有下载的压缩包，得到以&lt;code&gt;.gdb&lt;/code&gt;结尾的目录。目录名类似&lt;code&gt;H51.gdb&lt;/code&gt;、&lt;code&gt;I49.gdb&lt;/code&gt;等。
+然后在这些目录的上级目录执行以下脚本：&lt;/p&gt;
+&lt;p&gt;Linux系统：
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#!/bin/bash
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;file&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;./final&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; i in &lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;ls -d *.gdb&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt; ! -d &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$file&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;k&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;           &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;creating final filefolder&amp;#34;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;           ogr2ogr -f &lt;span class=&#34;s1&#34;&gt;&amp;#39;ESRI Shapefile&amp;#39;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$file&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$i&lt;/span&gt; -lco &lt;span class=&#34;nv&#34;&gt;encoding&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;UTF-8
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;           &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;merging……&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      ogr2ogr -f &lt;span class=&#34;s1&#34;&gt;&amp;#39;ESRI Shapefile&amp;#39;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$file&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$i&lt;/span&gt; -update -append
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;done&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;Windows系统。注意必须保存为 bat 文件执行，直接复制粘贴到 cmd 中会出现报错：
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bat&#34; data-lang=&#34;bat&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;REM 将A49分幅的gdb数据转为一组shp格式的文件，文件夹命名为Merged&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;REM 编码为UTF-8以正确显示属性字段中的中文&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ogr2ogr -f &lt;span class=&#34;s2&#34;&gt;&amp;#34;ESRI Shapefile&amp;#34;&lt;/span&gt; -lco encoding=UTF-8 Merged A49.gdb
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;REM 将当前目录下剩余所有的gdb数据追加Merged，同类shp文件合并。&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;/f&lt;/span&gt; &lt;span class=&#34;se&#34;&gt;%%&lt;/span&gt;i &lt;span class=&#34;k&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;dir /b &amp;#34;*.gdb&amp;#34;&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ogr2ogr -f &lt;span class=&#34;s2&#34;&gt;&amp;#34;ESRI Shapefile&amp;#34;&lt;/span&gt; -update -append Merged &lt;span class=&#34;se&#34;&gt;%%&lt;/span&gt;i
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;pause&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;若安装有python环境，还可选择&lt;code&gt;ogrmerge.py&lt;/code&gt;工具进行批量的格式转换和合并，详见&lt;a href=&#34;https://www.gdal.org/ogrmerge.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ogrmerge使用手册&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;该节将分幅的交通、水系、边界等12类要素分别合并为全国一张图，最后转为12个shp文件。&lt;/p&gt;
+&lt;h3 id=&#34;查询gb代码与class类别&#34;&gt;查询GB代码与CLASS类别&lt;/h3&gt;
+&lt;p&gt;使用&lt;code&gt;ogrinfo&lt;/code&gt;可以查询shp文件内包含哪些要素。例如以下命令查询&lt;code&gt;BOUL.shp&lt;/code&gt;中包含的GB代码：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ogrinfo -sql &amp;#34;SELECT distinct GB FROM BOUL&amp;#34; BOUL.shp
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;而以下命令则查询&lt;code&gt;AGNP.shp&lt;/code&gt;中包含的CLASS类别：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ogrinfo -sql &amp;#34;SELECT distinct CLASS FROM AGNP&amp;#34; AGNP.shp
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;提取某类要素&#34;&gt;提取某类要素&lt;/h3&gt;
+&lt;p&gt;由于每个数据集（一个shp文件）中存在不同等级的要素，而实际可能只使用其中一种，则仍可利用&lt;code&gt;ogr2ogr&lt;/code&gt;工具提供的sql查询选项进行提取。&lt;/p&gt;
+&lt;p&gt;例如：&lt;/p&gt;
+&lt;p&gt;行政区划&lt;code&gt;BOUL&lt;/code&gt;图层中GB代码&lt;code&gt;620201&lt;/code&gt;、&lt;code&gt;620202&lt;/code&gt;、&lt;code&gt;250200&lt;/code&gt;分别为已定国界、未定国界和海岸线，那么提取数据并转化为GMT格式的命令为：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ogr2ogr -f GMT -where &amp;#34;GB=620201 or GB=620202 or GB=250200&amp;#34; BOUL_sub.gmt BOUL.shp
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;最后GMT绘图如下：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;gmt begin ChinaMap
+    gmt plot BOUL_sub.gmt -R70/145/3/55 -JM105/35/6.5i 
+gmt end show
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;绘图结果：&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;ChinaMap&#34; srcset=&#34;
+               /blog/national-geographic-database/09.ChinaMap_hu47343f6bb81026092cc844ec85bd411e_98501_f26dcbda7785023b8bd506c0b82158b2.webp 400w,
+               /blog/national-geographic-database/09.ChinaMap_hu47343f6bb81026092cc844ec85bd411e_98501_79d9c8cc22f3da63fa3de483bb3b0046.webp 760w,
+               /blog/national-geographic-database/09.ChinaMap_hu47343f6bb81026092cc844ec85bd411e_98501_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/national-geographic-database/09.ChinaMap_hu47343f6bb81026092cc844ec85bd411e_98501_f26dcbda7785023b8bd506c0b82158b2.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;721&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;如果想要提取行政地名点&lt;code&gt;AGNP&lt;/code&gt;图层中的建制村信息（对应CLASS为AK），则使用：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ogr2ogr -f GMT -where &amp;#34;CLASS=&amp;#39;AK&amp;#39;&amp;#34; AGNP.gmt AGNP.shp
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;注意因为CLASS类别为字符串，所以此处&lt;code&gt;AK&lt;/code&gt;需要加上引号。GB代码为整型数因而不需要加引号。&lt;/p&gt;
+&lt;p&gt;最后转换成的GMT格式数据如下：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;...
+# @NCLASS|NAME|PINYIN|GNID|XZNAME
+# @Tstring|string|string|string|string
+# FEATURE_DATA
+# @DAK|岙里王村|Aoliwangcun|330226114037|胡陈乡
+121.68517089 29.388652295
+# @DAK|坝头村|Batoucun|331022000000|亭旁镇
+121.310746425 29.0109724900001
+# @DAK|白岩村|Baiyancun|331082111028|尤溪镇
+120.971417165 28.7226002200001
+# @DAK|柏树下村|Baishuxiacun|331082116042|邵家渡街道
+121.257111875 28.8522451100001
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;以 Windows 系统为例，首先将以上数据的编码转换为GB2312，再使用以下代码绘制：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;gmt begin AGNP jpg
+  gmt set PS_CHAR_ENCODING Standard+
+
+  gmt basemap -R120/121/28/29 -JM10c -Baf
+  gmt grdimage @earth_relief_15s -Cgeo
+  gmt plot -Sc0.2c -Gred -W0p,black AGNP.gmt
+  chcp 936
+  gmt convert AGNP.gmt -a2=&amp;#34;NAME&amp;#34; | gmt text -F+f10p,40+jTL -D0.15c/0.3c -Gwhite
+gmt end
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;绘图结果：&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;AGNP&#34; srcset=&#34;
+               /blog/national-geographic-database/AGNP_hub0eb28ad9760b99d05935a01a7ae7699_306750_86d5ce844a1d4259c458209104530d5b.webp 400w,
+               /blog/national-geographic-database/AGNP_hub0eb28ad9760b99d05935a01a7ae7699_306750_2f7b5d372b8dbf435311e90fa87e5fc9.webp 760w,
+               /blog/national-geographic-database/AGNP_hub0eb28ad9760b99d05935a01a7ae7699_306750_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/national-geographic-database/AGNP_hub0eb28ad9760b99d05935a01a7ae7699_306750_86d5ce844a1d4259c458209104530d5b.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;758&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

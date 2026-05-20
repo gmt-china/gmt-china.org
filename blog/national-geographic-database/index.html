@@ -1,0 +1,1556 @@
+<!DOCTYPE html><html lang="zh-Hans" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.5.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="本文介绍国家标准地理数据的获取以及处理为 GMT 支持格式的方法。" />
+
+  
+  <link rel="alternate" hreflang="zh-Hans" href="https://gmt-china.org/blog/national-geographic-database/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.1052fab8b7700a3dc49ee23683097d66.css" />
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hub7ca0b5404c6d576559b2bd22c64b0e5_1747_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hub7ca0b5404c6d576559b2bd22c64b0e5_1747_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://gmt-china.org/blog/national-geographic-database/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="GMT 中文社区" />
+  <meta property="og:url" content="https://gmt-china.org/blog/national-geographic-database/" />
+  <meta property="og:title" content="2021版1:100万全国标准基础地理数据！你值得拥有 | GMT 中文社区" />
+  <meta property="og:description" content="本文介绍国家标准地理数据的获取以及处理为 GMT 支持格式的方法。" /><meta property="og:image" content="https://gmt-china.org/media/icon_hub7ca0b5404c6d576559b2bd22c64b0e5_1747_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://gmt-china.org/media/icon_hub7ca0b5404c6d576559b2bd22c64b0e5_1747_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="zh-Hans" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2022-09-08T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2022-09-08T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://gmt-china.org/blog/national-geographic-database/"
+  },
+  "headline": "2021版1:100万全国标准基础地理数据！你值得拥有",
+  
+  "datePublished": "2022-09-08T00:00:00Z",
+  "dateModified": "2022-09-08T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "eyou"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "GMT 中文社区",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://gmt-china.org/media/icon_hub7ca0b5404c6d576559b2bd22c64b0e5_1747_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "\u003cp\u003e本文介绍国家标准地理数据的获取以及处理为 GMT 支持格式的方法。\u003c/p\u003e"
+}
+</script>
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>2021版1:100万全国标准基础地理数据！你值得拥有 | GMT 中文社区</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="5dfd698cfa071373ad9413e67603621c" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.2ed908358299dd7ab553faae685c746c.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>搜索</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="搜索..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="搜索...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">GMT 中文社区</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="切换导航">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">GMT 中文社区</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#"><span>首页</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#download"><span>下载安装</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#docs"><span>中文手册</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#posts"><span>博客</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+              
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="https://docs.gmt-china.org/latest/dataset/" target="_blank" rel="noopener"><span>地学数据集</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+              
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="https://docs.gmt-china.org/latest/gallery/" target="_blank" rel="noopener"><span>图库</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>联系我们</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/index.xml"><span><i class="fas fa-rss"></i></span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="搜索"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>浅色</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>深色</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>自动</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>2021版1:100万全国标准基础地理数据！你值得拥有</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/authors/eyou/">eyou</a></span>, <span >
+      <a href="/authors/%E9%99%88%E7%AE%AB%E7%BF%B0/">陈箫翰</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    2022年09月08日
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    5 分钟阅读时长
+  </span>
+  
+
+  
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/category/%E5%9C%B0%E5%AD%A6%E6%95%B0%E6%8D%AE/">地学数据</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>本文介绍国家标准地理数据的获取以及处理为 GMT 支持格式的方法。</p>
+<p>具体包括：</p>
+<ul>
+<li>国家标准1:100万（非涉密）基础地理数据的申请、下载</li>
+<li>数据集内容简介</li>
+<li>数据集要素合并、提取及格式转换</li>
+</ul>
+<div class="alert alert-info">
+  <div>
+    本文仅供个人科研作图参考。若使用者编制的地图需向社会公开的，请务必遵守
+《地图管理条例》有关规定依法履行地图审核程序。
+  </div>
+</div>
+<h2 id="数据概况">数据概况</h2>
+<p>国家基础地理信息中心于2017年11月份开始免费向公众提供全国1:100万非涉密的全国基础地理数据库。目前数据最新为2021版。该数据库：</p>
+<ul>
+<li>共77幅DLG数据集，包括全国陆地范围以及台湾岛、海南岛、钓鱼岛、南海诸岛在内的主要岛屿及其临近海域。</li>
+<li>包括水系、居民地及设施、公路铁路、行政边界、地名等5个数据集12个数据层。</li>
+</ul>
+<p>数据更多介绍可访问<a href="http://www.webmap.cn/commres.do?method=result100W" target="_blank" rel="noopener">全国地理信息资源目录服务系统</a>。</p>
+<h2 id="数据获取">数据获取</h2>
+<ul>
+<li>进入<a href="http://www.webmap.cn" target="_blank" rel="noopener">全国地理信息资源目录服务系统</a>，点右上角“注册”。已注册用户直接登陆。</li>
+<li>在“数据下载”栏目中，点击进入“1：100万全国基础地理信息数据库”。</li>
+<li>该数据集下有77个图幅产品。可选择一两个图幅，或全部选中，加入成果车。</li>
+<li>结算，填写订单中的个人信息，<strong>验证手机号</strong>，下载数据。
+**注：**若未提示验证手机，换个firefox浏览器试试。</li>
+</ul>
+<h2 id="数据集内容简介">数据集内容简介</h2>
+<p>该数据集包括5类12个要素集，如下图所示：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  id="figure-全国基础地理数据库数据集">
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="全国基础地理数据库数据集" srcset="
+               /blog/national-geographic-database/01.datalist_huf3ea7e69a9c5248598ec01115e2b1c27_77037_58b4b82665dbe53f9bce57ac84e2ac38.webp 400w,
+               /blog/national-geographic-database/01.datalist_huf3ea7e69a9c5248598ec01115e2b1c27_77037_7d8a566b65f496628f042f40cef71c1f.webp 760w,
+               /blog/national-geographic-database/01.datalist_huf3ea7e69a9c5248598ec01115e2b1c27_77037_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/blog/national-geographic-database/01.datalist_huf3ea7e69a9c5248598ec01115e2b1c27_77037_58b4b82665dbe53f9bce57ac84e2ac38.webp"
+               width="760"
+               height="282"
+               loading="lazy" data-zoomable /></div>
+  </div><figcaption>
+      全国基础地理数据库数据集
+    </figcaption></figure>
+<p>每个要素集内又包括不同等级的自然地理要素，以BOUL要素集（图层）为例：</p>
+<p><strong>BOUL 中国及邻区各级行政界限（线）图层</strong></p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="BOUL" srcset="
+               /blog/national-geographic-database/05.BOUL_huea9dd9a475ac6eb0176f34a75d227dc2_578086_62c837662175a9416e739767493ef576.webp 400w,
+               /blog/national-geographic-database/05.BOUL_huea9dd9a475ac6eb0176f34a75d227dc2_578086_53f1dec19259504f4a8e8d1ee184c1a3.webp 760w,
+               /blog/national-geographic-database/05.BOUL_huea9dd9a475ac6eb0176f34a75d227dc2_578086_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/blog/national-geographic-database/05.BOUL_huea9dd9a475ac6eb0176f34a75d227dc2_578086_62c837662175a9416e739767493ef576.webp"
+               width="760"
+               height="616"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>该数据集包括各级行政区界线，以GB码进行区分：</p>
+<table>
+<thead>
+<tr>
+<th>行政区界类型</th>
+<th>GB码</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>海岸线</td>
+<td>250200</td>
+</tr>
+<tr>
+<td>水系交汇处</td>
+<td>260100</td>
+</tr>
+<tr>
+<td>外国地区国界线</td>
+<td>610200</td>
+</tr>
+<tr>
+<td>国界线(已定)</td>
+<td>620201</td>
+</tr>
+<tr>
+<td>国界线(未定)</td>
+<td>620202</td>
+</tr>
+<tr>
+<td>省级界线</td>
+<td>630200</td>
+</tr>
+<tr>
+<td>特别行政区界</td>
+<td>630400</td>
+</tr>
+<tr>
+<td>地、市、州级行政区界</td>
+<td>640200</td>
+</tr>
+<tr>
+<td>县级行政区界</td>
+<td>650200</td>
+</tr>
+<tr>
+<td>特殊地区界限</td>
+<td>670202</td>
+</tr>
+</tbody>
+</table>
+<p>其他各图层内不同要素的分类编码可参考基础地理信息要素分类与代码（GB/T 13923-2006）。</p>
+<p>此外，常用的还有 <strong>AGNP 各级行政地名和城乡居民地坐标（点）图层</strong></p>
+<p>行政地名点以政府驻地来定位，无GB码，以CLASS类别区分：</p>
+<table>
+<thead>
+<tr>
+<th>行政地名点类型</th>
+<th>CLASS类别</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>国名</td>
+<td>AA</td>
+</tr>
+<tr>
+<td>省（直辖市、自治区、特别行政区）行政地名</td>
+<td>AB</td>
+</tr>
+<tr>
+<td>自治州、盟、地区行政地名</td>
+<td>AC</td>
+</tr>
+<tr>
+<td>地级市行政地名</td>
+<td>AD</td>
+</tr>
+<tr>
+<td>县级市行政地名</td>
+<td>AE</td>
+</tr>
+<tr>
+<td>县（自治县、旗、自治旗、地级市市辖区）级市行政地名</td>
+<td>AF</td>
+</tr>
+<tr>
+<td>县辖区及县级行政区域的派出机构地名</td>
+<td>AG</td>
+</tr>
+<tr>
+<td>街道办事处地名</td>
+<td>AH</td>
+</tr>
+<tr>
+<td>镇行政地名</td>
+<td>AI</td>
+</tr>
+<tr>
+<td>乡行政地名</td>
+<td>AJ</td>
+</tr>
+<tr>
+<td>建制村地名</td>
+<td>AK</td>
+</tr>
+<tr>
+<td>城镇区片、小区名</td>
+<td>BA</td>
+</tr>
+<tr>
+<td>自然村、屯、片村、村民小组名</td>
+<td>BB</td>
+</tr>
+<tr>
+<td>牧点、渔点、棚房名</td>
+<td>BC</td>
+</tr>
+<tr>
+<td>其它</td>
+<td>BD</td>
+</tr>
+<tr>
+<td>党政机关、党派团体名</td>
+<td>CA</td>
+</tr>
+<tr>
+<td>企事业单位名</td>
+<td>CB</td>
+</tr>
+<tr>
+<td>农、林、牧、渔场</td>
+<td>CC</td>
+</tr>
+</tbody>
+</table>
+<h2 id="数据处理">数据处理</h2>
+<p>从网站上直接下载的数据是分图幅的 geodatabase(gdb) 数据库文件，如果需要用 GMT画“全国一张图”，需要：</p>
+<ul>
+<li>合并77个gdb文件中的同类要素</li>
+<li>提取某类要素中的某个等级数据</li>
+<li>转为gmt识别的文本格式</li>
+</ul>
+<h3 id="gdb数据库文件合并">gdb数据库文件合并</h3>
+<p>采用本社区一贯推荐的<a href="https://docs.gmt-china.org/latest/utilities/gdal/" target="_blank" rel="noopener">GDAL/ORG库</a>将分幅的gdb数据进行批量合并。
+首先解压所有下载的压缩包，得到以<code>.gdb</code>结尾的目录。目录名类似<code>H51.gdb</code>、<code>I49.gdb</code>等。
+然后在这些目录的上级目录执行以下脚本：</p>
+<p>Linux系统：
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="nv">file</span><span class="o">=</span><span class="s2">&#34;./final&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> i in <span class="k">$(</span>ls -d *.gdb<span class="k">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">do</span>
+</span></span><span class="line"><span class="cl"> <span class="k">if</span> <span class="o">[</span> ! -d <span class="s2">&#34;</span><span class="nv">$file</span><span class="s2">&#34;</span> <span class="o">]</span>
+</span></span><span class="line"><span class="cl">      <span class="k">then</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">echo</span> <span class="s2">&#34;creating final filefolder&#34;</span> 
+</span></span><span class="line"><span class="cl">           ogr2ogr -f <span class="s1">&#39;ESRI Shapefile&#39;</span> <span class="nv">$file</span> <span class="nv">$i</span> -lco <span class="nv">encoding</span><span class="o">=</span>UTF-8
+</span></span><span class="line"><span class="cl">      <span class="k">else</span>
+</span></span><span class="line"><span class="cl">           <span class="nb">echo</span> <span class="s2">&#34;merging……&#34;</span>
+</span></span><span class="line"><span class="cl">      ogr2ogr -f <span class="s1">&#39;ESRI Shapefile&#39;</span> <span class="nv">$file</span> <span class="nv">$i</span> -update -append
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl"><span class="k">done</span>
+</span></span></code></pre></div></p>
+<p>Windows系统。注意必须保存为 bat 文件执行，直接复制粘贴到 cmd 中会出现报错：
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bat" data-lang="bat"><span class="line"><span class="cl"><span class="c1">REM 将A49分幅的gdb数据转为一组shp格式的文件，文件夹命名为Merged</span>
+</span></span><span class="line"><span class="cl"><span class="c1">REM 编码为UTF-8以正确显示属性字段中的中文</span>
+</span></span><span class="line"><span class="cl">ogr2ogr -f <span class="s2">&#34;ESRI Shapefile&#34;</span> -lco encoding=UTF-8 Merged A49.gdb
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">REM 将当前目录下剩余所有的gdb数据追加Merged，同类shp文件合并。</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="k">/f</span> <span class="se">%%</span>i <span class="k">in</span> <span class="p">(</span><span class="s1">&#39;dir /b &#34;*.gdb&#34;&#39;</span><span class="p">)</span> <span class="k">do</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">ogr2ogr -f <span class="s2">&#34;ESRI Shapefile&#34;</span> -update -append Merged <span class="se">%%</span>i
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">pause</span>
+</span></span></code></pre></div></p>
+<p>若安装有python环境，还可选择<code>ogrmerge.py</code>工具进行批量的格式转换和合并，详见<a href="https://www.gdal.org/ogrmerge.html" target="_blank" rel="noopener">ogrmerge使用手册</a>。</p>
+<p>该节将分幅的交通、水系、边界等12类要素分别合并为全国一张图，最后转为12个shp文件。</p>
+<h3 id="查询gb代码与class类别">查询GB代码与CLASS类别</h3>
+<p>使用<code>ogrinfo</code>可以查询shp文件内包含哪些要素。例如以下命令查询<code>BOUL.shp</code>中包含的GB代码：</p>
+<pre tabindex="0"><code>ogrinfo -sql &#34;SELECT distinct GB FROM BOUL&#34; BOUL.shp
+</code></pre><p>而以下命令则查询<code>AGNP.shp</code>中包含的CLASS类别：</p>
+<pre tabindex="0"><code>ogrinfo -sql &#34;SELECT distinct CLASS FROM AGNP&#34; AGNP.shp
+</code></pre><h3 id="提取某类要素">提取某类要素</h3>
+<p>由于每个数据集（一个shp文件）中存在不同等级的要素，而实际可能只使用其中一种，则仍可利用<code>ogr2ogr</code>工具提供的sql查询选项进行提取。</p>
+<p>例如：</p>
+<p>行政区划<code>BOUL</code>图层中GB代码<code>620201</code>、<code>620202</code>、<code>250200</code>分别为已定国界、未定国界和海岸线，那么提取数据并转化为GMT格式的命令为：</p>
+<pre tabindex="0"><code>ogr2ogr -f GMT -where &#34;GB=620201 or GB=620202 or GB=250200&#34; BOUL_sub.gmt BOUL.shp
+</code></pre><p>最后GMT绘图如下：</p>
+<pre tabindex="0"><code>gmt begin ChinaMap
+    gmt plot BOUL_sub.gmt -R70/145/3/55 -JM105/35/6.5i 
+gmt end show
+</code></pre><p>绘图结果：</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="ChinaMap" srcset="
+               /blog/national-geographic-database/09.ChinaMap_hu47343f6bb81026092cc844ec85bd411e_98501_f26dcbda7785023b8bd506c0b82158b2.webp 400w,
+               /blog/national-geographic-database/09.ChinaMap_hu47343f6bb81026092cc844ec85bd411e_98501_79d9c8cc22f3da63fa3de483bb3b0046.webp 760w,
+               /blog/national-geographic-database/09.ChinaMap_hu47343f6bb81026092cc844ec85bd411e_98501_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/blog/national-geographic-database/09.ChinaMap_hu47343f6bb81026092cc844ec85bd411e_98501_f26dcbda7785023b8bd506c0b82158b2.webp"
+               width="760"
+               height="721"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>如果想要提取行政地名点<code>AGNP</code>图层中的建制村信息（对应CLASS为AK），则使用：</p>
+<pre tabindex="0"><code>ogr2ogr -f GMT -where &#34;CLASS=&#39;AK&#39;&#34; AGNP.gmt AGNP.shp
+</code></pre><p>注意因为CLASS类别为字符串，所以此处<code>AK</code>需要加上引号。GB代码为整型数因而不需要加引号。</p>
+<p>最后转换成的GMT格式数据如下：</p>
+<pre tabindex="0"><code>...
+# @NCLASS|NAME|PINYIN|GNID|XZNAME
+# @Tstring|string|string|string|string
+# FEATURE_DATA
+# @DAK|岙里王村|Aoliwangcun|330226114037|胡陈乡
+121.68517089 29.388652295
+# @DAK|坝头村|Batoucun|331022000000|亭旁镇
+121.310746425 29.0109724900001
+# @DAK|白岩村|Baiyancun|331082111028|尤溪镇
+120.971417165 28.7226002200001
+# @DAK|柏树下村|Baishuxiacun|331082116042|邵家渡街道
+121.257111875 28.8522451100001
+...
+</code></pre><p>以 Windows 系统为例，首先将以上数据的编码转换为GB2312，再使用以下代码绘制：</p>
+<pre tabindex="0"><code>gmt begin AGNP jpg
+  gmt set PS_CHAR_ENCODING Standard+
+
+  gmt basemap -R120/121/28/29 -JM10c -Baf
+  gmt grdimage @earth_relief_15s -Cgeo
+  gmt plot -Sc0.2c -Gred -W0p,black AGNP.gmt
+  chcp 936
+  gmt convert AGNP.gmt -a2=&#34;NAME&#34; | gmt text -F+f10p,40+jTL -D0.15c/0.3c -Gwhite
+gmt end
+</code></pre><p>绘图结果：</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="AGNP" srcset="
+               /blog/national-geographic-database/AGNP_hub0eb28ad9760b99d05935a01a7ae7699_306750_86d5ce844a1d4259c458209104530d5b.webp 400w,
+               /blog/national-geographic-database/AGNP_hub0eb28ad9760b99d05935a01a7ae7699_306750_2f7b5d372b8dbf435311e90fa87e5fc9.webp 760w,
+               /blog/national-geographic-database/AGNP_hub0eb28ad9760b99d05935a01a7ae7699_306750_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/blog/national-geographic-database/AGNP_hub0eb28ad9760b99d05935a01a7ae7699_306750_86d5ce844a1d4259c458209104530d5b.webp"
+               width="760"
+               height="758"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+    </div>
+
+    
+
+
+
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://gmt-china.org/blog/national-geographic-database/&amp;text=2021%e7%89%881:100%e4%b8%87%e5%85%a8%e5%9b%bd%e6%a0%87%e5%87%86%e5%9f%ba%e7%a1%80%e5%9c%b0%e7%90%86%e6%95%b0%e6%8d%ae%ef%bc%81%e4%bd%a0%e5%80%bc%e5%be%97%e6%8b%a5%e6%9c%89" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://gmt-china.org/blog/national-geographic-database/&amp;t=2021%e7%89%881:100%e4%b8%87%e5%85%a8%e5%9b%bd%e6%a0%87%e5%87%86%e5%9f%ba%e7%a1%80%e5%9c%b0%e7%90%86%e6%95%b0%e6%8d%ae%ef%bc%81%e4%bd%a0%e5%80%bc%e5%be%97%e6%8b%a5%e6%9c%89" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=2021%e7%89%881:100%e4%b8%87%e5%85%a8%e5%9b%bd%e6%a0%87%e5%87%86%e5%9f%ba%e7%a1%80%e5%9c%b0%e7%90%86%e6%95%b0%e6%8d%ae%ef%bc%81%e4%bd%a0%e5%80%bc%e5%be%97%e6%8b%a5%e6%9c%89&amp;body=https://gmt-china.org/blog/national-geographic-database/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://gmt-china.org/blog/national-geographic-database/&amp;title=2021%e7%89%881:100%e4%b8%87%e5%85%a8%e5%9b%bd%e6%a0%87%e5%87%86%e5%9f%ba%e7%a1%80%e5%9c%b0%e7%90%86%e6%95%b0%e6%8d%ae%ef%bc%81%e4%bd%a0%e5%80%bc%e5%be%97%e6%8b%a5%e6%9c%89" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=2021%e7%89%881:100%e4%b8%87%e5%85%a8%e5%9b%bd%e6%a0%87%e5%87%86%e5%9f%ba%e7%a1%80%e5%9c%b0%e7%90%86%e6%95%b0%e6%8d%ae%ef%bc%81%e4%bd%a0%e5%80%bc%e5%be%97%e6%8b%a5%e6%9c%89%20https://gmt-china.org/blog/national-geographic-database/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://gmt-china.org/blog/national-geographic-database/&amp;title=2021%e7%89%881:100%e4%b8%87%e5%85%a8%e5%9b%bd%e6%a0%87%e5%87%86%e5%9f%ba%e7%a1%80%e5%9c%b0%e7%90%86%e6%95%b0%e6%8d%ae%ef%bc%81%e4%bd%a0%e5%80%bc%e5%be%97%e6%8b%a5%e6%9c%89" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2016 – 2026 GMT中文社区.
+  </p>
+  
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      由<a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a>支持发布——免费<a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">开源</a>网站，为创作者赋能。
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.fab8b449b814cc9f95b22fcf2e45f05b.js"></script>
+
+    
+    
+    
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js" integrity="sha512-Ypjm0o7jOxAd4hpdoppSEN0TQOC19UtPAqD+4s5AlXmUvbmmS/YMxYqAqarQYyxTnB6/rqip9qcxlNB/3U9Wdg==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/bash.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+
+    
+    
+    
+    <script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+    
+    
+      <script src="/js/wowchemy-headroom.c251366b4128fd5e6b046d4c97a62a51.js" type="module"></script>
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/zh/js/wowchemy.min.5dd6318d852b1d2dade11ec83bf2a2ae.js"></script>
+
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+</body>
+</html>

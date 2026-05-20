@@ -1,0 +1,1513 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>博客 | GMT 中文社区</title>
+    <link>https://gmt-china.org/blog/</link>
+      <atom:link href="https://gmt-china.org/blog/index.xml" rel="self" type="application/rss+xml" />
+    <description>博客</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-Hans</language><lastBuildDate>Wed, 19 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://gmt-china.org/media/icon_hub7ca0b5404c6d576559b2bd22c64b0e5_1747_512x512_fill_lanczos_center_3.png</url>
+      <title>博客</title>
+      <link>https://gmt-china.org/blog/</link>
+    </image>
+    
+    <item>
+      <title>GMT脚本执行利器——VS Code</title>
+      <link>https://gmt-china.org/blog/vscode-usage/</link>
+      <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://gmt-china.org/blog/vscode-usage/</guid>
+      <description>&lt;p&gt;Visual Studio Code，简称vscode，是微软推出的一款免费、轻量且功能强大的编辑器。vscode除一键执行、语法高亮、分屏显示外，还可实现bat/bash脚本的顺滑切换运行、jpg/gif/pdf等成图结果实时预览、脚本报错信息显示，非常适合全平台下执行GMT脚本。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注：vscode是跨平台软件，支持linux/Mac/Windows平台。本文以windows为例介绍其使用方法。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;vscode安装&#34;&gt;vscode安装&lt;/h2&gt;
+&lt;p&gt;vscode下载地址为：&lt;a href=&#34;https://code.visualstudio.com/Download&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;官网&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;安装中建议勾选下图中两项，目的是添加右键打开的快捷方式。&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /blog/vscode-usage/vscode_pic1_hucb35951264cbdf2376d8edbcacdd6732_28749_99ccf0ce316679dbb85f71d2699f5b04.webp 400w,
+               /blog/vscode-usage/vscode_pic1_hucb35951264cbdf2376d8edbcacdd6732_28749_67dc23844f9c7e8b13001d2f9034723b.webp 760w,
+               /blog/vscode-usage/vscode_pic1_hucb35951264cbdf2376d8edbcacdd6732_28749_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/vscode-usage/vscode_pic1_hucb35951264cbdf2376d8edbcacdd6732_28749_99ccf0ce316679dbb85f71d2699f5b04.webp&#34;
+               width=&#34;600px&#34;
+               height=&#34;564&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;安装完成之后有三种打开vscode的方式：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;开始菜单中，直接找到Visual Studio Code应用程序打开。&lt;/li&gt;
+&lt;li&gt;直接在对应脚本或工作文件夹点击右键，选择“&lt;strong&gt;通过Code打开（Open with Code）&lt;/strong&gt;”。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+R&lt;/code&gt;打开运行窗口，输入&lt;code&gt;code&lt;/code&gt; (前提是重启后，vscode已加入PATH路径)。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;插件安装&#34;&gt;插件安装&lt;/h2&gt;
+&lt;p&gt;vscode通过不同功能的插件实现代码的开发运行、图片文件的预览等等一系列功能。执行GMT脚本命令，推荐安装的插件包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Code Runner&lt;/strong&gt; 支持代码一键运行&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;vscode-pdf&lt;/strong&gt; pdf预览插件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;插件安装方式：打开&lt;strong&gt;Extensions&lt;/strong&gt;扩展插件菜单，搜索对应插件，点击安装。安装成功之后，&lt;strong&gt;Install&lt;/strong&gt;图标将变为&lt;strong&gt;齿轮&lt;/strong&gt;，可点击该齿轮，修改插件属性。已安装启用的插件都可在&lt;strong&gt;Extension&lt;/strong&gt;中查看设置。&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /blog/vscode-usage/vscode_pic2_hu2329616a440bb5d23159f8d74be2bc11_35260_095f9504e48845b4e693738d1d58f598.webp 400w,
+               /blog/vscode-usage/vscode_pic2_hu2329616a440bb5d23159f8d74be2bc11_35260_fde4e5938fbaa3df4a8dc87913bdb3f7.webp 760w,
+               /blog/vscode-usage/vscode_pic2_hu2329616a440bb5d23159f8d74be2bc11_35260_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/vscode-usage/vscode_pic2_hu2329616a440bb5d23159f8d74be2bc11_35260_095f9504e48845b4e693738d1d58f598.webp&#34;
+               width=&#34;700px&#34;
+               height=&#34;390&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;在 Extensions 菜单中，点击 Code Runner 插件的&lt;strong&gt;齿轮&lt;/strong&gt;图标，弹出菜单中选择“&lt;strong&gt;Extension Settings&lt;/strong&gt;”，勾选以下三个选项。不勾选这三个选项可能会导致无法正确执行 GMT 脚本。&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /blog/vscode-usage/vscode_pic3_hu805dad31df5a0e1c82582be035c398c2_86805_899e50487b02fa8bea5fd67347ebb54b.webp 400w,
+               /blog/vscode-usage/vscode_pic3_hu805dad31df5a0e1c82582be035c398c2_86805_c099fdcfad8aa58bf9c9abb224610a3e.webp 760w,
+               /blog/vscode-usage/vscode_pic3_hu805dad31df5a0e1c82582be035c398c2_86805_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/vscode-usage/vscode_pic3_hu805dad31df5a0e1c82582be035c398c2_86805_899e50487b02fa8bea5fd67347ebb54b.webp&#34;
+               width=&#34;700px&#34;
+               height=&#34;512&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;vscode执行gmt脚本过程&#34;&gt;vscode执行GMT脚本过程&lt;/h2&gt;
+&lt;p&gt;GMT脚本建议在独立工作空间（文件夹）中执行，有以下两种方式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在vscode中的Explore资源管理器菜单，选择“&lt;strong&gt;打开文件夹&lt;/strong&gt;“：&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /blog/vscode-usage/vscode_pic4_hu78227551c349f3d4eb61fdcd2af84b6c_33549_26f81e0a6b2037bc8f52972a91f46547.webp 400w,
+               /blog/vscode-usage/vscode_pic4_hu78227551c349f3d4eb61fdcd2af84b6c_33549_fee2d67c43da811798cef37ff1a012e5.webp 760w,
+               /blog/vscode-usage/vscode_pic4_hu78227551c349f3d4eb61fdcd2af84b6c_33549_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/vscode-usage/vscode_pic4_hu78227551c349f3d4eb61fdcd2af84b6c_33549_26f81e0a6b2037bc8f52972a91f46547.webp&#34;
+               width=&#34;500px&#34;
+               height=&#34;496&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;或者，在文件夹上右键，选择“&lt;strong&gt;通过Code打开&lt;/strong&gt;”：&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34;
+           src=&#34;https://gmt-china.org/blog/vscode-usage/vscode_gif1.gif&#34;
+           loading=&#34;lazy&#34; data-zoomable width=&#34;700px&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;含有中文的脚本需要设置编码为GB2312，否则会出现乱码：点击右下角的编码按钮，
+再选择“&lt;strong&gt;重新打开编码（Reopen with Encoding）&lt;/strong&gt;”，选择&lt;strong&gt;中文简体GB2312&lt;/strong&gt;编码。&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /blog/vscode-usage/vscode_pic5_hu3793052ad46ce1e1ef53104830a5d6dc_25246_4a73760aac727161bb55633ac5a23757.webp 400w,
+               /blog/vscode-usage/vscode_pic5_hu3793052ad46ce1e1ef53104830a5d6dc_25246_2c893c00e0e25eb290d851070ff8e056.webp 760w,
+               /blog/vscode-usage/vscode_pic5_hu3793052ad46ce1e1ef53104830a5d6dc_25246_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/vscode-usage/vscode_pic5_hu3793052ad46ce1e1ef53104830a5d6dc_25246_4a73760aac727161bb55633ac5a23757.webp&#34;
+               width=&#34;700px&#34;
+               height=&#34;463&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;执行脚本可选择脚本页面右上方三角符号（Alt+F1），脚本运行信息显示在下方Terminal终端窗体。若想同时预览生成结果，可增加编辑窗口（Split Editor），两个窗口分别显示脚本和运行结果。&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34;
+           src=&#34;https://gmt-china.org/blog/vscode-usage/vscode_gif2.gif&#34;
+           loading=&#34;lazy&#34; data-zoomable width=&#34;700px&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;若本机安装了Bash终端，vscode也可通过手工切换终端执行 bash 脚本。&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /blog/vscode-usage/vscode_pic6_1_hub3658aa8be61f9c3974d53027e7dff9b_53784_b1bf8ea9f43b6b3a864f12a79b9040d7.webp 400w,
+               /blog/vscode-usage/vscode_pic6_1_hub3658aa8be61f9c3974d53027e7dff9b_53784_f24839a5ca3b6217a783b9e911a26052.webp 760w,
+               /blog/vscode-usage/vscode_pic6_1_hub3658aa8be61f9c3974d53027e7dff9b_53784_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/vscode-usage/vscode_pic6_1_hub3658aa8be61f9c3974d53027e7dff9b_53784_b1bf8ea9f43b6b3a864f12a79b9040d7.webp&#34;
+               width=&#34;700px&#34;
+               height=&#34;584&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;如果你运行的是 bash 脚本，则必须在 &lt;code&gt;gmt begin&lt;/code&gt; 之前添加一行 &lt;code&gt;export GMT_SESSION_NAME=$$&lt;/code&gt; ，否则脚本运行将出现错误。&lt;/p&gt;
+&lt;p&gt;详情请参阅&lt;a href=&#34;https://docs.gmt-china.org/latest/module/begin/#unix-shell&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GMT中文手册的begin模块说明页面&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;为提高编码效率，推荐使用快捷键进行代码注释、代码运行、窗格切换等操作。键盘单击F1，调出vscode的命令面板，输入”shortcut“检索出快捷键编辑命令：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /blog/vscode-usage/vscode_pic7_huae9f90fb19d6dc42e8fc95d2da0c1f96_59482_48aed408e36b9e3b00617ba0470a7118.webp 400w,
+               /blog/vscode-usage/vscode_pic7_huae9f90fb19d6dc42e8fc95d2da0c1f96_59482_cba50ff60e6d58a2e48673aefb5fe653.webp 760w,
+               /blog/vscode-usage/vscode_pic7_huae9f90fb19d6dc42e8fc95d2da0c1f96_59482_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/vscode-usage/vscode_pic7_huae9f90fb19d6dc42e8fc95d2da0c1f96_59482_48aed408e36b9e3b00617ba0470a7118.webp&#34;
+               width=&#34;700px&#34;
+               height=&#34;215&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;我们可以查询或自定义众多快捷键，包括但不限于行注释（Add Line Comment/Remove Line Comment）、窗口分割（View: Split Editor Down/Right/Up/Left）、窗口关闭（View：Close Editor）等。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2021版1:100万全国标准基础地理数据！你值得拥有</title>
+      <link>https://gmt-china.org/blog/national-geographic-database/</link>
+      <pubDate>Sun, 15 Apr 2018 00:00:00 +0000</pubDate>
+      <guid>https://gmt-china.org/blog/national-geographic-database/</guid>
+      <description>&lt;p&gt;本文介绍国家标准地理数据的获取以及处理为 GMT 支持格式的方法。&lt;/p&gt;
+&lt;p&gt;具体包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;国家标准1:100万（非涉密）基础地理数据的申请、下载&lt;/li&gt;
+&lt;li&gt;数据集内容简介&lt;/li&gt;
+&lt;li&gt;数据集要素合并、提取及格式转换&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;alert alert-info&#34;&gt;
+  &lt;div&gt;
+    本文仅供个人科研作图参考。若使用者编制的地图需向社会公开的，请务必遵守
+《地图管理条例》有关规定依法履行地图审核程序。
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;数据概况&#34;&gt;数据概况&lt;/h2&gt;
+&lt;p&gt;国家基础地理信息中心于2017年11月份开始免费向公众提供全国1:100万非涉密的全国基础地理数据库。目前数据最新为2021版。该数据库：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;共77幅DLG数据集，包括全国陆地范围以及台湾岛、海南岛、钓鱼岛、南海诸岛在内的主要岛屿及其临近海域。&lt;/li&gt;
+&lt;li&gt;包括水系、居民地及设施、公路铁路、行政边界、地名等5个数据集12个数据层。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;数据更多介绍可访问&lt;a href=&#34;http://www.webmap.cn/commres.do?method=result100W&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;全国地理信息资源目录服务系统&lt;/a&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;数据获取&#34;&gt;数据获取&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;进入&lt;a href=&#34;http://www.webmap.cn&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;全国地理信息资源目录服务系统&lt;/a&gt;，点右上角“注册”。已注册用户直接登陆。&lt;/li&gt;
+&lt;li&gt;在“数据下载”栏目中，点击进入“1：100万全国基础地理信息数据库”。&lt;/li&gt;
+&lt;li&gt;该数据集下有77个图幅产品。可选择一两个图幅，或全部选中，加入成果车。&lt;/li&gt;
+&lt;li&gt;结算，填写订单中的个人信息，&lt;strong&gt;验证手机号&lt;/strong&gt;，下载数据。
+**注：**若未提示验证手机，换个firefox浏览器试试。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;数据集内容简介&#34;&gt;数据集内容简介&lt;/h2&gt;
+&lt;p&gt;该数据集包括5类12个要素集，如下图所示：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-全国基础地理数据库数据集&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;全国基础地理数据库数据集&#34; srcset=&#34;
+               /blog/national-geographic-database/01.datalist_huf3ea7e69a9c5248598ec01115e2b1c27_77037_58b4b82665dbe53f9bce57ac84e2ac38.webp 400w,
+               /blog/national-geographic-database/01.datalist_huf3ea7e69a9c5248598ec01115e2b1c27_77037_7d8a566b65f496628f042f40cef71c1f.webp 760w,
+               /blog/national-geographic-database/01.datalist_huf3ea7e69a9c5248598ec01115e2b1c27_77037_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/national-geographic-database/01.datalist_huf3ea7e69a9c5248598ec01115e2b1c27_77037_58b4b82665dbe53f9bce57ac84e2ac38.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;282&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      全国基础地理数据库数据集
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;每个要素集内又包括不同等级的自然地理要素，以BOUL要素集（图层）为例：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BOUL 中国及邻区各级行政界限（线）图层&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;BOUL&#34; srcset=&#34;
+               /blog/national-geographic-database/05.BOUL_huea9dd9a475ac6eb0176f34a75d227dc2_578086_62c837662175a9416e739767493ef576.webp 400w,
+               /blog/national-geographic-database/05.BOUL_huea9dd9a475ac6eb0176f34a75d227dc2_578086_53f1dec19259504f4a8e8d1ee184c1a3.webp 760w,
+               /blog/national-geographic-database/05.BOUL_huea9dd9a475ac6eb0176f34a75d227dc2_578086_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/national-geographic-database/05.BOUL_huea9dd9a475ac6eb0176f34a75d227dc2_578086_62c837662175a9416e739767493ef576.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;616&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;该数据集包括各级行政区界线，以GB码进行区分：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;行政区界类型&lt;/th&gt;
+&lt;th&gt;GB码&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;海岸线&lt;/td&gt;
+&lt;td&gt;250200&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;水系交汇处&lt;/td&gt;
+&lt;td&gt;260100&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;外国地区国界线&lt;/td&gt;
+&lt;td&gt;610200&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;国界线(已定)&lt;/td&gt;
+&lt;td&gt;620201&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;国界线(未定)&lt;/td&gt;
+&lt;td&gt;620202&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;省级界线&lt;/td&gt;
+&lt;td&gt;630200&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;特别行政区界&lt;/td&gt;
+&lt;td&gt;630400&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;地、市、州级行政区界&lt;/td&gt;
+&lt;td&gt;640200&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;县级行政区界&lt;/td&gt;
+&lt;td&gt;650200&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;特殊地区界限&lt;/td&gt;
+&lt;td&gt;670202&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;其他各图层内不同要素的分类编码可参考基础地理信息要素分类与代码（GB/T 13923-2006）。&lt;/p&gt;
+&lt;p&gt;此外，常用的还有 &lt;strong&gt;AGNP 各级行政地名和城乡居民地坐标（点）图层&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;行政地名点以政府驻地来定位，无GB码，以CLASS类别区分：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;行政地名点类型&lt;/th&gt;
+&lt;th&gt;CLASS类别&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;国名&lt;/td&gt;
+&lt;td&gt;AA&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;省（直辖市、自治区、特别行政区）行政地名&lt;/td&gt;
+&lt;td&gt;AB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;自治州、盟、地区行政地名&lt;/td&gt;
+&lt;td&gt;AC&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;地级市行政地名&lt;/td&gt;
+&lt;td&gt;AD&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;县级市行政地名&lt;/td&gt;
+&lt;td&gt;AE&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;县（自治县、旗、自治旗、地级市市辖区）级市行政地名&lt;/td&gt;
+&lt;td&gt;AF&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;县辖区及县级行政区域的派出机构地名&lt;/td&gt;
+&lt;td&gt;AG&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;街道办事处地名&lt;/td&gt;
+&lt;td&gt;AH&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;镇行政地名&lt;/td&gt;
+&lt;td&gt;AI&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;乡行政地名&lt;/td&gt;
+&lt;td&gt;AJ&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;建制村地名&lt;/td&gt;
+&lt;td&gt;AK&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;城镇区片、小区名&lt;/td&gt;
+&lt;td&gt;BA&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;自然村、屯、片村、村民小组名&lt;/td&gt;
+&lt;td&gt;BB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;牧点、渔点、棚房名&lt;/td&gt;
+&lt;td&gt;BC&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;其它&lt;/td&gt;
+&lt;td&gt;BD&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;党政机关、党派团体名&lt;/td&gt;
+&lt;td&gt;CA&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;企事业单位名&lt;/td&gt;
+&lt;td&gt;CB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;农、林、牧、渔场&lt;/td&gt;
+&lt;td&gt;CC&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;数据处理&#34;&gt;数据处理&lt;/h2&gt;
+&lt;p&gt;从网站上直接下载的数据是分图幅的 geodatabase(gdb) 数据库文件，如果需要用 GMT画“全国一张图”，需要：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;合并77个gdb文件中的同类要素&lt;/li&gt;
+&lt;li&gt;提取某类要素中的某个等级数据&lt;/li&gt;
+&lt;li&gt;转为gmt识别的文本格式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;gdb数据库文件合并&#34;&gt;gdb数据库文件合并&lt;/h3&gt;
+&lt;p&gt;采用本社区一贯推荐的&lt;a href=&#34;https://docs.gmt-china.org/latest/utilities/gdal/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GDAL/ORG库&lt;/a&gt;将分幅的gdb数据进行批量合并。
+首先解压所有下载的压缩包，得到以&lt;code&gt;.gdb&lt;/code&gt;结尾的目录。目录名类似&lt;code&gt;H51.gdb&lt;/code&gt;、&lt;code&gt;I49.gdb&lt;/code&gt;等。
+然后在这些目录的上级目录执行以下脚本：&lt;/p&gt;
+&lt;p&gt;Linux系统：
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#!/bin/bash
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;file&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;./final&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; i in &lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;ls -d *.gdb&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;do&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt; ! -d &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$file&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;k&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;           &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;creating final filefolder&amp;#34;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;           ogr2ogr -f &lt;span class=&#34;s1&#34;&gt;&amp;#39;ESRI Shapefile&amp;#39;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$file&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$i&lt;/span&gt; -lco &lt;span class=&#34;nv&#34;&gt;encoding&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;UTF-8
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;           &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;merging……&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      ogr2ogr -f &lt;span class=&#34;s1&#34;&gt;&amp;#39;ESRI Shapefile&amp;#39;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$file&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$i&lt;/span&gt; -update -append
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;done&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;Windows系统。注意必须保存为 bat 文件执行，直接复制粘贴到 cmd 中会出现报错：
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bat&#34; data-lang=&#34;bat&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;REM 将A49分幅的gdb数据转为一组shp格式的文件，文件夹命名为Merged&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;REM 编码为UTF-8以正确显示属性字段中的中文&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ogr2ogr -f &lt;span class=&#34;s2&#34;&gt;&amp;#34;ESRI Shapefile&amp;#34;&lt;/span&gt; -lco encoding=UTF-8 Merged A49.gdb
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;REM 将当前目录下剩余所有的gdb数据追加Merged，同类shp文件合并。&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;/f&lt;/span&gt; &lt;span class=&#34;se&#34;&gt;%%&lt;/span&gt;i &lt;span class=&#34;k&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;dir /b &amp;#34;*.gdb&amp;#34;&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;do&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ogr2ogr -f &lt;span class=&#34;s2&#34;&gt;&amp;#34;ESRI Shapefile&amp;#34;&lt;/span&gt; -update -append Merged &lt;span class=&#34;se&#34;&gt;%%&lt;/span&gt;i
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;pause&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;若安装有python环境，还可选择&lt;code&gt;ogrmerge.py&lt;/code&gt;工具进行批量的格式转换和合并，详见&lt;a href=&#34;https://www.gdal.org/ogrmerge.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ogrmerge使用手册&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;该节将分幅的交通、水系、边界等12类要素分别合并为全国一张图，最后转为12个shp文件。&lt;/p&gt;
+&lt;h3 id=&#34;查询gb代码与class类别&#34;&gt;查询GB代码与CLASS类别&lt;/h3&gt;
+&lt;p&gt;使用&lt;code&gt;ogrinfo&lt;/code&gt;可以查询shp文件内包含哪些要素。例如以下命令查询&lt;code&gt;BOUL.shp&lt;/code&gt;中包含的GB代码：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ogrinfo -sql &amp;#34;SELECT distinct GB FROM BOUL&amp;#34; BOUL.shp
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;而以下命令则查询&lt;code&gt;AGNP.shp&lt;/code&gt;中包含的CLASS类别：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ogrinfo -sql &amp;#34;SELECT distinct CLASS FROM AGNP&amp;#34; AGNP.shp
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;提取某类要素&#34;&gt;提取某类要素&lt;/h3&gt;
+&lt;p&gt;由于每个数据集（一个shp文件）中存在不同等级的要素，而实际可能只使用其中一种，则仍可利用&lt;code&gt;ogr2ogr&lt;/code&gt;工具提供的sql查询选项进行提取。&lt;/p&gt;
+&lt;p&gt;例如：&lt;/p&gt;
+&lt;p&gt;行政区划&lt;code&gt;BOUL&lt;/code&gt;图层中GB代码&lt;code&gt;620201&lt;/code&gt;、&lt;code&gt;620202&lt;/code&gt;、&lt;code&gt;250200&lt;/code&gt;分别为已定国界、未定国界和海岸线，那么提取数据并转化为GMT格式的命令为：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ogr2ogr -f GMT -where &amp;#34;GB=620201 or GB=620202 or GB=250200&amp;#34; BOUL_sub.gmt BOUL.shp
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;最后GMT绘图如下：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;gmt begin ChinaMap
+    gmt plot BOUL_sub.gmt -R70/145/3/55 -JM105/35/6.5i 
+gmt end show
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;绘图结果：&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;ChinaMap&#34; srcset=&#34;
+               /blog/national-geographic-database/09.ChinaMap_hu47343f6bb81026092cc844ec85bd411e_98501_f26dcbda7785023b8bd506c0b82158b2.webp 400w,
+               /blog/national-geographic-database/09.ChinaMap_hu47343f6bb81026092cc844ec85bd411e_98501_79d9c8cc22f3da63fa3de483bb3b0046.webp 760w,
+               /blog/national-geographic-database/09.ChinaMap_hu47343f6bb81026092cc844ec85bd411e_98501_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/national-geographic-database/09.ChinaMap_hu47343f6bb81026092cc844ec85bd411e_98501_f26dcbda7785023b8bd506c0b82158b2.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;721&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;如果想要提取行政地名点&lt;code&gt;AGNP&lt;/code&gt;图层中的建制村信息（对应CLASS为AK），则使用：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ogr2ogr -f GMT -where &amp;#34;CLASS=&amp;#39;AK&amp;#39;&amp;#34; AGNP.gmt AGNP.shp
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;注意因为CLASS类别为字符串，所以此处&lt;code&gt;AK&lt;/code&gt;需要加上引号。GB代码为整型数因而不需要加引号。&lt;/p&gt;
+&lt;p&gt;最后转换成的GMT格式数据如下：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;...
+# @NCLASS|NAME|PINYIN|GNID|XZNAME
+# @Tstring|string|string|string|string
+# FEATURE_DATA
+# @DAK|岙里王村|Aoliwangcun|330226114037|胡陈乡
+121.68517089 29.388652295
+# @DAK|坝头村|Batoucun|331022000000|亭旁镇
+121.310746425 29.0109724900001
+# @DAK|白岩村|Baiyancun|331082111028|尤溪镇
+120.971417165 28.7226002200001
+# @DAK|柏树下村|Baishuxiacun|331082116042|邵家渡街道
+121.257111875 28.8522451100001
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;以 Windows 系统为例，首先将以上数据的编码转换为GB2312，再使用以下代码绘制：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;gmt begin AGNP jpg
+  gmt set PS_CHAR_ENCODING Standard+
+
+  gmt basemap -R120/121/28/29 -JM10c -Baf
+  gmt grdimage @earth_relief_15s -Cgeo
+  gmt plot -Sc0.2c -Gred -W0p,black AGNP.gmt
+  chcp 936
+  gmt convert AGNP.gmt -a2=&amp;#34;NAME&amp;#34; | gmt text -F+f10p,40+jTL -D0.15c/0.3c -Gwhite
+gmt end
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;绘图结果：&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;AGNP&#34; srcset=&#34;
+               /blog/national-geographic-database/AGNP_hub0eb28ad9760b99d05935a01a7ae7699_306750_86d5ce844a1d4259c458209104530d5b.webp 400w,
+               /blog/national-geographic-database/AGNP_hub0eb28ad9760b99d05935a01a7ae7699_306750_2f7b5d372b8dbf435311e90fa87e5fc9.webp 760w,
+               /blog/national-geographic-database/AGNP_hub0eb28ad9760b99d05935a01a7ae7699_306750_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/national-geographic-database/AGNP_hub0eb28ad9760b99d05935a01a7ae7699_306750_86d5ce844a1d4259c458209104530d5b.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;758&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>GMT5在Windows下提示无法创建用户目录的解决办法</title>
+      <link>https://gmt-china.org/blog/user-directory-warning/</link>
+      <pubDate>Fri, 27 Oct 2017 00:00:00 +0000</pubDate>
+      <guid>https://gmt-china.org/blog/user-directory-warning/</guid>
+      <description>&lt;p&gt;GMT5的某些版本（&amp;lt;5.4.4）在某些特定的Windows下会出现如下警告信息：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;gmt: Unable to create GMT User directory : /Users/用户名/.gmt
+gmt: Auto-downloading of earth_relief_##m|s.grd files has been disabled.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这是一个Windows特有，但又不是所有人都会遇到的一个问题。出现该警告信息的本质原因
+在于，当前系统没有定义环境变量 &lt;code&gt;HOME&lt;/code&gt;，进而导致GMT无法知道当前计算机的主目录的
+具体位置。&lt;/p&gt;
+&lt;p&gt;虽然大部分情况下并不影响程序的正常运行，但总是出现这些警告信息真的有点难受。
+解决办法是：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1、打开 “我的电脑”-&amp;gt;“属性”-&amp;gt;“高级系统设置”-&amp;gt;“环境变量”
+2、新建 “系统变量”
+     变量名： HOME
+     变量值： C:\Users\用户名
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;重新运行GMT检查问题是否得到解决，可能需要重启计算机。&lt;/p&gt;
+&lt;p&gt;经测试，&lt;code&gt;HOME&lt;/code&gt; 变量的值可以取任意盘符中任何已存在的文件夹，正常情况下，
+执行脚本后会生成 &lt;code&gt;%HOME%/.gmt/cache&lt;/code&gt; 空文件夹。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>GMT 中文社区第三次线下聚餐</title>
+      <link>https://gmt-china.org/blog/gud-20171017/</link>
+      <pubDate>Tue, 17 Oct 2017 00:00:00 +0000</pubDate>
+      <guid>https://gmt-china.org/blog/gud-20171017/</guid>
+      <description>&lt;p&gt;金秋十月，秋高气爽，雁过留声。GMT 中文社区在北京成功举办了第三次线下聚餐活动。&lt;/p&gt;
+&lt;p&gt;2017 年 CGU 年会届时举行，全国同行汇集首都北京国际会议中心，我们借此机会齐聚一堂。
+个别同学本来表示由于时间原因或距离问题无法参会，最终还是觉得机会难得克服各种困难
+先后赶到。最终，13 位 GMTers 进行了一次成功的“网友见面会”。&lt;/p&gt;
+&lt;p&gt;在聚会上，本来活跃在 QQ 群里的大家面对面相互认识和了解了彼此的学习经历和科研方向，
+除了探讨了 GMT 学习、社区发展，还聊到了地震预报预警、防震减灾和地震学家如何对
+公众进行地震科普等问题。不仅如此，本次聚会大家还进行了一些简单的跨学科交流，
+桌上言谈之间对于自然科学研究及探索的热情和勇气溢于言表。&lt;/p&gt;
+&lt;p&gt;希望通过本次聚会我们能更加熟悉和了解该领域各个研究方向的同学，彼此保持
+更密切的联络，在科研道路上相互交流、积极互助。&lt;/p&gt;
+&lt;p&gt;科研道路上，知己天涯若比邻，期待下次再聚~&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /blog/gud-20171017/GUD-20171017-1_hu98a170cf69d9caf04998715da44e1a7b_797881_ca07fc3bf134f4aabb14ecde7cd56d5e.webp 400w,
+               /blog/gud-20171017/GUD-20171017-1_hu98a170cf69d9caf04998715da44e1a7b_797881_70cae30da2a303048b36054f82304fed.webp 760w,
+               /blog/gud-20171017/GUD-20171017-1_hu98a170cf69d9caf04998715da44e1a7b_797881_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/gud-20171017/GUD-20171017-1_hu98a170cf69d9caf04998715da44e1a7b_797881_ca07fc3bf134f4aabb14ecde7cd56d5e.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;570&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-从左至右依次为章浩东中科院地质与地球物理所王志伟地震局地质研究所王少卿地震局地球物理所-张琰地震局地球物理所张周广州地化所徐荟地震局地球物理所王亮成都理工杨晓瑜地震局地球物理所李佳威地震局地球物理所北大神秘人田冬冬中科大任昱南海所方洪健中科大胡少乾中科大&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;从左至右依次为：章浩东（中科院地质与地球物理所）、王志伟（地震局地质研究所）、王少卿（地震局地球物理所）、 张琰（地震局地球物理所）、张周（广州地化所）、徐荟（地震局地球物理所）、王亮（成都理工）、杨晓瑜（地震局地球物理所）、李佳威（地震局地球物理所&amp;#43;北大）、神秘人、田冬冬（中科大）、任昱（南海所）、方洪健（中科大）、胡少乾（中科大）&#34; srcset=&#34;
+               /blog/gud-20171017/GUD-20171017-2_huec3dee1505f57ae47c290e2a7230c1e1_845558_5cc50441586c9c0ab9c39101ee7f7643.webp 400w,
+               /blog/gud-20171017/GUD-20171017-2_huec3dee1505f57ae47c290e2a7230c1e1_845558_79e9f8640a0c654f9884907c741370da.webp 760w,
+               /blog/gud-20171017/GUD-20171017-2_huec3dee1505f57ae47c290e2a7230c1e1_845558_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/gud-20171017/GUD-20171017-2_huec3dee1505f57ae47c290e2a7230c1e1_845558_5cc50441586c9c0ab9c39101ee7f7643.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;493&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      从左至右依次为：章浩东（中科院地质与地球物理所）、王志伟（地震局地质研究所）、王少卿（地震局地球物理所）、 张琰（地震局地球物理所）、张周（广州地化所）、徐荟（地震局地球物理所）、王亮（成都理工）、杨晓瑜（地震局地球物理所）、李佳威（地震局地球物理所+北大）、神秘人、田冬冬（中科大）、任昱（南海所）、方洪健（中科大）、胡少乾（中科大）
+    &lt;/figcaption&gt;&lt;/figure&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>利用 Google Maps 获取超高精度高程数据</title>
+      <link>https://gmt-china.org/blog/google-maps-elevation-api/</link>
+      <pubDate>Thu, 14 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>https://gmt-china.org/blog/google-maps-elevation-api/</guid>
+      <description>&lt;p&gt;在绘制超小区域的地形图时，常需要超高精度的高程数据。&lt;/p&gt;
+&lt;p&gt;目前已知的公开高程数据中，ASTER GDEM的精度最高，为1弧秒，即约30米一个数据点。
+可以通过 Google Maps Elevation API 获取米级精度的数据。&lt;/p&gt;
+&lt;h2 id=&#34;数据简介&#34;&gt;数据简介&lt;/h2&gt;
+&lt;p&gt;Google Maps Elevation API 提供地球表面所有位置的海拔高度数据，包括海床上的深度位
+置（此类位置返回负值）。&lt;/p&gt;
+&lt;p&gt;官方文档：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://developers.google.com/maps/documentation/elevation/start?hl=zh-cn&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;入门指南&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developers.google.com/maps/documentation/elevation/intro?hl=zh-cn&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;开发人员指南&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;获取密钥-api-key&#34;&gt;获取密钥 API KEY&lt;/h2&gt;
+&lt;p&gt;想要从Google Maps中获取地形数据，首先需要一个密钥。
+可以从 &lt;a href=&#34;https://developers.google.com/maps/documentation/elevation/get-api-key&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;get API key&lt;/a&gt;
+页面开始申请秘钥（需要提供信用卡等信息）。&lt;/p&gt;
+&lt;p&gt;限额说明：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;每个用户最多可能只能申请10个免费密钥&lt;/li&gt;
+&lt;li&gt;每个密钥每天2500次免费请求&lt;/li&gt;
+&lt;li&gt;每次请求最多512个位置&lt;/li&gt;
+&lt;li&gt;每秒最多50次请求&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;使用说明&#34;&gt;使用说明&lt;/h2&gt;
+&lt;h3 id=&#34;获取单点高程&#34;&gt;获取单点高程&lt;/h3&gt;
+&lt;p&gt;通过简单的网络请求即可获取单点的高程：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;https://maps.googleapis.com/maps/api/elevation/json?locations=39.7391536,-104.9847034&amp;amp;key=YOUR_API_KEY
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;其中：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;locations=39.7391536,-104.9847034&lt;/code&gt; 指定了要获取高程的经纬度，纬度和经度之间用逗号分隔；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;key=YOU_API_KEY&lt;/code&gt; 指定了用户密钥，用户需要将自己申请的密钥替换 &lt;code&gt;YOU_API_KEY&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;将上面的链接复制到浏览器中，即可得到返回值为::&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{
+   &amp;quot;results&amp;quot; : [
+        {
+            &amp;quot;elevation&amp;quot; : 1608.637939453125,
+            &amp;quot;location&amp;quot; : {
+                &amp;quot;lat&amp;quot; : 39.73915360,
+                &amp;quot;lng&amp;quot; : -104.98470340
+            },
+            &amp;quot;resolution&amp;quot; : 4.771975994110107
+        }
+   ],
+   &amp;quot;status&amp;quot; : &amp;quot;OK&amp;quot;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;从中可以看到这一点的海拔高度是 1608.637939453125 米（小数点后几位可能都没有意义）。
+resolution给出了该点高程的分辨率值，即内插海拔高度的数据点之间的最大距离，以米为单位。&lt;/p&gt;
+&lt;h3 id=&#34;获取多点高程&#34;&gt;获取多点高程&lt;/h3&gt;
+&lt;p&gt;也可以在一次网络请求中获取多个点的高程，多个位置之间用 &lt;code&gt;|&lt;/code&gt; 分隔即可。例如：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;https://maps.googleapis.com/maps/api/elevation/json?locations=39.7391536,-104.9847034|36.455556,-116.866667&amp;amp;key=YOUR_API_KEY
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;但一次请求中的位置不能超过512个。&lt;/p&gt;
+&lt;h3 id=&#34;批量获取高程&#34;&gt;批量获取高程&lt;/h3&gt;
+&lt;p&gt;Google Maps 提供了多种客户端以实现批量获取高程。
+此处以&lt;a href=&#34;https://github.com/googlemaps/google-maps-services-python/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Python客户端&lt;/a&gt; 为例。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;安装 Google Map API 的 Python模块:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt; $ pip install -U googlemaps
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;获取密钥&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;参考如下脚本批量获取高程数据&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;ch&#34;&gt;#!/usr/bin/env python&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# -*- coding: utf-8 -*-&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;googlemaps&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;numpy&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;np&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;request_elevation&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;xmin&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;xmax&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;xinc&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ymin&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ymax&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;yinc&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;maxnum&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;512&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&amp;#34;Request elevation and return them with a list
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;    Parameter
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;    =========
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;    xmin : float
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;        minimum longitude, unit is degree
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;    xmax : float
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;        maximum longitude, unit is degree
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;    xinc : float
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;        increment of longitude
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;    ymin : float
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;        minimum latitude, unit is degree
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;    ymax : float
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;        maximum latitude, unit is degree
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;    yinc : float
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;        increment of latitude
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;    maxnum : int
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;        point number of one request, maximum value is 512
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;    &amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;xlist&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;arange&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;xmin&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;xmax&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;xinc&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;ylist&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;arange&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ymin&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ymax&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;yinc&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;points&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;y&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;y&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ylist&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;x&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;xlist&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;requestnum&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;floor&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;len&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;points&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;/&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;maxnum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;npoints&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;np&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;array_split&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;points&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;requestnum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;requestnum&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;2500&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Error: Request number exceed! Change grid or region.&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;gmaps&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;elevation&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;locations&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;loc&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;tolist&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;())&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;loc&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;npoints&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 设置要下载高程数据的经度范围、纬度范围以及网格间隔&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;xmin&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;xmax&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;xinc&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;120.000&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;129.005&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;0.00005&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;ymin&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ymax&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;yinc&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;30.000&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;30.005&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;0.00005&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;gmaps&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;googlemaps&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Client&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;key&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;YOU_API_KEY&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Obtain all elevations&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 请设置 maxnum 确保每一次请求的数据点数不超过 512 个以控制请求字符串长度&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;elevations&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;request_elevation&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;xmin&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;xmax&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;xinc&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ymin&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ymax&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;yinc&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;maxnum&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;512&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# output data with format `longitude   latitude elevation resolution`&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;with&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;open&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Elevations.dat&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;w&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;loclist&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;elevations&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;subloc&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;loclist&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;outputstr&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;{:.5f}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;si&#34;&gt;{:.5f}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;si&#34;&gt;{:.5f}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;si&#34;&gt;{:.5f}&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\n&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;format&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                &lt;span class=&#34;n&#34;&gt;subloc&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;location&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;][&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;lng&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                &lt;span class=&#34;n&#34;&gt;subloc&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;location&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;][&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;lat&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                &lt;span class=&#34;n&#34;&gt;subloc&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;elevation&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                &lt;span class=&#34;n&#34;&gt;subloc&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;resolution&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;])&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;writelines&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;outputstr&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>GMT 中文社区 QQ 群入群须知</title>
+      <link>https://gmt-china.org/blog/community-guide/</link>
+      <pubDate>Wed, 23 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>https://gmt-china.org/blog/community-guide/</guid>
+      <description>&lt;p&gt;欢迎加入“地学GMT中文社区群”：&lt;/p&gt;
+&lt;p&gt;&lt;i class=&#34;fab fa-qq&#34;&gt;&lt;/i&gt;  一群：218905582
+&lt;br&gt;
+&lt;i class=&#34;fab fa-qq&#34;&gt;&lt;/i&gt;  二群：791856541&lt;/p&gt;
+&lt;p&gt;GMT 中文社区群是一个相对活跃且学术氛围浓厚的群。本文是 GMT 中文社区群的入群须知，
+也是 GMT 中文社区的提问规范。希望所有群友可以阅读并遵守以下规范来营造更好的群环境。&lt;/p&gt;
+&lt;div class=&#34;row &#34;&gt;
+&lt;div class=&#34;col-md-6&#34;&gt;
+&lt;h4 id=&#34;群内可以做的事&#34;&gt;群内可以做的事&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;GMT 相关问题&lt;/li&gt;
+&lt;li&gt;其他地学软件相关问题&lt;/li&gt;
+&lt;li&gt;地学科研相关问题&lt;/li&gt;
+&lt;li&gt;求助文献&lt;/li&gt;
+&lt;li&gt;发科研相关的培训、会议信息&lt;/li&gt;
+&lt;li&gt;介绍并推广自己的最新研究成果&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&#34;col-md-6&#34;&gt;
+&lt;h4 id=&#34;群内禁止做的事&#34;&gt;群内禁止做的事：&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;发广告&lt;/li&gt;
+&lt;li&gt;签到、灌水等无意义行为&lt;/li&gt;
+&lt;li&gt;人身攻击&lt;/li&gt;
+&lt;li&gt;讨论政治问题&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;安装类问题&#34;&gt;安装类问题&lt;/h2&gt;
+&lt;p&gt;如果你在安装 GMT 的过程中遇到问题，请参照下面的模板提问。&lt;/p&gt;
+&lt;div class=&#34;alert alert-info&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;我在安装 GMT 的时候遇到了问题，请问该如何解决？谢谢。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;操作系统是&lt;/strong&gt;: Windows XP | Windows 7 | Ubuntu | CentOS | macOS &amp;hellip;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;要安装的GMT版本是&lt;/strong&gt;: GMT 4.5.16 | GMT 5.4.2 &amp;hellip;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;安装GMT参考的文档是&lt;/strong&gt;: &lt;em&gt;此处可贴文档的网址&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;安装过程中显示的错误信息为&lt;/strong&gt;: &lt;em&gt;此处可贴图&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;思路类问题&#34;&gt;思路类问题&lt;/h2&gt;
+&lt;p&gt;想要实现某一类图，但不知GMT能否实现或没有实现的思路。&lt;/p&gt;
+&lt;p&gt;如果别人文章中有自己想要实现的效果图就直接贴图，并指出自己在实现图中哪一部分
+时没有思路。如果找不到已有的效果图，可以考虑手绘示意图，或精准描述自己想要的
+效果，以免引起误会，造成不必要的时间浪费。&lt;/p&gt;
+&lt;div class=&#34;alert alert-info&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;em&gt;此处先贴一张图&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;请问图中的XXXXX能否用GMT实现？该如何实现？谢谢。&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-info&#34;&gt;
+  &lt;div&gt;
+    请问我想用GMT实现XXX效果。&lt;em&gt;此处详细介绍自己想要的效果&lt;/em&gt; 。不知GMT中该如何实现？
+谢谢。
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;如果遇到自己画出来的图与自己预期的图不一致，请参考如下模板。&lt;/p&gt;
+&lt;div class=&#34;alert alert-info&#34;&gt;
+  &lt;div&gt;
+    &lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;当前效果&lt;/strong&gt;：截图&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;预期效果&lt;/strong&gt;：预期效果截图，或对预期效果的精确描述&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;我的代码是&lt;/strong&gt;：给出自己使用的代码，可以截图可以贴代码。最好是给出最小示例而不是一堆代码。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GMT版本是&lt;/strong&gt;: GMT 5.4.2&lt;/li&gt;
+&lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;脚本报错类&#34;&gt;脚本报错类&lt;/h2&gt;
+&lt;p&gt;遇到绘图脚本或数据处理脚本出错时，请参考如下模板。&lt;/p&gt;
+&lt;div class=&#34;alert alert-info&#34;&gt;
+  &lt;div&gt;
+    &lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;我想要实现的是&lt;/strong&gt; ：&amp;hellip;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;我的命令/脚本是&lt;/strong&gt;: 可截图或贴脚本&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;终端报错是&lt;/strong&gt;: 终端报错截图&lt;/li&gt;
+&lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;文献求助&#34;&gt;文献求助&lt;/h2&gt;
+&lt;p&gt;需要他人帮忙下载文献时，请先使用 sci-hub 工具自行尝试下载
+（&lt;a href=&#34;https://gmt-china.org/blog/sci-hub/&#34;&gt;sci-hub教程&lt;/a&gt;）。&lt;/p&gt;
+&lt;p&gt;对于中文文献或 sci-hub 无法下载的文献，方可在群中寻找帮助。求助文献时，请先明确
+告知“使用 sci-hub无 法下载该文章”并提供文章的官方链接。若找不到官方链接，则提供
+文章的标题、作者、期刊、年份等信息。&lt;/p&gt;
+&lt;p&gt;求助文献示例如下：&lt;/p&gt;
+&lt;div class=&#34;alert alert-info&#34;&gt;
+  &lt;div&gt;
+    文献求助！我已经尝试用 sci-hub 下载但依然下载不到。文章链接为: XXXXXXX。谢谢。
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;提问的智慧&#34;&gt;提问的智慧&lt;/h2&gt;
+&lt;p&gt;时间对任何人都是一笔宝贵的财富。没有人有义务回答你的问题。在期望别人回答你的问题
+之前先要问一问自己针对这个问题做了哪些努力。&lt;/p&gt;
+&lt;h3 id=&#34;提问前需要做的事情&#34;&gt;提问前需要做的事情&lt;/h3&gt;
+&lt;p&gt;大多数的问题，文档都可以为你提供标准的解答。因此在你提问之前，你最好先去阅读一下
+相关的文档，至少确保你阅读过一份完整的入门文档。如果你能够在你提问的同时表明
+自己已经阅读过文档，但是依旧留有困惑，潜在的回答者会更加愿意为你解答。&lt;/p&gt;
+&lt;p&gt;推荐的一些文档：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.gmt-china.org/latest/gallery/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GMT 中文社区：图库&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.gmt-china.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GMT 中文手册&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.generic-mapping-tools.org/latest/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GMT 官方文档&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;提问技巧&#34;&gt;提问技巧&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;精确描述自己做了什么，遇到了什么问题，要提供足够的信息给潜在的回答者，尽量避免
+回答者多次要求提问者补充额外的信息的情况。&lt;/li&gt;
+&lt;li&gt;提供当前所使用的代码。贴完图之后如果自行修正了代码中的某些错误，一定要更新图。&lt;/li&gt;
+&lt;li&gt;提供截图以及文本。有些时候需要准确看到代码的样子，此时截图更合适；有些时候需要
+复制代码在自己电脑上跑一遍，此时提供文本更合适。&lt;/li&gt;
+&lt;li&gt;提问时说一说自己为了解决这个问题做了哪些事情，没人喜欢“伸手党”。&lt;/li&gt;
+&lt;li&gt;时间对任何人都是一笔宝贵的财富，请心怀感恩之心。&lt;/li&gt;
+&lt;li&gt;当你解决了某个问题（不管是别人帮助还是自己茅塞顿开），请不要吝啬告诉大家你的解决方案&lt;/li&gt;
+&lt;li&gt;当别人正在讨论某个问题时，请不要中间插入自己的问题，待别人的问题告一段落之后再提问。&lt;/li&gt;
+&lt;li&gt;除非必要，不要在首次发问的时候@某个人，这样给所有人的感觉是你在向这个人提问，
+从而失去了更多的潜在回答者。&lt;/li&gt;
+&lt;li&gt;有问题就直接问，不必管有没有人用过。很多时候，你在A软件中遇到的问题可能跟A软件
+完全没有关系，完全没接触过A软件的人可能也可以帮你解决该问题。&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>投稿须知</title>
+      <link>https://gmt-china.org/blog/instructions-for-authors/</link>
+      <pubDate>Thu, 17 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>https://gmt-china.org/blog/instructions-for-authors/</guid>
+      <description>&lt;p&gt;GMT 中文社区欢迎读者投稿，稿件主要包括社区博文和绘图实例两大类。&lt;/p&gt;
+&lt;h2 id=&#34;稿件类型&#34;&gt;稿件类型&lt;/h2&gt;
+&lt;h3 id=&#34;社区博文&#34;&gt;社区博文&lt;/h3&gt;
+&lt;p&gt;社区博文是与 GMT 官方及社区活动有关的简短文章，包括但不限于：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;GMT 官方新闻（比如新版本发布）&lt;/li&gt;
+&lt;li&gt;GMT 社区新闻（比如聚餐与培训）&lt;/li&gt;
+&lt;li&gt;GMT 使用技巧等&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;绘图实例&#34;&gt;绘图实例&lt;/h3&gt;
+&lt;p&gt;绘图实例是指使用 GMT 绘制的具有典型性的图件。
+目前社区维护的绘图实例位于
+&lt;a href=&#34;https://docs.gmt-china.org/latest/gallery/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GMT 中文手册：绘图实例&lt;/a&gt;中。&lt;/p&gt;
+&lt;p&gt;请参考&lt;a href=&#34;https://docs.gmt-china.org/latest/contributing/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GMT 中文手册：贡献指南&lt;/a&gt;，
+直接向中文手册提交绘图实例。&lt;/p&gt;
+&lt;h2 id=&#34;投稿方式&#34;&gt;投稿方式&lt;/h2&gt;
+&lt;p&gt;可以通过如下几种方式投稿：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;直接在 &lt;a href=&#34;https://github.com/gmt-china/gmt-china.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;社区主页&lt;/a&gt;
+或 &lt;a href=&#34;https://github.com/gmt-china/GMT_docs&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GMT中文手册&lt;/a&gt; 的 GitHub 仓库中
+提交 Issue 或 Pull Request。
+（不熟悉 Pull Request 的读者可以参考 &lt;a href=&#34;https://seismo-learn.org/contributing/pull-request/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pull Request 流程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;将稿件发送至 &lt;a href=&#34;mailto:admin@gmt-china.org&#34;&gt;admin@gmt-china.org&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;作者权益&#34;&gt;作者权益&lt;/h2&gt;
+&lt;p&gt;请确保你有将稿件投稿到社区的权利，特别是在图件修改自他人图件的情况下。
+你所拥有的权益是稿件公开后，你有署名权（如果维护者对你的稿件有大改，
+则维护者可能会在你的名字后面署名）。接受的稿件在公开后，任何人对你的稿件都可以
+以任何媒介以任何形式进行复制、发行、修改、转换或以其为基础进行再创作用于任何
+可能的用途，包括商业目的。别人在使用你的作品之后，应当提及你和 GMT 中文社区，
+但社区无法保证第三方会尊重你的权益。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>使用sci-hub下载文献</title>
+      <link>https://gmt-china.org/blog/sci-hub/</link>
+      <pubDate>Sat, 12 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>https://gmt-china.org/blog/sci-hub/</guid>
+      <description>&lt;p&gt;科研人员经常要看一些全文，但由于单位不可能花钱购买所有数据库的下载权限，
+因而会经常需要需要付费下载文章的情况。本文将介绍文献下载的好工具 sci-hub，
+可以下载到绝大多数外文期刊的文章甚至书籍。&lt;/p&gt;
+&lt;h2 id=&#34;sci-hub-网站&#34;&gt;sci-hub 网站&lt;/h2&gt;
+&lt;p&gt;sci-hub 是一个在线网站，可以下载众多本该付费下载的文章，因而本质上是非法的，
+用户请自行判断。原始域名已经被封禁，用户可以访问如下网站获取可用的网址：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://whereisscihub.now.sh/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://whereisscihub.now.sh/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;使用方法&#34;&gt;使用方法&lt;/h2&gt;
+&lt;p&gt;下面将用多种方法演示如何下载地球科学引用率非常高的一篇文章 Preliminary reference Earth model。&lt;/p&gt;
+&lt;p&gt;要下载一篇文章，需要知道如下两个信息中的至少一个：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;文献的官方网址，比如 &lt;a href=&#34;https://www.sciencedirect.com/science/article/pii/0031920181900467&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.sciencedirect.com/science/article/pii/0031920181900467&lt;/a&gt;,
+可以通过 Google Scholar 等网站搜索得到&lt;/li&gt;
+&lt;li&gt;文献的DOI，比如 &lt;code&gt;10.1016/0031-9201(81)90046-7&lt;/code&gt;，可以从文章的官方网站上找到，
+现在大多数文章的参考文献也要求给出DOI信息&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;DOI 是 Digital Object Identifier 的缩写，也叫唯一标识符，是国际通用、
+全球唯一、终身不变的数字资源标识符。正如我们每人都有自己独一无二的身份证号一样，
+DOI代码具有唯一性，一旦分配，终身不变。已知DOI，将 DOI 加到 &lt;a href=&#34;https://dx.doi.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://dx.doi.org/&lt;/a&gt; 后
+（例如 &lt;a href=&#34;https://dx.doi.org/10.1016/0031-9201%2881%2990046-7&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://dx.doi.org/10.1016/0031-9201(81)90046-7&lt;/a&gt; ）即可跳转到该文章的真实网址。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;到-sci-hub-网站下载&#34;&gt;到 sci-hub 网站下载&lt;/h3&gt;
+&lt;p&gt;访问 sci-hub 网址，比如 &lt;a href=&#34;https://sci.hubg.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://sci.hubg.org/&lt;/a&gt; ，如下图所示：&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;sci-hub主页&#34; srcset=&#34;
+               /blog/sci-hub/sci-hub-homepage_huf742b26f81888ed21ce09c51811961f9_145831_848fade44d3de3837dcf9d5c3ea49556.webp 400w,
+               /blog/sci-hub/sci-hub-homepage_huf742b26f81888ed21ce09c51811961f9_145831_c8182fb81fd9bef0ea1f958f1b84cb30.webp 760w,
+               /blog/sci-hub/sci-hub-homepage_huf742b26f81888ed21ce09c51811961f9_145831_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/sci-hub/sci-hub-homepage_huf742b26f81888ed21ce09c51811961f9_145831_848fade44d3de3837dcf9d5c3ea49556.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;407&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;将文献网址或DOI粘贴到搜索框中，按下确认键或点击搜索框右边的open按钮即可。&lt;/p&gt;
+&lt;h3 id=&#34;直接利用网址下载全文&#34;&gt;直接利用网址下载全文&lt;/h3&gt;
+&lt;p&gt;打开文章对应的网址，在域名的后面加上 sci-hub 的域名，比如 &lt;code&gt;sci-hub.org&lt;/code&gt; 即可。&lt;/p&gt;
+&lt;p&gt;例如，这篇文章的网址是 &lt;a href=&#34;https://www.sciencedirect.com/science/article/pii/0031920181900467&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.sciencedirect.com/science/article/pii/0031920181900467&lt;/a&gt; ，
+在域名的后面加上 sci-hub 的域名，变成：
+&lt;a href=&#34;https://www.sciencedirect.com.sci-hub.org/science/article/pii/0031920181900467&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.sciencedirect.com.sci-hub.org/science/article/pii/0031920181900467&lt;/a&gt;
+即可直接下载文章全文。&lt;/p&gt;
+&lt;h3 id=&#34;直接利用doi下载全文&#34;&gt;直接利用DOI下载全文&lt;/h3&gt;
+&lt;p&gt;已知文章DOI的前提下，直接在 sci-hub 域名后面加上 DOI 即可，比如直接访问
+&lt;a href=&#34;https://sci-hub.org/10.1016/0031-9201%2881%2990046-7&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://sci-hub.org/10.1016/0031-9201(81)90046-7&lt;/a&gt; 即可下载文章全文。&lt;/p&gt;
+&lt;h2 id=&#34;注意事项&#34;&gt;注意事项&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;当文献下载过频繁会要求用户输入验证码，如下图：&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;sci-hub验证码&#34; srcset=&#34;
+               /blog/sci-hub/sci-hub-captcha_hu9fd9782435d308c7467286210ab48f61_172703_5117aa30487283ed03aeb961ce7b8834.webp 400w,
+               /blog/sci-hub/sci-hub-captcha_hu9fd9782435d308c7467286210ab48f61_172703_a618df7f14a02f50bdc633b367c1b60c.webp 760w,
+               /blog/sci-hub/sci-hub-captcha_hu9fd9782435d308c7467286210ab48f61_172703_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/sci-hub/sci-hub-captcha_hu9fd9782435d308c7467286210ab48f61_172703_5117aa30487283ed03aeb961ce7b8834.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;386&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;DOI是如 &lt;code&gt;10.1016/0031-9201(81)90046-7&lt;/code&gt; 这样的字符串，前面不要带 &lt;code&gt;doi:&lt;/code&gt; 等其他字符。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;sci-hub 不支持下载国内期刊的文章&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>GMT中文社区第二次线下聚餐</title>
+      <link>https://gmt-china.org/blog/gud-20160921/</link>
+      <pubDate>Tue, 27 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>https://gmt-china.org/blog/gud-20160921/</guid>
+      <description>&lt;p&gt;2016年9月21日，借GMT中文社区首次线下培训契机，在社区创始人田冬冬博士和GMT群管理员
+刘珠妹老师的号召下，GMT中文社区在湖北武汉组织了第二次线下聚餐（GMT User Dinner，简称GUD），
+四位群管理员和来自河北、福建、安徽、甘肃、湖北等地的共16位社区成员参加了此次聚会。&lt;/p&gt;
+&lt;p&gt;聚会伊始，杨萍带来了兰州似火的热情，为大家奉上美味糖果牦牛肉，大红色的包装纸
+被单斌老师认成喜糖。红色代表着喜庆，象征着今天大家有缘聚在一起，也是一种皆大
+欢喜的团圆。随后大家自我介绍了自己的群内ID和真实姓名，社区成员对彼此的学习情况、
+工作经历、研究领域等有了初步认识。稍后，社区成员商讨了GMT社区网站的美观设计、
+腾讯网盘容量已扩容性问题、相同问题反复提问和解答等。针对上述内容，田博士希望
+将来可以重新设计一个漂亮的社区logo，建议把GMT社区内容重新移植回QQ群文件中，
+并希冀整理群问题的工作可以尽快开展，因此再次号召更多志愿者加入到GMT社区的管理
+和维护工作。稍后，大家谈到了亘古不变的话题“虎哥究竟是男是女”，众人仁者见
+仁智者见智，各持己见，瞬间聚会气氛达到了高潮，可惜的是虎哥本人并不在现场！&lt;/p&gt;
+&lt;p&gt;随后田博士在师弟和美女的陪同下，参观了位于东湖之滨、珞珈山下、拥有百年历史的
+全国重点高校—国立武汉大学。走出武大校园后，随后乘船游览了国家5A级旅游景区—东湖。
+此次聚会活动虎哥没有参加，但虎哥热情依在，虎哥看完聚会照片，和大家调侃了“桂花山药”
+美味的一盘菜，并押宝5毛，最后在虎哥强烈邀约下，筹备了第三次线下聚餐活动。&lt;/p&gt;
+&lt;p&gt;GMT社区线下聚会在轻松愉快的氛围中结束，此次聚会谈论话题广泛，但又不失主题性，
+为GMT社区成员之间深入交流提供了一个很好的平台，促进了GMT社区的稳健成长。
+遥祝GMT中文社区像东湖一样，可以永葆原创魅力，又像武汉大学一样，亦可承载
+一路的历史、厚重、辉煌！ “相见时难别亦难”，美好的聚会终有一别，这次聚会虽然短暂，
+但短暂的聚会让我们会加倍的去珍惜，希望下一次聚会再团聚！&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-参会人员从左往右依次为章婷湖北省地震局刘珠妹中国地震局地震研究所王丽霞中国地震局兰州地震研究所杨萍中国地震局兰州地震研究所郑海刚安徽省地震局谢小晋中国地质大学-武汉贾媛山东省地震局杨锦玲福建省地震局田冬冬中国科学技术大学肖晓武汉大学赵志远河北省地震局刘旭耀中国地质大学-武汉罗娜河北省地震局邓明莉中国科学院测量与地球物理研究所刘成利中国地质大学-武汉单斌中国地质大学-武汉&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;参会人员从左往右依次为：章婷（湖北省地震局）、刘珠妹（中国地震局地震研究所）、王丽霞（中国地震局兰州地震研究所）、杨萍（中国地震局兰州地震研究所）、郑海刚（安徽省地震局）、谢小晋（中国地质大学-武汉）、贾媛（山东省地震局）、杨锦玲（福建省地震局）、田冬冬（中国科学技术大学）、肖晓（武汉大学）、赵志远（河北省地震局）、刘旭耀（中国地质大学-武汉）、罗娜（河北省地震局）、邓明莉（中国科学院测量与地球物理研究所）、刘成利（中国地质大学-武汉）、单斌（中国地质大学-武汉）&#34; srcset=&#34;
+               /blog/gud-20160921/GUD-20160921_huafb73f337da936cf3b994b5d2cd7b25b_837863_7f14ff346008b86ae8d679eb5d33e560.webp 400w,
+               /blog/gud-20160921/GUD-20160921_huafb73f337da936cf3b994b5d2cd7b25b_837863_27d3f8df1552a6e384205973889567e3.webp 760w,
+               /blog/gud-20160921/GUD-20160921_huafb73f337da936cf3b994b5d2cd7b25b_837863_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/gud-20160921/GUD-20160921_huafb73f337da936cf3b994b5d2cd7b25b_837863_7f14ff346008b86ae8d679eb5d33e560.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;570&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      参会人员从左往右依次为：章婷（湖北省地震局）、刘珠妹（中国地震局地震研究所）、王丽霞（中国地震局兰州地震研究所）、杨萍（中国地震局兰州地震研究所）、郑海刚（安徽省地震局）、谢小晋（中国地质大学-武汉）、贾媛（山东省地震局）、杨锦玲（福建省地震局）、田冬冬（中国科学技术大学）、肖晓（武汉大学）、赵志远（河北省地震局）、刘旭耀（中国地质大学-武汉）、罗娜（河北省地震局）、邓明莉（中国科学院测量与地球物理研究所）、刘成利（中国地质大学-武汉）、单斌（中国地质大学-武汉）
+    &lt;/figcaption&gt;&lt;/figure&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>GMT中文社区首次线下培训</title>
+      <link>https://gmt-china.org/blog/gmtcon-20160921/</link>
+      <pubDate>Sun, 25 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>https://gmt-china.org/blog/gmtcon-20160921/</guid>
+      <description>&lt;p&gt;2016年9月21至22日，GMT中文社区协同中国地震局地震研究所和中国地震局地壳形变学科
+技术管理组举行了首次GMT线下培训活动。&lt;/p&gt;
+&lt;p&gt;此次培训邀请了田冬冬（中国科学技术大学在读博士，社区 ID：知名不具）、
+单斌（中国地质大学特任教授，社区 ID：Bins）和
+刘珠妹（中国地震局地震研究所，社区 ID：忆尤）三位老师在湖北省地震局21楼报告厅
+做了《GMT入门、基础及进阶》、《GMT应用与科技论文写作》、《地学常见GMT图件模板讲解》
+专题培训讲座，来自全国地震系统的学员和慕名人士共计120余人参加了此次培训。&lt;/p&gt;
+&lt;p&gt;此次培训考虑到培训人员GMT操作能力差异巨大，为了尽可能地照顾到所有培训人员的需求，
+经过一个月精心调研准备，从内容、思路、绘图技巧等方面综合考虑，确定了此次GMT专题
+讲座的最终主题。&lt;/p&gt;
+&lt;p&gt;21日上午田冬冬博士首先介绍了GMT的概念、开发团队、GMT的版本等，
+随后对GMT基础知识、配置文件、常用命令进行了详细讲解，最后总结了GMT学习方法及
+学习资源，对GMT中文社区创建初衷、社区功能、未来发展等做了阐述，并呼吁各位
+仁人志士加入到GMT社区的设计和日常维护中。&lt;/p&gt;
+&lt;p&gt;单斌教授对GMT做了简单介绍，随后深入浅出的介绍了GMT常用选项、常用命令、shell脚本
+编写等，并对GMT在科技论文中的应用做了具体实例讲解，提供了科技论文写作技巧。
+最后具神指出了GMT5和GMT4的语法命令区别，对学习兴趣、专业优势等和大家做了深入
+分享交流。&lt;/p&gt;
+&lt;p&gt;22日下午刘珠妹老师对地学常见GMT图件模板进行了讲解，刘老师首先讲授了怎样读懂脚本的
+使用平台、脚本版本、脚本结构等内容，然后讲授了编写绘图脚本的6个基本步骤，
+介绍了自由空气异常图、布格异常图等几种常用绘图模板，讨论了中文支持、脚本批量运行、
+二次开发等GMT绘图技巧，刘老师强调在学习过程中，应对照样例修改参数，
+具体问题具体分析，带着问题去找答案。&lt;/p&gt;
+&lt;p&gt;此次GMT专题培训授课内容全面、专题性比较强、课程安排比较合理，通过此次培训，
+推广了GMT的使用范围，提高了GMT软件在日常工作中实际操作应用能力，
+促进了GMT群和GMT中文社区的未来更快更好发展，加强了GMT群成员的交流，
+此次培训取得了预期效果，期待下一次培训的召开。&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;田冬冬&#34; srcset=&#34;
+               /blog/gmtcon-20160921/GMTCon20160921-1_hufa6f9c68e54c09f4a62327e6e8aed350_291187_a1cddd8a933b616ce400f1cd3bafa169.webp 400w,
+               /blog/gmtcon-20160921/GMTCon20160921-1_hufa6f9c68e54c09f4a62327e6e8aed350_291187_634952eb6d3a5ed90d01f7bc2da7b39c.webp 760w,
+               /blog/gmtcon-20160921/GMTCon20160921-1_hufa6f9c68e54c09f4a62327e6e8aed350_291187_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/gmtcon-20160921/GMTCon20160921-1_hufa6f9c68e54c09f4a62327e6e8aed350_291187_a1cddd8a933b616ce400f1cd3bafa169.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;507&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;单斌&#34; srcset=&#34;
+               /blog/gmtcon-20160921/GMTCon20160921-2_huefac1f45a4af092d8acbd9d28a43f6fa_284705_b610a6dbd02d6bd3fe37e69f3690ba67.webp 400w,
+               /blog/gmtcon-20160921/GMTCon20160921-2_huefac1f45a4af092d8acbd9d28a43f6fa_284705_ea991405a89c79a8581223ef9d158306.webp 760w,
+               /blog/gmtcon-20160921/GMTCon20160921-2_huefac1f45a4af092d8acbd9d28a43f6fa_284705_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/gmtcon-20160921/GMTCon20160921-2_huefac1f45a4af092d8acbd9d28a43f6fa_284705_b610a6dbd02d6bd3fe37e69f3690ba67.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;507&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;刘珠妹&#34; srcset=&#34;
+               /blog/gmtcon-20160921/GMTCon20160921-3_huaeb15ebfc4264d19b0e8b4d9d90c92f7_358187_d7f100080f647723124ef986160a5f7f.webp 400w,
+               /blog/gmtcon-20160921/GMTCon20160921-3_huaeb15ebfc4264d19b0e8b4d9d90c92f7_358187_4909b792319b47c09538fe6493a11efc.webp 760w,
+               /blog/gmtcon-20160921/GMTCon20160921-3_huaeb15ebfc4264d19b0e8b4d9d90c92f7_358187_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/gmtcon-20160921/GMTCon20160921-3_huaeb15ebfc4264d19b0e8b4d9d90c92f7_358187_d7f100080f647723124ef986160a5f7f.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;507&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;现场互动&#34; srcset=&#34;
+               /blog/gmtcon-20160921/GMTCon20160921-4_hu544bc5678527035feead4557d8b92eb3_385829_a9f53c46857e33169bb542ecd11e6f4f.webp 400w,
+               /blog/gmtcon-20160921/GMTCon20160921-4_hu544bc5678527035feead4557d8b92eb3_385829_c41273b7e4f2317ce0d1c9a4a9570f5a.webp 760w,
+               /blog/gmtcon-20160921/GMTCon20160921-4_hu544bc5678527035feead4557d8b92eb3_385829_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/gmtcon-20160921/GMTCon20160921-4_hu544bc5678527035feead4557d8b92eb3_385829_a9f53c46857e33169bb542ecd11e6f4f.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;507&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>GMT中文社区首次线下聚餐</title>
+      <link>https://gmt-china.org/blog/gud-20160628/</link>
+      <pubDate>Sat, 24 Sep 2016 00:00:00 +0000</pubDate>
+      <guid>https://gmt-china.org/blog/gud-20160628/</guid>
+      <description>&lt;p&gt;2016年6月28日，GMT中文社区在北京举行了首次GMT用户线下聚餐（GMT User Dinner，简称GUD）。&lt;/p&gt;
+&lt;p&gt;6月27日至29日，很多GMT用户参加了在中国科学院地质与地球物理研究所举办的
+“首届中国区域地震学参考模型交流会”。
+社区创始人田冬冬提议借此机会，举行社区的第一次线下聚会。&lt;/p&gt;
+&lt;p&gt;6月28日晚，参与聚会的GMT社区用户相约前往北京北辰西路的芝麻花餐厅聚会。
+在聚会上，社区成员相互认识，对彼此的研究领域、GMT 学习和社区的发展进行了交流和讨论。&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-左至右依次为李佳威中国地震局地球物理研究所王志伟中国地震局地质研究所田冬冬中国科学技术大学王亮桂林理工大学李君中国地震局第二监测中心&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;左至右依次为：李佳威（中国地震局地球物理研究所）、王志伟（中国地震局地质研究所）、田冬冬（中国科学技术大学）、王亮（桂林理工大学）、李君（中国地震局第二监测中心&#34; srcset=&#34;
+               /blog/gud-20160628/GUD-20160628_huc804dcc579c6cbb80b51109e35ac1af5_240262_4ec50d67fd775edbe75fe70531d7985a.webp 400w,
+               /blog/gud-20160628/GUD-20160628_huc804dcc579c6cbb80b51109e35ac1af5_240262_74d7c5e9fd0680d30beaa0cc9967827b.webp 760w,
+               /blog/gud-20160628/GUD-20160628_huc804dcc579c6cbb80b51109e35ac1af5_240262_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/gud-20160628/GUD-20160628_huc804dcc579c6cbb80b51109e35ac1af5_240262_4ec50d67fd775edbe75fe70531d7985a.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;570&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      左至右依次为：李佳威（中国地震局地球物理研究所）、王志伟（中国地震局地质研究所）、田冬冬（中国科学技术大学）、王亮（桂林理工大学）、李君（中国地震局第二监测中心
+    &lt;/figcaption&gt;&lt;/figure&gt;</description>
+    </item>
+    
+    <item>
+      <title>GMT国内镜像正式建成</title>
+      <link>https://gmt-china.org/blog/mirror-site-founded/</link>
+      <pubDate>Fri, 08 Jul 2016 00:00:00 +0000</pubDate>
+      <guid>https://gmt-china.org/blog/mirror-site-founded/</guid>
+      <description>&lt;p&gt;经过本社区积极联系，GMT中国区镜像站点已于2016年7月6日正式建立，并已加入GMT官网镜像列表中。
+该镜像站点依托中国科学技术大学LUG服务器，是中国唯一的一个 GMT 镜像站。
+GMT国内镜像的建立，可以大大加快下载GMT源码及相关数据的速度。&lt;/p&gt;
+&lt;h2 id=&#34;gmt-源码包镜像&#34;&gt;GMT 源码包镜像&lt;/h2&gt;
+&lt;p&gt;镜像地址：&lt;a href=&#34;http://mirrors.ustc.edu.cn/gmt/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://mirrors.ustc.edu.cn/gmt/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;GMT 源码包镜像中包含了 GMT 源码软件包以及 GSHHG 和 DCW 数据压缩包。
+进入 GMT 镜像即可直接下载 GMT 源码包，Windows/Mac 安装包位于镜像的 &lt;code&gt;bin&lt;/code&gt; 目录下。&lt;/p&gt;
+&lt;h2 id=&#34;gmt-远程数据镜像&#34;&gt;GMT 远程数据镜像&lt;/h2&gt;
+&lt;p&gt;镜像地址：&lt;a href=&#34;https://mirrors.ustc.edu.cn/gmtdata/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://mirrors.ustc.edu.cn/gmtdata/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;GMT 远程数据镜像中提供了全球地形起伏等地学数据。该镜像的使用方法可以参考
+&lt;a href=&#34;https://docs.gmt-china.org/latest/dataset/usage/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://docs.gmt-china.org/latest/dataset/usage/&lt;/a&gt;。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>GMT中文社区正式成立</title>
+      <link>https://gmt-china.org/blog/gmt-china-community-founded/</link>
+      <pubDate>Wed, 06 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>https://gmt-china.org/blog/gmt-china-community-founded/</guid>
+      <description>&lt;p&gt;GMT的中文用户们，大家好，我是 &lt;a href=&#34;https://seisman.info&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;seisman&lt;/a&gt; 。&lt;/p&gt;
+&lt;p&gt;GMT中文社区于今日正式成立了！&lt;/p&gt;
+&lt;p&gt;GMT中文社区是针对GMT中文用户而成立的社区。整个社区目前包含了三个主要部分：
+社区主站、GMT中文手册和问答社区。&lt;/p&gt;
+&lt;p&gt;在社区的第一篇博文中，我想谈谈建立这个社区的原因及一些想法。&lt;/p&gt;
+&lt;h2 id=&#34;gmt中文手册&#34;&gt;GMT中文手册&lt;/h2&gt;
+&lt;p&gt;GMT中文手册的项目始于2014年，到2016年初已经初步成形。&lt;/p&gt;
+&lt;p&gt;在2014年，网络上能够找到的几本GMT中文文档，大多基于GMT4甚至GMT3。
+这几本文档存在一些明显的缺陷：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;排版质量一般，大多是在Word里写好然后转换成PDF的&lt;/li&gt;
+&lt;li&gt;缺乏维护，几乎都是写好发布之后就没有再更新&lt;/li&gt;
+&lt;li&gt;不完整，很多有价值的内容都没有被包含在文档中&lt;/li&gt;
+&lt;li&gt;不严谨，很多文档声称是基于GMT4，但实际上某些命令却在使用GMT3的语法&lt;/li&gt;
+&lt;li&gt;无法适配最新版的GMT，某些时候对于新用户而言是一种障碍&lt;/li&gt;
+&lt;li&gt;重复劳动：不同的作者，花费了大量的时间和精力，翻译整理出了几份相似的文档，
+这其中很多工作都是在重复劳动&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;因而，我于2014年开始写针对GMT5的中文手册。新的GMT中文手册具有如下特点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;开源：源代码用rST语言写成，并在GitHub上开源&lt;/li&gt;
+&lt;li&gt;高质量排版：文档有网页版和PDF版，保证高质量的排版（目前尚存在不足，见第5条）&lt;/li&gt;
+&lt;li&gt;完整性：尽可能覆盖GMT的方方面面，成为一个完整的参考手册（没有最完整，只有更完整，见第5条）&lt;/li&gt;
+&lt;li&gt;协同合作：依托强大的GitHub和Git，使得多人合作共同编辑同一份文档变得很简单&lt;/li&gt;
+&lt;li&gt;持续维护：不仅适配GMT的新版本，而且不断修正文档中存在的错误&lt;/li&gt;
+&lt;li&gt;严谨性：尽可能保证所有命令均通过GMT最新版本的测试&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;经过两年努力，文档的整体结构已经大体完成。我希望文档今后能够持续更新，不断完善，
+不管是接下来的GMT 5.2.2、5.3.0还是未来的GMT 6.0甚至7.0，都能随着GMT版本的升级
+而不断更新，但这些已非我一人之力所能完成。众人拾柴火焰高。我希望有更多的GMT中文
+用户加入到文档维护的队伍中来，这便是我建立GMT中文社区的目的。&lt;/p&gt;
+&lt;h2 id=&#34;问答社区&#34;&gt;问答社区&lt;/h2&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    问答社区试运行了一段时间，但最终还是因为用户参与度较低而决定关闭问答社区。
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;GMT问答社区的前身是地学GMT学习群（群号：218905582）。QQ群属于即时通讯，通常在
+群中提的问题都可以快速得到答案，但与此同时，QQ群存在如下缺点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;即时性导致的随意性：由于QQ本质上是一种聊天工具，导致很多人在提问时太过随意。
+遇到问题时，不加思索在QQ群中提问，却不去思考如何提问，如何在提问时提供完整
+有效的信息，如何在提问时解释清楚自己想要实现什么和遇到了什么问题。
+QQ群中的很多提问都是如此，需要回答者多次向提问者发问才能搞清楚提问者的问题。
+这不仅浪费了回答者的时间，也不利于提问者能力的提高。&lt;/li&gt;
+&lt;li&gt;多话题引起的错乱：经常遇到几个人同时提问，几个话题互相交叉，使得搞不清到底谁在回复谁&lt;/li&gt;
+&lt;li&gt;问答记录无法长期保存：只有用户接收到的消息会被保存到本地磁盘中，而对于
+新加入的成员而言，则无法看到历史聊天记录&lt;/li&gt;
+&lt;li&gt;问答记录无法搜索：仅当聊天记录保存在本地磁盘中才能被搜索，无法通过搜索引擎检索&lt;/li&gt;
+&lt;li&gt;问答记录无法被非群成员搜索：有大量的GMT用户未加入群中，这些非成员则无法获取这些优质的问答资源&lt;/li&gt;
+&lt;li&gt;Linux用户提问不便：Linux下几乎没有可用的QQ客户端，导致众多Linux下的GMT用户
+只能通过手机打字在群中提问，且只能通过手机拍照的方式上传屏幕截图&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;鉴于QQ群的以上几个缺点，萌生了建立问答社区的想法。希望这样一个问答社区可以解决QQ
+群存在的问题。问答社区将努力保持高信噪比，专注于GMT的问与答。&lt;/p&gt;
+&lt;h2 id=&#34;gmt中文社区&#34;&gt;GMT中文社区&lt;/h2&gt;
+&lt;p&gt;最初是计划把中文手册以及问答社区都放在我自己的博客域名之下的，但这样做一方面
+不够正式，另一方面也会影响到我对于自己博客的整体定位。最终经过一番考量之后，
+决定单独购买域名，建立GMT中文社区，然后将文档以及问答社区作为GMT中文社区的子项目。&lt;/p&gt;
+&lt;p&gt;现在，整个GMT中文社区的基本框架已经搭建完毕。我希望它能顺利运行下去，也欢迎
+更多的人提意见和建议，加入到整个社区的维护中来。&lt;/p&gt;
+&lt;p&gt;最后，我要感谢王亮在整个社区的建立过程中和我交流与讨论，并给出了很多有意义的建议。
+我还要感谢各种开源服务，我的工作是建立在它们之上的。我也希望华语地学界有更多的
+人了解开源、认同开源、热爱开源并最终参与到开源中来。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

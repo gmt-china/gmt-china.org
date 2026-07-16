@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mac | GMT 中文社区</title>
+    <link>https://gmt-china.org/tag/mac/</link>
+      <atom:link href="https://gmt-china.org/tag/mac/index.xml" rel="self" type="application/rss+xml" />
+    <description>Mac</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-Hans</language><lastBuildDate>Wed, 19 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://gmt-china.org/media/icon_hub7ca0b5404c6d576559b2bd22c64b0e5_1747_512x512_fill_lanczos_center_3.png</url>
+      <title>Mac</title>
+      <link>https://gmt-china.org/tag/mac/</link>
+    </image>
+    
+    <item>
+      <title>GMT脚本执行利器——VS Code</title>
+      <link>https://gmt-china.org/blog/vscode-usage/</link>
+      <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://gmt-china.org/blog/vscode-usage/</guid>
+      <description>&lt;p&gt;Visual Studio Code，简称vscode，是微软推出的一款免费、轻量且功能强大的编辑器。vscode除一键执行、语法高亮、分屏显示外，还可实现bat/bash脚本的顺滑切换运行、jpg/gif/pdf等成图结果实时预览、脚本报错信息显示，非常适合全平台下执行GMT脚本。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注：vscode是跨平台软件，支持linux/Mac/Windows平台。本文以windows为例介绍其使用方法。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;vscode安装&#34;&gt;vscode安装&lt;/h2&gt;
+&lt;p&gt;vscode下载地址为：&lt;a href=&#34;https://code.visualstudio.com/Download&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;官网&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;安装中建议勾选下图中两项，目的是添加右键打开的快捷方式。&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /blog/vscode-usage/vscode_pic1_hucb35951264cbdf2376d8edbcacdd6732_28749_99ccf0ce316679dbb85f71d2699f5b04.webp 400w,
+               /blog/vscode-usage/vscode_pic1_hucb35951264cbdf2376d8edbcacdd6732_28749_67dc23844f9c7e8b13001d2f9034723b.webp 760w,
+               /blog/vscode-usage/vscode_pic1_hucb35951264cbdf2376d8edbcacdd6732_28749_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/vscode-usage/vscode_pic1_hucb35951264cbdf2376d8edbcacdd6732_28749_99ccf0ce316679dbb85f71d2699f5b04.webp&#34;
+               width=&#34;600px&#34;
+               height=&#34;564&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;安装完成之后有三种打开vscode的方式：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;开始菜单中，直接找到Visual Studio Code应用程序打开。&lt;/li&gt;
+&lt;li&gt;直接在对应脚本或工作文件夹点击右键，选择“&lt;strong&gt;通过Code打开（Open with Code）&lt;/strong&gt;”。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl+R&lt;/code&gt;打开运行窗口，输入&lt;code&gt;code&lt;/code&gt; (前提是重启后，vscode已加入PATH路径)。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;插件安装&#34;&gt;插件安装&lt;/h2&gt;
+&lt;p&gt;vscode通过不同功能的插件实现代码的开发运行、图片文件的预览等等一系列功能。执行GMT脚本命令，推荐安装的插件包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Code Runner&lt;/strong&gt; 支持代码一键运行&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;vscode-pdf&lt;/strong&gt; pdf预览插件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;插件安装方式：打开&lt;strong&gt;Extensions&lt;/strong&gt;扩展插件菜单，搜索对应插件，点击安装。安装成功之后，&lt;strong&gt;Install&lt;/strong&gt;图标将变为&lt;strong&gt;齿轮&lt;/strong&gt;，可点击该齿轮，修改插件属性。已安装启用的插件都可在&lt;strong&gt;Extension&lt;/strong&gt;中查看设置。&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /blog/vscode-usage/vscode_pic2_hu2329616a440bb5d23159f8d74be2bc11_35260_095f9504e48845b4e693738d1d58f598.webp 400w,
+               /blog/vscode-usage/vscode_pic2_hu2329616a440bb5d23159f8d74be2bc11_35260_fde4e5938fbaa3df4a8dc87913bdb3f7.webp 760w,
+               /blog/vscode-usage/vscode_pic2_hu2329616a440bb5d23159f8d74be2bc11_35260_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/vscode-usage/vscode_pic2_hu2329616a440bb5d23159f8d74be2bc11_35260_095f9504e48845b4e693738d1d58f598.webp&#34;
+               width=&#34;700px&#34;
+               height=&#34;390&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;在 Extensions 菜单中，点击 Code Runner 插件的&lt;strong&gt;齿轮&lt;/strong&gt;图标，弹出菜单中选择“&lt;strong&gt;Extension Settings&lt;/strong&gt;”，勾选以下三个选项。不勾选这三个选项可能会导致无法正确执行 GMT 脚本。&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /blog/vscode-usage/vscode_pic3_hu805dad31df5a0e1c82582be035c398c2_86805_899e50487b02fa8bea5fd67347ebb54b.webp 400w,
+               /blog/vscode-usage/vscode_pic3_hu805dad31df5a0e1c82582be035c398c2_86805_c099fdcfad8aa58bf9c9abb224610a3e.webp 760w,
+               /blog/vscode-usage/vscode_pic3_hu805dad31df5a0e1c82582be035c398c2_86805_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/vscode-usage/vscode_pic3_hu805dad31df5a0e1c82582be035c398c2_86805_899e50487b02fa8bea5fd67347ebb54b.webp&#34;
+               width=&#34;700px&#34;
+               height=&#34;512&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;vscode执行gmt脚本过程&#34;&gt;vscode执行GMT脚本过程&lt;/h2&gt;
+&lt;p&gt;GMT脚本建议在独立工作空间（文件夹）中执行，有以下两种方式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在vscode中的Explore资源管理器菜单，选择“&lt;strong&gt;打开文件夹&lt;/strong&gt;“：&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /blog/vscode-usage/vscode_pic4_hu78227551c349f3d4eb61fdcd2af84b6c_33549_26f81e0a6b2037bc8f52972a91f46547.webp 400w,
+               /blog/vscode-usage/vscode_pic4_hu78227551c349f3d4eb61fdcd2af84b6c_33549_fee2d67c43da811798cef37ff1a012e5.webp 760w,
+               /blog/vscode-usage/vscode_pic4_hu78227551c349f3d4eb61fdcd2af84b6c_33549_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/vscode-usage/vscode_pic4_hu78227551c349f3d4eb61fdcd2af84b6c_33549_26f81e0a6b2037bc8f52972a91f46547.webp&#34;
+               width=&#34;500px&#34;
+               height=&#34;496&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;或者，在文件夹上右键，选择“&lt;strong&gt;通过Code打开&lt;/strong&gt;”：&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34;
+           src=&#34;https://gmt-china.org/blog/vscode-usage/vscode_gif1.gif&#34;
+           loading=&#34;lazy&#34; data-zoomable width=&#34;700px&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;含有中文的脚本需要设置编码为GB2312，否则会出现乱码：点击右下角的编码按钮，
+再选择“&lt;strong&gt;重新打开编码（Reopen with Encoding）&lt;/strong&gt;”，选择&lt;strong&gt;中文简体GB2312&lt;/strong&gt;编码。&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /blog/vscode-usage/vscode_pic5_hu3793052ad46ce1e1ef53104830a5d6dc_25246_4a73760aac727161bb55633ac5a23757.webp 400w,
+               /blog/vscode-usage/vscode_pic5_hu3793052ad46ce1e1ef53104830a5d6dc_25246_2c893c00e0e25eb290d851070ff8e056.webp 760w,
+               /blog/vscode-usage/vscode_pic5_hu3793052ad46ce1e1ef53104830a5d6dc_25246_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/vscode-usage/vscode_pic5_hu3793052ad46ce1e1ef53104830a5d6dc_25246_4a73760aac727161bb55633ac5a23757.webp&#34;
+               width=&#34;700px&#34;
+               height=&#34;463&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;执行脚本可选择脚本页面右上方三角符号（Alt+F1），脚本运行信息显示在下方Terminal终端窗体。若想同时预览生成结果，可增加编辑窗口（Split Editor），两个窗口分别显示脚本和运行结果。&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34;
+           src=&#34;https://gmt-china.org/blog/vscode-usage/vscode_gif2.gif&#34;
+           loading=&#34;lazy&#34; data-zoomable width=&#34;700px&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;若本机安装了Bash终端，vscode也可通过手工切换终端执行 bash 脚本。&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /blog/vscode-usage/vscode_pic6_1_hub3658aa8be61f9c3974d53027e7dff9b_53784_b1bf8ea9f43b6b3a864f12a79b9040d7.webp 400w,
+               /blog/vscode-usage/vscode_pic6_1_hub3658aa8be61f9c3974d53027e7dff9b_53784_f24839a5ca3b6217a783b9e911a26052.webp 760w,
+               /blog/vscode-usage/vscode_pic6_1_hub3658aa8be61f9c3974d53027e7dff9b_53784_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/vscode-usage/vscode_pic6_1_hub3658aa8be61f9c3974d53027e7dff9b_53784_b1bf8ea9f43b6b3a864f12a79b9040d7.webp&#34;
+               width=&#34;700px&#34;
+               height=&#34;584&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;如果你运行的是 bash 脚本，则必须在 &lt;code&gt;gmt begin&lt;/code&gt; 之前添加一行 &lt;code&gt;export GMT_SESSION_NAME=$$&lt;/code&gt; ，否则脚本运行将出现错误。&lt;/p&gt;
+&lt;p&gt;详情请参阅&lt;a href=&#34;https://docs.gmt-china.org/latest/module/begin/#unix-shell&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GMT中文手册的begin模块说明页面&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;为提高编码效率，推荐使用快捷键进行代码注释、代码运行、窗格切换等操作。键盘单击F1，调出vscode的命令面板，输入”shortcut“检索出快捷键编辑命令：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /blog/vscode-usage/vscode_pic7_huae9f90fb19d6dc42e8fc95d2da0c1f96_59482_48aed408e36b9e3b00617ba0470a7118.webp 400w,
+               /blog/vscode-usage/vscode_pic7_huae9f90fb19d6dc42e8fc95d2da0c1f96_59482_cba50ff60e6d58a2e48673aefb5fe653.webp 760w,
+               /blog/vscode-usage/vscode_pic7_huae9f90fb19d6dc42e8fc95d2da0c1f96_59482_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://gmt-china.org/blog/vscode-usage/vscode_pic7_huae9f90fb19d6dc42e8fc95d2da0c1f96_59482_48aed408e36b9e3b00617ba0470a7118.webp&#34;
+               width=&#34;700px&#34;
+               height=&#34;215&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;我们可以查询或自定义众多快捷键，包括但不限于行注释（Add Line Comment/Remove Line Comment）、窗口分割（View: Split Editor Down/Right/Up/Left）、窗口关闭（View：Close Editor）等。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

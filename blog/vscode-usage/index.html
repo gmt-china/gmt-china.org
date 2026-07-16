@@ -1,0 +1,1478 @@
+<!DOCTYPE html><html lang="zh-Hans" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.5.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Visual Studio Code，简称vscode，是微软推出的一款免费、轻量且" />
+
+  
+  <link rel="alternate" hreflang="zh-Hans" href="https://gmt-china.org/blog/vscode-usage/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.1052fab8b7700a3dc49ee23683097d66.css" />
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hub7ca0b5404c6d576559b2bd22c64b0e5_1747_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hub7ca0b5404c6d576559b2bd22c64b0e5_1747_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://gmt-china.org/blog/vscode-usage/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="GMT 中文社区" />
+  <meta property="og:url" content="https://gmt-china.org/blog/vscode-usage/" />
+  <meta property="og:title" content="GMT脚本执行利器——VS Code | GMT 中文社区" />
+  <meta property="og:description" content="Visual Studio Code，简称vscode，是微软推出的一款免费、轻量且" /><meta property="og:image" content="https://gmt-china.org/media/icon_hub7ca0b5404c6d576559b2bd22c64b0e5_1747_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://gmt-china.org/media/icon_hub7ca0b5404c6d576559b2bd22c64b0e5_1747_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="zh-Hans" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2025-08-21T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2025-08-21T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://gmt-china.org/blog/vscode-usage/"
+  },
+  "headline": "GMT脚本执行利器——VS Code",
+  
+  "datePublished": "2025-08-21T00:00:00Z",
+  "dateModified": "2025-08-21T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "刘珠妹"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "GMT 中文社区",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://gmt-china.org/media/icon_hub7ca0b5404c6d576559b2bd22c64b0e5_1747_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "Visual Studio Code，简称vscode，是微软推出的一款免费、轻量且"
+}
+</script>
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>GMT脚本执行利器——VS Code | GMT 中文社区</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="de4017d6f83166687c87047225ee5463" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.2ed908358299dd7ab553faae685c746c.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>搜索</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="搜索..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="搜索...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">GMT 中文社区</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="切换导航">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">GMT 中文社区</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#"><span>首页</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#download"><span>下载安装</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#docs"><span>中文手册</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#posts"><span>博客</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+              
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="https://docs.gmt-china.org/latest/dataset/" target="_blank" rel="noopener"><span>地学数据集</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+              
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="https://docs.gmt-china.org/latest/gallery/" target="_blank" rel="noopener"><span>图库</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>联系我们</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/index.xml"><span><i class="fas fa-rss"></i></span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="搜索"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>浅色</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>深色</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>自动</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>GMT脚本执行利器——VS Code</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      <a href="/authors/%E5%88%98%E7%8F%A0%E5%A6%B9/">刘珠妹</a></span>, <span >
+      <a href="/authors/%E8%B5%B5%E5%BF%97%E8%BF%9C/">赵志远</a></span>, <span >
+      <a href="/authors/%E9%99%88%E7%AE%AB%E7%BF%B0/">陈箫翰</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    2025年08月21日
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    3 分钟阅读时长
+  </span>
+  
+
+  
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/category/gmt%E6%8A%80%E5%B7%A7/">GMT技巧</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>Visual Studio Code，简称vscode，是微软推出的一款免费、轻量且功能强大的编辑器。vscode除一键执行、语法高亮、分屏显示外，还可实现bat/bash脚本的顺滑切换运行、jpg/gif/pdf等成图结果实时预览、脚本报错信息显示，非常适合全平台下执行GMT脚本。</p>
+<p><strong>注：vscode是跨平台软件，支持linux/Mac/Windows平台。本文以windows为例介绍其使用方法。</strong></p>
+<h2 id="vscode安装">vscode安装</h2>
+<p>vscode下载地址为：<a href="https://code.visualstudio.com/Download" target="_blank" rel="noopener">官网</a></p>
+<p>安装中建议勾选下图中两项，目的是添加右键打开的快捷方式。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /blog/vscode-usage/vscode_pic1_hucb35951264cbdf2376d8edbcacdd6732_28749_99ccf0ce316679dbb85f71d2699f5b04.webp 400w,
+               /blog/vscode-usage/vscode_pic1_hucb35951264cbdf2376d8edbcacdd6732_28749_67dc23844f9c7e8b13001d2f9034723b.webp 760w,
+               /blog/vscode-usage/vscode_pic1_hucb35951264cbdf2376d8edbcacdd6732_28749_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/blog/vscode-usage/vscode_pic1_hucb35951264cbdf2376d8edbcacdd6732_28749_99ccf0ce316679dbb85f71d2699f5b04.webp"
+               width="600px"
+               height="564"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+<p>安装完成之后有三种打开vscode的方式：</p>
+<ol>
+<li>开始菜单中，直接找到Visual Studio Code应用程序打开。</li>
+<li>直接在对应脚本或工作文件夹点击右键，选择“<strong>通过Code打开（Open with Code）</strong>”。</li>
+<li><code>Ctrl+R</code>打开运行窗口，输入<code>code</code> (前提是重启后，vscode已加入PATH路径)。</li>
+</ol>
+<h2 id="插件安装">插件安装</h2>
+<p>vscode通过不同功能的插件实现代码的开发运行、图片文件的预览等等一系列功能。执行GMT脚本命令，推荐安装的插件包括：</p>
+<ul>
+<li><strong>Code Runner</strong> 支持代码一键运行</li>
+<li><strong>vscode-pdf</strong> pdf预览插件</li>
+</ul>
+<p>插件安装方式：打开<strong>Extensions</strong>扩展插件菜单，搜索对应插件，点击安装。安装成功之后，<strong>Install</strong>图标将变为<strong>齿轮</strong>，可点击该齿轮，修改插件属性。已安装启用的插件都可在<strong>Extension</strong>中查看设置。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /blog/vscode-usage/vscode_pic2_hu2329616a440bb5d23159f8d74be2bc11_35260_095f9504e48845b4e693738d1d58f598.webp 400w,
+               /blog/vscode-usage/vscode_pic2_hu2329616a440bb5d23159f8d74be2bc11_35260_fde4e5938fbaa3df4a8dc87913bdb3f7.webp 760w,
+               /blog/vscode-usage/vscode_pic2_hu2329616a440bb5d23159f8d74be2bc11_35260_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/blog/vscode-usage/vscode_pic2_hu2329616a440bb5d23159f8d74be2bc11_35260_095f9504e48845b4e693738d1d58f598.webp"
+               width="700px"
+               height="390"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+<p>在 Extensions 菜单中，点击 Code Runner 插件的<strong>齿轮</strong>图标，弹出菜单中选择“<strong>Extension Settings</strong>”，勾选以下三个选项。不勾选这三个选项可能会导致无法正确执行 GMT 脚本。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /blog/vscode-usage/vscode_pic3_hu805dad31df5a0e1c82582be035c398c2_86805_899e50487b02fa8bea5fd67347ebb54b.webp 400w,
+               /blog/vscode-usage/vscode_pic3_hu805dad31df5a0e1c82582be035c398c2_86805_c099fdcfad8aa58bf9c9abb224610a3e.webp 760w,
+               /blog/vscode-usage/vscode_pic3_hu805dad31df5a0e1c82582be035c398c2_86805_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/blog/vscode-usage/vscode_pic3_hu805dad31df5a0e1c82582be035c398c2_86805_899e50487b02fa8bea5fd67347ebb54b.webp"
+               width="700px"
+               height="512"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+<h2 id="vscode执行gmt脚本过程">vscode执行GMT脚本过程</h2>
+<p>GMT脚本建议在独立工作空间（文件夹）中执行，有以下两种方式：</p>
+<ul>
+<li>在vscode中的Explore资源管理器菜单，选择“<strong>打开文件夹</strong>“：</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /blog/vscode-usage/vscode_pic4_hu78227551c349f3d4eb61fdcd2af84b6c_33549_26f81e0a6b2037bc8f52972a91f46547.webp 400w,
+               /blog/vscode-usage/vscode_pic4_hu78227551c349f3d4eb61fdcd2af84b6c_33549_fee2d67c43da811798cef37ff1a012e5.webp 760w,
+               /blog/vscode-usage/vscode_pic4_hu78227551c349f3d4eb61fdcd2af84b6c_33549_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/blog/vscode-usage/vscode_pic4_hu78227551c349f3d4eb61fdcd2af84b6c_33549_26f81e0a6b2037bc8f52972a91f46547.webp"
+               width="500px"
+               height="496"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+<ul>
+<li>或者，在文件夹上右键，选择“<strong>通过Code打开</strong>”：</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt=""
+           src="/blog/vscode-usage/vscode_gif1.gif"
+           loading="lazy" data-zoomable width="700px" /></div>
+  </div></figure>
+<p>含有中文的脚本需要设置编码为GB2312，否则会出现乱码：点击右下角的编码按钮，
+再选择“<strong>重新打开编码（Reopen with Encoding）</strong>”，选择<strong>中文简体GB2312</strong>编码。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /blog/vscode-usage/vscode_pic5_hu3793052ad46ce1e1ef53104830a5d6dc_25246_4a73760aac727161bb55633ac5a23757.webp 400w,
+               /blog/vscode-usage/vscode_pic5_hu3793052ad46ce1e1ef53104830a5d6dc_25246_2c893c00e0e25eb290d851070ff8e056.webp 760w,
+               /blog/vscode-usage/vscode_pic5_hu3793052ad46ce1e1ef53104830a5d6dc_25246_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/blog/vscode-usage/vscode_pic5_hu3793052ad46ce1e1ef53104830a5d6dc_25246_4a73760aac727161bb55633ac5a23757.webp"
+               width="700px"
+               height="463"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+<p>执行脚本可选择脚本页面右上方三角符号（Alt+F1），脚本运行信息显示在下方Terminal终端窗体。若想同时预览生成结果，可增加编辑窗口（Split Editor），两个窗口分别显示脚本和运行结果。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt=""
+           src="/blog/vscode-usage/vscode_gif2.gif"
+           loading="lazy" data-zoomable width="700px" /></div>
+  </div></figure>
+<p>若本机安装了Bash终端，vscode也可通过手工切换终端执行 bash 脚本。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /blog/vscode-usage/vscode_pic6_1_hub3658aa8be61f9c3974d53027e7dff9b_53784_b1bf8ea9f43b6b3a864f12a79b9040d7.webp 400w,
+               /blog/vscode-usage/vscode_pic6_1_hub3658aa8be61f9c3974d53027e7dff9b_53784_f24839a5ca3b6217a783b9e911a26052.webp 760w,
+               /blog/vscode-usage/vscode_pic6_1_hub3658aa8be61f9c3974d53027e7dff9b_53784_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/blog/vscode-usage/vscode_pic6_1_hub3658aa8be61f9c3974d53027e7dff9b_53784_b1bf8ea9f43b6b3a864f12a79b9040d7.webp"
+               width="700px"
+               height="584"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+<p>如果你运行的是 bash 脚本，则必须在 <code>gmt begin</code> 之前添加一行 <code>export GMT_SESSION_NAME=$$</code> ，否则脚本运行将出现错误。</p>
+<p>详情请参阅<a href="https://docs.gmt-china.org/latest/module/begin/#unix-shell" target="_blank" rel="noopener">GMT中文手册的begin模块说明页面</a></p>
+<p>为提高编码效率，推荐使用快捷键进行代码注释、代码运行、窗格切换等操作。键盘单击F1，调出vscode的命令面板，输入”shortcut“检索出快捷键编辑命令：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /blog/vscode-usage/vscode_pic7_huae9f90fb19d6dc42e8fc95d2da0c1f96_59482_48aed408e36b9e3b00617ba0470a7118.webp 400w,
+               /blog/vscode-usage/vscode_pic7_huae9f90fb19d6dc42e8fc95d2da0c1f96_59482_cba50ff60e6d58a2e48673aefb5fe653.webp 760w,
+               /blog/vscode-usage/vscode_pic7_huae9f90fb19d6dc42e8fc95d2da0c1f96_59482_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/blog/vscode-usage/vscode_pic7_huae9f90fb19d6dc42e8fc95d2da0c1f96_59482_48aed408e36b9e3b00617ba0470a7118.webp"
+               width="700px"
+               height="215"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+<p>我们可以查询或自定义众多快捷键，包括但不限于行注释（Add Line Comment/Remove Line Comment）、窗口分割（View: Split Editor Down/Right/Up/Left）、窗口关闭（View：Close Editor）等。</p>
+
+    </div>
+
+    
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/windows/">Windows</a>
+  
+  <a class="badge badge-light" href="/tag/linux/">Linux</a>
+  
+  <a class="badge badge-light" href="/tag/mac/">Mac</a>
+  
+</div>
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://gmt-china.org/blog/vscode-usage/&amp;text=GMT%e8%84%9a%e6%9c%ac%e6%89%a7%e8%a1%8c%e5%88%a9%e5%99%a8%e2%80%94%e2%80%94VS%20Code" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://gmt-china.org/blog/vscode-usage/&amp;t=GMT%e8%84%9a%e6%9c%ac%e6%89%a7%e8%a1%8c%e5%88%a9%e5%99%a8%e2%80%94%e2%80%94VS%20Code" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=GMT%e8%84%9a%e6%9c%ac%e6%89%a7%e8%a1%8c%e5%88%a9%e5%99%a8%e2%80%94%e2%80%94VS%20Code&amp;body=https://gmt-china.org/blog/vscode-usage/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://gmt-china.org/blog/vscode-usage/&amp;title=GMT%e8%84%9a%e6%9c%ac%e6%89%a7%e8%a1%8c%e5%88%a9%e5%99%a8%e2%80%94%e2%80%94VS%20Code" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=GMT%e8%84%9a%e6%9c%ac%e6%89%a7%e8%a1%8c%e5%88%a9%e5%99%a8%e2%80%94%e2%80%94VS%20Code%20https://gmt-china.org/blog/vscode-usage/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://gmt-china.org/blog/vscode-usage/&amp;title=GMT%e8%84%9a%e6%9c%ac%e6%89%a7%e8%a1%8c%e5%88%a9%e5%99%a8%e2%80%94%e2%80%94VS%20Code" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2016 – 2026 GMT中文社区.
+  </p>
+  
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      由<a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a>支持发布——免费<a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">开源</a>网站，为创作者赋能。
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.fab8b449b814cc9f95b22fcf2e45f05b.js"></script>
+
+    
+    
+    
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js" integrity="sha512-Ypjm0o7jOxAd4hpdoppSEN0TQOC19UtPAqD+4s5AlXmUvbmmS/YMxYqAqarQYyxTnB6/rqip9qcxlNB/3U9Wdg==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/bash.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+
+    
+    
+    
+    <script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+    
+    
+      <script src="/js/wowchemy-headroom.c251366b4128fd5e6b046d4c97a62a51.js" type="module"></script>
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/zh/js/wowchemy.min.5dd6318d852b1d2dade11ec83bf2a2ae.js"></script>
+
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+</body>
+</html>

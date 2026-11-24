@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>社区规范 | GMT 中文社区</title>
+    <link>https://gmt-china.org/category/%E7%A4%BE%E5%8C%BA%E8%A7%84%E8%8C%83/</link>
+      <atom:link href="https://gmt-china.org/category/%E7%A4%BE%E5%8C%BA%E8%A7%84%E8%8C%83/index.xml" rel="self" type="application/rss+xml" />
+    <description>社区规范</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-Hans</language><lastBuildDate>Wed, 23 Aug 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://gmt-china.org/media/icon_hub7ca0b5404c6d576559b2bd22c64b0e5_1747_512x512_fill_lanczos_center_3.png</url>
+      <title>社区规范</title>
+      <link>https://gmt-china.org/category/%E7%A4%BE%E5%8C%BA%E8%A7%84%E8%8C%83/</link>
+    </image>
+    
+    <item>
+      <title>GMT 中文社区 QQ 群入群须知</title>
+      <link>https://gmt-china.org/blog/community-guide/</link>
+      <pubDate>Wed, 23 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>https://gmt-china.org/blog/community-guide/</guid>
+      <description>&lt;p&gt;欢迎加入“地学GMT中文社区群”：&lt;/p&gt;
+&lt;p&gt;&lt;i class=&#34;fab fa-qq&#34;&gt;&lt;/i&gt;  一群：218905582
+&lt;br&gt;
+&lt;i class=&#34;fab fa-qq&#34;&gt;&lt;/i&gt;  二群：791856541&lt;/p&gt;
+&lt;p&gt;GMT 中文社区群是一个相对活跃且学术氛围浓厚的群。本文是 GMT 中文社区群的入群须知，
+也是 GMT 中文社区的提问规范。希望所有群友可以阅读并遵守以下规范来营造更好的群环境。&lt;/p&gt;
+&lt;div class=&#34;row &#34;&gt;
+&lt;div class=&#34;col-md-6&#34;&gt;
+&lt;h4 id=&#34;群内可以做的事&#34;&gt;群内可以做的事&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;GMT 相关问题&lt;/li&gt;
+&lt;li&gt;其他地学软件相关问题&lt;/li&gt;
+&lt;li&gt;地学科研相关问题&lt;/li&gt;
+&lt;li&gt;求助文献&lt;/li&gt;
+&lt;li&gt;发科研相关的培训、会议信息&lt;/li&gt;
+&lt;li&gt;介绍并推广自己的最新研究成果&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&#34;col-md-6&#34;&gt;
+&lt;h4 id=&#34;群内禁止做的事&#34;&gt;群内禁止做的事：&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;发广告&lt;/li&gt;
+&lt;li&gt;签到、灌水等无意义行为&lt;/li&gt;
+&lt;li&gt;人身攻击&lt;/li&gt;
+&lt;li&gt;讨论政治问题&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;安装类问题&#34;&gt;安装类问题&lt;/h2&gt;
+&lt;p&gt;如果你在安装 GMT 的过程中遇到问题，请参照下面的模板提问。&lt;/p&gt;
+&lt;div class=&#34;alert alert-info&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;我在安装 GMT 的时候遇到了问题，请问该如何解决？谢谢。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;操作系统是&lt;/strong&gt;: Windows XP | Windows 7 | Ubuntu | CentOS | macOS &amp;hellip;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;要安装的GMT版本是&lt;/strong&gt;: GMT 4.5.16 | GMT 5.4.2 &amp;hellip;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;安装GMT参考的文档是&lt;/strong&gt;: &lt;em&gt;此处可贴文档的网址&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;安装过程中显示的错误信息为&lt;/strong&gt;: &lt;em&gt;此处可贴图&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;思路类问题&#34;&gt;思路类问题&lt;/h2&gt;
+&lt;p&gt;想要实现某一类图，但不知GMT能否实现或没有实现的思路。&lt;/p&gt;
+&lt;p&gt;如果别人文章中有自己想要实现的效果图就直接贴图，并指出自己在实现图中哪一部分
+时没有思路。如果找不到已有的效果图，可以考虑手绘示意图，或精准描述自己想要的
+效果，以免引起误会，造成不必要的时间浪费。&lt;/p&gt;
+&lt;div class=&#34;alert alert-info&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;&lt;em&gt;此处先贴一张图&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;请问图中的XXXXX能否用GMT实现？该如何实现？谢谢。&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-info&#34;&gt;
+  &lt;div&gt;
+    请问我想用GMT实现XXX效果。&lt;em&gt;此处详细介绍自己想要的效果&lt;/em&gt; 。不知GMT中该如何实现？
+谢谢。
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;如果遇到自己画出来的图与自己预期的图不一致，请参考如下模板。&lt;/p&gt;
+&lt;div class=&#34;alert alert-info&#34;&gt;
+  &lt;div&gt;
+    &lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;当前效果&lt;/strong&gt;：截图&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;预期效果&lt;/strong&gt;：预期效果截图，或对预期效果的精确描述&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;我的代码是&lt;/strong&gt;：给出自己使用的代码，可以截图可以贴代码。最好是给出最小示例而不是一堆代码。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;GMT版本是&lt;/strong&gt;: GMT 5.4.2&lt;/li&gt;
+&lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;脚本报错类&#34;&gt;脚本报错类&lt;/h2&gt;
+&lt;p&gt;遇到绘图脚本或数据处理脚本出错时，请参考如下模板。&lt;/p&gt;
+&lt;div class=&#34;alert alert-info&#34;&gt;
+  &lt;div&gt;
+    &lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;我想要实现的是&lt;/strong&gt; ：&amp;hellip;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;我的命令/脚本是&lt;/strong&gt;: 可截图或贴脚本&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;终端报错是&lt;/strong&gt;: 终端报错截图&lt;/li&gt;
+&lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;文献求助&#34;&gt;文献求助&lt;/h2&gt;
+&lt;p&gt;需要他人帮忙下载文献时，请先使用 sci-hub 工具自行尝试下载
+（&lt;a href=&#34;https://gmt-china.org/blog/sci-hub/&#34;&gt;sci-hub教程&lt;/a&gt;）。&lt;/p&gt;
+&lt;p&gt;对于中文文献或 sci-hub 无法下载的文献，方可在群中寻找帮助。求助文献时，请先明确
+告知“使用 sci-hub无 法下载该文章”并提供文章的官方链接。若找不到官方链接，则提供
+文章的标题、作者、期刊、年份等信息。&lt;/p&gt;
+&lt;p&gt;求助文献示例如下：&lt;/p&gt;
+&lt;div class=&#34;alert alert-info&#34;&gt;
+  &lt;div&gt;
+    文献求助！我已经尝试用 sci-hub 下载但依然下载不到。文章链接为: XXXXXXX。谢谢。
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;提问的智慧&#34;&gt;提问的智慧&lt;/h2&gt;
+&lt;p&gt;时间对任何人都是一笔宝贵的财富。没有人有义务回答你的问题。在期望别人回答你的问题
+之前先要问一问自己针对这个问题做了哪些努力。&lt;/p&gt;
+&lt;h3 id=&#34;提问前需要做的事情&#34;&gt;提问前需要做的事情&lt;/h3&gt;
+&lt;p&gt;大多数的问题，文档都可以为你提供标准的解答。因此在你提问之前，你最好先去阅读一下
+相关的文档，至少确保你阅读过一份完整的入门文档。如果你能够在你提问的同时表明
+自己已经阅读过文档，但是依旧留有困惑，潜在的回答者会更加愿意为你解答。&lt;/p&gt;
+&lt;p&gt;推荐的一些文档：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.gmt-china.org/latest/gallery/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GMT 中文社区：图库&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.gmt-china.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GMT 中文手册&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.generic-mapping-tools.org/latest/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GMT 官方文档&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;提问技巧&#34;&gt;提问技巧&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;精确描述自己做了什么，遇到了什么问题，要提供足够的信息给潜在的回答者，尽量避免
+回答者多次要求提问者补充额外的信息的情况。&lt;/li&gt;
+&lt;li&gt;提供当前所使用的代码。贴完图之后如果自行修正了代码中的某些错误，一定要更新图。&lt;/li&gt;
+&lt;li&gt;提供截图以及文本。有些时候需要准确看到代码的样子，此时截图更合适；有些时候需要
+复制代码在自己电脑上跑一遍，此时提供文本更合适。&lt;/li&gt;
+&lt;li&gt;提问时说一说自己为了解决这个问题做了哪些事情，没人喜欢“伸手党”。&lt;/li&gt;
+&lt;li&gt;时间对任何人都是一笔宝贵的财富，请心怀感恩之心。&lt;/li&gt;
+&lt;li&gt;当你解决了某个问题（不管是别人帮助还是自己茅塞顿开），请不要吝啬告诉大家你的解决方案&lt;/li&gt;
+&lt;li&gt;当别人正在讨论某个问题时，请不要中间插入自己的问题，待别人的问题告一段落之后再提问。&lt;/li&gt;
+&lt;li&gt;除非必要，不要在首次发问的时候@某个人，这样给所有人的感觉是你在向这个人提问，
+从而失去了更多的潜在回答者。&lt;/li&gt;
+&lt;li&gt;有问题就直接问，不必管有没有人用过。很多时候，你在A软件中遇到的问题可能跟A软件
+完全没有关系，完全没接触过A软件的人可能也可以帮你解决该问题。&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>投稿须知</title>
+      <link>https://gmt-china.org/blog/instructions-for-authors/</link>
+      <pubDate>Thu, 17 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>https://gmt-china.org/blog/instructions-for-authors/</guid>
+      <description>&lt;p&gt;GMT 中文社区欢迎读者投稿，稿件主要包括社区博文和绘图实例两大类。&lt;/p&gt;
+&lt;h2 id=&#34;稿件类型&#34;&gt;稿件类型&lt;/h2&gt;
+&lt;h3 id=&#34;社区博文&#34;&gt;社区博文&lt;/h3&gt;
+&lt;p&gt;社区博文是与 GMT 官方及社区活动有关的简短文章，包括但不限于：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;GMT 官方新闻（比如新版本发布）&lt;/li&gt;
+&lt;li&gt;GMT 社区新闻（比如聚餐与培训）&lt;/li&gt;
+&lt;li&gt;GMT 使用技巧等&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;绘图实例&#34;&gt;绘图实例&lt;/h3&gt;
+&lt;p&gt;绘图实例是指使用 GMT 绘制的具有典型性的图件。
+目前社区维护的绘图实例位于
+&lt;a href=&#34;https://docs.gmt-china.org/latest/gallery/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GMT 中文手册：绘图实例&lt;/a&gt;中。&lt;/p&gt;
+&lt;p&gt;请参考&lt;a href=&#34;https://docs.gmt-china.org/latest/contributing/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GMT 中文手册：贡献指南&lt;/a&gt;，
+直接向中文手册提交绘图实例。&lt;/p&gt;
+&lt;h2 id=&#34;投稿方式&#34;&gt;投稿方式&lt;/h2&gt;
+&lt;p&gt;可以通过如下几种方式投稿：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;直接在 &lt;a href=&#34;https://github.com/gmt-china/gmt-china.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;社区主页&lt;/a&gt;
+或 &lt;a href=&#34;https://github.com/gmt-china/GMT_docs&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GMT中文手册&lt;/a&gt; 的 GitHub 仓库中
+提交 Issue 或 Pull Request。
+（不熟悉 Pull Request 的读者可以参考 &lt;a href=&#34;https://seismo-learn.org/contributing/pull-request/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pull Request 流程&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;将稿件发送至 &lt;a href=&#34;mailto:admin@gmt-china.org&#34;&gt;admin@gmt-china.org&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;作者权益&#34;&gt;作者权益&lt;/h2&gt;
+&lt;p&gt;请确保你有将稿件投稿到社区的权利，特别是在图件修改自他人图件的情况下。
+你所拥有的权益是稿件公开后，你有署名权（如果维护者对你的稿件有大改，
+则维护者可能会在你的名字后面署名）。接受的稿件在公开后，任何人对你的稿件都可以
+以任何媒介以任何形式进行复制、发行、修改、转换或以其为基础进行再创作用于任何
+可能的用途，包括商业目的。别人在使用你的作品之后，应当提及你和 GMT 中文社区，
+但社区无法保证第三方会尊重你的权益。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

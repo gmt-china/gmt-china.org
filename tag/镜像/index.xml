@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>镜像 | GMT 中文社区</title>
+    <link>https://gmt-china.org/tag/%E9%95%9C%E5%83%8F/</link>
+      <atom:link href="https://gmt-china.org/tag/%E9%95%9C%E5%83%8F/index.xml" rel="self" type="application/rss+xml" />
+    <description>镜像</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>zh-Hans</language><lastBuildDate>Fri, 08 Jul 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://gmt-china.org/media/icon_hub7ca0b5404c6d576559b2bd22c64b0e5_1747_512x512_fill_lanczos_center_3.png</url>
+      <title>镜像</title>
+      <link>https://gmt-china.org/tag/%E9%95%9C%E5%83%8F/</link>
+    </image>
+    
+    <item>
+      <title>GMT国内镜像正式建成</title>
+      <link>https://gmt-china.org/blog/mirror-site-founded/</link>
+      <pubDate>Fri, 08 Jul 2016 00:00:00 +0000</pubDate>
+      <guid>https://gmt-china.org/blog/mirror-site-founded/</guid>
+      <description>&lt;p&gt;经过本社区积极联系，GMT中国区镜像站点已于2016年7月6日正式建立，并已加入GMT官网镜像列表中。
+该镜像站点依托中国科学技术大学LUG服务器，是中国唯一的一个 GMT 镜像站。
+GMT国内镜像的建立，可以大大加快下载GMT源码及相关数据的速度。&lt;/p&gt;
+&lt;h2 id=&#34;gmt-源码包镜像&#34;&gt;GMT 源码包镜像&lt;/h2&gt;
+&lt;p&gt;镜像地址：&lt;a href=&#34;http://mirrors.ustc.edu.cn/gmt/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://mirrors.ustc.edu.cn/gmt/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;GMT 源码包镜像中包含了 GMT 源码软件包以及 GSHHG 和 DCW 数据压缩包。
+进入 GMT 镜像即可直接下载 GMT 源码包，Windows/Mac 安装包位于镜像的 &lt;code&gt;bin&lt;/code&gt; 目录下。&lt;/p&gt;
+&lt;h2 id=&#34;gmt-远程数据镜像&#34;&gt;GMT 远程数据镜像&lt;/h2&gt;
+&lt;p&gt;镜像地址：&lt;a href=&#34;https://mirrors.ustc.edu.cn/gmtdata/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://mirrors.ustc.edu.cn/gmtdata/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;GMT 远程数据镜像中提供了全球地形起伏等地学数据。该镜像的使用方法可以参考
+&lt;a href=&#34;https://docs.gmt-china.org/latest/dataset/usage/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://docs.gmt-china.org/latest/dataset/usage/&lt;/a&gt;。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
